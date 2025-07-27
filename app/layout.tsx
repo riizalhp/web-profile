@@ -5,59 +5,61 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Fatiha Eros Perdana - Expert Product Designer & UI/UX Specialist | Portfolio',
-  description: 'Fatiha Eros Perdana - Professional Product Designer specializing in UI/UX design, visual design, SEO optimization, and web development. 4+ years experience crafting user-centric designs with pixel-perfect precision. Available for freelance projects in Yogyakarta, Indonesia.',
+  title: 'Rizal Hanifa Pratama - Expert Project Manager & Tech Leader | Portfolio',
+  description: 'Rizal Hanifa Pratama - Experienced Tech Project Manager with strong background in leading cross-functional teams, managing tech projects, and delivering impactful digital solutions. Active in both startup and corporate environments in Yogyakarta, Indonesia.',
   keywords: [
-    'Product Designer',
-    'UI/UX Designer',
-    'Visual Designer',
-    'Web Developer',
-    'SEO Specialist',
-    'User Experience Design',
-    'Interface Design',
-    'Freelance Designer',
-    'Yogyakarta Designer',
-    'Indonesia Designer',
-    'Fatiha Eros Perdana',
+    'Project Manager',
+    'Tech Project Manager',
+    'Product Owner',
+    'Digital Solutions',
+    'Cross-functional Teams',
+    'Project Planning',
+    'Risk Management',
+    'Team Leadership',
+    'Startup Experience',
+    'Corporate Experience',
+    'Yogyakarta Project Manager',
+    'Indonesia Tech Leader',
+    'Rizal Hanifa Pratama',
     'Portfolio',
-    'Design Services',
-    'Figma Expert',
-    'Framer Designer',
-    'Information Architecture',
-    'Story Boarding',
-    'Illustration',
-    'No Code Development'
+    'Project Management Services',
+    'GitHub Projects',
+    'Trello Expert',
+    'Notion Expert',
+    'Agile Methodology',
+    'Scrum Master',
+    'Budget Management'
   ],
-  authors: [{ name: 'Fatiha Eros Perdana' }],
-  creator: 'Fatiha Eros Perdana',
-  publisher: 'Fatiha Eros Perdana',
+  authors: [{ name: 'Rizal Hanifa Pratama' }],
+  creator: 'Rizal Hanifa Pratama',
+  publisher: 'Rizal Hanifa Pratama',
   robots: 'index, follow',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://fatihaeros.com',
-    title: 'Fatiha Eros Perdana - Expert Product Designer & UI/UX Specialist',
-    description: 'Professional Product Designer with 4+ years experience in UI/UX design, visual design, and web development. Crafting user-centric designs with pixel-perfect precision.',
-    siteName: 'Fatiha Eros Perdana Portfolio',
+    url: 'https://rizalhanifa.com',
+    title: 'Rizal Hanifa Pratama - Expert Project Manager & Tech Leader',
+    description: 'Experienced Tech Project Manager with strong background in leading cross-functional teams and delivering impactful digital solutions.',
+    siteName: 'Rizal Hanifa Pratama Portfolio',
     images: [{
-      url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC5kIlEjYNcAfgYtwCkKW_vNGe8wISmf26pKJGchx2m7SyvGDHafZqHB74xb87h0LZNQK8dpSv7bCVhG1K89zYgOpow3Um1M0xEhwts89UEB0FCSs5dl9zGYO6EXDZSZgQUYYExJG_wP92Qv5BN6-3papfSw4yY70BbKJL_b5P3C8sA32fjqzicp5983SbAn6Gc0SErmxYOFN3s-DRrape9f0lVazch8hpU12bEHKGtnRjOqHMPWpVPvuP_qCExfisMD1ALkIEibPke',
+      url: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg',
       width: 1200,
       height: 630,
-      alt: 'Fatiha Eros Perdana - Product Designer Portfolio'
+      alt: 'Rizal Hanifa Pratama - Project Manager Portfolio'
     }]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Fatiha Eros Perdana - Expert Product Designer & UI/UX Specialist',
-    description: 'Professional Product Designer with 4+ years experience in UI/UX design, visual design, and web development.',
-    creator: '@fatihaeros',
-    images: ['https://lh3.googleusercontent.com/aida-public/AB6AXuC5kIlEjYNcAfgYtwCkKW_vNGe8wISmf26pKJGchx2m7SyvGDHafZqHB74xb87h0LZNQK8dpSv7bCVhG1K89zYgOpow3Um1M0xEhwts89UEB0FCSs5dl9zGYO6EXDZSZgQUYYExJG_wP92Qv5BN6-3papfSw4yY70BbKJL_b5P3C8sA32fjqzicp5983SbAn6Gc0SErmxYOFN3s-DRrape9f0lVazch8hpU12bEHKGtnRjOqHMPWpVPvuP_qCExfisMD1ALkIEibPke']
+    title: 'Rizal Hanifa Pratama - Expert Project Manager & Tech Leader',
+    description: 'Experienced Tech Project Manager with strong background in leading cross-functional teams and delivering impactful digital solutions.',
+    creator: '@riizalhp',
+    images: ['https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg']
   },
   verification: {
     google: 'your-google-verification-code',
   },
   alternates: {
-    canonical: 'https://fatihaeros.com',
+    canonical: 'https://rizalhanifa.com',
   }
 };
 
@@ -85,41 +87,41 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              "name": "Fatiha Eros Perdana",
-              "jobTitle": "Product Designer",
-              "description": "Professional Product Designer specializing in UI/UX design, visual design, SEO optimization, and web development with 4+ years of experience.",
-              "url": "https://fatihaeros.com",
-              "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuC5kIlEjYNcAfgYtwCkKW_vNGe8wISmf26pKJGchx2m7SyvGDHafZqHB74xb87h0LZNQK8dpSv7bCVhG1K89zYgOpow3Um1M0xEhwts89UEB0FCSs5dl9zGYO6EXDZSZgQUYYExJG_wP92Qv5BN6-3papfSw4yY70BbKJL_b5P3C8sA32fjqzicp5983SbAn6Gc0SErmxYOFN3s-DRrape9f0lVazch8hpU12bEHKGtnRjOqHMPWpVPvuP_qCExfisMD1ALkIEibPke",
+              "name": "Rizal Hanifa Pratama",
+              "jobTitle": "Project Manager",
+              "description": "Experienced Tech Project Manager with strong background in leading cross-functional teams, managing tech projects, and delivering impactful digital solutions.",
+              "url": "https://rizalhanifa.com",
+              "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Yogyakarta",
                 "addressCountry": "Indonesia"
               },
               "sameAs": [
-                "https://linkedin.com/in/fatihaeros",
-                "https://twitter.com/fatihaeros",
-                "https://instagram.com/fatihaeros"
+                "https://www.linkedin.com/in/rizal-hanifa-pratama/",
+                "https://wa.me/6289667912404",
+                "https://www.instagram.com/riizalhp"
               ],
               "knowsAbout": [
-                "UI/UX Design",
-                "Product Design",
-                "Visual Design",
-                "Web Development",
-                "SEO Optimization",
-                "Information Architecture",
-                "Story Boarding",
-                "Figma",
-                "Framer"
+                "Project Management",
+                "Team Leadership",
+                "Digital Solutions",
+                "Cross-functional Teams",
+                "Risk Management",
+                "Budget Management",
+                "Agile Methodology",
+                "GitHub Projects",
+                "Trello"
               ],
               "alumniOf": {
                 "@type": "Organization",
-                "name": "Design Education"
+                "name": "UPN Veteran Yogyakarta"
               },
               "worksFor": [
                 {
                   "@type": "Organization",
-                  "name": "Sabila Transport",
-                  "description": "Product Designer - Full-time"
+                  "name": "Contsolution Development",
+                  "description": "Project Manager - Full-time"
                 }
               ]
             })
