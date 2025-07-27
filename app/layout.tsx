@@ -1,8 +1,20 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import localFont from 'next/font/local';
+import { Sora } from 'next/font/google';
+import SpotlightProvider from '@/components/SpotlightProvider';
 
-const inter = Inter({ subsets: ['latin'] });
+
+const satoshi = localFont({
+  src: '../public/fonts/Satoshi-Variable.ttf',
+  variable: '--font-satoshi',
+});
+
+const sora = Sora({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-sora',
+});
 
 export const metadata: Metadata = {
   title: 'Rizal Hanifa Pratama - Expert Project Manager & Tech Leader | Portfolio',
@@ -69,17 +81,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${satoshi.variable} ${sora.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#0F0F0F" />
+        <meta name="theme-color" content="#000000" />
         <meta name="geo.region" content="ID-YO" />
         <meta name="geo.placename" content="Yogyakarta" />
         <meta name="geo.position" content="-7.797068;110.370529" />
         <meta name="ICBM" content="-7.797068, 110.370529" />
-        
         {/* Structured Data */}
         <script
           type="application/ld+json"
@@ -128,7 +139,13 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body>
+        <div className="relative h-full w-full bg-[#000000]">
+          <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] "></div>
+          {children}
+          <SpotlightProvider />
+        </div>
+      </body>
     </html>
   );
 }

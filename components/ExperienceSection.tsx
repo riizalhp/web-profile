@@ -1,9 +1,14 @@
+'use client';
+
+import Image from 'next/image';
+import { Github, Trello, FolderOpen, Layout, Disc } from 'lucide-react';
+import ConnectCard from './ui/connect-card';
+
 export default function ExperienceSection() {
   const experiences = [
     {
       company: "Contsolution Development",
       location: "Yogyakarta",
-      description: "Digital solutions provider that empowers businesses to grow through technology and creativity.",
       role: "Project Manager",
       period: "Aug 2021 – Present",
       isActive: true
@@ -11,7 +16,6 @@ export default function ExperienceSection() {
     {
       company: "PT. Gemala Kempa Daya",
       location: "Jakarta Utara",
-      description: "Automotive manufacturing company specializing in high-quality vehicle components for the global market.",
       role: "Product Owner Intern",
       period: "Jun 2024 – Aug 2024",
       isActive: false
@@ -19,53 +23,219 @@ export default function ExperienceSection() {
     {
       company: "ITC UPN \"Veteran\" Yogyakarta",
       location: "Yogyakarta",
-      description: "Active IT community that has been fostering digital innovation and technical skills for students since 2004.",
       role: "Head of Project Manager Department",
       period: "Feb 2023 – Jun 2024",
       isActive: false
     }
   ];
 
+  const companiesWorkedWith = [
+    { name: "Sabila Transport", logo: "https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg" }, // Dummy URL
+    { name: "Cipta Daya Inovasi", logo: "https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg" }, // Dummy URL
+    { name: "Hasnur Centre", logo: "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg" }, // Dummy URL
+    { name: "Company A", logo: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg" }, // More Dummy URLs
+    { name: "Company B", logo: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg" }, 
+  ];
+
   return (
-    <section id="experience" className="scroll-animate">
-      <div className="card">
-        <h2 className="text-2xl font-semibold mb-6 flex justify-between items-center">
-          <span className="gradient-text">Experience</span>
-          <span className="text-sm text-purple-300 bg-purple-600/20 px-3 py-1 rounded-full border border-purple-500/30">
-            3+ Years
-          </span>
-        </h2>
-        
-        <div className="space-y-8">
-          {experiences.map((exp, index) => (
-            <div key={index} className="experience-item">
-              <div className="flex items-start space-x-4">
-                <div className="pt-2">
-                  <span 
-                    className={`w-3 h-3 ${exp.isActive ? 'bg-green-500' : 'bg-purple-500'} rounded-full inline-block shadow-lg`}
-                    title={exp.isActive ? 'Currently Active' : 'Past Role'}
-                  />
-                </div>
-                <div className="flex-1">
-                  <div className="flex justify-between items-start mb-2">
-                    <div>
-                      <h3 className="font-bold text-white text-lg">{exp.company}</h3>
-                      <p className="text-purple-300 text-sm">{exp.location}</p>
+    <section id="experience" className="py-20 px-6">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Experience Column */}
+          <div>
+            <div className="card scroll-animate p-4">
+              <div className="flex items-center justify-between mb-4">
+                <h2 className="text-2xl font-bold text-white">Experience</h2>
+                <span className="text-sm bg-white/10 px-3 py-1 rounded-full border border-white/20">
+                  3+ Years
+                </span>
+              </div>
+              
+              <div className="space-y-2">
+                {experiences.map((exp, index) => (
+                  <div key={index} className="relative">
+                    {/* Timeline line - only show for items that are not the last */}
+                    {index < experiences.length - 1 && <div className="timeline-line"></div>}
+                    
+                    <div className="flex items-start space-x-4">
+                      <div className={`timeline-dot ${exp.isActive ? 'active' : ''}`}></div>
+                      
+                      <div className="flex-1">
+                        <div className="flex justify-between items-start mb-2">
+                          <div>
+                            <h3 className="font-bold text-sm text-white">{exp.company}</h3>
+                            <p className="text-white/60 text-sm">{exp.location}</p>
+                          </div>
+                          <p className="text-sm text-white/50 whitespace-nowrap ml-4">
+                            {exp.period}
+                          </p>
+                        </div>
+                        
+                        <p className="text-white font-medium text-xs">{exp.role}</p>
+                      </div>
                     </div>
-                    <p className="text-sm text-gray-400 whitespace-nowrap ml-4">
-                      {exp.period}
-                    </p>
                   </div>
-                  <p className="text-gray-300 text-sm mb-2 leading-relaxed">
-                    {exp.description}
-                  </p>
-                  <p className="text-purple-200 font-medium">{exp.role}</p>
+                ))}
+              </div>
+
+              {/* Company | Worked With Section - Moved inside Experience Card */}
+              <div className="mt-4">
+                <h3 className="text-lg font-bold mb-2">Company | Worked With</h3>
+                <div className="overflow-hidden relative py-4">
+                  <div className="flex whitespace-nowrap company-scroll-animation">
+                    {companiesWorkedWith.map((company, index) => (
+                      <div key={index} className="tool-item cursor-hover flex-shrink-0 mx-4">
+                        <Image
+                          src={company.logo}
+                          alt={company.name}
+                          width={40}
+                          height={40}
+                          className="rounded-lg"
+                        />
+                      </div>
+                    ))}
+                    {/* Duplicate for seamless loop */}
+                    {companiesWorkedWith.map((company, index) => (
+                      <div key={`duplicate-${index}`} className="tool-item cursor-hover flex-shrink-0 mx-2">
+                        <Image
+                          src={company.logo}
+                          alt={company.name}
+                          width={30}
+                          height={30}
+                          className="rounded-lg"
+                        />
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
-          ))}
+          </div>
+
+          {/* Skills & Tools & Connect Column */}
+          <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="flex flex-col gap-8">
+              <SkillsCard />
+              <ToolsCard />
+            </div>
+            <div className="md:row-span-2">
+              <ConnectCard />
+            </div>
+          </div>
         </div>
       </div>
     </section>
   );
 }
+
+function SkillsCard() {
+  const skills = [
+    "Project Planning", "Project Scheduling", "Budgeting", "Cost Management",
+    "Risk Management", "Project Documentation", "Leadership", "Communication",
+    "Time Management", "Team Management", "Problem Solving", "Adaptability"
+  ];
+
+  const topSkills = [
+    "Project Planning",
+    "Project Scheduling", 
+    "Budgeting",
+    "Cost Management",
+  ];
+
+  const middleSkills = [
+    "Risk Management",
+    "Project Documentation",
+    "Leadership",
+    "Communication",
+  ];
+
+  const bottomSkills = [
+    "Time Management",
+    "Team Management",
+    "Problem Solving",
+    "Adaptability"
+  ];
+
+  return (
+    <div className="card scroll-animate">
+      <h3 className="text-xl font-bold mb-6 text-white">Skills & Expertise</h3>
+      
+      <div className="space-y-4 overflow-hidden">
+        {/* Top row - scrolling left */}
+        <div className="relative">
+          <div className="flex space-x-3 skill-scroll-left">
+            {[...topSkills, ...topSkills].map((skill, index) => ( // Duplicate for infinite scroll effect
+              <span 
+                key={index}
+                className="tag skill-item whitespace-nowrap"
+                title={`Expert in ${skill}`}
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+        
+        {/* Middle row - scrolling right */}
+        <div className="relative">
+          <div className="flex space-x-3 skill-scroll-right">
+            {[...middleSkills, ...middleSkills].map((skill, index) => ( // Duplicate for infinite scroll effect
+              <span 
+                key={index}
+                className="tag skill-item whitespace-nowrap"
+                title={`Expert in ${skill}`}
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Bottom row - scrolling left */}
+        <div className="relative">
+          <div className="flex space-x-3 skill-scroll-left">
+            {[...bottomSkills, ...bottomSkills].map((skill, index) => ( // Duplicate for infinite scroll effect
+              <span 
+                key={index}
+                className="tag skill-item whitespace-nowrap"
+                title={`Expert in ${skill}`}
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ToolsCard() {
+  const tools = [
+    { name: "GitHub", icon: Github },
+    { name: "Trello", icon: Trello },
+    { name: "Notion", icon: FolderOpen }, // Using FolderOpen as a placeholder, Notion icon not directly in Lucide
+    { name: "Canva", icon: Layout }, // Using Layout as a placeholder
+    { name: "Figma", icon: Disc }, // Using Disc as a placeholder
+  ];
+
+  return (
+    <div className="card scroll-animate">
+      <h3 className="text-xl font-bold mb-2 text-white">Essential Stack</h3>
+      <p className="text-sm text-white/60 mb-6">
+        A Comprehensive Collection of Useful Tools to Support and Optimize My Project Management Workflow
+      </p>
+      <div className="flex justify-center gap-x-4 items-center">
+        {tools.map((tool, index) => {
+          const Icon = tool.icon;
+          return (
+            <div key={index} className="tool-item cursor-hover flex-shrink-0">
+              <Icon className="tool-icon" />
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+

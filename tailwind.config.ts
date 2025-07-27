@@ -9,24 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       animation: {
-        'float': 'float 6s ease-in-out infinite',
-        'float-delay-1': 'float 6s ease-in-out infinite 1s',
-        'float-delay-2': 'float 6s ease-in-out infinite 2s',
-        'float-delay-3': 'float 6s ease-in-out infinite 3s',
-        'float-delay-4': 'float 6s ease-in-out infinite 4s',
+        marquee: 'marquee var(--duration) linear infinite',
+        'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
       },
       keyframes: {
-        float: {
-          '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-10px)' },
+        marquee: {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(calc(-100% - var(--gap)))' },
         },
-        scrollLeft: {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-100%)' },
-        },
-        scrollRight: {
-          '0%': { transform: 'translateX(-100%)' },
-          '100%': { transform: 'translateX(0)' },
+        'marquee-vertical': {
+          from: { transform: 'translateY(0)' },
+          to: { transform: 'translateY(calc(-100% - var(--gap)))' },
         },
       },
       colors: {
