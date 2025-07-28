@@ -17,7 +17,7 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: 'Rizal Hanifa Pratama - Expert Project Manager & Tech Leader | Portfolio',
+  title: 'Riizalhp | Portfolio',
   description: 'Rizal Hanifa Pratama - Experienced Tech Project Manager with strong background in leading cross-functional teams, managing tech projects, and delivering impactful digital solutions. Active in both startup and corporate environments in Yogyakarta, Indonesia.',
   keywords: [
     'Project Manager',
@@ -141,7 +141,7 @@ export default function RootLayout({
       </head>
       <body>
         <div className="relative h-full w-full bg-[#000000]">
-          <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] "></div>
+          <div className="absolute bottom-0 left-0 right-0 top-0 -z-10 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] "></div>
           {children}
           
         </div>

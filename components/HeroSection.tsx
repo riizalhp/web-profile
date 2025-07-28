@@ -19,20 +19,20 @@ export default function HeroSection() {
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             I&apos;m <span className="text-white gradient-text">Rizal</span>,<br />
-            <span className="text-3xl md:text-4xl text-white/80">Project Manager & Freelance Developer </span>
+            <span className="text-3xl md:text-4xl text-white/80 leading-none">Project Manager <span className="block mt-[-0.5rem]">& Freelance Developer</span></span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-white/70 mb-8 max-w-3xl md:mx-0 mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-white/70 mb-8 max-w-3xl md:mx-0 mx-auto leading-relaxed">
             An experienced Tech Project Manager with a strong background in leading cross-functional teams, 
             managing tech projects, and delivering impactful digital solutions.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center">
-            <button className="btn-primary cursor-hover">
+            <a href="mailto:rizalhp12345@gmail.com" className="btn-primary cursor-hover">
               Let&apos;s Work Together
-            </button>
+            </a>
             <button className="btn-secondary cursor-hover">
-              View My Work
+              View My Projects
             </button>
           </div>
           

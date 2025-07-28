@@ -468,11 +468,11 @@ textarea:focus {
 }
 
 .skill-scroll-left {
-  animation: scrollLeft 30s linear infinite; /* Adjust duration as needed */
+  animation: scrollLeft 15s linear infinite; /* Adjust duration as needed */
 }
 
 .skill-scroll-right {
-  animation: scrollRight 30s linear infinite; /* Adjust duration as needed */
+  animation: scrollRight 15s linear infinite; /* Adjust duration as needed */
 }
 
 

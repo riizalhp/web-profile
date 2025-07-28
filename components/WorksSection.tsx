@@ -46,9 +46,9 @@ export default function WorksSection() {
     {
       id: 3,
       title: "AI Agent Developer",
-      description: "Developing intelligent AI agents for automation, data analysis, and enhanced user experiences.",
+      description: "Developing intelligent AI agents for automation, data analysis, and enhanced user experiences with intelligent.",
       image: "https://s14.gifyu.com/images/bKyH6.png",
-      tags: ["Machine Learning", "NLP", "Automation", "Data Science"],
+      tags: ["Machine Learning", "NLP", "Automation", "n8n"],
       status: "Available",
       year: "Ongoing",
       path: "/services/ai-agent-developer",
@@ -63,8 +63,12 @@ export default function WorksSection() {
   const displayedServices = services;
 
   const handleViewProjectClick = (service: any) => {
-    setSelectedService(service);
-    setShowInfo(true); // Show info when a service is selected
+    if (showInfo && selectedService && selectedService.id === service.id) {
+      handleCloseInfo(); // Close if the same project is already open
+    } else {
+      setSelectedService(service);
+      setShowInfo(true); // Show info for the new project
+    }
   };
 
   const handleCloseInfo = () => {
