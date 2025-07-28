@@ -30,11 +30,17 @@ export default function ExperienceSection() {
   ];
 
   const companiesWorkedWith = [
-    { name: "Sabila Transport", logo: "https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg" }, // Dummy URL
-    { name: "Cipta Daya Inovasi", logo: "https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg" }, // Dummy URL
-    { name: "Hasnur Centre", logo: "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg" }, // Dummy URL
-    { name: "Company A", logo: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg" }, // More Dummy URLs
-    { name: "Company B", logo: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg" }, 
+    { name: "Company 1", logo: "https://s14.gifyu.com/images/bKywC.png" },
+    { name: "Company 2", logo: "https://s14.gifyu.com/images/bKywr.png" },
+    { name: "Company 3", logo: "https://s14.gifyu.com/images/bKywD.png" },
+    { name: "Company 4", logo: "https://s14.gifyu.com/images/bKywP.png" },
+    { name: "Company 5", logo: "https://s14.gifyu.com/images/bKy3S.png" },
+    { name: "Company 6", logo: "https://s14.gifyu.com/images/bKy3L.png" },
+    { name: "Company 7", logo: "https://s14.gifyu.com/images/bKy3T.png" },
+    { name: "Company 8", logo: "https://s14.gifyu.com/images/bKy3h.png" },
+    { name: "Company 9", logo: "https://s14.gifyu.com/images/bKy3q.png" },
+    { name: "Company 10", logo: "https://s14.gifyu.com/images/bKy3W.png" },
+    { name: "Company 11", logo: "https://s14.gifyu.com/images/bKy3j.png" },
   ];
 
   return (
@@ -45,7 +51,7 @@ export default function ExperienceSection() {
           <div>
             <div className="card scroll-animate p-4">
               <div className="flex items-center justify-between mb-4">
-                <h2 className="text-2xl font-bold text-white">Experience</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-white">Experience</h2>
                 <span className="text-sm bg-white/10 px-3 py-1 rounded-full border border-white/20">
                   3+ Years
                 </span>
@@ -57,7 +63,7 @@ export default function ExperienceSection() {
                     {/* Timeline line - only show for items that are not the last */}
                     {index < experiences.length - 1 && <div className="timeline-line"></div>}
                     
-                    <div className="flex items-start space-x-4">
+                    <div className="flex items-start space-x-2 sm:space-x-4">
                       <div className={`timeline-dot ${exp.isActive ? 'active' : ''}`}></div>
                       
                       <div className="flex-1">
@@ -71,7 +77,7 @@ export default function ExperienceSection() {
                           </p>
                         </div>
                         
-                        <p className="text-white font-medium text-xs">{exp.role}</p>
+                        <p className="text-white font-medium text-xxs sm:text-xs">{exp.role}</p>
                       </div>
                     </div>
                   </div>
@@ -81,27 +87,27 @@ export default function ExperienceSection() {
               {/* Company | Worked With Section - Moved inside Experience Card */}
               <div className="mt-4">
                 <h3 className="text-lg font-bold mb-2">Company | Worked With</h3>
-                <div className="overflow-hidden relative py-4">
+                <div className="overflow-hidden relative py-2">
                   <div className="flex whitespace-nowrap company-scroll-animation">
                     {companiesWorkedWith.map((company, index) => (
-                      <div key={index} className="tool-item cursor-hover flex-shrink-0 mx-4">
+                      <div key={index} className="tool-item cursor-hover flex-shrink-0 mx-1 sm:mx-2">
                         <Image
                           src={company.logo}
                           alt={company.name}
-                          width={40}
-                          height={40}
+                          width={60}
+                          height={60}
                           className="rounded-lg"
                         />
                       </div>
                     ))}
                     {/* Duplicate for seamless loop */}
                     {companiesWorkedWith.map((company, index) => (
-                      <div key={`duplicate-${index}`} className="tool-item cursor-hover flex-shrink-0 mx-2">
+                      <div key={`duplicate-${index}`} className="tool-item cursor-hover flex-shrink-0 mx-1">
                         <Image
                           src={company.logo}
                           alt={company.name}
-                          width={30}
-                          height={30}
+                          width={50}
+                          height={50}
                           className="rounded-lg"
                         />
                       </div>
@@ -113,8 +119,8 @@ export default function ExperienceSection() {
           </div>
 
           {/* Skills & Tools & Connect Column */}
-          <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="flex flex-col gap-8">
+          <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+            <div className="flex flex-col gap-4 md:gap-8">
               <SkillsCard />
               <ToolsCard />
             </div>
@@ -163,7 +169,7 @@ function SkillsCard() {
       <div className="space-y-4 overflow-hidden">
         {/* Top row - scrolling left */}
         <div className="relative">
-          <div className="flex space-x-3 skill-scroll-left">
+          <div className="flex space-x-2 sm:space-x-3 skill-scroll-left">
             {[...topSkills, ...topSkills].map((skill, index) => ( // Duplicate for infinite scroll effect
               <span 
                 key={index}
@@ -178,7 +184,7 @@ function SkillsCard() {
         
         {/* Middle row - scrolling right */}
         <div className="relative">
-          <div className="flex space-x-3 skill-scroll-right">
+          <div className="flex space-x-2 sm:space-x-3 skill-scroll-right">
             {[...middleSkills, ...middleSkills].map((skill, index) => ( // Duplicate for infinite scroll effect
               <span 
                 key={index}
@@ -193,7 +199,7 @@ function SkillsCard() {
 
         {/* Bottom row - scrolling left */}
         <div className="relative">
-          <div className="flex space-x-3 skill-scroll-left">
+          <div className="flex space-x-2 sm:space-x-3 skill-scroll-left">
             {[...bottomSkills, ...bottomSkills].map((skill, index) => ( // Duplicate for infinite scroll effect
               <span 
                 key={index}
@@ -221,11 +227,11 @@ function ToolsCard() {
 
   return (
     <div className="card scroll-animate">
-      <h3 className="text-xl font-bold mb-2 text-white">Essential Stack</h3>
+      <h3 className="text-lg sm:text-xl font-bold mb-2 text-white">Essential Stack</h3>
       <p className="text-sm text-white/60 mb-6">
         A Comprehensive Collection of Useful Tools to Support and Optimize My Project Management Workflow
       </p>
-      <div className="flex justify-center gap-x-4 items-center">
+      <div className="flex justify-center gap-x-2 sm:gap-x-4 items-center">
         {tools.map((tool, index) => {
           const Icon = tool.icon;
           return (

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { User, Monitor, FileText, Handshake, Linkedin, Menu, X } from 'lucide-react'; // Import necessary icons
+import { Menu, X } from 'lucide-react';
 
 export default function Navigation() {
   const [activeSection, setActiveSection] = useState('home');
@@ -43,10 +43,10 @@ export default function Navigation() {
   };
 
   const navItems = [
-    { id: 'experience', label: 'Experience', icon: User },
-    { id: 'works', label: 'Works', icon: Monitor },
-    { id: 'skills', label: 'Skills', icon: FileText },
-    { id: 'contact', label: 'Contact', icon: Handshake },
+    { id: 'experience', label: 'Experience' },
+    { id: 'works', label: 'Works' },
+    { id: 'skills', label: 'Skills' },
+    { id: 'contact', label: 'Contact' },
   ];
 
   return (
@@ -60,13 +60,12 @@ export default function Navigation() {
           <Image
             alt="Rizal's profile picture - Project Manager"
             className="w-8 h-8 rounded-full border-2 border-white/20"
-            src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg" // Using dummy image
+            src="https://s14.gifyu.com/images/bKypA.gif"
             width={32}
             height={32}
             priority
           />
-          <span className="font-medium text-white">Rizal</span>
-        </button>
+          </button>
 
         {/* Mobile Menu Toggle */}
         <button
@@ -93,7 +92,6 @@ export default function Navigation() {
                   activeSection === item.id ? 'active' : ''
                 }`}
               >
-                <Icon className="h-4 w-4" />
                 <span>{item.label}</span>
               </button>
             );

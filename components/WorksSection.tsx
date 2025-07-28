@@ -3,103 +3,96 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation'; // Import useRouter
+import { useRouter } from 'next/navigation';
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/ui/carousel';
+import Autoplay from "embla-carousel-autoplay";
 
 export default function WorksSection() {
-  const [showAll, setShowAll] = useState(false);
+  const [showInfo, setShowInfo] = useState(false);
+  const [selectedService, setSelectedService] = useState<any>(null); // State to hold the selected service
   const router = useRouter(); // Initialize router
 
-  const projects = [
+  const services = [
     {
       id: 1,
-      title: "E-Commerce Platform Redesign",
-      description: "Led a cross-functional team to redesign and optimize a major e-commerce platform, resulting in 40% increase in user engagement.",
-      image: "https://i.postimg.cc/rs9TMfjp/Portofolio-2.png",
-      tags: ["Project Management", "Team Leadership", "UX Strategy"],
-      status: "Completed",
-      year: "2024",
-      path: "/projects/e-commerce-platform-redesign" // Static path for this project
+      title: "Project Manager",
+      description: "Leading projects from conception to completion, ensuring timely delivery and stakeholder satisfaction.",
+      image: "https://s14.gifyu.com/images/bKyHu.png",
+      tags: ["Planning", "Execution", "Monitoring", "Closing"],
+      status: "Available",
+      year: "Ongoing",
+      path: "/services/project-manager",
+      carouselImages: [
+        "https://s14.gifyu.com/images/bKyHu.png",
+        "https://i.postimg.cc/rs9TMfjp/Portofolio-2.png", // Placeholder
+        "https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg" // Placeholder
+      ]
     },
     {
       id: 2,
-      title: "Mobile App Development",
-      description: "Managed the development of a mobile application from concept to launch, coordinating between design, development, and QA teams.",
-      image: "https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg",
-      tags: ["Agile", "Mobile Development", "Risk Management"],
-      status: "Completed",
-      year: "2023",
-      path: "/projects/mobile-app-development" // Static path for this project
+      title: "Web Developer",
+      description: "Crafting responsive and high-performance web applications using modern frameworks and best practices.",
+      image: "https://s14.gifyu.com/images/bKyHd.png",
+      tags: ["Frontend", "Backend", "Fullstack", "UI/UX"],
+      status: "Available",
+      year: "Ongoing",
+      path: "/services/web-developer",
+      carouselImages: [
+        "https://s14.gifyu.com/images/bKyHd.png",
+        "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg", // Placeholder
+        "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg" // Placeholder
+      ]
     },
     {
       id: 3,
-      title: "Digital Transformation Initiative",
-      description: "Currently leading a digital transformation project for a traditional manufacturing company, implementing modern project management tools.",
-      image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
-      tags: ["Digital Transformation", "Change Management", "Process Optimization"],
-      status: "In Progress",
-      year: "2024",
-      path: "/projects/digital-transformation-initiative" // Static path for this project
-    },
-    {
-      id: 4,
-      title: "SaaS Product Launch",
-      description: "Orchestrated the launch of a new SaaS product, managing stakeholder expectations and ensuring on-time delivery.",
-      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg",
-      tags: ["Product Launch", "Stakeholder Management", "Go-to-Market"],
-      status: "Completed",
-      year: "2023",
-      path: "/projects/saas-product-launch" // Static path for this project
-    },
-    {
-      id: 5,
-      title: "Enterprise Integration Project",
-      description: "Led the integration of multiple enterprise systems, improving operational efficiency by 35%.",
-      image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
-      tags: ["System Integration", "Enterprise Solutions", "Process Improvement"],
-      status: "Completed",
-      year: "2022",
-      path: "/projects/enterprise-integration-project" // Static path for this project
-    },
-    {
-      id: 6,
-      title: "Cloud Migration Strategy",
-      description: "Developed and executed a comprehensive cloud migration strategy for a Fortune 500 company.",
-      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg",
-      tags: ["Cloud Migration", "Strategic Planning", "Risk Assessment"],
-      status: "Completed",
-      year: "2022",
-      path: "/projects/cloud-migration-strategy" // Static path for this project
+      title: "AI Agent Developer",
+      description: "Developing intelligent AI agents for automation, data analysis, and enhanced user experiences.",
+      image: "https://s14.gifyu.com/images/bKyH6.png",
+      tags: ["Machine Learning", "NLP", "Automation", "Data Science"],
+      status: "Available",
+      year: "Ongoing",
+      path: "/services/ai-agent-developer",
+      carouselImages: [
+        "https://s14.gifyu.com/images/bKyH6.png",
+        "https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg", // Placeholder
+        "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg" // Placeholder
+      ]
     }
   ];
 
-  const displayedProjects = showAll ? projects : projects.slice(0, 3);
+  const displayedServices = services;
 
-  // Ubah ini untuk mengarahkan ke jalur statis
-  const navigateToProject = (projectPath: string) => {
-    router.push(projectPath);
+  const handleViewProjectClick = (service: any) => {
+    setSelectedService(service);
+    setShowInfo(true); // Show info when a service is selected
+  };
+
+  const handleCloseInfo = () => {
+    setSelectedService(null);
+    setShowInfo(false); // Hide info when closed
   };
 
   return (
     <section id="works" className="py-20 px-6 bg-black">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 scroll-animate">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Works & Projects</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Works Service</h2>
           <p className="text-xl text-white max-w-3xl mx-auto">
-            A showcase of successful projects and digital solutions I&apos;ve managed and delivered
+            Explore the range of services we offer to help you achieve your digital goals.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {displayedProjects.map((project, index) => (
+          {displayedServices.map((service, index) => (
             <div
-              key={project.id}
+              key={service.id}
               className="project-card scroll-animate cursor-hover"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="relative overflow-hidden">
                 <Image
-                  src={project.image}
-                  alt={project.title}
+                  src={service.image}
+                  alt={service.title}
                   width={400}
                   height={200}
                   className="project-image"
@@ -108,13 +101,13 @@ export default function WorksSection() {
               </div>
               
               <div className="p-6">
-                <h3 className="font-bold text-xl mb-3 text-white">{project.title}</h3>
+                <h3 className="font-bold text-xl mb-3 text-white">{service.title}</h3>
                 <p className="text-white/70 text-sm mb-4 leading-relaxed">
-                  {project.description}
+                  {service.description}
                 </p>
                 
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {project.tags.map((tag, tagIndex) => (
+                  {service.tags.map((tag, tagIndex) => (
                     <span 
                       key={tagIndex}
                       className="text-xs px-2 py-1 bg-white/10 text-white/70 rounded-full border border-white/20"
@@ -125,24 +118,56 @@ export default function WorksSection() {
                 </div>
 
                 <button
-                  onClick={() => navigateToProject(project.path)} // Menggunakan project.path
+                  onClick={() => handleViewProjectClick(service)} // Menggunakan handleViewProjectClick
                   className="btn-secondary w-full cursor-hover"
                 >
-                  Detail Project
+                  View Project
                 </button>
               </div>
             </div>
           ))}
         </div>
 
-        {!showAll && (
-          <div className="text-center mt-12 scroll-animate">
-            <button
-              onClick={() => setShowAll(true)}
-              className="btn-primary cursor-hover"
+        {showInfo && selectedService && (
+          <div className="mt-12">
+            <h3 className="text-2xl font-bold mb-6 text-white text-center">{selectedService.title} Projects</h3>
+            <Carousel
+              className="w-full max-w-full mx-auto"
+              opts={{
+                loop: true,
+              }}
+              plugins={[
+                Autoplay({
+                  delay: 3000,
+                }),
+              ]}
             >
-              View All Projects
-            </button>
+              <CarouselContent className="-ml-1">
+                    {selectedService.carouselImages.map((image: string, index: number) => (
+                      <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
+                        <div className="p-1">
+                          <Image
+                            src={image}
+                            alt={`${selectedService.title} Project ${index + 1}`}
+                            width={600}
+                            height={400}
+                            className="rounded-lg object-cover w-full h-auto"
+                          />
+                        </div>
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+            <div className="text-center mt-8">
+              <button
+                onClick={handleCloseInfo}
+                className="btn-primary cursor-hover"
+              >
+                Close Project View
+              </button>
+            </div>
           </div>
         )}
       </div>

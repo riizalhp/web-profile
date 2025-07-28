@@ -49,31 +49,13 @@ body {
   background: #000000;
   color: #ffffff;
   overflow-x: hidden;
-  cursor: none; /* Hide default cursor */
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Sora', sans-serif;
 }
 
-/* Custom Cursor */
-.custom-cursor {
-  position: fixed;
-  width: 20px;
-  height: 20px;
-  background: #ffffff;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  mix-blend-mode: difference;
-  transition: transform 0.2s ease, opacity 0.2s ease; /* Added opacity transition */
-  opacity: 1; /* Ensure it's visible by default */
-}
 
-.custom-cursor.hover {
-  transform: scale(2);
-  background: #3B82F6; /* Example hover color for cursor */
-}
 
 /* Scroll Animations */
 .scroll-animate {
@@ -228,11 +210,18 @@ h1, h2, h3, h4, h5, h6 {
   /* Removed hover transform */
 }
 
-.tool-icon {
+  .tool-icon {
   width: 30px;
   height: 30px;
   fill: #ffffff; /* Default fill for SVG icons */
   transition: fill 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .tool-icon {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .tool-item:hover .tool-icon {

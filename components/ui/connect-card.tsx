@@ -10,7 +10,7 @@ export default function ConnectCard() {
 
   return (
     <div className="card scroll-animate">
-      <h3 className="text-xl font-bold mb-6 text-white">Connect</h3>
+      <h3 className="text-lg sm:text-xl font-bold mb-6 text-white">Connect</h3>
       <div className="space-y-4">
         {socialLinks.map((link, index) => {
           const Icon = link.icon;
@@ -20,7 +20,7 @@ export default function ConnectCard() {
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="social-link cursor-hover"
+              className="social-link cursor-hover py-2 px-3 sm:py-3 sm:px-4"
               aria-label={`Connect with Rizal on ${link.name}`}
             >
               <Icon className="w-6 h-6" />
@@ -38,7 +38,7 @@ export default function ConnectCard() {
           aria-label="Send email to Rizal Hanifa Pratama"
         >
           <Handshake className="w-6 h-6" />
-          <span>Send Email → rizalhp12345@gmail.com</span>
+          <span className="text-sm">Send Email → rizalhp12345@gmail.com</span>
         </a>
       </div>
     </div>
