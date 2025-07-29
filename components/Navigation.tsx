@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Briefcase, FolderOpen } from 'lucide-react';
 
 export default function Navigation() {
   const [activeSection, setActiveSection] = useState('home');
@@ -10,7 +10,7 @@ export default function Navigation() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'experience', 'works', 'skills', 'contact'];
+      const sections = ['home', 'experience', 'works'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -43,10 +43,8 @@ export default function Navigation() {
   };
 
   const navItems = [
-    { id: 'experience', label: 'Experience' },
-    { id: 'works', label: 'Works' },
-    { id: 'skills', label: 'Skills' },
-    { id: 'contact', label: 'Contact' },
+    { id: 'experience', label: 'Experience', icon: Briefcase },
+    { id: 'works', label: 'Works', icon: FolderOpen },
   ];
 
   return (
@@ -90,8 +88,9 @@ export default function Navigation() {
                 onClick={() => scrollToSection(item.id)}
                 className={`nav-item cursor-hover ${
                   activeSection === item.id ? 'active' : ''
-                }`}
+                } flex items-center justify-center md:justify-start`}
               >
+                {Icon && <Icon className="md:hidden w-5 h-5 mr-2" />}
                 <span>{item.label}</span>
               </button>
             );

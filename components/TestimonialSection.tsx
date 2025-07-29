@@ -4,16 +4,16 @@ import Image from 'next/image';
 
 const reviews = [
   {
-    name: 'Jack',
-    username: '@jack',
+    name: 'Theresia Tatik Pujiastuti',
+    username: 'RS PANTI RAPIH',
     body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: 'https://avatar.vercel.sh/jack',
+    img: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=pJub28QAAAAJ&citpid=2',
   },
   {
-    name: 'Jill',
-    username: '@jill',
+    name: 'Fieryal Nafila',
+    username: 'PT PINDAD',
     body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: 'https://avatar.vercel.sh/jill',
+    img: 'https://scontent-cgk2-2.cdninstagram.com/v/t51.2885-19/394773036_1215054696564108_2650932998415715501_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-cgk2-2.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QHmjPWvlwZ28WphwIjzqJirLOaVSCbp2wJxLgw-shbFG3Of_gUsCX5vfa7y8Dl0lLs&_nc_ohc=ZlLoZeVmpL4Q7kNvwEl2bur&_nc_gid=tI2XySWrh1Y78EnYctvBRQ&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AfSElERx9W96ZQLgiU668L0L6yZOqVObt8G8onHjxOhNWA&oe=688D4C28&_nc_sid=7a9f4b://avatar.vercel.sh/jill',
   },
   {
     name: 'John',

@@ -5,6 +5,37 @@ import Image from 'next/image';
 
 export default function HeroSection() {
   const [mounted, setMounted] = useState(false);
+  const [displayText, setDisplayText] = useState('');
+  const [phraseIndex, setPhraseIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const phrases = ["I'm Rizal,", "Project Manager & Freelance Developer"];
+
+  useEffect(() => {
+    let timer: NodeJS.Timeout;
+    const currentPhrase = phrases[phraseIndex];
+
+    if (isDeleting) {
+      timer = setTimeout(() => {
+        setDisplayText(currentPhrase.substring(0, displayText.length - 1));
+      }, 50); // Deleting speed
+    } else {
+      timer = setTimeout(() => {
+        setDisplayText(currentPhrase.substring(0, displayText.length + 1));
+      }, 100); // Typing speed
+    }
+
+    if (!isDeleting && displayText === currentPhrase) {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        setIsDeleting(true);
+      }, 1000); // Pause before deleting
+    } else if (isDeleting && displayText === '') {
+      setIsDeleting(false);
+      setPhraseIndex((prev) => (prev + 1) % phrases.length);
+    }
+
+    return () => clearTimeout(timer);
+  }, [displayText, isDeleting, phraseIndex, phrases]);
 
   useEffect(() => {
     setMounted(true);
@@ -18,8 +49,10 @@ export default function HeroSection() {
         {/* Left: Text Content */}
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            I&apos;m <span className="text-white gradient-text">Rizal</span>,<br />
-            <span className="text-3xl md:text-4xl text-white/80 leading-none">Project Manager <span className="block mt-[-0.5rem]">& Freelance Developer</span></span>
+            <span className={phraseIndex === 0 ? "text-white gradient-text" : "text-3xl md:text-4xl text-white/80 leading-none"}>
+              {displayText}
+            </span>
+            <span className="cursor">|</span>
           </h1>
           
           <p className="text-lg md:text-xl text-white/70 mb-8 max-w-3xl md:mx-0 mx-auto leading-relaxed">
