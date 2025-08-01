@@ -46,6 +46,7 @@ export const metadata: Metadata = {
   creator: 'Rizal Hanifa Pratama',
   publisher: 'Rizal Hanifa Pratama',
   robots: 'index, follow',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
   openGraph: {
     type: 'website',
     locale: 'en_US',

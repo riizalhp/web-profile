@@ -8,7 +8,7 @@ export default function HeroSection() {
   const [displayText, setDisplayText] = useState('');
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const phrases = ["I'm Rizal,", "Project Manager & Freelance Developer"];
+  const phrases = ["I'm Rizal,", "Project Manager & Freelance Website Developer"];
 
   useEffect(() => {
     let timer: NodeJS.Timeout;
@@ -44,8 +44,8 @@ export default function HeroSection() {
   if (!mounted) return null;
 
   return (
-    <section id="home" className="min-h-screen flex items-center px-6 pt-20 hero-section">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+    <section id="home" className="min-h-screen flex items-center px-4 md:px-6 pt-24 md:pt-20 hero-section">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 w-full">
         {/* Left: Text Content */}
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
@@ -56,8 +56,7 @@ export default function HeroSection() {
           </h1>
           
           <p className="text-lg md:text-xl text-white/70 mb-8 max-w-3xl md:mx-0 mx-auto leading-relaxed">
-            An experienced Tech Project Manager with a strong background in leading cross-functional teams, 
-            managing tech projects, and delivering impactful digital solutions.
+            I manage AI projects and build websites to deliver impactful digital solutions.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center">

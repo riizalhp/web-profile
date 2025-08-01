@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { Menu, X, Briefcase, FolderOpen } from 'lucide-react';
+import { Menu, X, Home, User, Briefcase, FolderOpen } from 'lucide-react';
 
 export default function Navigation() {
   const [activeSection, setActiveSection] = useState('home');
@@ -33,80 +33,140 @@ export default function Navigation() {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false); // Close menu after clicking a link
+      setIsMenuOpen(false);
     }
   };
 
   const handleSayHello = () => {
     window.location.href = 'mailto:rizalhp12345@gmail.com?subject=Hello! Let\'s work together&body=Hi Rizal, I\'d love to discuss a potential project with you.';
-    setIsMenuOpen(false); // Close menu after clicking the button
+    setIsMenuOpen(false);
   };
 
   const navItems = [
+    { id: 'home', label: 'Home', icon: Home },
     { id: 'experience', label: 'Experience', icon: Briefcase },
     { id: 'works', label: 'Works', icon: FolderOpen },
   ];
 
   return (
-    <nav className="navbar">
-      <div className="flex items-center justify-between w-full md:w-auto">
-        {/* Profile Pic and Name */}
-        <button 
-          onClick={() => scrollToSection('home')}
-          className="flex items-center space-x-2 nav-item cursor-hover"
-        >
-          <Image
-            alt="Rizal's profile picture - Project Manager"
-            className="w-8 h-8 rounded-full border-2 border-white/20"
-            src="https://s14.gifyu.com/images/bKypA.gif"
-            width={32}
-            height={32}
-            priority
-          />
-          </button>
+    <>
+      {/* Desktop Navbar */}
+      <nav className="hidden md:block fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-lg border-b border-gray-800">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex items-center justify-between h-16">
+            {/* Logo */}
+            <div className="flex items-center space-x-3">
+              <Image
+                alt="Rizal's profile picture"
+                className="w-10 h-10 rounded-full ring-2 ring-blue-500"
+                src="https://s14.gifyu.com/images/bKypA.gif"
+                width={40}
+                height={40}
+                priority
+              />
+              <div>
+                <h2 className="text-white font-bold text-lg">Rizal HP</h2>
+                <p className="text-gray-400 text-xs">Project Manager</p>
+              </div>
+            </div>
 
-        {/* Mobile Menu Toggle */}
-        <button
-          className="md:hidden text-white focus:outline-none cursor-hover"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Toggle navigation menu"
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-      </div>
-      
-      {/* Navigation Links and Say Hello Button */}
-      <div
-        className={`md:flex md:items-center md:space-x-2 md:flex-row w-full md:w-auto ${isMenuOpen ? 'flex flex-col space-y-4 mt-4' : 'hidden'}`}
-      >
-        <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2 nav-items-group">
-          {navItems.map((item) => {
-            const Icon = item.icon;
-            return (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className={`nav-item cursor-hover ${
-                  activeSection === item.id ? 'active' : ''
-                } flex items-center justify-center md:justify-start`}
+            {/* Navigation Items */}
+            <div className="flex items-center space-x-8">
+              {navItems.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <button
+                    key={item.id}
+                    onClick={() => scrollToSection(item.id)}
+                    className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white/10 ${
+                      activeSection === item.id 
+                        ? 'text-blue-400 bg-blue-500/20' 
+                        : 'text-gray-300 hover:text-white'
+                    }`}
+                  >
+                    <Icon size={18} />
+                    <span className="font-medium">{item.label}</span>
+                  </button>
+                );
+              })}
+              
+              {/* CTA Button */}
+              <button 
+                onClick={handleSayHello}
+                className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105"
               >
-                {Icon && <Icon className="md:hidden w-5 h-5 mr-2" />}
-                <span>{item.label}</span>
+                Let&apos;s Talk 🚀
               </button>
-            );
-          })}
+            </div>
+          </div>
         </div>
-        
-        {/* Say Hello Button */}
-        <button 
-          onClick={handleSayHello}
-          className="btn-say-hello cursor-hover w-full md:w-auto"
-          aria-label="Send email to say hello"
-        >
-          <span>Say Hello!</span>
-          <span className="text-xl">👋</span>
-        </button>
-      </div>
-    </nav>
+      </nav>
+
+      {/* Mobile Navbar */}
+      <nav className="md:hidden fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-lg border-b border-gray-800">
+        <div className="px-4">
+          <div className="flex items-center justify-between h-16">
+            {/* Logo */}
+            <div className="flex items-center space-x-2">
+              <Image
+                alt="Rizal's profile picture"
+                className="w-8 h-8 rounded-full ring-2 ring-blue-500"
+                src="https://s14.gifyu.com/images/bKypA.gif"
+                width={32}
+                height={32}
+                priority
+              />
+              <div>
+                <h2 className="text-white font-bold text-sm">Rizal HP</h2>
+                <p className="text-gray-400 text-xs">Project Manager</p>
+              </div>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              className="text-white p-2 rounded-lg hover:bg-white/10 transition-colors"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
+            </button>
+          </div>
+
+          {/* Mobile Menu */}
+          <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-96 pb-4' : 'max-h-0'}`}>
+            <div className="space-y-2 pt-2">
+              {navItems.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <button
+                    key={item.id}
+                    onClick={() => scrollToSection(item.id)}
+                    className={`w-full flex items-center space-x-3 px-3 py-3 rounded-lg transition-all duration-300 text-sm ${
+                      activeSection === item.id 
+                        ? 'text-blue-400 bg-blue-500/20' 
+                        : 'text-gray-300 hover:text-white hover:bg-white/10'
+                    }`}
+                  >
+                    <Icon size={18} />
+                    <span className="font-medium">{item.label}</span>
+                  </button>
+                );
+              })}
+              
+              {/* Mobile CTA Button */}
+              <button 
+                onClick={handleSayHello}
+                className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white px-3 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 mt-3 text-sm"
+              >
+                Let&apos;s Talk 🚀
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      {/* Spacer for fixed navbar */}
+      <div className="h-16"></div>
+    </>
   );
 }

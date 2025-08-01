@@ -1,3 +1,9 @@
+interface ProjectLink {
+  type: 'direct' | 'denied';
+  url?: string;
+  companyProfileUrl?: string;
+}
+
 interface ProjectDetail {
   id: string;
   title: string;
@@ -5,79 +11,110 @@ interface ProjectDetail {
   overview: string;
   features: string[];
   techStack: string[];
-  githubLink?: string;
-  websiteLink?: string;
+  githubLink?: ProjectLink;
+  websiteLink?: ProjectLink;
   galleryImages?: string[];
 }
 
 export const projectsData: ProjectDetail[] = [
   {
-    id: "e-commerce-platform-redesign",
-    title: "E-commerce Platform Redesign",
-    mainImage: "https://s14.gifyu.com/images/bKyHu.png", // Placeholder
-    overview: "A comprehensive redesign of an existing e-commerce platform to improve user experience and conversion rates. This project focused on modernizing the UI/UX, enhancing performance, and streamlining the user journey from product discovery to checkout.",
-    features: [
-      "Modern and intuitive UI/UX design",
-      "Fully responsive layout for seamless experience across all devices (desktop, tablet, mobile)",
-      "Advanced product catalog with filtering and search capabilities",
-      "Optimized and streamlined checkout process for higher conversion rates",
-      "Integration with popular payment gateways (e.g., Stripe, PayPal)",
-      "User authentication and profile management",
-      "Shopping cart and wishlist functionality",
-      "Admin panel for product, order, and user management"
-    ],
-    techStack: ["React", "Next.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Stripe API"],
-    githubLink: "https://github.com/your-repo/e-commerce-redesign",
-    websiteLink: "https://your-ecommerce-site.com"
+    id: "sales-distribution-optimization",
+    title: "Sales Distribution Optimization Website and Dashboard",
+    mainImage: "https://s14.gifyu.com/images/bKy5T.png",
+    overview: "This system is designed to help companies optimize their sales distribution process through a web-based technology solution. The website enables efficient management of product distribution data, real-time monitoring of sales performance, and identification of areas needing improvement or intervention.",
+    features: ["User Management", "Store Management", "Order Management", "Route Optimization Utilizes K-Means Clustering, K-Nearest Neighbors (KNN), and Saving Matrix", "Map Integration Interactive visualization using Leaflet JS"],
+    techStack: ["Laravel", "PHP", "Basis Data", "MySQL", "HTML5", "CSS3", "JavaScript"],
+    githubLink: { type: 'denied', companyProfileUrl: 'http://pdam-kulonprogo.id/v1/?i=1' },
+    websiteLink: { type: 'denied', companyProfileUrl: 'http://pdam-kulonprogo.id/v1/?i=1' }
   },
   {
-    id: "project-manager-work-service",
-    title: "Project Manager Work Service",
-    mainImage: "https://s14.gifyu.com/images/bKyHu.png", // Placeholder
-    overview: "This service showcases my capabilities as a Project Manager, detailing various projects I've led from conception to successful completion. It highlights my approach to planning, execution, monitoring, and closing projects, ensuring stakeholder satisfaction and timely delivery.",
-    features: [
-      "Detailed project timelines and milestones",
-      "Risk assessment and mitigation strategies",
-      "Stakeholder communication plans",
-      "Budget management and resource allocation",
-      "Quality assurance and control processes",
-      "Post-project evaluation and lessons learned"
-    ],
-    techStack: ["Project Management Methodologies (Agile, Scrum)", "Jira", "Trello", "Asana", "Microsoft Project", "Confluence"],
-    githubLink: "https://github.com/your-repo/project-management-service",
-    websiteLink: "https://your-pm-service.com"
+    id: "mvp-agrofaster",
+    title: "Minimum Viable Product Agrofaster",
+    mainImage: "https://s14.gifyu.com/images/bKy5E.png",
+    overview: "Agrofaster is a web-based digital platform designed to optimize the distribution of agricultural products from farmers to stores, distributors, or end consumers. The system leverages artificial intelligence and interactive mapping to accelerate delivery processes, optimize routes, and improve real-time visibility of agricultural distribution operations.",
+    features: ["home", "saprodi market", "profile", "sell the harvest"],
+    techStack: ["next js", "react native", "mysql", "express js"],
+    githubLink: { type: 'denied', companyProfileUrl: 'https://agrofaster.com/' },
+    websiteLink: { type: 'denied', companyProfileUrl: 'https://agrofaster.com/' }
   },
   {
-    id: "web-developer-portfolio",
-    title: "Web Developer Portfolio",
-    mainImage: "https://s14.gifyu.com/images/bKyHd.png", // Placeholder
-    overview: "A personal portfolio website demonstrating my skills and projects as a web developer. It features a clean, modern design and highlights my expertise in front-end and back-end development, responsive design, and UI/UX principles.",
-    features: [
-      "Interactive project showcase with detailed descriptions",
-      "Responsive design for optimal viewing on all devices",
-      "Contact form for inquiries",
-      "About section detailing skills and experience",
-      "Blog section for sharing insights and articles"
-    ],
-    techStack: ["React", "Next.js", "Tailwind CSS", "TypeScript", "Node.js", "Express.js", "Vercel"],
-    githubLink: "https://github.com/your-repo/web-portfolio",
-    websiteLink: "https://your-portfolio-site.com"
+    id: "cms-rantangin",
+    title: "Content Management System Rantangin",
+    mainImage: "https://s14.gifyu.com/images/bKy5k.png",
+    overview: "The Admin Dashboard in a catering platform application serves as the central control panel for business owners or catering managers to efficiently monitor, manage, and optimize daily operations. This dashboard provides access to order data, customer records, menu settings, payments, and performance reports — all in one user-friendly interface.",
+    features: ["Displays a summary of daily, weekly, and monthly orders", "Monitors order status (incoming, processing, delivery, completed)", "Manages customer and partner/vendor data", "Adds, edits, or removes food menu items", "Tracks sales statistics, revenue, and best-selling products", "Manages delivery schedules and menu availability", "Provides visual business performance reports"],
+    techStack: ["Next js", "react native", "mysql", "express js"],
+    githubLink: { type: 'denied', companyProfileUrl: 'https://rantangin.com/' },
+    websiteLink: { type: 'denied', companyProfileUrl: 'https://rantangin.com/' }
   },
   {
-    id: "ai-agent-developer-showcase",
-    title: "AI Agent Developer Showcase",
-    mainImage: "https://s14.gifyu.com/images/bKyH6.png", // Placeholder
-    overview: "A collection of AI agent development projects, demonstrating my ability to build intelligent automation solutions, data analysis tools, and enhanced user experiences. This includes projects involving natural language processing, machine learning, and integration with various platforms.",
-    features: [
-      "Showcase of various AI agent functionalities (e.g., chatbots, data parsers)",
-      "Demonstrations of automation workflows",
-      "Integration with third-party APIs (e.g., OpenAI, Google Cloud AI)",
-      "Performance metrics and analysis of AI models",
-      "Use cases and benefits of AI agent implementation"
-    ],
-    techStack: ["Python", "TensorFlow", "PyTorch", "scikit-learn", "NLTK", "SpaCy", "OpenAI API", "n8n", "LangChain"],
-    githubLink: "https://github.com/your-repo/ai-agent-showcase",
-    websiteLink: "https://your-ai-agent-showcase.com"
-  }
+    id: "attendance-system",
+    title: "Attendance System",
+    mainImage: "https://s14.gifyu.com/images/bKy5q.png",
+    overview: "Digital attendance tracking system developed to help the company efficiently record, manage, and monitor employee attendance in real time. This system replaces manual attendance methods with a faster, more accurate, and centralized digital approach. With a user-friendly interface and secure data handling, the system enables daily attendance reporting, lateness tracking, leave requests, and overtime logging all in one integrated platform.",
+    features: ["Daily Attendance Tracking", "Employee Data Management", "Lateness & Absence Notifications", "Monthly Attendance Recap", "Online Leave & Permission Requests", "Admin Dashboard"],
+    techStack: ["next js", "react native", "mysql", "express js"],
+    githubLink: { type: 'denied', companyProfileUrl: 'https://www.instagram.com/sevenincjogja' },
+    websiteLink: { type: 'denied', companyProfileUrl: 'https://www.instagram.com/sevenincjogja' }
+  },
+  {
+    id: "jogja-dataku-dlhk",
+    title: "Jogja Dataku Dinas Lingkungan Hidup dan Kehutanan Yogyakarta",
+    mainImage: "https://s14.gifyu.com/images/bKy5l.png",
+    overview: "Web-based information system developed to support the management and publication of environmental and forestry data in the Yogyakarta region. This project is an initiative by the Environmental and Forestry Agency (DLHK) of Yogyakarta Special Region to promote transparency, efficiency, and open data access to the public.",
+    features: ["Provide public access to environmental and forestry data", "Simplify the data input, update, and validation process for DLHK staff", "Present data visualizations through charts and interactive maps"],
+    techStack: ["PHP"],
+    githubLink: { type: 'denied', companyProfileUrl: 'https://bapperida.jogjaprov.go.id/dataku/data_dasar/index/26-lingkungan-hidup?bidang_urusan=1' },
+    websiteLink: { type: 'direct', url: 'https://bapperida.jogjaprov.go.id/dataku/data_dasar/index/26-lingkungan-hidup?bidang_urusan=1' }
+  },
+  {
+    id: "mvp-sinaou-edu",
+    title: "Minimum Viable Product and Content Management System Admin Dashboard",
+    mainImage: "https://s14.gifyu.com/images/bKy5W.png",
+    overview: "Digital platform that connects students with qualified private tutors quickly, easily, and reliably. Sinaou Edu serves as a solution for parents, students, and university learners seeking additional academic or non-academic tutoring available both online and offline.",
+    features: ["Simplifying access to qualified private tutors tailored to user needs", "Offering both online and in-person tutoring sessions", "Supporting flexible scheduling and automated booking", "Providing ratings, reviews, and detailed tutor profiles", "Enabling transparent learning progress monitoring"],
+    techStack: ["Laravel",  "Botble", "PHP", "Basis Data", "MySQL", "Frontend Technologies", "HTML5", "CSS3", "JavaScript"],
+    githubLink: { type: 'denied', companyProfileUrl: 'https://www.linkedin.com/company/sinaou-education/?viewAsMember=true' },
+    websiteLink: { type: 'denied', companyProfileUrl: 'https://www.linkedin.com/company/sinaou-education/?viewAsMember=true' }
+  },
+  {
+    id: "ahp-dss",
+    title: "Analytical Hierarchy Process Decision Support System",
+    mainImage: "https://s14.gifyu.com/images/bKy5c.png",
+    overview: "Decision support system based on the Analytical Hierarchy Process (AHP) method, developed to assist in making strategic, objective, and structured decisions within PT Pindad. The system evaluates multiple decision alternatives based on defined criteria and sub-criteria, considering the weights and priorities of each element.",
+    features: ["Assist management in selecting, evaluating, or ranking the best alternatives", "Provide objective, mathematical weighting of decision criteria", "Support consistent, data-based decision-making", "Visualize pairwise comparison results in tables and charts"],
+    techStack: ["next js", "react native", "mysql", "express js"],
+    githubLink: { type: 'denied', companyProfileUrl: 'https://pindad.com/' },
+    websiteLink: { type: 'denied', companyProfileUrl: 'https://pindad.com/' }
+  },
+  {
+    id: "dashboard-oee",
+    title: "Overall Equipment Effectiveness Dashboard Real-Time",
+    mainImage: "https://s14.gifyu.com/images/bKy5j.png",
+    overview: "The OEE Dashboard is an interactive visual interface designed to monitor and analyze the effectiveness of production equipment in real time. OEE (Overall Equipment Effectiveness) is a key metric in manufacturing used to measure how effectively a machine is being utilized, based on three core components: Availability, Performance, and Quality.",
+    features: ["Real-time monitoring of machine performance", "Identifies root causes of inefficiency", "Improves productivity with accurate data", "Supports data-driven decision-making", "Simplifies daily, weekly, and monthly reporting"],
+    techStack: ["Framework Laravel", "Blade Template", "Bootstrap", "Chart Js", "JQuery", "PostreSQL", "Json"],
+    githubLink: { type: 'denied', companyProfileUrl: 'https://gemalakempadaya.web.indotrading.com/about' },
+    websiteLink: { type: 'denied', companyProfileUrl: 'https://gemalakempadaya.web.indotrading.com/about' }
+  },
+  {
+    id: "ayra-ai",
+    title: "Offline Madical Advisor AI",
+    mainImage: "https://s14.gifyu.com/images/bKy5F.png",
+    overview: "AI-powered medical advisor system designed to assist users in receiving quick, safe, and accurate preliminary health recommendations. AYRA AI does not replace professional doctors but serves as a virtual medical assistant that users can access anytime to receive information, education, and initial advice based on the symptoms they experience.",
+    features: ["Offline First", "Provide instant preliminary health assessments", "Help users become more aware of their body conditions", "Reduce the burden on healthcare services for mild symptoms", "Deliver accessible health education for the public"],
+    techStack: ["Gemma AI", "Kotlin", "SQLlite RAG"],
+    githubLink: { type: 'direct', url: 'https://github.com/riizalhp/medical-advisor-ai' },
+    websiteLink: { type: 'denied', companyProfileUrl: 'https://github.com/riizalhp/medical-advisor-ai' }
+  },
+  {
+    id: "healthy-games-quiz",
+    title: "Hypertension Educational Game",
+    mainImage: "https://s14.gifyu.com/images/bKX3g.png",
+    overview: "Interactive digital game platform designed to raise public awareness about hypertension (high blood pressure) through engaging and educational gameplay. The game blends medical knowledge with popular quiz and puzzle mechanics, structured in progressive levels to make learning accessible and fun for all ages..",
+    features: ["Level-Based Education", "Progressive Gameplay", "Image Guessing", "Family 1000 Quiz Mode", "Game Map", "Word Guessing", "Scoring System & Leaderboard"],
+    techStack: ["overview game game quiz hipertensi"],
+    githubLink: { type: 'denied', companyProfileUrl: 'https://gamematahati.com/splash' },
+    websiteLink: { type: 'direct', url: 'https://gamematahati.com/splash' }
+  },
 ];
-

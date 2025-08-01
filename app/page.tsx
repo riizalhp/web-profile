@@ -1,15 +1,14 @@
 'use client';
 
-import { useEffect } from 'react';
-
-import Navigation from '@/components/Navigation'; // Use Navigation component
+import React, { useEffect } from 'react';
+import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import ExperienceSection from '@/components/ExperienceSection';
 import WorksSection from '@/components/WorksSection';
 import TestimonialSection from '@/components/TestimonialSection';
 import GetInTouchSection from '@/components/GetInTouchSection';
 
-export default function Home() {
+const Home: React.FC = () => {
   useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
@@ -34,18 +33,18 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white overflow-x-hidden">
+      <Navigation />
       
-      <Navigation /> {/* Render the updated Navigation component */}
-      
-      <main>
+      <main className="w-full">
         <HeroSection />
         <ExperienceSection />
         <WorksSection />
-        
         <TestimonialSection />
         <GetInTouchSection />
       </main>
     </div>
   );
-}
+};
+
+export default Home;
