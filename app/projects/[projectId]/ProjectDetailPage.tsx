@@ -4,27 +4,27 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { useState, useCallback, useEffect } from 'react';
-import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext, useCarousel } from '@/components/ui/carousel';
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/ui/carousel';
 import { PaginationContent, PaginationItem } from '@/components/ui/pagination';
 import Autoplay from "embla-carousel-autoplay";
-import { type CarouselApi } from "embla-carousel-react";
-import { projectsData } from '@/lib/projects';
+import { type UseEmblaCarouselType } from "embla-carousel-react";
+import { projectsData, type ProjectDetail } from '@/lib/projects';
 
 import DeniedPopup from '@/components/ui/DeniedPopup';
 
-export default function ProjectDetailPage({ project, otherProjects }: { project: any, otherProjects: any[] }) {
-  const [api, setApi] = useState<CarouselApi>();
+export default function ProjectDetailPage({ project, otherProjects }: { project: ProjectDetail | undefined, otherProjects: ProjectDetail[] }) {
+  const [api, setApi] = useState<any>();
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
   const [hoveredProjectId, setHoveredProjectId] = useState<string | null>(null); // New state for hover effect
   const [isDeniedPopupOpen, setIsDeniedPopupOpen] = useState(false);
   const [deniedPopupCompanyUrl, setDeniedPopupCompanyUrl] = useState<string | undefined>(undefined);
 
-  const onSelect = useCallback((api: CarouselApi) => {
+  const onSelect = useCallback((api: any) => {
     setSelectedIndex(api.selectedScrollSnap());
   }, []);
 
-  const onInit = useCallback((api: CarouselApi) => {
+  const onInit = useCallback((api: any) => {
     setScrollSnaps(api.scrollSnapList());
   }, []);
 

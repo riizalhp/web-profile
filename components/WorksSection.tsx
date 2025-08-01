@@ -5,16 +5,16 @@ import { useState, useCallback, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext, useCarousel } from '@/components/ui/carousel';
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/ui/carousel';
 import Autoplay from "embla-carousel-autoplay";
-import { type CarouselApi } from "embla-carousel-react";
+import { type UseEmblaCarouselType } from "embla-carousel-react";
 import { useMediaQuery } from '@/hooks/useMediaQuery';
 
 export default function WorksSection() {
   const router = useRouter(); // Initialize router
   const isMobile = useMediaQuery("(max-width: 768px)");
 
-  const [api, setApi] = useState<CarouselApi>();
+  const [api, setApi] = useState<any>();
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
 
@@ -22,11 +22,11 @@ export default function WorksSection() {
   const [selectedServiceId, setSelectedServiceId] = useState<string | null>(null);
   const [hoveredSliderImageIndex, setHoveredSliderImageIndex] = useState<number | null>(null); // New state for hover effect on slider images
 
-  const onSelect = useCallback((api: CarouselApi) => {
+  const onSelect = useCallback((api: any) => {
     setSelectedIndex(api.selectedScrollSnap());
   }, []);
 
-  const onInit = useCallback((api: CarouselApi) => {
+  const onInit = useCallback((api: any) => {
     setScrollSnaps(api.scrollSnapList());
   }, []);
 

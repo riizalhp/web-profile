@@ -1,10 +1,10 @@
-interface ProjectLink {
+export interface ProjectLink {
   type: 'direct' | 'denied';
   url?: string;
   companyProfileUrl?: string;
 }
 
-interface ProjectDetail {
+export interface ProjectDetail {
   id: string;
   title: string;
   mainImage: string;
@@ -117,4 +117,34 @@ export const projectsData: ProjectDetail[] = [
     githubLink: { type: 'denied', companyProfileUrl: 'https://gamematahati.com/splash' },
     websiteLink: { type: 'direct', url: 'https://gamematahati.com/splash' }
   },
+  {
+    id: "multix-company-profile",
+    title: "Template Company Profile",
+    mainImage: "https://s14.gifyu.com/images/bKXKI.png",
+    overview: "A versatile Content Management System (CMS) website built using the PHP CodeIgniter framework. Designed to provide a platform for companies (especially consulting firms) to easily manage their online presence. This demo site showcases various services, features, portfolios, and pricing structures—indicating that the CMS is built for businesses that require a professional website with robust functionality to present services and engage with clients.",
+    features: ["Service Management", "Portfolio Management", "Team Management", "Pricing Package Management", "Client Testimonials", "News/Blog", "Contact Form", "Responsive Design", "CMS Dashboard"],
+    techStack: ["Backend Framework: CodeIgniter (PHP)", "Backend Language: PHP", "Database: MySQL", "Frontend: HTML, CSS, JavaScript"],
+    githubLink: { type: 'denied', companyProfileUrl: 'https://demo.phpscriptpoint.com/multix/' },
+    websiteLink: { type: 'direct', url: 'https://demo.phpscriptpoint.com/multix/' }
+  },
+  {
+    id: "pms-panda-resort",
+    title: "Property Management System and Online Booking",
+    mainImage: "https://s14.gifyu.com/images/bKXxK.jpg",
+    overview: "A Property Management System (PMS) or Online Booking System specifically designed for the hospitality industry, such as resorts, hotels, or lodges. This system serves not only as a customer-facing booking interface but also offers a powerful admin panel for property owners to manage all operational aspects. From room management, availability, pricing, to payment and marketing integrations (SEO, coupons)—all are integrated into one platform. It aims to automate reservation processes and improve operational efficiency for accommodation businesses.",
+    features: ["Fully Responsive Design", "Easy Customization", "Complete Booking System", "Availability Management", "iCal Sync", "Intuitive Admin Panel", "Multi-User", "Flexible Content Management", "Comment Management"],
+    techStack: ["Backend Framework: Laravel", "Backend Language: PHP", "Database: MySQL", "Frontend: HTML5, Tailwind CSS, JavaScript"],
+    githubLink: { type: 'denied', companyProfileUrl: 'https://resort.pandao.eu/en' },
+    websiteLink: { type: 'direct', url: 'https://resort.pandao.eu/en' }
+  },
+  {
+    id: "pms-flex-home",
+    title: "Property Agent Content Management System",
+    mainImage: "https://s14.gifyu.com/images/bKXx3.jpg",
+    overview: "A powerful real estate and property management platform, most likely built using the Botble CMS. This system is tailored for the property market, offering a complete set of features to showcase property listings, development projects, and agent profiles. With strong functionality for both the frontend (public users) and backend (administration), Flex Home is designed to be the go-to tool for real estate businesses aiming for a professional and efficient online presence.",
+    features: ["Frontend: Homepage, Projects, Properties with Map, Single Property, Single Property with Video, News/Blog, About Us", "Backend: Dashboard, Property Management, Payment Gateway, Media Files, Theme Translation"],
+    techStack: ["Backend Framework: Laravel with Botble CMS (PHP)", "Database: MySQL", "Frontend: HTML5, CSS3, JavaScript"],
+    githubLink: { type: 'denied', companyProfileUrl: 'https://flex-home.botble.com/' },
+    websiteLink: { type: 'direct', url: 'https://flex-home.botble.com/' }
+  }
 ];

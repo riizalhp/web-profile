@@ -65,8 +65,8 @@ export default function Navigation() {
                 priority
               />
               <div>
-                <h2 className="text-white font-bold text-lg">Rizal HP</h2>
-                <p className="text-gray-400 text-xs">Project Manager</p>
+                <h2 className="text-white font-bold text-lg">riizalhp.</h2>
+                <p className="text-gray-400 text-xs">Project Manager and Freelance Web Developer</p>
               </div>
             </div>
 
@@ -117,8 +117,8 @@ export default function Navigation() {
                 priority
               />
               <div>
-                <h2 className="text-white font-bold text-sm">Rizal HP</h2>
-                <p className="text-gray-400 text-xs">Project Manager</p>
+                <h2 className="text-white font-bold text-sm">riizalhp.</h2>
+                <p className="text-gray-400 text-xs">Project Manager and Freelance Web Developer</p>
               </div>
             </div>
 
