@@ -80,8 +80,8 @@ export default function HeroSection() {
             <Image
               src="https://s14.gifyu.com/images/bKypA.gif"
               alt="Rizal Hanifa Pratama"
-              width={400}
-              height={400}
+              width={300}
+              height={300}
               className="rounded-full border-4 border-white/20"
               priority
             />

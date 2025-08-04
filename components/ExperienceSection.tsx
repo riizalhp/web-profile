@@ -108,12 +108,14 @@ export default function ExperienceSection() {
           </div>
 
           {/* Skills & Tools & Connect Column */}
-          <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
-            <div className="flex flex-col gap-4 md:gap-4">
+          <div className="md:col-span-2 flex flex-col md:flex-row gap-8">
+            {/* Kolom Kiri Bagian Dalam (Skills & Tools) */}
+            <div className="flex flex-col gap-8 md:w-1/2">
               <SkillsCard />
               <ToolsCard />
             </div>
-            <div className="flex flex-col gap-4 md:gap-8">
+            {/* Kolom Kanan Bagian Dalam (Connect) */}
+            <div className="md:w-1/2">
               <ConnectCard />
             </div>
           </div>
