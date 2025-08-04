@@ -50,7 +50,7 @@ export default function ExperienceSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Experience Column */}
           <div>
-            <div className="card scroll-animate p-4">
+            <div className="card scroll-animate p-4 h-full flex flex-col">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-xl sm:text-2xl font-bold text-white">Experience</h2>
                 <span className="text-sm bg-white/10 px-3 py-1 rounded-full border border-white/20">
@@ -58,7 +58,7 @@ export default function ExperienceSection() {
                 </span>
               </div>
               
-              <div className="space-y-2">
+              <div className="space-y-2 flex-grow">
                 {experiences.map((exp, index) => (
                   <div key={index} className="relative">
                     {/* Timeline line - only show for items that are not the last */}
@@ -112,11 +112,13 @@ export default function ExperienceSection() {
             {/* Kolom Kiri Bagian Dalam (Skills & Tools) */}
             <div className="flex flex-col gap-8 md:w-1/2">
               <SkillsCard />
-              <ToolsCard />
+              <div className="flex-grow">
+                <ToolsCard />
+              </div>
             </div>
             {/* Kolom Kanan Bagian Dalam (Connect) */}
             <div className="md:w-1/2">
-              <ConnectCard />
+              <ConnectCardWrapper />
             </div>
           </div>
         </div>
@@ -199,7 +201,7 @@ function ToolsCard() {
   ];
 
   return (
-    <div className="card p-4">
+    <div className="card p-4 h-full flex flex-col">
       <div className="flex items-center justify-between">
         <h2 className="text-xl sm:text-2xl font-bold text-white">Essential Stack</h2>
         <span className="text-sm bg-white/10 px-3 py-1 rounded-full border border-white/20">
@@ -209,7 +211,8 @@ function ToolsCard() {
       <p className="text-sm text-white/60 mb-6">
         Project Management, Web Development, and Ai Agent Arsenal
       </p>
-      <div className="flex flex-wrap justify-center gap-x-4 sm:gap-x-6 gap-y-2 items-center">
+      {/* Tambahkan flex-grow agar tools berada di tengah secara vertikal */}
+      <div className="flex flex-wrap justify-center gap-x-4 sm:gap-x-6 gap-y-2 items-center flex-grow">
         {tools.map((tool, index) => (
           <React.Fragment key={index}>
             {tool.name === "React" && <div className="w-full h-0" />}
@@ -222,3 +225,13 @@ function ToolsCard() {
     </div>
   );
 }
+
+// Buat wrapper untuk ConnectCard agar bisa menerapkan h-full
+function ConnectCardWrapper() {
+  return (
+    <div className="h-full">
+      <ConnectCard />
+    </div>
+  );
+}
+
