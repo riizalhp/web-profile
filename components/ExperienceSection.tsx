@@ -109,11 +109,11 @@ export default function ExperienceSection() {
 
           {/* Skills & Tools & Connect Column */}
           <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
-            <div className="flex flex-col gap-4 md:gap-8">
+            <div className="flex flex-col gap-4 md:gap-4">
               <SkillsCard />
               <ToolsCard />
             </div>
-            <div className="md:row-span-2">
+            <div className="flex flex-col gap-4 md:gap-8">
               <ConnectCard />
             </div>
           </div>
@@ -139,7 +139,7 @@ const SkillTag = ({ skill }: { skill: string }) => (
 
 function SkillsCard() {
   return (
-    <div className="card scroll-animate p-4 h-full">
+    <div className="card p-4 h-full">
       <div className="flex items-center justify-between">
         <h2 className="text-xl sm:text-2xl font-bold text-white">Skills & Expertise</h2>
         <span className="text-sm bg-white/10 px-3 py-1 rounded-full border border-white/20">
@@ -197,7 +197,7 @@ function ToolsCard() {
   ];
 
   return (
-    <div className="card scroll-animate p-4">
+    <div className="card p-4">
       <div className="flex items-center justify-between">
         <h2 className="text-xl sm:text-2xl font-bold text-white">Essential Stack</h2>
         <span className="text-sm bg-white/10 px-3 py-1 rounded-full border border-white/20">

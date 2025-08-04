@@ -23,7 +23,7 @@ export default function ConnectCard() {
   ];
 
   return (
-    <div className="card scroll-animate p-4">
+    <div className="card p-4">
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-xl sm:text-2xl font-bold mb-6 text-white">Connect</h2>
         <span className="text-sm bg-white/10 px-3 py-1 rounded-full border border-white/20">
