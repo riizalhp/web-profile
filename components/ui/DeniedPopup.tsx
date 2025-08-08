@@ -8,14 +8,14 @@ interface DeniedPopupProps {
   companyProfileUrl?: string;
 }
 
-export default function DeniedPopup({ isOpen, onClose, companyProfileUrl }: DeniedPopupProps) {
+export default function DeniedPopup({ isOpen, onClose, companyProfileUrl, message }: DeniedPopupProps) {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent>
         <DialogHeader>
           <DialogTitle>Access Denied</DialogTitle>
           <DialogDescription>
-            Access to this portfolio is restricted as it contains company confidential information.
+            {message}
           </DialogDescription>
         </DialogHeader>
         {companyProfileUrl && (

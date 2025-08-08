@@ -59,13 +59,13 @@ export default function Navigation() {
               <Image
                 alt="Rizal's profile picture"
                 className="w-10 h-10 rounded-full ring-2 ring-blue-500"
-                src="https://s14.gifyu.com/images/bKypA.gif"
+                src="https://s14.gifyu.com/images/bNH4S.webp"
                 width={40}
                 height={40}
                 priority
               />
               <div>
-                <h2 className="text-white font-bold text-lg">riizalhp.</h2>
+                <h2 className="text-white font-bold text-lg">pmngetech.</h2>
                 <p className="text-gray-400 text-xs">Project Manager and Freelance Web Developer</p>
               </div>
             </div>
@@ -111,13 +111,13 @@ export default function Navigation() {
               <Image
                 alt="Rizal's profile picture"
                 className="w-8 h-8 rounded-full ring-2 ring-blue-500"
-                src="https://s14.gifyu.com/images/bKypA.gif"
+                src="https://s14.gifyu.com/images/bNH4S.webp"
                 width={32}
                 height={32}
                 priority
               />
               <div>
-                <h2 className="text-white font-bold text-sm">riizalhp.</h2>
+                <h2 className="text-white font-bold text-sm">pmngetech.</h2>
                 <p className="text-gray-400 text-xs">Project Manager and Freelance Web Developer</p>
               </div>
             </div>

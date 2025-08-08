@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     google: 'your-google-verification-code',
   },
   alternates: {
-    canonical: 'https://rizalhanifa.com',
+    canonical: 'https://riizalhp.web.id',
   }
 };
 

@@ -4,19 +4,24 @@
 import { useState, useCallback, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/ui/carousel';
+import DeniedPopup from '@/components/ui/DeniedPopup';
 import Autoplay from "embla-carousel-autoplay";
 import { type UseEmblaCarouselType } from "embla-carousel-react";
 import { useMediaQuery } from '@/hooks/useMediaQuery';
+import { projectsData } from '@/lib/projects';
 
 export default function WorksSection() {
-  const router = useRouter(); // Initialize router
+  
   const isMobile = useMediaQuery("(max-width: 768px)");
 
   const [api, setApi] = useState<any>();
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
+  const [isDeniedPopupOpen, setIsDeniedPopupOpen] = useState(false);
+  const [deniedPopupMessage, setDeniedPopupMessage] = useState('');
+  const [deniedCompanyProfileUrl, setDeniedCompanyProfileUrl] = useState<string | undefined>(undefined);
 
   // State for selected service to display inline slider
   const [selectedServiceId, setSelectedServiceId] = useState<string | null>(null);
@@ -45,55 +50,56 @@ export default function WorksSection() {
       id: "project-manager-work-service",
       title: "Project Manager",
       description: "Leading projects from conception to completion, ensuring timely delivery and stakeholder satisfaction.",
-      image: "https://s14.gifyu.com/images/bKyHu.png",
+      image: "https://s14.gifyu.com/images/bNK59.webp",
       tags: ["Planning", "Execution", "Monitoring", "Closing"],
       status: "Available",
       year: "Ongoing",
       path: "/services/project-manager",
       carouselImages: [
-        { src: "https://s14.gifyu.com/images/bKy5T.png", id: "sales-distribution-optimization" },
-        { src: "https://s14.gifyu.com/images/bKy5E.png", id: "mvp-agrofaster" },
-        { src: "https://s14.gifyu.com/images/bKy5k.png", id: "cms-rantangin" },
-        { src: "https://s14.gifyu.com/images/bKy5q.png", id: "attendance-system" },
-        { src: "https://s14.gifyu.com/images/bKy5l.png", id: "jogja-dataku-dlhk" },
-        { src: "https://s14.gifyu.com/images/bKy5W.png", id: "mvp-sinaou-edu" },
-        { src: "https://s14.gifyu.com/images/bKy5c.png", id: "ahp-dss" },
-        { src: "https://s14.gifyu.com/images/bKy5j.png", id: "dashboard-oee" },
-        { src: "https://s14.gifyu.com/images/bKy5F.png", id: "ayra-ai" },
-        { src: "https://s14.gifyu.com/images/bKX3g.png", id: "healthy-games-quiz" }
+        { src: "https://s14.gifyu.com/images/bNT09.webp", id: "sales-distribution-optimization" },
+        { src: "https://s14.gifyu.com/images/bNTjR.webp", id: "mvp-agrofaster" },
+        { src: "https://s14.gifyu.com/images/bNT0A.webp", id: "cms-rantangin" },
+        { src: "https://s14.gifyu.com/images/bNT0y.webp", id: "attendance-system" },
+        { src: "https://s14.gifyu.com/images/bNT0h.webp", id: "jogja-dataku-dlhk" },
+        { src: "https://s14.gifyu.com/images/bNmKh.webp", id: "ahp-dss" },
+        { src: "https://s14.gifyu.com/images/bNT0Z.webp", id: "dashboard-oee" },
+        { src: "https://s14.gifyu.com/images/bNm2X.webp", id: "ayra-ai" },
+        { src: "https://s14.gifyu.com/images/bNT0t.webp", id: "healthy-games-quiz" }
       ]
     },
     {
       id: "web-developer-portfolio",
       title: "Web Developer",
       description: "Crafting responsive and high-performance web applications using modern frameworks and best practices.",
-      image: "https://s14.gifyu.com/images/bKyHd.png",
+      image: "https://s14.gifyu.com/images/bNK5v.webp",
       tags: ["Frontend", "Backend", "Fullstack", "UI/UX"],
       status: "Available",
       year: "Ongoing",
       path: "/services/web-developer",
       carouselImages: [
-        { src: "https://s14.gifyu.com/images/bKXKI.png", id: "web-developer-portfolio" },
-        { src: "https://s14.gifyu.com/images/bKXxK.jpg", id: "web-developer-portfolio" },
-        { src: "https://s14.gifyu.com/images/bKXx0.png", id: "web-developer-portfolio" },
-        { src: "https://s14.gifyu.com/images/bKXxU.png", id: "web-developer-portfolio" },
-        { src: "https://s14.gifyu.com/images/bKXxf.png", id: "web-developer-portfolio" },
-        { src: "https://s14.gifyu.com/images/bKXK2.png", id: "web-developer-portfolio" },
-        { src: "https://s14.gifyu.com/images/bKXKS.png", id: "web-developer-portfolio" }
+        { src: "https://s14.gifyu.com/images/bNTjQ.webp", id: "estate-hub" },
+        { src: "https://s14.gifyu.com/images/bNTjU.webp", id: "portal-berita" },
+        { src: "https://s14.gifyu.com/images/bNTjY.webp", id: "berita-kini" },
+        { src: "https://s14.gifyu.com/images/bNT0E.webp", id: "fashion-hub" },
+        { src: "https://s14.gifyu.com/images/bNT0k.webp", id: "magelang-advanture" },
+        { src: "https://s14.gifyu.com/images/bNT0a.webp", id: "galactic-annihilator" },
+        { src: "https://s14.gifyu.com/images/bNT01.webp", id: "properti-agent" },
+        { src: "https://s14.gifyu.com/images/bNT0G.webp", id: "pemilos" }
       ]
     },
     {
       id: "ai-agent-developer-showcase",
       title: "AI Agent Developer",
       description: "Developing intelligent AI agents for automation, data analysis, and enhanced user experiences with intelligent.",
-      image: "https://s14.gifyu.com/images/bKyH6.png",
+      image: "https://s14.gifyu.com/images/bNK5w.webp",
       tags: ["Machine Learning", "NLP", "Automation", "n8n"],
       status: "Available",
       year: "Ongoing",
-      path: "/services/ai-agent-developer",
+      path: "/swebpervices/ai-agent-developer",
       carouselImages: [
-        { src: "https://s14.gifyu.com/images/bKy5g.png", id: "ai-agent-developer-showcase" }
-      ]
+        { src: "https://s14.gifyu.com/images/bNwdu.png", id: "kampung-kecil" }
+      ],
+      accessType: 2
     }
   ];
 
@@ -189,20 +195,36 @@ export default function WorksSection() {
                           onMouseLeave={() => setHoveredSliderImageIndex(null)}
                         >
                           <div className="p-0">
-                            <Link href={`/projects/${image.id}`}>
-                              <div className="block cursor-hover relative overflow-hidden rounded-lg shadow-lg group flex aspect-video items-center justify-center">
-                                <Image
-                                  src={image.src}
-                                  alt={`${service.title} Image ${index + 1}`}
-                                  width={800}
-                                  height={450}
-                                  className="rounded-lg object-cover w-full h-full transition-transform duration-300"
-                                />
-                                <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                  <p className="text-white text-lg font-bold text-center">View Project</p>
-                                </div>
+                            <div
+                              className="block cursor-hover relative overflow-hidden rounded-lg shadow-lg group flex aspect-video items-center justify-center"
+                              onClick={() => {
+                                const project = projectsData.find(p => p.id === image.id);
+                                if (project) {
+                                  if (project.accessType === 1) {
+                                    setDeniedPopupMessage("Access to this portfolio is restricted as it contains confidential company information. You will be redirected to the company profile website.");
+                                    setDeniedCompanyProfileUrl(project.websiteLink?.companyProfileUrl);
+                                    setIsDeniedPopupOpen(true);
+                                  } else if (project.accessType === 3) {
+                                    setDeniedPopupMessage("Access to this portfolio is restricted as it is part of a competition project. You will be redirected to the overview page.");
+                                    setDeniedCompanyProfileUrl(project.websiteLink?.companyProfileUrl);
+                                    setIsDeniedPopupOpen(true);
+                                  } else if (project.accessType === 2 && project.websiteLink?.url) {
+                                    window.open(project.websiteLink.url, '_blank');
+                                  }
+                                }
+                              }}
+                            >
+                              <Image
+                                src={image.src}
+                                alt={`${service.title} Image ${index + 1}`}
+                                width={800}
+                                height={450}
+                                className="rounded-lg object-cover w-full h-full transition-transform duration-300"
+                              />
+                              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p className="text-white text-lg font-bold text-center">View Website</p>
                               </div>
-                            </Link>
+                            </div>
                           </div>
                         </CarouselItem>
                       ))}
@@ -275,7 +297,20 @@ export default function WorksSection() {
                             hoveredSliderImageIndex === index ? 'scale-125' : ''
                           }`}
                           onClick={() => {
-                            router.push(`/projects/${image.id}`);
+                            const project = projectsData.find(p => p.id === image.id);
+                            if (project) {
+                              if (project.accessType === 1) {
+                                setDeniedPopupMessage("Access to this portfolio is restricted as it contains confidential company information. You will be redirected to the company profile website.");
+                                setDeniedCompanyProfileUrl(project.websiteLink?.companyProfileUrl);
+                                setIsDeniedPopupOpen(true);
+                              } else if (project.accessType === 3) {
+                                setDeniedPopupMessage("Access to this portfolio is restricted as it is part of a competition project. You will be redirected to the overview page.");
+                                setDeniedCompanyProfileUrl(project.websiteLink?.companyProfileUrl);
+                                setIsDeniedPopupOpen(true);
+                              } else if (project.accessType === 2 && project.websiteLink?.url) {
+                                window.open(project.websiteLink.url, '_blank');
+                              }
+                            }
                           }}
                         />
                       </div>
@@ -307,6 +342,13 @@ export default function WorksSection() {
             </div>
           </div>
         )}
+
+        <DeniedPopup
+          isOpen={isDeniedPopupOpen}
+          onClose={() => setIsDeniedPopupOpen(false)}
+          message={deniedPopupMessage}
+          companyProfileUrl={deniedCompanyProfileUrl}
+        />
       </div>
     </section>
   );

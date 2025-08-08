@@ -78,7 +78,7 @@ export default function HeroSection() {
         <div className="md:w-1/2 flex justify-center md:justify-end">
           <div className="relative inline-block">
             <Image
-              src="https://s14.gifyu.com/images/bKypA.gif"
+              src="https://s14.gifyu.com/images/bNH4S.webp"
               alt="Rizal Hanifa Pratama"
               width={300}
               height={300}
