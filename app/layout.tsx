@@ -19,7 +19,7 @@ const sora = Sora({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://riizalhp.web.id'),
-  title: 'Rizal Hanifa Pratama | Freelance Web Developer & Project Manager Yogyakarta',
+  title: 'Rizal Hanifa Pratama | Web Developer & Project Manager',
   description:
     'Portfolio Rizal Hanifa Pratama, Freelance Web Developer dan Project Manager di Yogyakarta, Indonesia. Mengelola proyek teknologi, membangun website, dan memberikan solusi digital/',
   keywords: [
