@@ -1,14 +1,12 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import localFont from 'next/font/local';
-import { Sora } from 'next/font/google';
+import { Inter, Sora } from 'next/font/google';
 import Footer from '@/components/Footer';
 
-
-
-const satoshi = localFont({
-  src: '../public/fonts/Satoshi-Variable.ttf',
-  variable: '--font-satoshi',
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
 });
 
 const sora = Sora({
@@ -90,7 +88,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${satoshi.variable} ${sora.variable}`}>
+    <html lang="en" className={`${inter.variable} ${sora.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />

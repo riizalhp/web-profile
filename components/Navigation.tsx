@@ -55,7 +55,11 @@ export default function Navigation() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <div className="flex items-center space-x-3">
+            <button 
+              onClick={() => scrollToSection('home')}
+              className="flex items-center space-x-3 cursor-pointer select-none"
+              aria-label="Scroll to top"
+            >
               <Image
                 alt="Rizal's profile picture"
                 className="w-10 h-10 rounded-full ring-2 ring-blue-500"
@@ -64,11 +68,11 @@ export default function Navigation() {
                 height={40}
                 priority
               />
-              <div>
+              <div className="text-left">
                 <h2 className="text-white font-bold text-lg">pmngetech.</h2>
                 <p className="text-gray-400 text-xs">Project Manager and Freelance Web Developer</p>
               </div>
-            </div>
+            </button>
 
             {/* Navigation Items */}
             <div className="flex items-center space-x-8">
@@ -105,7 +109,11 @@ export default function Navigation() {
         <div className="px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <div className="flex items-center space-x-2">
+            <button 
+              onClick={() => scrollToSection('home')}
+              className="flex items-center space-x-2 cursor-pointer select-none"
+              aria-label="Scroll to top"
+            >
               <Image
                 alt="Rizal's profile picture"
                 className="w-8 h-8 rounded-full ring-2 ring-blue-500"
@@ -114,11 +122,11 @@ export default function Navigation() {
                 height={32}
                 priority
               />
-              <div>
+              <div className="text-left">
                 <h2 className="text-white font-bold text-sm">pmngetech.</h2>
                 <p className="text-gray-400 text-xs">Project Manager and Freelance Web Developer</p>
               </div>
-            </div>
+            </button>
 
             {/* Mobile Menu Button */}
             <button

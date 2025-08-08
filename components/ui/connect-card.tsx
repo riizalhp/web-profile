@@ -52,12 +52,12 @@ export default function ConnectCard() {
       <div className="border-t border-white/20 mt-6 pt-6">
         <p className="text-sm text-white/50 mb-2">Let&apos;s Work Together!</p>
         <a
-          href="mailto:rizalhp12345@gmail.com?subject=Let's Work Together!&body=Hi Rizal,%0D%0A%0D%0AI would love to discuss a potential project with you.%0D%0A%0D%0ABest regards"
+          href="mailto:riizalhp@outlook.com?subject=Let's Work Together!&body=Hi Rizal,%0D%0A%0D%0AI would love to discuss a potential project with you.%0D%0A%0D%0ABest regards"
           className="social-link w-full text-left focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded-lg mb-4"
           aria-label="Send email to Rizal Hanifa Pratama"
         >
           <Handshake className="w-6 h-6" />
-          <span className="text-sm">Send Email → rizalhp12345@gmail.com</span>
+          <span className="text-sm">Send Email → riizalhp@outlook.com</span>
         </a>
       </div>
     </div>
