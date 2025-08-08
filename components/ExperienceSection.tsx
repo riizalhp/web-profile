@@ -89,7 +89,7 @@ const companiesWorkedWith = [
 
               {/* Company | Worked With Section - Moved inside Experience Card */}
               <div className="mt-4">
-                <h3 className="text-lg font-bold mb-2 text-center">Trusted by Leading Companies</h3>
+                <h3 className="text-lg font-bold mb-2 text-center">Company Worked With</h3>
                 <div className="relative flex w-full overflow-hidden">
                   <Marquee pauseOnHover className="[--duration:20s] [--gap:0.5rem]">
                     {companiesWorkedWith.map((company, index) => (
