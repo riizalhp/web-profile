@@ -31,22 +31,23 @@ export default function ExperienceSection() {
     }
   ];
 
-  const companiesWorkedWith = [
-    { name: "Company 1", logo: "https://s14.gifyu.com/images/bKywC.png" },
-    { name: "Company 2", logo: "https://s14.gifyu.com/images/bKywr.png" },
-    { name: "Company 3", logo: "https://s14.gifyu.com/images/bKywD.png" },
-    { name: "Company 4", logo: "https://s14.gifyu.com/images/bKywP.png" },
-    { name: "Company 5", logo: "https://s14.gifyu.com/images/bKy3S.png" },
-    { name: "Company 6", logo: "https://s14.gifyu.com/images/bKy3L.png" },
-    { name: "Company 7", logo: "https://s14.gifyu.com/images/bKy3T.png" },
-    { name: "Company 8", logo: "https://s14.gifyu.com/images/bKy3h.png" },
-    { name: "Company 9", logo: "https://s14.gifyu.com/images/bKy3q.png" },
-    { name: "Company 10", logo: "https://s14.gifyu.com/images/bKy3W.png" },
-    { name: "Company 11", logo: "https://s14.gifyu.com/images/bKy3j.png" },
-  ];
+const companiesWorkedWith = [
+  { name: "Company 12", logo: "https://s14.gifyu.com/images/bNmjp.webp" },
+  { name: "Company 13", logo: "https://s14.gifyu.com/images/bNmjz.webp" },
+  { name: "Company 14", logo: "https://s14.gifyu.com/images/bNmjM.webp" },
+  { name: "Company 15", logo: "https://s14.gifyu.com/images/bNmjL.webp" },
+  { name: "Company 16", logo: "https://s14.gifyu.com/images/bNmjs.webp" },
+  { name: "Company 17", logo: "https://s14.gifyu.com/images/bNmjx.webp" },
+  { name: "Company 18", logo: "https://s14.gifyu.com/images/bNmjH.webp" },
+  { name: "Company 19", logo: "https://s14.gifyu.com/images/bNmjK.webp" },
+  { name: "Company 20", logo: "https://s14.gifyu.com/images/bNmjN.webp" },
+  { name: "Company 21", logo: "https://s14.gifyu.com/images/bNmjT.webp" },
+  { name: "Company 22", logo: "https://s14.gifyu.com/images/bNmjw.webp" },
+];
+
 
   return (
-    <section id="experience" className="py-20 px-6">
+    <section id="experience" className="py-20 px-6 scroll-animate">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Experience Column */}

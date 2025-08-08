@@ -81,7 +81,7 @@ const ReviewCard = ({
 
 const TestimonialSection = () => {
   return (
-    <section id="testimonials" className="py-20 px-6 bg-black">
+    <section id="testimonials" className="py-20 px-6 bg-black scroll-animate">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 scroll-animate">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Client Testimonials</h2>

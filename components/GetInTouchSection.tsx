@@ -2,7 +2,7 @@ import React from 'react';
 
 const GetInTouchSection = () => {
   return (
-    <section id="contact" className="relative flex flex-col items-center justify-center py-20 bg-black text-white overflow-hidden">
+    <section id="contact" className="relative flex flex-col items-center justify-center py-20 bg-black text-white overflow-hidden scroll-animate">
       <div className="absolute inset-0 flex items-center justify-center">
         {/* Ripple 1 */}
         <div className="absolute w-96 h-96 rounded-full bg-blue-500 opacity-20 animate-ripple-1"></div>

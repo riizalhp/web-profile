@@ -107,7 +107,7 @@ export default function WorksSection() {
   const selectedService = displayedServices.find(service => service.id === selectedServiceId);
 
   return (
-    <section id="works" className="py-20 px-6 bg-black">
+    <section id="works" className="py-20 px-6 bg-black scroll-animate">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 scroll-animate">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Works Service</h2>

@@ -10,7 +10,7 @@ export default function HeroSection() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [isCvPopupOpen, setIsCvPopupOpen] = useState(false);
 
-  const pdfLink = "https://pdflink.to/d0159dd6/embed/";
+  const pdfLink = "https://pdflink.to/100dd795/embed/";
   const phrases = ["I'm Rizal,", "Project Manager & Freelance Website Developer"];
 
   useEffect(() => {
