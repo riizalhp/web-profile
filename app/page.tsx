@@ -1,12 +1,14 @@
 'use client';
 
 import React, { useEffect } from 'react';
+import dynamic from 'next/dynamic';
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
-import ExperienceSection from '@/components/ExperienceSection';
-import WorksSection from '@/components/WorksSection';
-import TestimonialSection from '@/components/TestimonialSection';
-import GetInTouchSection from '@/components/GetInTouchSection';
+
+const ExperienceSection = dynamic(() => import('@/components/ExperienceSection'));
+const WorksSection = dynamic(() => import('@/components/WorksSection'));
+const TestimonialSection = dynamic(() => import('@/components/TestimonialSection'));
+const GetInTouchSection = dynamic(() => import('@/components/GetInTouchSection'));
 
 const Home: React.FC = () => {
   useEffect(() => {
