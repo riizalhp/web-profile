@@ -1,13 +1,16 @@
-'use client';
-
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
+import PdfViewerPopup from '@/components/ui/PdfViewerPopup';
 
 export default function HeroSection() {
   const [mounted, setMounted] = useState(false);
   const [displayText, setDisplayText] = useState('');
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+  const [isCvPopupOpen, setIsCvPopupOpen] = useState(false);
+
+  const pdfLink = "https://pdflink.to/d0159dd6/embed/";
   const phrases = ["I'm Rizal,", "Project Manager & Freelance Website Developer"];
 
   useEffect(() => {
@@ -56,15 +59,15 @@ export default function HeroSection() {
           </h1>
           
           <p className="text-lg md:text-xl text-white/70 mb-8 max-w-3xl md:mx-0 mx-auto leading-relaxed">
-            I manage AI projects and build websites to deliver impactful digital solutions.
+            I bring ideas to life by managing  projects and crafting websites that turn big visions into impactful digital experiences.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center">
-            <a href="mailto:rizalhp12345@gmail.com" className="btn-primary cursor-hover">
+            <a href="mailto:riizalhp@outlook.com" className="btn-primary cursor-hover">
               Let&apos;s Work Together
             </a>
-            <button className="btn-secondary cursor-hover">
-              View My Projects
+            <button onClick={() => setIsCvPopupOpen(true)} className="btn-secondary cursor-hover">
+              View CV
             </button>
           </div>
           
@@ -89,6 +92,11 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
+      <PdfViewerPopup
+        isOpen={isCvPopupOpen}
+        onClose={() => setIsCvPopupOpen(false)}
+        pdfUrl={pdfLink}
+      />
     </section>
   );
 }

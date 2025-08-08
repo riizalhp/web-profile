@@ -83,7 +83,7 @@ export default function WorksSection() {
         { src: "https://s14.gifyu.com/images/bNT0E.webp", id: "fashion-hub" },
         { src: "https://s14.gifyu.com/images/bNT0k.webp", id: "magelang-advanture" },
         { src: "https://s14.gifyu.com/images/bNT0a.webp", id: "galactic-annihilator" },
-        { src: "https://s14.gifyu.com/images/bNT01.webp", id: "properti-agent" },
+        { src: "https://s14.gifyu.com/images/bNT01.webp", id: "properti" },
         { src: "https://s14.gifyu.com/images/bNT0G.webp", id: "pemilos" }
       ]
     },

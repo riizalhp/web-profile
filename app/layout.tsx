@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import { Sora } from 'next/font/google';
+import Footer from '@/components/Footer';
 
 
 
@@ -17,30 +18,35 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: 'Riizalhp | Portfolio',
-  description: 'Rizal Hanifa Pratama - Experienced Tech Project Manager with strong background in leading cross-functional teams, managing tech projects, and delivering impactful digital solutions. Active in both startup and corporate environments in Yogyakarta, Indonesia.',
+  metadataBase: new URL('https://riizalhp.web.id'),
+  title: 'Rizal Hanifa Pratama | Freelance Web Developer & Project Manager Yogyakarta',
+  description:
+    'Portfolio Rizal Hanifa Pratama, Freelance Web Developer dan Project Manager di Yogyakarta, Indonesia. Mengelola proyek teknologi, membangun website, dan memberikan solusi digital/',
   keywords: [
-    'Project Manager',
-    'Tech Project Manager',
-    'Product Owner',
-    'Digital Solutions',
-    'Cross-functional Teams',
-    'Project Planning',
-    'Risk Management',
-    'Team Leadership',
-    'Startup Experience',
-    'Corporate Experience',
-    'Yogyakarta Project Manager',
-    'Indonesia Tech Leader',
-    'Rizal Hanifa Pratama',
-    'Portfolio',
-    'Project Management Services',
-    'GitHub Projects',
-    'Trello Expert',
-    'Notion Expert',
-    'Agile Methodology',
-    'Scrum Master',
-    'Budget Management'
+    'Freelance Web Developer Yogyakarta',
+    'Jasa Pembuatan Website Yogyakarta',
+    'Jasa Web Developer Indonesia',
+    'Project Manager Yogyakarta',
+    'Manajer Proyek Teknologi Indonesia',
+    'Pengelolaan Proyek Digital',
+    'Pembuatan Website Profesional',
+    'Solusi Digital Yogyakarta',
+    'Jasa Website Murah Yogyakarta',
+    'Pengembangan Website Yogyakarta',
+    'Pengembangan Aplikasi Web',
+    'Layanan Manajemen Proyek',
+    'Jasa Product Owner Indonesia',
+    'Jasa Agile Scrum Master',
+    'Pengelolaan Tim Proyek',
+    'Pengelolaan Anggaran Proyek',
+    'Konsultan IT Yogyakarta',
+    'Layanan Web Developer Freelance',
+    'Jasa Pembuatan Sistem Informasi',
+    'Website untuk Perusahaan',
+    'Pembuatan Website Startup',
+    'Jasa Web Design Yogyakarta',
+    'Pembuatan Landing Page',
+    'Portfolio Web Developer Yogyakarta'
   ],
   authors: [{ name: 'Rizal Hanifa Pratama' }],
   creator: 'Rizal Hanifa Pratama',
@@ -49,32 +55,34 @@ export const metadata: Metadata = {
   viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
   openGraph: {
     type: 'website',
-    locale: 'en_US',
-    url: 'https://rizalhanifa.com',
-    title: 'Rizal Hanifa Pratama - Expert Project Manager & Tech Leader',
-    description: 'Experienced Tech Project Manager with strong background in leading cross-functional teams and delivering impactful digital solutions.',
+    locale: 'id_ID',
+    url: 'https://riizalhp.web.id',
+    title: 'Rizal Hanifa Pratama | Freelance Web Developer & Project Manager Yogyakarta',
+    description:
+      'Portfolio Rizal Hanifa Pratama, Freelance Web Developer dan Project Manager berpengalaman di Yogyakarta, Indonesia. Mengelola proyek teknologi, membangun website, dan memberikan solusi digital yang berdampak.',
     siteName: 'Rizal Hanifa Pratama Portfolio',
-    images: [{
-      url: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg',
-      width: 1200,
-      height: 630,
-      alt: 'Rizal Hanifa Pratama - Project Manager Portfolio'
-    }]
+    images: [
+      {
+        url: 'https://s14.gifyu.com/images/bNH4S.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Rizal Hanifa Pratama - Freelance Web Developer & Project Manager Yogyakarta'
+      }
+    ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Rizal Hanifa Pratama - Expert Project Manager & Tech Leader',
-    description: 'Experienced Tech Project Manager with strong background in leading cross-functional teams and delivering impactful digital solutions.',
+    title: 'Rizal Hanifa Pratama | Freelance Web Developer & Project Manager Yogyakarta',
+    description:
+      'Portfolio Rizal Hanifa Pratama, Freelance Web Developer dan Project Manager berpengalaman di Yogyakarta, Indonesia. Mengelola proyek teknologi, membangun website, dan memberikan solusi digital yang berdampak.',
     creator: '@riizalhp',
-    images: ['https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg']
-  },
-  verification: {
-    google: 'your-google-verification-code',
+    images: ['https://s14.gifyu.com/images/bNH4S.webp']
   },
   alternates: {
-    canonical: 'https://riizalhp.web.id',
+    canonical: 'https://riizalhp.web.id'
   }
 };
+
 
 export default function RootLayout({
   children,
@@ -144,7 +152,7 @@ export default function RootLayout({
         <div className="relative h-full w-full bg-[#000000]">
           <div className="absolute bottom-0 left-0 right-0 top-0 -z-10 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] "></div>
           {children}
-          
+          <Footer />
         </div>
       </body>
     </html>

@@ -6,6 +6,7 @@ interface DeniedPopupProps {
   isOpen: boolean;
   onClose: () => void;
   companyProfileUrl?: string;
+  message: string;
 }
 
 export default function DeniedPopup({ isOpen, onClose, companyProfileUrl, message }: DeniedPopupProps) {

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { Menu, X, Home, User, Briefcase, FolderOpen } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 export default function Navigation() {
   const [activeSection, setActiveSection] = useState('home');
@@ -43,9 +43,9 @@ export default function Navigation() {
   };
 
   const navItems = [
-    { id: 'home', label: 'Home', icon: Home },
-    { id: 'experience', label: 'Experience', icon: Briefcase },
-    { id: 'works', label: 'Works', icon: FolderOpen },
+    { id: 'home', label: 'Home' },
+    { id: 'experience', label: 'Experience' },
+    { id: 'works', label: 'Works' },
   ];
 
   return (
@@ -73,7 +73,6 @@ export default function Navigation() {
             {/* Navigation Items */}
             <div className="flex items-center space-x-8">
               {navItems.map((item) => {
-                const Icon = item.icon;
                 return (
                   <button
                     key={item.id}
@@ -84,7 +83,6 @@ export default function Navigation() {
                         : 'text-gray-300 hover:text-white'
                     }`}
                   >
-                    <Icon size={18} />
                     <span className="font-medium">{item.label}</span>
                   </button>
                 );
@@ -136,7 +134,6 @@ export default function Navigation() {
           <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-96 pb-4' : 'max-h-0'}`}>
             <div className="space-y-2 pt-2">
               {navItems.map((item) => {
-                const Icon = item.icon;
                 return (
                   <button
                     key={item.id}
@@ -147,7 +144,6 @@ export default function Navigation() {
                         : 'text-gray-300 hover:text-white hover:bg-white/10'
                     }`}
                   >
-                    <Icon size={18} />
                     <span className="font-medium">{item.label}</span>
                   </button>
                 );
