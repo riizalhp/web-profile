@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>boycodes.</title>
+    <link rel="icon" href="/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ['Satoshi', 'sans-serif'],
+          },
+          extend: {
+            animation: {
+              'scroll-infinite': 'scroll-infinite 20s linear infinite',
+            },
+            keyframes: {
+              'scroll-infinite': {
+                from: { transform: 'translateX(0)' },
+                to: { transform: 'translateX(-100%)' },
+              }
+            }
+          }
+        },
+      }
+    </script>
+    <style>
+      @font-face {
+        font-family: 'Satoshi';
+        src: url("https://assets.website-files.com/642e874fbb8de81042b83498/642e874fbb8de86d8ab83502_Satoshi-Light.woff") format('woff');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Satoshi';
+        src: url("https://assets.website-files.com/642e874fbb8de81042b83498/642e874fbb8de8e0b7b83501_Satoshi-Regular.woff") format('woff');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Satoshi';
+        src: url("https://assets.website-files.com/642e874fbb8de81042b83498/642e874fbb8de8f0a5b83500_Satoshi-Medium.woff") format('woff');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Satoshi';
+        src: url("https://assets.website-files.com/642e874fbb8de81042b83498/642e874fbb8de87633b834ff_Satoshi-Italic.woff") format('woff');
+        font-weight: 400;
+        font-style: italic;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Satoshi';
+        src: url("https://assets.website-files.com/642e874fbb8de81042b83498/642e874fbb8de814bdb834fe_Satoshi-Bold.woff") format('woff');
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+      .typed-cursor::after {
+        content: '_';
+        display: inline;
+        animation: blink 1s infinite;
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      .noise-overlay {
+        background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1295275/background-noise.png');
+      }
+    </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "framer-motion": "https://esm.sh/framer-motion@11.3.12?deps=react@^19.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
