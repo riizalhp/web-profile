@@ -3,6 +3,11 @@ import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import HighlightText from './HighlightText';
 
+const staticImageUrls = [
+  'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1522199670076-2852f8c89bb8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+];
+
 interface ArticlesProps {
   onSelectArticle: (article: any) => void;
 }
@@ -10,17 +15,9 @@ interface ArticlesProps {
 const Articles: React.FC<ArticlesProps> = ({ onSelectArticle }) => {
   const { t } = useLanguage();
   const articlesContent = t('articles');
-
-  const articleImageMap: { [key: string]: string } = {
-    "Marketplace Commissions Are Rising, It's Time for Your Own Website": "/articles/marketplace-naikkan-komisi-website-pribadi-boycodes.webp",
-    "E-commerce vs. Marketplace: Which is a Better Fit for Your Business?": "/articles/ecommerce-vs-marketplace-perbedaan-keuntungan-boycodes.webp",
-    "Marketplace Naikkan Komisi, Saatnya Punya Website Pribadi": "/articles/marketplace-naikkan-komisi-website-pribadi-boycodes.webp",
-    "E-commerce vs Marketplace: Mana yang Lebih Cocok untuk Bisnis Anda?": "/articles/ecommerce-vs-marketplace-perbedaan-keuntungan-boycodes.webp"
-  };
-
-  const articles = articlesContent.items.map((article: any) => ({
+  const articles = articlesContent.items.map((article: any, index: number) => ({
     ...article,
-    imageUrl: articleImageMap[article.title] || '/images/jasa-pembuatan-website-murah-profesional-boycodes.webp',
+    imageUrl: staticImageUrls[index % staticImageUrls.length],
   }));
 
   return (

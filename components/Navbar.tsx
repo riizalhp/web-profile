@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { InstagramIcon, FacebookIcon, TikTokIcon, WhatsAppIcon } from './Icons';
+import { InstagramIcon, LinkedInIcon, TikTokIcon, WhatsAppIcon } from './Icons';
 import type { Page } from '../App';
 import { useLanguage } from '../contexts/LanguageContext';
 import HighlightText from './HighlightText';
@@ -40,9 +39,9 @@ const Navbar: React.FC<{ onNavigate: (page: Page) => void; }> = ({ onNavigate })
   };
 
   const socialLinks = [
-    { Icon: InstagramIcon, href: 'https://www.instagram.com/boycodes.id' },
-    { Icon: FacebookIcon, href: 'https://www.facebook.com/boycodes' },
-    { Icon: TikTokIcon, href: 'https://www.tiktok.com/@boycodes' },
+    { Icon: InstagramIcon, href: 'https://www.instagram.com/riizalhp' },
+    { Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/riizalhp' },
+    { Icon: TikTokIcon, href: 'https://www.tiktok.com/@riizalhp' },
     { Icon: WhatsAppIcon, href: t('whatsappLink') },
   ];
   
@@ -65,8 +64,8 @@ const Navbar: React.FC<{ onNavigate: (page: Page) => void; }> = ({ onNavigate })
           <button onClick={() => handleNavigation('home')} className="md:absolute md:left-1/2 md:-translate-x-1/2">
             <HighlightText>
               <div className="text-2xl md:text-3xl font-medium tracking-tighter text-zinc-900">
-                <span className="font-light">boy</span>
-                <span className="font-bold">codes</span>
+                <span className="font-light">riizal</span>
+                <span className="font-bold">hp</span>
                 <span style={{ color: '#78ff00' }}>.</span>
               </div>
             </HighlightText>
@@ -78,6 +77,12 @@ const Navbar: React.FC<{ onNavigate: (page: Page) => void; }> = ({ onNavigate })
             <div className="hidden md:block">
               <LanguageSwitcher />
             </div>
+            <button
+                onClick={() => handleNavigation('contact')}
+                className="hidden md:inline-block bg-zinc-900 text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-zinc-700 transition-colors duration-300 transform hover:-translate-y-0.5"
+            >
+                {t('contact.hireMeButton')}
+            </button>
             <button onClick={toggleMenu} className="flex items-center gap-2 text-sm font-medium tracking-tight group">
               {t('navMenu')}
               <div className="w-6 h-6 flex flex-col justify-center items-center gap-1.5">
@@ -116,8 +121,8 @@ const Navbar: React.FC<{ onNavigate: (page: Page) => void; }> = ({ onNavigate })
           </div>
           <div>
             <p className="text-zinc-400 text-sm mb-4">{t('getInTouch')}</p>
-            <a href="mailto:boycodes@outlook.com" className="text-lg text-zinc-800">
-              <HighlightText>boycodes@outlook.com</HighlightText>
+            <a href="mailto:riizalhp@outlook.com" className="text-lg text-zinc-800">
+              <HighlightText>riizalhp@outlook.com</HighlightText>
             </a>
             <div className="flex items-center gap-4 mt-8">
               {socialLinks.map(({ Icon, href }, index) => (

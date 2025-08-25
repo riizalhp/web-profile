@@ -54,7 +54,7 @@ const Companies: React.FC = () => {
         <div className="absolute bottom-8 left-0 w-full">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h3 className="text-center text-zinc-500 font-medium tracking-widest uppercase mb-8 text-sm">
-                    {t('trustedBy')}
+                    {t('hero.trustedBy')}
                 </h3>
                 <div className="relative w-full overflow-hidden">
                     <div className="flex flex-nowrap">
@@ -83,21 +83,12 @@ const Companies: React.FC = () => {
 
 const Hero: React.FC = () => {
   const { t } = useLanguage();
-  const words = t('heroWords');
+  const content = t('hero');
+  const words = content.words;
   const { text: typedText, wordIndex } = useTypewriter(words);
   const currentWord = words[wordIndex];
 
   const renderTypedWord = () => {
-    if (currentWord === 'boycodes.') {
-      return (
-        <>
-          <span className="font-light">{typedText.substring(0, 3)}</span>
-          <span className="font-bold">{typedText.substring(3, 8)}</span>
-          {typedText.length > 8 && <span style={{ color: '#78ff00' }}>.</span>}
-        </>
-      );
-    }
-
     if (currentWord && currentWord.endsWith('.')) {
       const typedWordPart = typedText.endsWith('.') ? typedText.slice(0, -1) : typedText;
       const typedDot = typedText.endsWith('.') ? '.' : '';
@@ -117,13 +108,15 @@ const Hero: React.FC = () => {
     <section className="h-screen flex flex-col justify-center items-center text-center relative px-4">
       <div className="relative z-10 pointer-events-none">
         <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-light tracking-tighter text-zinc-900">
-          {t('heroWeAre')}{' '}
+          {content.weAre}{' '}
           <span className="typed-cursor whitespace-nowrap min-h-[1em] inline-block">
             {renderTypedWord()}
           </span>
         </h1>
-        <h3 className="text-base sm:text-lg md:text-xl text-zinc-800 max-w-md mx-auto mt-8 font-normal">
-          {t('heroSubtitle')}
+        <h3
+          className="text-base sm:text-lg md:text-xl text-zinc-800 max-w-md md:max-w-3xl mx-auto mt-8 font-normal"
+          dangerouslySetInnerHTML={{ __html: content.subtitle }}
+        >
         </h3>
       </div>
       <Companies />

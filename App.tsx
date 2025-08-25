@@ -20,7 +20,7 @@ const App: React.FC = () => {
   const [selectedArticle, setSelectedArticle] = useState<any | null>(null);
   const [currentMeta, setCurrentMeta] = useState<any>(null);
 
-  const BASE_URL = 'https://boycodes.com';
+  const BASE_URL = 'https://riizalhp.web.id';
 
   useEffect(() => {
     let metaData;
@@ -44,11 +44,11 @@ const App: React.FC = () => {
             '@type': 'WebPage',
             '@id': canonicalUrl,
           },
-          author: { '@type': 'Organization', 'name': 'BoyCodes' },
+          author: { '@type': 'Organization', 'name': 'RizalHp' },
           publisher: {
             '@type': 'Organization',
-            'name': 'BoyCodes',
-            'logo': { '@type': 'ImageObject', 'url': 'https://boycodes.com/assets/logo.png' }
+            'name': 'RizalHp',
+            'logo': { '@type': 'ImageObject', 'url': 'https://riizalhp.web.id/assets/logo.png' }
           }
         }
       };

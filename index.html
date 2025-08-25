@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>boycodes.</title>
-    <link rel="icon" href="/favicon.ico" />
+    <title>riizalhp.</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -15,11 +14,17 @@
           extend: {
             animation: {
               'scroll-infinite': 'scroll-infinite 20s linear infinite',
+              'scroll-slow': 'scroll-infinite 80s linear infinite',
+              'scroll-slow-reverse': 'scroll-infinite-reverse 80s linear infinite',
             },
             keyframes: {
               'scroll-infinite': {
                 from: { transform: 'translateX(0)' },
                 to: { transform: 'translateX(-100%)' },
+              },
+              'scroll-infinite-reverse': {
+                from: { transform: 'translateX(-100%)' },
+                to: { transform: 'translateX(0)' },
               }
             }
           }
