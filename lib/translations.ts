@@ -178,13 +178,13 @@ export const translations = {
       ongoingTitleBold: "Works",
       ongoingSubtitle: "Here's a sneak peek at what I'm currently building. Check back soon for the final results!",
       ongoingProjects: [
-        { title: "ResumeAI Platform", category: "Project Manager", description: "Developing a web platform to build and optimize ATS-friendly CVs with a job description matching feature.", status: "In Progress", imageUrl: '/images/rizal-hanifa-pratama-web-developer-cv.webp' }
+        { title: "ResumeAI Platform", category: "Project Manager", description: "Developing a web platform to build and optimize ATS-friendly CVs with a job description matching feature.", status: "In Progress", imageUrl: '/images/rizal-hanifa-pratama-web-developer-cv.webp', liveUrl: 'https://resumeai.fun' }
       ],
       projects: [
         {
           title: 'Ayra - Wellness Companion',
           category: 'Project Manager',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://youtu.be/ag3znSncd24?si=g-89U5rEcAdq1Wip',
           imageUrl: '/images/pengalaman-freelance-rizal-hanifa-pratama-project-manager.webp',
           overview: "UI/UX design mockup for the Ayra mobile application, a personal wellness companion that helps users monitor their daily health. Key features include activity tracking (steps, hydration, sleep, diet), mood & energy check-ins, health tips, and a consultation chatbot. The design is clean and modern with a teal, white, and yellow/orange accent color scheme.",
           contributions: [
@@ -200,7 +200,7 @@ export const translations = {
         {
           title: 'Matahati - Health Education App',
           category: 'Project Manager',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://gamematahati.com/',
           imageUrl: '/images/keahlian-rizal-hanifa-pratama-web-developer.webp',
           overview: "Design of a health education mobile application Matahati. This application combines education about hypertension with interactive games like quizzes, crosswords, and map games. The interface uses a cheerful pink theme to be more friendly to lay users.",
           contributions: [
@@ -215,7 +215,7 @@ export const translations = {
         {
           title: 'Woodland - Design Firm Profile',
           category: 'Web Development',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-woodland.vercel.app/',
           imageUrl: '/images/jasa-website-development-rizal-hanifa-pratama.webp',
           overview: "Woodland website, a company profile for an architectural and interior design firm. It displays a list of services (architecture, interior design, consultation), a showcase gallery of modern houses, and company branding information.",
           contributions: [
@@ -230,7 +230,7 @@ export const translations = {
         {
           title: 'Modestwear - E-commerce',
           category: 'Web Development',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-modestwear.vercel.app/',
           imageUrl: '/images/resume-terbaru-rizal-hanifa-pratama-project-manager.webp',
           overview: "Modestwear website, an e-commerce for modern Muslim fashion. It displays collections of hijabs, abayas, dresses, kimonos, and accessories. Equipped with category features, best-selling items, promos, and a product catalog page. The design is clean and elegant with beige and black tones.",
           contributions: [
@@ -245,7 +245,7 @@ export const translations = {
         {
           title: 'OEE Monitoring System',
           category: 'Project Manager',
-          liveUrl: 'https://example.com',
+          liveUrl: null,
           imageUrl: '/images/web-developer-rizal-hanifa-pratama-portofolio.webp',
           overview: "This project is an OEE (Overall Equipment Effectiveness) Monitoring System developed for PT. Gemala Kempa Daya. The system is used to monitor the performance of production machines in real-time through key metrics such as Performance, Quality, Loading Time, and Total Stop Time. This dashboard helps the company analyze downtime, improve efficiency, and optimize production processes.",
           contributions: [
@@ -259,7 +259,7 @@ export const translations = {
         {
           title: 'Sinaou - Digital Education Management System',
           category: 'Project Manager',
-          liveUrl: 'https://example.com',
+          liveUrl: null,
           imageUrl: '/images/rizal-hanifa-pratama-project-management-case-study.webp',
           overview: "This project is Sinaou – a Digital Education Management System, a web-based platform used to manage data for teachers, students, classes, and salary status in an integrated manner. The dashboard makes it easy for admins to verify teachers, monitor class activities, and efficiently manage academic data. The system is designed to enhance transparency, orderliness, and efficiency in technology-based education management.",
           contributions: [
@@ -273,7 +273,7 @@ export const translations = {
         {
           title: 'Supplier Priority Selection System',
           category: 'Project Manager',
-          liveUrl: 'https://example.com',
+          liveUrl: null,
           imageUrl: '/images/rizal-hanifa-pratama-professional-project-management.webp',
           overview: "This project is an Information System for Supplier Priority Selection at PT Pindad (Heavy Equipment Division) using the Analytical Hierarchy Process (AHP) method. The system helps the company evaluate and compare suppliers based on key criteria such as quality, delivery, price, and financial condition. The system dashboard displays measurable comparisons between suppliers and provides automatic reports in PDF format to facilitate strategic decision-making.",
           contributions: [
@@ -287,7 +287,7 @@ export const translations = {
         {
           title: 'FashionHub Indonesia - E-commerce',
           category: 'Web Development',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://fashion-ecommerce-riizalhp-portfolio.vercel.app/',
           imageUrl: '/images/project-management-rizal-hanifa-pratama.webp',
           overview: "This project is a women's fashion e-commerce platform (FashionHub Indonesia) focused on providing an online shopping experience with a modern, clean, and user-friendly interface. The system includes features like a product catalog, category filters, a shopping cart system, stock management, and automatic discount integration. Product displays are made attractive with high-quality photos and dynamic options for size, color, and quantity selection. The main goal of this project is to provide a digital solution for fashion brands to get closer to their customers through a fast, easy-to-use, and responsive platform on various devices.",
           contributions: [
@@ -301,7 +301,7 @@ export const translations = {
         {
           title: 'Jogja Dataku - Data Management Platform',
           category: 'Project Manager',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://bapperida.jogjaprov.go.id/dataku/data_dasar/index/26-lingkungan-hidup?bidang_urusan=1',
           imageUrl: '/images/pengalaman-rizal-hanifa-pratama-sebagai-web-developer.webp',
           overview: "This project is Jogja Dataku, a web-based data management platform developed for the Regional Government of DIY. The system serves as a center for regional development information and data, covering various indicators such as finance, social, economic, and environmental. The platform allows users to search for data, display regional performance indicators, and export data to Excel/PDF formats. Its purpose is to provide data transparency and support data-driven decision making.",
           contributions: [
@@ -315,7 +315,7 @@ export const translations = {
         {
           title: 'Activity & Attendance Log System',
           category: 'Project Manager',
-          liveUrl: 'https://example.com',
+          liveUrl: null,
           imageUrl: '/images/portfolio-rizal-hanifa-pratama-project-manager.webp',
           overview: "This project is an Activity & Attendance Log System, a platform designed to record employees' daily activities, track attendance, and manage work shift logs. The system helps the company monitor employee productivity with high transparency and accuracy. Key features include an activity log, activity history, clock-in/out recording, and real-time reporting that can be used by HR or operational managers for performance evaluation. The main goal of this project is to improve human resource management efficiency through an easy-to-use digital system, while also reducing the risk of human error in manual recording.",
           contributions: [
@@ -329,7 +329,7 @@ export const translations = {
         {
           title: 'Car Rental Platform',
           category: 'Web Development',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-car-rent-v1.vercel.app/',
           imageUrl: '/images/pengalaman-kerja-rizal-hanifa-pratama-project-manager.webp',
           overview: "This project is a Car Rental Platform, a modern website for premium car rental services. The platform provides an easy-to-use vehicle booking experience for customers, with complete vehicle details, daily rental prices, additional features, and user reviews. The website is designed to make it easy for potential customers to choose a car according to their needs—from luxury sedans, SUVs, to trucks. The system is also equipped with 24/7 instant booking, customer reviews, and integration of add-on options (e.g., GPS, insurance, or child seat). The goal of this project is to help car rental businesses increase their online visibility, simplify bookings, and provide a practical and transparent digital experience for users.",
           contributions: [
@@ -343,7 +343,7 @@ export const translations = {
         {
           title: 'Gaming E-Commerce Website',
           category: 'Web Development',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-gamezio.vercel.app/',
           imageUrl: '/images/jasa-web-developer-rizal-hanifa-pratama.webp',
           overview: "This project is a Gaming E-Commerce Website, a digital platform for selling gaming products and accessories such as gaming chairs, desks, keyboards, mice, and other gear. The website is designed with a futuristic dark neon theme that fits the gaming world's identity, complete with neon green accents. In addition to an interactive product catalog, the platform also features highlights of top products, reviews from gamers, and integration with online gaming communities. The goal of this website development is to attract the highly visual gamer market, present an immersive online shopping experience, and increase sales conversion of gaming products.",
           contributions: [
@@ -357,7 +357,7 @@ export const translations = {
         {
           title: 'KU AIRKU - Distribution Management System',
           category: 'Project Manager',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://amdk-airku-v2.vercel.app/',
           imageUrl: '/images/jasa-project-manager-rizal-hanifa-pratama.webp',
           overview: "This project is the 'KU AIRKU' Distribution Management System, a digital platform for managing the clean water distribution chain, from recording orders, assigning fleets, to tracking deliveries. The system is equipped with an admin portal to monitor sales performance, survey reports, delivery routes, and order statuses in real-time. Additionally, there is a mobile-friendly sales portal that makes it easy for the sales team to record customer order requests quickly, transparently, and accurately. The project's goal is to improve distribution efficiency, reduce delays, and provide full visibility for management in monitoring operational distribution activities.",
           contributions: [
@@ -371,7 +371,7 @@ export const translations = {
         {
           title: 'Zairent - Car Rental Platform',
           category: 'Web Development',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-zairent.vercel.app/',
           imageUrl: '/images/rizal-hanifa-pratama-project-manager-and-web-jogja-developer-profile.webp',
           overview: "Design for Zairent, a premium car rental platform with a modern and user-friendly concept. This website features a quick search based on car type, pickup location, and rental dates. It includes a comprehensive car catalog with detailed specifications (fuel type, transmission, mileage) and hourly rental prices. The interface uses a combination of bright yellow and white to highlight an elegant, professional, yet user-friendly feel.",
           contributions: [
@@ -387,7 +387,7 @@ export const translations = {
         {
           title: 'Law Firm & Notary Profile',
           category: 'Web Development',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-sealed.vercel.app/',
           imageUrl: '/images/rizal-hanifa-pratama-project-manager-and-web-developer-profile.webp',
           overview: "Company profile website design for a law & notary service. This website showcases main services such as legal consultation, business contracts, and notary services. The professional look with a combination of dark and beige colors gives an elegant, modern, and trustworthy impression. Features include a services section, client testimonials, and business contact information.",
           contributions: [
@@ -403,7 +403,7 @@ export const translations = {
         {
           title: 'HRIS Dashboard',
           category: 'Web Development',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-hris.vercel.app/',
           imageUrl: '/images/rizal-hanifa-pratama-project-manager-team-lead.webp',
           overview: "Design for a web-based HRIS (Human Resource Information System) dashboard featuring real-time employee attendance tracking, absence data management, and digital payroll processing. This dashboard allows HR to monitor clock-in/out times, attendance status, and daily activity summaries, and calculate employee salaries with detailed deductions and compliance indicators. The interface uses a modern, clean style with a well-structured data layout.",
           contributions: [
@@ -434,7 +434,7 @@ export const translations = {
         {
           title: 'News Portal & CMS',
           category: 'Web Development',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://portal-berita-v1-riizalhp-portofolio.vercel.app/homepage',
           imageUrl: '/images/profil-dan-pengalaman-rizal-hanifa-pratama-project-manager.webp',
           overview: "Design for a News Portal website with a modern content management system. There are two main sides: Frontend News Portal → displays the latest articles with categories (technology, politics, economy, sports), breaking news, trending articles, and a main news slider. Admin Dashboard → for managing articles, drafts, comments, media, and visitor statistics. The dashboard includes comment moderation, user management, and latest activity reports. The interface is clean, professional, and easy to use for both readers and admins.",
           contributions: [
@@ -450,7 +450,7 @@ export const translations = {
         {
           title: 'School E-Voting Application',
           category: 'Web Development',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://pemilihan-ketua-osis-v1-riizalhp-portofolio.vercel.app/',
           imageUrl: '/images/portfolio-rizal-hanifa-pratama-dalam-web-development.webp',
           overview: "A school e-voting application for the 2025 Student Council President election. The platform allows students to view candidate profiles, read their vision and mission, and vote online with a security system that allows only one vote per account. The design is simple, modern, and transparent to support the digital democracy process at school.",
           contributions: [
@@ -480,7 +480,7 @@ export const translations = {
         {
           title: 'Night Club Reservation Website',
           category: 'Web Development',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-nitely.vercel.app/',
           imageUrl: '/images/keahlian-dan-skill-rizal-hanifa-pratama-project-manager.webp',
           overview: "A night club reservation website with features for VIP table booking, event information, and online reservations. Users can select zones (A, B, C), number of guests, and view upcoming events and a gallery of the club's atmosphere. The design uses dark colors with neon purple-blue accents to create a modern and exclusive feel.",
           contributions: [
@@ -495,7 +495,7 @@ export const translations = {
         {
           title: 'Mas Boy - Website Services',
           category: 'Web Development',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boy-codes.vercel.app/',
           imageUrl: '/images/karir-profesional-rizal-hanifa-pratama-project-manager.webp',
           overview: "A website for a professional website services provider branded as Mas Boy, a digital business partner in Yogyakarta. This website showcases services for custom, SEO-friendly websites with unlimited pages and full support. It includes work statistics such as the number of websites built, client satisfaction rates, and on-time project completion.",
           contributions: [
@@ -510,7 +510,7 @@ export const translations = {
         {
           title: '17-an Event Landing Page',
           category: 'Web Development',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://undangan-17an.vercel.app/',
           imageUrl: '/images/jasa-freelance-web-developer-rizal-hanifa-pratama.webp',
           overview: "A landing page website for an Independence Day competition and fun walk event. The website displays event information (date, location, time), competition categories for various groups (children, teens, fathers, mothers, couples, all residents), and prizes for the winners. The design is simple, bright, and easily accessible to the general public.",
           contributions: [
@@ -525,7 +525,7 @@ export const translations = {
         {
           title: 'PesantrenFund Crowdfunding',
           category: 'Web Development',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-pesantrenfund-beta.vercel.app/',
           imageUrl: '/images/tentang-rizal-hanifa-pratama-web-developer.webp',
           overview: "PesantrenFund crowdfunding website to support the digitalization program of Islamic boarding schools in Indonesia. This website has features for donation campaigns, category filters (education, zakat, infrastructure, training), and a donation target progress bar. The look is professional with a focus on fund transparency and program impact.",
           contributions: [
@@ -540,7 +540,7 @@ export const translations = {
         {
           title: 'Agrofaster - Agriculture Marketplace',
           category: 'Project Manager',
-          liveUrl: 'https://example.com',
+          liveUrl: null,
           imageUrl: '/images/rizal-hanifa-pratama-project-manager-digital-solutions.webp',
           overview: "Agrofaster mobile application, a marketplace for agricultural needs. Farmers can buy seeds, fertilizers, and farming equipment easily through a digital platform. Key features include user registration, account verification, product catalog, item recommendations, and a system for ordering and selling harvest products.",
           contributions: [
@@ -555,7 +555,7 @@ export const translations = {
         {
           title: 'Realistic Homes - Property Website',
           category: 'Web Development',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-realistica.vercel.app/',
           imageUrl: '/images/rizal-hanifa-pratama-web-developer-fullstack.webp',
           overview: "Realistic Homes website, a company profile for a real estate business. It displays a catalog of new homes, apartments, and luxury flats. Equipped with detailed project information pages and a visual gallery. The design is minimalist with a monochrome feel to look elegant and professional.",
           contributions: [
@@ -570,7 +570,7 @@ export const translations = {
         {
           title: 'Gymon Fitness - Landing Page',
           category: 'Web Development',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-gymon.vercel.app/',
           imageUrl: '/images/profil-profesional-rizal-hanifa-pratama-project-manager.webp',
           overview: "Gymon Fitness website, a landing page for a fitness center. It displays classes (yoga, personal training, group class), trainer profiles, membership packages, and a call-to-action for online registration. The design is clean with neutral colors and neon green accents for an energetic feel.",
           contributions: [
@@ -585,7 +585,7 @@ export const translations = {
         {
           title: 'Galactic Annihilator - Web Game',
           category: 'Web Development',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://airplane-shooting-game-riizalhp-por.vercel.app/',
           imageUrl: '/images/rizal-hanifa-pratama-cv-professional-project-manager.webp',
           overview: "A web-based game, Galactic Annihilator, a simple mini arcade shooter. Players control a spaceship to avoid and destroy enemies, with a score and life system. The design is minimalist with a sci-fi feel.",
           contributions: [
@@ -600,7 +600,7 @@ export const translations = {
         {
           title: 'Zinzira - Streetwear E-commerce',
           category: 'Web Development',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-zinzira.vercel.app/',
           imageUrl: '/images/portfolio-it-projects-rizal-hanifa-pratama-web-developer.webp',
           overview: "Zinzira website, an e-commerce for Gen Z streetwear fashion. It displays best-seller collections, a product catalog with discounts, and customer reviews. The design is modern, bold, with a focus on product visuals.",
           contributions: [
@@ -615,7 +615,7 @@ export const translations = {
         {
           title: 'ViewTube - Streaming Platform',
           category: 'Web Development',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://youtube-rebuild-riizalhp-portfolio.vercel.app/',
           imageUrl: '/images/perjalanan-karir-rizal-hanifa-pratama-project-manager.webp',
           overview: "A video streaming platform called ViewTube, similar to YouTube, with key features: content recommendations, trending videos, shorts, channel categories, and an ad system. The UI is modern with a dark mode for viewing comfort.",
           contributions: [
@@ -630,7 +630,7 @@ export const translations = {
         {
           title: 'Hyperfit - Fitness Landing Page',
           category: 'Web Development',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-hyperfit.vercel.app/',
           imageUrl: '/images/pengalaman-rizal-hanifa-pratama-di-project-management.webp',
           overview: "Hyperfit website, a modern landing page for a gym & fitness center. It displays trainer profiles, class schedules, price packages, and a call-to-action for online booking. The design is energetic with orange accents to evoke enthusiasm.",
           contributions: [
@@ -645,7 +645,7 @@ export const translations = {
         {
           title: 'DreamHome - Property Listing',
           category: 'Web Development',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://properti-management-v2-riizalhp-portofolio.vercel.app/',
           imageUrl: '/images/pengalaman-proyek-rizal-hanifa-pratama-project-manager.webp',
           overview: "DreamHome property website, a listing platform for houses and apartments. It displays thousands of properties with filters for location, price, house type, and agent. Equipped with 'Featured Properties' & 'Top Agents' features.",
           contributions: [
@@ -660,7 +660,7 @@ export const translations = {
         {
           title: 'Architect Agency Profile',
           category: 'Web Development',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-formark.vercel.app/',
           imageUrl: '/images/karir-dan-proyek-rizal-hanifa-pratama-project-manager.webp',
           overview: "Architect Agency website, a company profile for an architecture firm. It focuses on showcasing modern architectural projects, upcoming projects, and a visual gallery. The design is clean with a touch of bold typography and neon yellow accents.",
           contributions: [
@@ -1131,13 +1131,13 @@ export const translations = {
       ongoingTitleBold: "Berjalan",
       ongoingSubtitle: "Intip apa yang sedang saya bangun saat ini. Kunjungi kembali segera untuk melihat hasil akhirnya!",
       ongoingProjects: [
-        { title: "Platform ResumeAI", category: "Manajemen Proyek", description: "Mengembangkan platform web untuk membuat dan mengoptimalkan CV ATS-friendly dengan fitur pencocokan deskripsi pekerjaan.", status: "Dalam Pengerjaan", imageUrl: '/images/rizal-hanifa-pratama-web-developer-cv.webp' }
+        { title: "Platform ResumeAI", category: "Manajemen Proyek", description: "Mengembangkan platform web untuk membuat dan mengoptimalkan CV ATS-friendly dengan fitur pencocokan deskripsi pekerjaan.", status: "Dalam Pengerjaan", imageUrl: '/images/rizal-hanifa-pratama-web-developer-cv.webp', liveUrl: 'https://resumeai.fun' }
       ],
       projects: [
         {
           title: 'Ayra - Wellness Companion',
           category: 'Manajemen Proyek',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://youtu.be/ag3znSncd24?si=g-89U5rEcAdq1Wip',
           imageUrl: '/images/pengalaman-freelance-rizal-hanifa-pratama-project-manager.webp',
           overview: "Mockup desain UI/UX aplikasi mobile Ayra, sebuah personal wellness companion yang membantu pengguna memantau kesehatan harian. Fitur utama termasuk tracking aktivitas (langkah, hidrasi, tidur, pola makan), mood & energi check-in, tips kesehatan, hingga chatbot untuk konsultasi. Desain clean dan modern dengan nuansa hijau tosca, putih, dan aksen kuning/oranye.",
           contributions: [
@@ -1153,7 +1153,7 @@ export const translations = {
         {
           title: 'Matahati - Aplikasi Edukasi Kesehatan',
           category: 'Manajemen Proyek',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://gamematahati.com/',
           imageUrl: '/images/keahlian-rizal-hanifa-pratama-web-developer.webp',
           overview: "Desain aplikasi mobile edukasi kesehatan Matahati. Aplikasi ini menggabungkan edukasi seputar hipertensi dengan game interaktif seperti kuis, teka-teki silang, dan map game. Tampilan menggunakan tema pink ceria agar lebih ramah untuk pengguna awam.",
           contributions: [
@@ -1168,7 +1168,7 @@ export const translations = {
         {
           title: 'Woodland - Profil Firma Desain',
           category: 'Pengembangan Web',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-woodland.vercel.app/',
           imageUrl: '/images/jasa-website-development-rizal-hanifa-pratama.webp',
           overview: "Website Woodland, company profile untuk firma desain arsitektur dan interior. Menampilkan daftar layanan (architecture, interior design, consultation), showcase galeri rumah modern, serta informasi company branding.",
           contributions: [
@@ -1183,7 +1183,7 @@ export const translations = {
         {
           title: 'Modestwear - E-commerce',
           category: 'Pengembangan Web',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-modestwear.vercel.app/',
           imageUrl: '/images/resume-terbaru-rizal-hanifa-pratama-project-manager.webp',
           overview: "Website Modestwear, e-commerce fashion muslimah modern. Menampilkan koleksi hijab, abaya, dress, kimono, hingga aksesoris. Dilengkapi fitur kategori, best selling, promo, serta halaman katalog produk. Desain clean dan elegan dengan nuansa beige dan hitam.",
           contributions: [
@@ -1198,7 +1198,7 @@ export const translations = {
         {
           title: 'OEE Monitoring System',
           category: 'Manajemen Proyek',
-          liveUrl: 'https://example.com',
+          liveUrl: null,
           imageUrl: '/images/web-developer-rizal-hanifa-pratama-portofolio.webp',
           overview: "Proyek ini adalah OEE (Overall Equipment Effectiveness) Monitoring System yang dikembangkan untuk PT. Gemala Kempa Daya. Sistem ini digunakan untuk memantau performa mesin produksi secara real-time melalui metrik utama seperti Performance, Quality, Loading Time, dan Total Stop Time. Dashboard ini membantu perusahaan dalam menganalisis downtime, meningkatkan efisiensi, serta mengoptimalkan proses produksi.",
           contributions: [
@@ -1212,7 +1212,7 @@ export const translations = {
         {
           title: 'Sinaou - Sistem Manajemen Pendidikan Digital',
           category: 'Manajemen Proyek',
-          liveUrl: 'https://example.com',
+          liveUrl: null,
           imageUrl: '/images/rizal-hanifa-pratama-project-management-case-study.webp',
           overview: "Proyek ini adalah Sinaou – Sistem Manajemen Pendidikan Digital, sebuah platform berbasis web yang digunakan untuk mengelola data pengajar, siswa, kelas, hingga status gaji secara terintegrasi. Dashboard memberikan kemudahan bagi admin untuk melakukan verifikasi pengajar, memantau aktivitas kelas, dan mengelola data akademik secara efisien. Sistem ini dirancang untuk meningkatkan transparansi, keteraturan, serta efisiensi dalam pengelolaan pendidikan berbasis teknologi.",
           contributions: [
@@ -1226,7 +1226,7 @@ export const translations = {
         {
           title: 'Sistem Pemilihan Prioritas Supplier',
           category: 'Manajemen Proyek',
-          liveUrl: 'https://example.com',
+          liveUrl: null,
           imageUrl: '/images/rizal-hanifa-pratama-professional-project-management.webp',
           overview: "Proyek ini adalah Sistem Informasi Pemilihan Prioritas Supplier PT Pindad (Divisi Alat Berat) dengan metode Analytical Hierarchy Process (AHP). Sistem ini membantu perusahaan dalam mengevaluasi dan membandingkan supplier berdasarkan kriteria utama seperti kualitas, pengiriman, harga, dan kondisi finansial. Dashboard sistem menampilkan hasil perbandingan antar supplier secara terukur serta menyediakan laporan otomatis dalam format PDF untuk mempermudah pengambilan keputusan strategis.",
           contributions: [
@@ -1240,7 +1240,7 @@ export const translations = {
         {
           title: 'FashionHub Indonesia - E-commerce',
           category: 'Pengembangan Web',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://fashion-ecommerce-riizalhp-portfolio.vercel.app/',
           imageUrl: '/images/project-management-rizal-hanifa-pratama.webp',
           overview: "Proyek ini merupakan platform e-commerce fashion wanita (FashionHub Indonesia) yang berfokus pada pengalaman belanja online dengan tampilan modern, clean, dan user-friendly. Sistem ini mencakup fitur katalog produk, filter kategori, sistem keranjang belanja, manajemen stok, hingga integrasi diskon otomatis. Tampilan produk dibuat menarik dengan foto berkualitas tinggi serta opsi pemilihan ukuran, warna, dan jumlah secara dinamis. Tujuan utama proyek ini adalah memberikan solusi digital bagi brand fashion agar lebih dekat dengan pelanggan melalui platform yang cepat, mudah digunakan, dan responsif di berbagai perangkat.",
           contributions: [
@@ -1254,7 +1254,7 @@ export const translations = {
         {
           title: 'Jogja Dataku - Platform Manajemen Data',
           category: 'Manajemen Proyek',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://bapperida.jogjaprov.go.id/dataku/data_dasar/index/26-lingkungan-hidup?bidang_urusan=1',
           imageUrl: '/images/pengalaman-rizal-hanifa-pratama-sebagai-web-developer.webp',
           overview: "Proyek ini adalah Jogja Dataku, sebuah platform manajemen data berbasis web yang dikembangkan untuk Pemerintah Daerah DIY. Sistem ini berfungsi sebagai pusat informasi dan data pembangunan daerah, mencakup berbagai indikator seperti keuangan, sosial, ekonomi, serta lingkungan. Platform ini memungkinkan pengguna untuk melakukan pencarian data, menampilkan indikator kinerja daerah, serta melakukan ekspor data ke format Excel/PDF. Tujuannya adalah menyediakan transparansi data serta mendukung pengambilan keputusan berbasis data (data-driven decision making).",
           contributions: [
@@ -1268,7 +1268,7 @@ export const translations = {
         {
           title: 'Sistem Log Aktivitas & Kehadiran',
           category: 'Manajemen Proyek',
-          liveUrl: 'https://example.com',
+          liveUrl: null,
           imageUrl: '/images/portfolio-rizal-hanifa-pratama-project-manager.webp',
           overview: "Proyek ini adalah Sistem Activity & Attendance Log, sebuah platform yang dirancang untuk mencatat aktivitas harian karyawan, mencatat kehadiran, serta mengelola log shift kerja. Sistem ini membantu perusahaan dalam memantau produktivitas karyawan dengan transparansi dan akurasi tinggi. Fitur utama mencakup log activity, riwayat aktivitas, pencatatan waktu masuk/keluar, serta pelaporan real-time yang dapat digunakan oleh HR atau manajer operasional untuk evaluasi kinerja. Tujuan utama proyek ini adalah meningkatkan efisiensi pengelolaan sumber daya manusia melalui sistem digital yang mudah digunakan, sekaligus mengurangi risiko human error pada pencatatan manual.",
           contributions: [
@@ -1282,7 +1282,7 @@ export const translations = {
         {
           title: 'Platform Rental Mobil',
           category: 'Pengembangan Web',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-car-rent-v1.vercel.app/',
           imageUrl: '/images/pengalaman-kerja-rizal-hanifa-pratama-project-manager.webp',
           overview: "Proyek ini adalah Car Rental Platform, sebuah website modern untuk layanan penyewaan mobil premium. Platform ini menyediakan pengalaman pemesanan kendaraan yang mudah digunakan oleh pelanggan, dengan detail kendaraan yang lengkap, harga sewa per hari, fitur tambahan, serta ulasan pengguna. Website ini dirancang untuk mempermudah calon pelanggan dalam memilih mobil sesuai kebutuhan—mulai dari kategori luxury sedan, SUV, hingga trucks. Sistem juga dilengkapi dengan instant booking 24/7, review pelanggan, serta integrasi opsi add-ons (misalnya GPS, asuransi, atau child seat). Tujuan proyek ini adalah membantu bisnis rental mobil meningkatkan visibilitas online, mempermudah pemesanan, dan memberikan pengalaman digital yang praktis serta transparan bagi pengguna.",
           contributions: [
@@ -1296,7 +1296,7 @@ export const translations = {
         {
           title: 'Website E-Commerce Gaming',
           category: 'Pengembangan Web',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-gamezio.vercel.app/',
           imageUrl: '/images/jasa-web-developer-rizal-hanifa-pratama.webp',
           overview: "Proyek ini adalah Gaming E-Commerce Website, sebuah platform digital untuk menjual produk dan aksesoris gaming seperti kursi gaming, meja, keyboard, mouse, dan perlengkapan lainnya. Website dirancang dengan tema dark neon futuristik yang sesuai dengan identitas dunia gaming, lengkap dengan sentuhan hijau neon sebagai warna aksen. Selain katalog produk yang interaktif, platform ini juga menampilkan highlight produk unggulan, ulasan dari gamer, serta integrasi dengan komunitas pemain game online. Tujuan dari pengembangan website ini adalah untuk menarik pasar gamer yang sangat visual, menghadirkan pengalaman belanja online yang imersif, dan meningkatkan konversi penjualan produk gaming.",
           contributions: [
@@ -1310,7 +1310,7 @@ export const translations = {
         {
           title: 'KU AIRKU - Sistem Manajemen Distribusi',
           category: 'Manajemen Proyek',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://amdk-airku-v2.vercel.app/',
           imageUrl: '/images/jasa-project-manager-rizal-hanifa-pratama.webp',
           overview: `Proyek ini adalah Sistem Manajemen Distribusi "KU AIRKU", sebuah platform digital untuk mengelola rantai distribusi air bersih mulai dari pencatatan pemesanan, penugasan armada, hingga pelacakan pengiriman. Sistem ini dilengkapi dengan portal admin untuk memantau performa penjualan, laporan survei, rute pengiriman, serta status pesanan secara real-time. Selain itu, terdapat juga portal sales mobile-friendly yang memudahkan tim penjualan untuk mencatat permintaan pesanan dari pelanggan dengan cepat, transparan, dan akurat. Tujuan proyek ini adalah meningkatkan efisiensi distribusi, mengurangi keterlambatan, serta memberikan visibilitas penuh bagi manajemen dalam memantau aktivitas operasional distribusi.`,
           contributions: [
@@ -1324,7 +1324,7 @@ export const translations = {
         {
           title: 'Zairent - Platform Sewa Mobil',
           category: 'Pengembangan Web',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-zairent.vercel.app/',
           imageUrl: '/images/rizal-hanifa-pratama-project-manager-and-web-jogja-developer-profile.webp',
           overview: "Desain website Zairent, sebuah platform penyewaan mobil premium dengan konsep modern dan user-friendly. Website ini menghadirkan fitur pencarian cepat berdasarkan tipe mobil, lokasi penjemputan, serta tanggal sewa. Terdapat katalog mobil lengkap dengan detail spesifikasi (tipe bahan bakar, transmisi, jarak tempuh) dan harga sewa per jam. Tampilan menggunakan kombinasi warna kuning cerah dan putih untuk menonjolkan kesan elegan, profesional, sekaligus ramah pengguna.",
           contributions: [
@@ -1340,7 +1340,7 @@ export const translations = {
         {
           title: 'Profil Firma Hukum & Notaris',
           category: 'Pengembangan Web',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-sealed.vercel.app/',
           imageUrl: '/images/rizal-hanifa-pratama-project-manager-and-web-developer-profile.webp',
           overview: "Desain website company profile untuk jasa hukum & notaris. Website ini menampilkan layanan utama seperti legal consultation, business contract, serta notary services. Tampilan profesional dengan kombinasi warna gelap dan beige yang memberi kesan elegan, modern, dan terpercaya. Fitur yang dihadirkan meliputi section layanan, testimoni klien, serta informasi kontak bisnis.",
           contributions: [
@@ -1356,7 +1356,7 @@ export const translations = {
         {
           title: 'Dasbor HRIS',
           category: 'Pengembangan Web',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-hris.vercel.app/',
           imageUrl: '/images/rizal-hanifa-pratama-project-manager-team-lead.webp',
           overview: "Desain dashboard sistem HRIS (Human Resource Information System) berbasis web yang menampilkan fitur utama seperti pelacakan kehadiran karyawan secara real-time, pengelolaan data absensi, serta pemrosesan gaji digital. Dashboard ini memungkinkan HR untuk memantau jam masuk/keluar, status kehadiran, rekap aktivitas harian, serta menghitung gaji karyawan lengkap dengan rincian potongan dan indikator kepatuhan. Tampilan menggunakan gaya modern, clean, dengan struktur data yang rapi sehingga memudahkan proses manajemen SDM.",
           contributions: [
@@ -1387,7 +1387,7 @@ export const translations = {
         {
           title: 'Portal Berita & CMS',
           category: 'Pengembangan Web',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://portal-berita-v1-riizalhp-portofolio.vercel.app/homepage',
           imageUrl: '/images/profil-dan-pengalaman-rizal-hanifa-pratama-project-manager.webp',
           overview: "Desain website Portal Berita dengan sistem manajemen konten modern. Terdapat dua sisi utama: Frontend Portal Berita → menampilkan artikel terkini dengan kategori (teknologi, politik, ekonomi, olahraga), breaking news, artikel trending, serta slider berita utama. Admin Dashboard → untuk pengelolaan artikel, draft, komentar, media, hingga statistik pengunjung. Dashboard dilengkapi fitur moderasi komentar, manajemen user, dan laporan aktivitas terbaru. Tampilan clean, profesional, dan mudah digunakan baik untuk pembaca maupun admin.",
           contributions: [
@@ -1403,7 +1403,7 @@ export const translations = {
         {
           title: 'Aplikasi E-Voting Sekolah',
           category: 'Pengembangan Web',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://pemilihan-ketua-osis-v1-riizalhp-portofolio.vercel.app/',
           imageUrl: '/images/portfolio-rizal-hanifa-pratama-dalam-web-development.webp',
           overview: "Aplikasi e-voting sekolah untuk pemilihan Ketua OSIS 2025. Platform ini memungkinkan siswa melihat profil kandidat, membaca visi misi, dan memberikan suara secara online dengan sistem keamanan yang hanya mengizinkan satu kali voting per akun. Desain sederhana, modern, dan transparan untuk mendukung proses demokrasi digital di sekolah.",
           contributions: [
@@ -1433,7 +1433,7 @@ export const translations = {
         {
           title: 'Website Reservasi Night Club',
           category: 'Pengembangan Web',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-nitely.vercel.app/',
           imageUrl: '/images/keahlian-dan-skill-rizal-hanifa-pratama-project-manager.webp',
           overview: "Website reservasi night club dengan fitur pemesanan meja VIP, informasi event, dan reservasi online. Pengguna dapat memilih zona (A, B, C), jumlah tamu, serta melihat daftar event mendatang dan galeri suasana club. Desain menggunakan warna gelap dengan aksen neon ungu-biru yang menciptakan kesan modern dan eksklusif.",
           contributions: [
@@ -1448,7 +1448,7 @@ export const translations = {
         {
           title: 'Mas Boy - Jasa Website',
           category: 'Pengembangan Web',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boy-codes.vercel.app/',
           imageUrl: '/images/karir-profesional-rizal-hanifa-pratama-project-manager.webp',
           overview: "Website layanan jasa website profesional dengan branding Mas Boy sebagai digital partner bisnis di Yogyakarta. Website ini menampilkan layanan pembuatan website custom, SEO-friendly, unlimited pages, dan full support. Terdapat statistik hasil kerja seperti jumlah website yang dibangun, tingkat kepuasan klien, serta ketepatan waktu pengerjaan.",
           contributions: [
@@ -1463,7 +1463,7 @@ export const translations = {
         {
           title: 'Landing Page Acara 17-an',
           category: 'Pengembangan Web',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://undangan-17an.vercel.app/',
           imageUrl: '/images/jasa-freelance-web-developer-rizal-hanifa-pratama.webp',
           overview: "Website landing page untuk acara Lomba & Jalan Sehat 17-an. Website menampilkan informasi acara (tanggal, lokasi, waktu), kategori lomba untuk berbagai kalangan (anak, remaja, bapak-bapak, ibu-ibu, pasangan, semua warga), serta hadiah bagi pemenang. Desain sederhana, cerah, dan mudah diakses oleh masyarakat umum.",
           contributions: [
@@ -1478,7 +1478,7 @@ export const translations = {
         {
           title: 'PesantrenFund Crowdfunding',
           category: 'Pengembangan Web',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-pesantrenfund-beta.vercel.app/',
           imageUrl: '/images/tentang-rizal-hanifa-pratama-web-developer.webp',
           overview: "Website crowdfunding PesantrenFund untuk mendukung program digitalisasi pesantren di Indonesia. Website ini memiliki fitur kampanye donasi, filter kategori (pendidikan, zakat, infrastruktur, pelatihan), serta progress bar target donasi. Tampilan profesional dengan fokus pada transparansi dana dan dampak program.",
           contributions: [
@@ -1493,7 +1493,7 @@ export const translations = {
         {
           title: 'Agrofaster - Marketplace Pertanian',
           category: 'Manajemen Proyek',
-          liveUrl: 'https://example.com',
+          liveUrl: null,
           imageUrl: '/images/rizal-hanifa-pratama-project-manager-digital-solutions.webp',
           overview: "Aplikasi mobile Agrofaster, marketplace untuk kebutuhan pertanian. Petani dapat membeli benih, pupuk, dan peralatan tani dengan mudah melalui platform digital. Fitur utama meliputi registrasi user, verifikasi akun, katalog produk, rekomendasi barang, hingga sistem pemesanan dan penjualan hasil panen.",
           contributions: [
@@ -1508,7 +1508,7 @@ export const translations = {
         {
           title: 'Realistic Homes - Website Properti',
           category: 'Pengembangan Web',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-realistica.vercel.app/',
           imageUrl: '/images/rizal-hanifa-pratama-web-developer-fullstack.webp',
           overview: "Website Realistic Homes, company profile untuk bisnis properti. Menampilkan katalog rumah baru, apartemen, dan luxury flats. Dilengkapi halaman informasi detail proyek serta galeri visual. Desain minimalis dengan nuansa monokrom agar terlihat elegan dan profesional.",
           contributions: [
@@ -1523,7 +1523,7 @@ export const translations = {
         {
           title: 'Gymon Fitness - Landing Page',
           category: 'Pengembangan Web',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-gymon.vercel.app/',
           imageUrl: '/images/profil-profesional-rizal-hanifa-pratama-project-manager.webp',
           overview: "Website Gymon Fitness, landing page untuk pusat kebugaran. Menampilkan kelas (yoga, personal training, group class), profil trainer, paket membership, dan call-to-action untuk registrasi online. Desain clean dengan warna netral dan aksen hijau neon untuk kesan energik.",
           contributions: [
@@ -1538,7 +1538,7 @@ export const translations = {
         {
           title: 'Galactic Annihilator - Game Web',
           category: 'Pengembangan Web',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://airplane-shooting-game-riizalhp-por.vercel.app/',
           imageUrl: '/images/rizal-hanifa-pratama-cv-professional-project-manager.webp',
           overview: "Game berbasis web Galactic Annihilator, sebuah mini arcade shooter sederhana. Pemain mengendalikan pesawat luar angkasa untuk menghindari dan menghancurkan musuh, dengan sistem skor dan nyawa. Desain minimalis dengan nuansa sci-fi.",
           contributions: [
@@ -1553,7 +1553,7 @@ export const translations = {
         {
           title: 'Zinzira - E-commerce Streetwear',
           category: 'Pengembangan Web',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-zinzira.vercel.app/',
           imageUrl: '/images/portfolio-it-projects-rizal-hanifa-pratama-web-developer.webp',
           overview: "Website Zinzira, e-commerce fashion streetwear untuk generasi Z. Menampilkan koleksi best sellers, katalog produk dengan diskon, serta ulasan pelanggan. Desain modern, bold, dengan fokus pada visual produk.",
           contributions: [
@@ -1568,7 +1568,7 @@ export const translations = {
         {
           title: 'ViewTube - Platform Streaming',
           category: 'Pengembangan Web',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://youtube-rebuild-riizalhp-portfolio.vercel.app/',
           imageUrl: '/images/perjalanan-karir-rizal-hanifa-pratama-project-manager.webp',
           overview: "Platform streaming video bernama ViewTube, mirip YouTube, dengan fitur utama: rekomendasi konten, video trending, shorts, kategori channel, dan sistem iklan. UI dibuat modern dengan mode dark untuk kenyamanan menonton.",
           contributions: [
@@ -1583,7 +1583,7 @@ export const translations = {
         {
           title: 'Hyperfit - Landing Page Fitness',
           category: 'Pengembangan Web',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-hyperfit.vercel.app/',
           imageUrl: '/images/pengalaman-rizal-hanifa-pratama-di-project-management.webp',
           overview: "Website Hyperfit, landing page modern untuk gym & fitness center. Menampilkan profil pelatih, jadwal kelas, paket harga, dan call-to-action untuk booking online. Desain energik dengan aksen oranye untuk membangkitkan semangat.",
           contributions: [
@@ -1598,7 +1598,7 @@ export const translations = {
         {
           title: 'DreamHome - Listing Properti',
           category: 'Pengembangan Web',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://properti-management-v2-riizalhp-portofolio.vercel.app/',
           imageUrl: '/images/pengalaman-proyek-rizal-hanifa-pratama-project-manager.webp',
           overview: "Website properti DreamHome, platform listing rumah dan apartemen. Menampilkan ribuan properti dengan filter lokasi, harga, jenis rumah, hingga agen. Dilengkapi fitur “Featured Properties” & “Top Agents”.",
           contributions: [
@@ -1613,7 +1613,7 @@ export const translations = {
         {
           title: 'Architect Agency Profile',
           category: 'Pengembangan Web',
-          liveUrl: 'https://example.com',
+          liveUrl: 'https://boycodes-formark.vercel.app/',
           imageUrl: '/images/karir-dan-proyek-rizal-hanifa-pratama-project-manager.webp',
           overview: "Website Architect Agency, company profile untuk firma arsitektur. Fokus menampilkan proyek arsitektur modern, upcoming projects, serta galeri visual. Desain clean dengan sentuhan tipografi bold dan aksen neon kuning.",
           contributions: [

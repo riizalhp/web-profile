@@ -11,8 +11,8 @@ const staticImageUrls = [
   'https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   'https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  'https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%D%3D',
+  'https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%D%3D',
 ];
 
 const Works: React.FC = () => {
@@ -93,29 +93,49 @@ const Works: React.FC = () => {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-                {ongoingProjects.map((project: any, index: number) => (
-                  <div key={index} className="group block text-left overflow-hidden rounded-lg shadow-sm hover:shadow-2xl transition-shadow duration-300 cursor-default">
-                      <div className="relative h-64 md:h-80 overflow-hidden">
-                        <img
-                          src={project.imageUrl || staticImageUrls[(staticImageUrls.length - 1 - index) % staticImageUrls.length]}
-                          alt={project.title}
-                          className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-                        
-                        <div className="absolute bottom-0 left-0 right-0 p-6 bg-black/30 backdrop-blur-lg transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
-                          <div className="flex justify-between items-start mb-2">
-                              <p className="text-sm text-zinc-300">{project.category}</p>
-                              <span className="text-xs font-bold bg-green-100 text-green-800 px-2.5 py-1 rounded-full flex-shrink-0">{project.status}</span>
-                          </div>
-                          <h3 className="text-2xl font-bold text-white mt-1 transition-colors duration-300">
-                            {project.title}
-                          </h3>
-                          <p className="text-zinc-200 mt-2 text-sm">{project.description}</p>
+                {ongoingProjects.map((project: any, index: number) => {
+                  const CardContent = (
+                    <div className="relative h-64 md:h-80 overflow-hidden">
+                      <img
+                        src={project.imageUrl || staticImageUrls[(staticImageUrls.length - 1 - index) % staticImageUrls.length]}
+                        alt={project.title}
+                        className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                      
+                      <div className="absolute bottom-0 left-0 right-0 p-6 bg-black/30 backdrop-blur-lg transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
+                        <div className="flex justify-between items-start mb-2">
+                            <p className="text-sm text-zinc-300">{project.category}</p>
+                            <span className="text-xs font-bold bg-green-100 text-green-800 px-2.5 py-1 rounded-full flex-shrink-0">{project.status}</span>
                         </div>
+                        <h3 className="text-2xl font-bold text-white mt-1 transition-colors duration-300">
+                          {project.title}
+                        </h3>
+                        <p className="text-zinc-200 mt-2 text-sm">{project.description}</p>
                       </div>
-                  </div>
-                ))}
+                    </div>
+                  );
+
+                  if (project.liveUrl) {
+                    return (
+                      <a
+                        key={index}
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group block text-left overflow-hidden rounded-lg shadow-sm hover:shadow-2xl transition-shadow duration-300"
+                      >
+                        {CardContent}
+                      </a>
+                    );
+                  }
+
+                  return (
+                    <div key={index} className="group block text-left overflow-hidden rounded-lg shadow-sm hover:shadow-2xl transition-shadow duration-300 cursor-default">
+                      {CardContent}
+                    </div>
+                  );
+                })}
               </div>
             </>
           )}
