@@ -124,37 +124,52 @@ export const translations = {
           quote: 'Rizal is a rare combination of a detail-oriented project manager and a highly skilled web developer. He kept our team organized while delivering a flawless product ahead of schedule.',
           author: 'Theresia Tatik Pujiastuti',
           company: 'RS Panti Rapih',
-          image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%D%D%D%D',
+          image: '/testimoni/Theresia-Tatik-Pujiastuti.webp',
         },
         {
           quote: 'Working with Rizal was effortless. He understands business needs, translates them into technical solutions, and makes sure everything is done on time without sacrificing quality.',
           author: 'Fieryal Nafila',
           company: 'PT Pindad',
-          image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%D%D%D%D',
+          image: '/testimoni/Fieryal-Nafila.webp',
         },
         {
           quote: 'Professional, communicative, and extremely talented. Rizal built our website exactly as envisioned and even suggested improvements that boosted our user experience.',
           author: 'Agus Sumaryono',
           company: 'Founder Edusales',
-          image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%D%D%D%D',
+          image: '/testimoni/Agus-sumaryono.webp',
         },
       ],
       certificatesTitle: 'Certificates & Licenses',
       certificates: [
         {
-          name: 'Google Project Management: Professional Certificate',
-          issuer: 'Coursera | Google',
-          url: 'https://www.coursera.org/professional-certificates/google-project-management'
+          name: 'Fundamental Project Management',
+          issuer: 'KOMDIGI : Google',
+          url: 'https://drive.google.com/drive/u/0/home'
         },
         {
-          name: 'Meta Back-End Developer Professional Certificate',
-          issuer: 'Coursera | Meta',
-          url: 'https://www.coursera.org/professional-certificates/meta-back-end-developer'
+          name: 'Junior Website Programmer',
+          issuer: 'HALTEV : BNSP',
+          url: 'https://drive.google.com/drive/u/0/home'
         },
         {
-          name: 'Certified Associate in Project Management (CAPM)®',
-          issuer: 'Project Management Institute (PMI)',
-          url: 'https://www.pmi.org/certifications/certified-associate-capm'
+          name: 'Intermediate Project Management',
+          issuer: 'Talenthub',
+          url: 'https://drive.google.com/drive/u/0/home'
+        },
+        {
+          name: 'Digital Marketing',
+          issuer: 'BNSP',
+          url: 'https://drive.google.com/file/d/1E_W_sGnqLSHZsR47b-UqfPuP_Xg859Eo/view?usp=sharing'
+        },
+        {
+          name: 'SCRUM Fundamental Certified',
+          issuer: 'Scrum Study',
+          url: 'https://www.scrumstudy.com/certification/verify?type=SFC&number=938802'
+        },
+        {
+          name: 'Complete Agile Scrum Master Certification Training',
+          issuer: 'Udemy',
+          url: 'https://udemy-certificate.s3.amazonaws.com/image/UC-4d20f0ac-9726-4a56-8df1-fc0edd79c4d9.jpg'
         }
       ],
     },
@@ -1077,37 +1092,52 @@ export const translations = {
           quote: 'Rizal adalah kombinasi langka dari seorang manajer proyek yang berorientasi pada detail dan pengembang web yang sangat terampil. Dia menjaga tim kami tetap terorganisir sambil memberikan produk yang sempurna lebih cepat dari jadwal.',
           author: 'Theresia Tatik Pujiastuti',
           company: 'RS Panti Rapih',
-          image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%D%D%D%D',
+          image: '/testimoni/Theresia-Tatik-Pujiastuti.webp',
         },
         {
           quote: 'Bekerja dengan Rizal sangat mudah. Dia memahami kebutuhan bisnis, menerjemahkannya ke dalam solusi teknis, dan memastikan semuanya selesai tepat waktu tanpa mengorbankan kualitas.',
           author: 'Fieryal Nafila',
           company: 'PT Pindad',
-          image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%D%D%D%D',
+          image: '/testimoni/Fieryal-Nafila.webp',
         },
         {
           quote: 'Profesional, komunikatif, dan sangat berbakat. Rizal membangun situs web kami persis seperti yang dibayangkan dan bahkan menyarankan perbaikan yang meningkatkan pengalaman pengguna kami.',
           author: 'Agus Sumaryono',
           company: 'Pendiri Edusales',
-          image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%D%D%D%D',
+          image: '/testimoni/Agus-sumaryono.webp',
         },
       ],
       certificatesTitle: 'Sertifikat & Lisensi',
       certificates: [
         {
-          name: 'Google Project Management: Professional Certificate',
-          issuer: 'Coursera | Google',
-          url: 'https://www.coursera.org/professional-certificates/google-project-management'
+          name: 'Fundamental Project Management',
+          issuer: 'KOMDIGI : Google',
+          url: 'https://drive.google.com/drive/u/0/home'
         },
         {
-          name: 'Meta Back-End Developer Professional Certificate',
-          issuer: 'Coursera | Meta',
-          url: 'https://www.coursera.org/professional-certificates/meta-back-end-developer'
+          name: 'Junior Website Programmer',
+          issuer: 'HALTEV : BNSP',
+          url: 'https://drive.google.com/drive/u/0/home'
         },
         {
-          name: 'Certified Associate in Project Management (CAPM)®',
-          issuer: 'Project Management Institute (PMI)',
-          url: 'https://www.pmi.org/certifications/certified-associate-capm'
+          name: 'Intermediate Project Management',
+          issuer: 'Talenthub',
+          url: 'https://drive.google.com/drive/u/0/home'
+        },
+        {
+          name: 'Digital Marketing',
+          issuer: 'BNSP',
+          url: 'https://drive.google.com/file/d/1E_W_sGnqLSHZsR47b-UqfPuP_Xg859Eo/view?usp=sharing'
+        },
+        {
+          name: 'SCRUM Fundamental Certified',
+          issuer: 'Scrum Study',
+          url: 'https://www.scrumstudy.com/certification/verify?type=SFC&number=938802'
+        },
+        {
+          name: 'Complete Agile Scrum Master Certification Training',
+          issuer: 'Udemy',
+          url: 'https://udemy-certificate.s3.amazonaws.com/image/UC-4d20f0ac-9726-4a56-8df1-fc0edd79c4d9.jpg'
         }
       ],
     },
