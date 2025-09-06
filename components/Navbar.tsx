@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { InstagramIcon, LinkedInIcon, TikTokIcon, WhatsAppIcon } from './Icons';
 import type { Page } from '../App';
@@ -55,7 +56,7 @@ const Navbar: React.FC<{ onNavigate: (page: Page) => void; }> = ({ onNavigate })
   ];
 
   return (
-    <header className="absolute top-0 left-0 right-0 z-50 p-6 md:p-8">
+    <header className="absolute top-10 left-0 right-0 z-50 p-6 md:p-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <button onClick={() => handleNavigation('about')} className="hidden md:block text-sm font-medium tracking-tight hover:text-zinc-500 transition-colors">

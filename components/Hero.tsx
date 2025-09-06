@@ -41,9 +41,17 @@ const useTypewriter = (words: string[], { typeSpeed = 75, backSpeed = 50, backDe
 };
 
 const logos = [
-  'https://i.postimg.cc/rFP12wxt/62ea6eb5b3469aa3d6ebb52f.png',
-  'https://i.postimg.cc/26GWckCy/62ea6f00b3469aa3d6ebb531.png',
-  'https://i.postimg.cc/fWHXYRHg/62ea6ed9b3469aa3d6ebb530.png',
+  'https://i.postimg.cc/7Zw0JR8f/1.png',
+  'https://i.postimg.cc/Gp9BkwMh/10.png',
+  'https://i.postimg.cc/fbFVC2F7/11.png',
+  'https://i.postimg.cc/W3FkPLrf/2.png',
+  'https://i.postimg.cc/y6RZQK7D/3.png',
+  'https://i.postimg.cc/wMDR7XwX/4.png',
+  'https://i.postimg.cc/ydMS1Qy6/5.png',
+  'https://i.postimg.cc/65NGFPQY/6.png',
+  'https://i.postimg.cc/XYjBYyd5/7.png',
+  'https://i.postimg.cc/pXYnvBhx/8.png',
+  'https://i.postimg.cc/Z5wBBKxM/9.png'
 ];
 
 const Companies: React.FC = () => {

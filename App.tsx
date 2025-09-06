@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import TopBar from './components/TopBar';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -121,6 +122,7 @@ const App: React.FC = () => {
       <div className="bg-white text-zinc-900 min-h-screen font-sans antialiased overflow-x-hidden relative">
         <div className="noise-overlay fixed inset-0 z-[100] pointer-events-none opacity-10"></div>
         <div className="relative z-10">
+          <TopBar />
           <Navbar onNavigate={handleNavigate} />
           <main>
             {renderPage()}

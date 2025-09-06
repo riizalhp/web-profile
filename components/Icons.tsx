@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 export const InstagramIcon: React.FC<{ className?: string }> = ({ className }) => (
@@ -18,7 +19,7 @@ export const TikTokIcon: React.FC<{ className?: string }> = ({ className }) => (
 
 export const WhatsAppIcon: React.FC<{ className?: string }> = ({ className }) => (
     <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.269.655 4.357 1.846 6.167l-1.288 4.725 4.839-1.282zM7.82 6.815c.292-.472.459-.48.683-.483.226 0 .433.004.606.004.221 0 .546.21.828.744.342.646.947 2.193 1.085 2.36.138.166.276.248.455.248.221 0 .423-.083.596-.248.21-.202.471-.645.671-1.011l.271-.486c.166-.293.332-.486.596-.486s.546.124.719.248c.172.124.645.744.744 1.24.1.496.1.915.042 1.332-.058.417-.221.744-.455 1.011-.276.319-1.181 1.34-1.666 1.846-.484.506-1.041.833-1.455.995-.414.162-.828.124-1.24.083-.455-.042-1.455-.486-2.678-1.545-1.011-.875-1.748-1.995-1.995-2.678-.248-.683-.042-1.011.166-1.332.208-.319.455-.417.596-.417.142 0 .276.004.414.042z"/>
+        <path d="M12.04,2C6.58,2,2.13,6.45,2.13,11.91C2.13,13.66,2.61,15.33,3.49,16.81L2.1,21.9L7.45,20.55C8.85,21.32,10.41,21.82,12.04,21.82H12.05C17.5,21.82,21.95,17.37,21.95,11.91C21.95,6.45,17.5,2,12.04,2M17.18,14.44C16.94,14.32,15.81,13.78,15.57,13.68C15.33,13.58,15.17,13.53,15,13.78C14.83,14.02,14.31,14.64,14.17,14.82C14.02,14.99,13.87,15.02,13.63,14.9C13.39,14.78,12.51,14.5,11.41,13.53C10.53,12.75,9.94,11.85,9.79,11.6C9.65,11.36,9.77,11.23,9.89,11.11C10,11,10.14,10.84,10.29,10.67C10.43,10.5,10.48,10.37,10.58,10.18C10.68,9.98,10.63,9.81,10.56,9.69C10.48,9.57,10.06,8.56,9.89,8.16C9.72,7.76,9.55,7.82,9.43,7.81H9.01C8.84,7.81,8.58,7.86,8.36,8.08C8.14,8.31,7.62,8.79,7.62,9.94C7.62,11.09,8.39,12.18,8.51,12.35C8.64,12.52,10.06,14.81,12.31,15.75C14.56,16.68,14.91,16.54,15.25,16.5C15.59,16.46,16.51,15.95,16.7,15.35C16.9,14.75,16.9,14.24,16.82,14.12C16.74,14,16.59,13.95,16.35,13.83Z" />
     </svg>
 );
 
@@ -31,5 +32,36 @@ export const CheckIcon: React.FC<{ className?: string }> = ({ className }) => (
 export const SearchIcon: React.FC<{ className?: string }> = ({ className }) => (
     <svg className={className} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+    </svg>
+);
+
+export const ChevronLeftIcon: React.FC<{ className?: string }> = ({ className }) => (
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+  </svg>
+);
+
+export const ChevronRightIcon: React.FC<{ className?: string }> = ({ className }) => (
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+  </svg>
+);
+
+export const LocationPinIcon: React.FC<{ className?: string }> = ({ className }) => (
+    <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <path fillRule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.58 3.963-7.488C20 5.482 16.418 2 12 2S4 5.482 4 10a8.96 8.96 0 003.963 7.488c1.233 1.267 2.223 2.224 2.683 2.282a19.58 19.58 0 001.145.742zM12 13.5a3.5 3.5 0 100-7 3.5 3.5 0 000 7z" clipRule="evenodd" />
+    </svg>
+);
+
+export const MailIcon: React.FC<{ className?: string }> = ({ className }) => (
+    <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+      <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+    </svg>
+);
+
+export const PhoneIcon: React.FC<{ className?: string }> = ({ className }) => (
+    <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <path fillRule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.279-.087.431l4.257 7.373c.077.152.256.18.431.087l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C6.542 22.5 2.25 18.208 2.25 12.25V10.5A3 3 0 014.5 7.5H6.375c.621 0 1.125-.504 1.125-1.125V4.5A3 3 0 014.5 1.5H3A1.5 1.5 0 001.5 3v1.5z" clipRule="evenodd" />
     </svg>
 );

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://riizalhp.web.id/sitemap.xml

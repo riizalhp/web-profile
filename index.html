@@ -13,7 +13,7 @@
           },
           extend: {
             animation: {
-              'scroll-infinite': 'scroll-infinite 20s linear infinite',
+              'scroll-infinite': 'scroll-infinite 120s linear infinite',
               'scroll-slow': 'scroll-infinite 80s linear infinite',
               'scroll-slow-reverse': 'scroll-infinite-reverse 80s linear infinite',
             },
@@ -78,6 +78,13 @@
       }
       .noise-overlay {
         background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1295275/background-noise.png');
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
       }
     </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>

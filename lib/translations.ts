@@ -63,923 +63,250 @@ export const translations = {
     menuArticles: 'Articles',
     menuContact: 'Contact',
     getInTouch: 'Get in touch',
-    whatsappLink: 'https://wa.me/6289667912404',
+    whatsappLink: 'https://wa.me/6288225444313?text=Hello%2C%20I%27m%20interested%20in%20your%20services.',
 
-    // Hero
     hero: {
-      weAre: 'I am',
-      subtitle: 'Bringing ideas to life by managing projects and crafting websites<br class="hidden md:block" />that turn big visions into impactful digital experiences.',
-      words: ["Project Manager.", "Web Developer.", "Rizal Hanifa."],
-      trustedBy: 'worked with',
+      trustedBy: 'Company Worked With',
+      words: ['a Project Manager.', 'a Web Developer.', 'Rizal Hanifa.', 'a Digital Solution.'],
+      weAre: "I am",
+      subtitle: "Bringing ideas to life by managing projects and creating websites<br/>that transform grand visions into impactful digital experiences."
     },
 
-    // About
     about: {
-      title: 'About',
-      titleBold: 'Me',
-      subtitle: 'Hi, I’m Rizal Hanifa Pratama – a Project Manager, Web Developer based in Yogyakarta, Indonesia (UTC+7).',
-      intro: 'I bring ideas to life by managing projects and crafting digital solutions that transform big visions into impactful online experiences. With over 1 year of professional experience, I’ve collaborated with companies across different industries to deliver high-quality results on time and with attention to detail.',
-      experienceTitle: 'Experience',
+      title: 'A Little Bit',
+      titleBold: 'About Me',
+      subtitle: 'Project Manager and Web Developer based in Yogyakarta, Indonesia.',
+      intro: 'With over 1 year of professional experience, I specialize in bringing ideas to life through project management and creating impactful digital solutions. My passion is to turn complex visions into high-quality, user-centric digital products.',
+      experienceTitle: 'Work Experience',
       experience: [
-        {
-          role: 'Project Manager',
-          company: 'Contsolution Development',
-          period: 'Aug 2024 – Present • Yogyakarta',
-        },
-        {
-          role: 'Product Owner Intern',
-          company: 'PT. Gemala Kempa Daya',
-          period: 'Jun 2024 – Aug 2024 • Jakarta Utara',
-        },
-        {
-          role: 'Head of Project Manager Department',
-          company: 'ITC UPN “Veteran” Yogyakarta',
-          period: 'Feb 2023 – Jun 2024 • Yogyakarta',
-        },
-      ],
-      skillsTitle: 'Skills & Expertise',
-      pmSkills: [
-          'Project Planning', 'Scheduling', 'Cost Management', 'Risk Management', 'Documentation',
-          'Agile/Scrum', 'Stakeholder Communication', 'Trello', 'Jira', 'Asana', 'Notion', 'Github Project',
-      ],
-      devSkills: [
-          'Frontend Development', 'Backend Development', 'Fullstack Development', 'UI/UX Design',
-          'HTML', 'CSS', 'JavaScript', 'Typescript', 'React', 'Next.js',
-          'Laravel', 'Node.js', 'Express', 'PostgreSQL', 'MySQL', 'Figma', 'TailwindCSS', 'AI Integration'
+        { role: 'Project Manager', company: 'Contsolution Development', period: 'Aug 2024 - Present' },
+        { role: 'Product Owner Intern', company: 'PT. Gemala Kempa Daya', period: 'Jun 2024 - Aug 2024' },
+        { role: 'Head of Project Manager Department', company: 'ITC UPN “Veteran” Yogyakarta', period: 'Feb 2023 - Jun 2024' }
       ],
       expertiseAreasTitle: 'What I Do',
       expertiseAreas: [
-          {
-              title: 'Project Management',
-              description: 'From initiation to closing, I ensure your project runs smoothly and efficiently.'
-          },
-          {
-              title: 'Web Development',
-              description: 'Building responsive, modern, and high-performance websites.'
-          }
+        { title: 'Project Management', description: 'Leading projects from concept to completion with a focus on timeline, budget, and quality.' },
+        { title: 'Web Development', description: 'Building responsive and performant websites using modern technologies.' }
       ],
-      testimonialsTitle: 'What People Say',
-      testimonials: [
-        {
-          quote: 'Rizal is a rare combination of a detail-oriented project manager and a highly skilled web developer. He kept our team organized while delivering a flawless product ahead of schedule.',
-          author: 'Theresia Tatik Pujiastuti',
-          company: 'RS Panti Rapih',
-          image: '/testimoni/Theresia-Tatik-Pujiastuti.webp',
-        },
-        {
-          quote: 'Working with Rizal was effortless. He understands business needs, translates them into technical solutions, and makes sure everything is done on time without sacrificing quality.',
-          author: 'Fieryal Nafila',
-          company: 'PT Pindad',
-          image: '/testimoni/Fieryal-Nafila.webp',
-        },
-        {
-          quote: 'Professional, communicative, and extremely talented. Rizal built our website exactly as envisioned and even suggested improvements that boosted our user experience.',
-          author: 'Agus Sumaryono',
-          company: 'Founder Edusales',
-          image: '/testimoni/Agus-sumaryono.webp',
-        },
-      ],
-      certificatesTitle: 'Certificates & Licenses',
+      skillsTitle: 'Skills',
+      pmSkills: ['Agile Methodologies', 'Scrum', 'Risk Management', 'Stakeholder Communication', 'Jira', 'Trello'],
+      devSkills: ['React', 'TypeScript', 'Next.js', 'Node.js', 'Tailwind CSS', 'Figma'],
+      certificatesTitle: 'Certificates',
       certificates: [
-        {
-          name: 'Fundamental Project Management',
-          issuer: 'KOMDIGI : Google',
-          url: 'https://drive.google.com/drive/u/0/home'
-        },
-        {
-          name: 'Junior Website Programmer',
-          issuer: 'HALTEV : BNSP',
-          url: 'https://drive.google.com/drive/u/0/home'
-        },
-        {
-          name: 'Intermediate Project Management',
-          issuer: 'Talenthub',
-          url: 'https://drive.google.com/drive/u/0/home'
-        },
-        {
-          name: 'Digital Marketing',
-          issuer: 'BNSP',
-          url: 'https://drive.google.com/file/d/1E_W_sGnqLSHZsR47b-UqfPuP_Xg859Eo/view?usp=sharing'
-        },
-        {
-          name: 'SCRUM Fundamental Certified',
-          issuer: 'Scrum Study',
-          url: 'https://www.scrumstudy.com/certification/verify?type=SFC&number=938802'
-        },
-        {
-          name: 'Complete Agile Scrum Master Certification Training',
-          issuer: 'Udemy',
-          url: 'https://udemy-certificate.s3.amazonaws.com/image/UC-4d20f0ac-9726-4a56-8df1-fc0edd79c4d9.jpg'
-        }
+        { name: 'Fundamental Project Management', issuer: 'KOMDIGI', url: 'https://drive.google.com/file/d/11PCUyEWwBZQVbgvPpQ_xaovNNfJhncbv/view?usp=sharing' },
+        { name: 'Complete Agile Scrum Master Certification Training', issuer: 'Udemy', url: 'https://udemy-certificate.s3.amazonaws.com/image/UC-4d20f0ac-9726-4a56-8df1-fc0edd79c4d9.jpg' },
+        { name: 'Junior Web Programmer', issuer: 'BNSP', url: 'https://drive.google.com/file/d/1kMiecECnIHqntaL99PdFcBMGEkqraM91/view' },
+        { name: 'Intermediate Project Management', issuer: 'TalentHub', url: 'https://drive.google.com/file/d/1WiiztwcxMMFmy9XQeHWZEUQNaBsGbncp/view' },
+        { name: 'Scrum Fundamental Certified', issuer: 'SCRUMStudy', url: 'https://www.scrumstudy.com/certification/verify?type=SFC&number=938802' },
+        { name: 'Project Initiation', issuer: 'Google', url: 'https://coursera.org/share/1b464c0e46e43aac4c8ed3ca3ad7ddf0' },
+        { name: 'Digital Marketing', issuer: 'BNSP', url: 'https://drive.google.com/file/d/1E_W_sGnqLSHZsR47b-UqfPuP_Xg859Eo/view' }
       ],
+      testimonialsTitle: 'What Clients Say',
+      testimonials: [
+        { quote: 'Rizal is a rare combination of a detail-oriented project manager and a highly skilled web developer. He kept our team organized while delivering a flawless product ahead of schedule.', author: 'Theresia Tatik Pujiastuti', company: 'RS Panti Rapih', image: '/testimoni/Theresia-Tatik-Pujiastuti.webp' },
+        { quote: 'Working with Rizal was a breeze. He understood the business needs, translated them into technical solutions, and made sure everything was done on time without compromising quality.', author: 'Fieryal Nafila', company: 'PT Pindad', image: '/testimoni/Fieryal-Nafila.webp' },
+        { quote: 'Professional, communicative, and incredibly talented. Rizal built our website exactly as envisioned and even suggested improvements that enhanced our user experience.', author: 'Agus Sumaryono', company: 'Founder of Edusales', image: '/testimoni/Agus-sumaryono.webp' }
+      ]
     },
 
-    // Works
     works: {
+      ongoingTitleLight: 'Ongoing',
+      ongoingTitleBold: 'Projects',
+      ongoingSubtitle: 'Here are some of the projects I am currently working on.',
+      ongoingProjects: [
+        { title: 'ResumeAI Platform', category: 'Project Management', description: 'Developing a web platform to create and optimize ATS-friendly CVs with job description matching features.', status: 'In Progress', liveUrl: null, imageUrl: '/images/rizal-hanifa-pratama-web-developer-cv.webp' },
+      ],
       title: 'My',
       titleBold: 'Works',
-      subtitle: "I've crafted digital experiences for a diverse range of clients. Explore some of my selected projects below.",
-      filterAll: 'All Projects',
+      subtitle: 'A glimpse into our portfolio of successful projects.',
+      filterAll: 'All',
       searchPlaceholder: 'Search projects...',
-      noResults: 'No projects found.',
       loadMoreButton: 'Load More',
+      noResults: 'No projects found.',
+      projects: [
+        { title: 'Ayra - Wellness Companion', category: 'Project Management', liveUrl: 'https://www.youtube.com/watch?si=g-89U5rEcAdq1Wip&v=ag3znSncd24&feature=youtu.be', githubUrl: null, overview: 'UI/UX design mockup for the Ayra mobile app, a personal wellness companion that helps users monitor daily health. Key features include activity tracking (steps, hydration, sleep, diet), mood & energy check-ins, health tips, and a consultation chatbot.', contributions: ['Acted as Project Manager.', 'Gathered application requirements based on client needs.', 'Created project plans, timelines, and workflows for the design & development teams.', 'Coordinated with UI/UX designers to ensure design alignment with user needs.', 'Reviewed design outcomes and provided feedback for product refinement.', 'Prepared documentation and presented results to stakeholders.'], imageUrl: '/images/pengalaman-freelance-rizal-hanifa-pratama-project-manager.webp' },
+        { title: 'Matahati - Health Education App', category: 'Project Management', liveUrl: 'https://gamematahati.com/', githubUrl: null, overview: 'Design for the Matahati mobile health education app. This application combines education about hypertension with interactive games like quizzes, crosswords, and map games. It features a cheerful pink theme to be more approachable for lay users.', contributions: ['Defined requirements for a game-based educational app for health outreach.', 'Designed feature flows (games, quizzes, education) with the design & development teams.', 'Managed the project timeline to ensure timely completion.', 'Coordinated across teams (designers, developers, health experts).', 'Prepared project documentation and presented results to stakeholders.'], imageUrl: '/images/keahlian-rizal-hanifa-pratama-web-developer.webp' },
+        { title: 'Woodland - Design Firm Profile', category: 'Web Development', liveUrl: 'https://boycodes-woodland.vercel.app/', githubUrl: null, overview: 'Woodland website, a company profile for an architecture and interior design firm. It showcases a list of services (architecture, interior design, consultation), a gallery of modern homes, and company branding information.', contributions: ['Built the about & services pages with a clean structure.', 'Created an architectural gallery showcase module.', 'Developed project detail pages for homes.', 'Optimized the UI for a minimalist and elegant feel.', 'Added strategic CTAs to attract potential clients.'], imageUrl: '/images/jasa-website-development-rizal-hanifa-pratama.webp' },
+        { title: 'Modestwear - E-commerce', category: 'Web Development', liveUrl: 'https://boycodes-modestwear.vercel.app/', githubUrl: null, overview: 'Modestwear website, an e-commerce platform for modern Muslimah fashion. It features collections of hijabs, abayas, dresses, kimonos, and accessories, complete with categories, best-selling items, promotions, and a product catalog page.', contributions: ['Developed a product catalog system with category filters.', 'Created product pages with price, collection, and promo status information.', 'Optimized the website for speed and e-commerce SEO.', 'Built a backend module for stock & product management.', 'Implemented a responsive design for desktop & mobile.'], imageUrl: '/images/resume-terbaru-rizal-hanifa-pratama-project-manager.webp' },
+        { title: 'OEE Monitoring System', category: 'Project Management', liveUrl: '#', githubUrl: null, overview: 'This project is an OEE (Overall Equipment Effectiveness) Monitoring System developed for PT. Gemala Kempa Daya. The system is used to monitor production machine performance in real-time through key metrics like Performance, Quality, Loading Time, and Total Stop Time.', contributions: ['Designed the project timeline and roadmap.', 'Coordinated developer and QA teams.', 'Defined system requirements with factory stakeholders.', 'Ensured OEE features met industry standards.'], imageUrl: '/images/web-developer-rizal-hanifa-pratama-portofolio.webp' },
+        { title: 'Sinaou - Digital Education Management System', category: 'Project Management', liveUrl: '#', githubUrl: null, overview: 'Sinaou is a web-based Digital Education Management System used to manage teacher, student, class, and salary data in an integrated manner. The dashboard allows admins to verify teachers, monitor class activities, and efficiently manage academic data.', contributions: ['Managed project planning and set development milestones.', 'Led communication between education stakeholders and the developer team.', 'Authored the functional system requirements documentation (FSD).', 'Oversaw timeline, output quality, and system testing before implementation.'], imageUrl: '/images/rizal-hanifa-pratama-project-management-case-study.webp' },
+        { title: 'Supplier Priority Selection System', category: 'Project Management', liveUrl: '#', githubUrl: null, overview: 'This project is an Information System for Supplier Priority Selection for PT Pindad (Heavy Equipment Division) using the Analytical Hierarchy Process (AHP) method. The system helps the company evaluate and compare suppliers based on key criteria such as quality, delivery, price, and financial condition.', contributions: ['Developed the project plan and defined the functional scope of the system.', 'Coordinated with technical teams and stakeholders to determine supplier evaluation criteria.', 'Ensured the AHP method was implemented according to academic standards and business needs.', 'Oversaw system testing, data validation, and the delivery of accurate results to company management.'], imageUrl: '/images/rizal-hanifa-pratama-professional-project-management.webp' },
+        { title: 'FashionHub Indonesia - E-commerce', category: 'Web Development', liveUrl: 'https://fashion-ecommerce-riizalhp-portfolio.vercel.app/', githubUrl: null, overview: 'A women\'s fashion e-commerce platform (FashionHub Indonesia) focused on a modern, clean, and user-friendly online shopping experience. The system includes product catalog features, category filters, a shopping cart system, stock management, and automatic discount integration.', contributions: ['Developed the e-commerce architecture for both frontend and backend.', 'Implemented product management and shopping cart systems.', 'Integrated automatic discount features and the checkout system.', 'Optimized the design to be mobile-friendly and responsive.'], imageUrl: '/images/project-management-rizal-hanifa-pratama.webp' },
+        { title: 'Jogja Dataku - Data Management Platform', category: 'Project Management', liveUrl: 'https://bapperida.jogjaprov.go.id/dataku/data_dasar/index/26-lingkungan-hidup?bidang_urusan=1', githubUrl: null, overview: 'Jogja Dataku is a web-based data management platform developed for the Regional Government of DIY. The system serves as a center for information and regional development data, covering various indicators such as finance, social, economic, and environmental aspects.', contributions: ['Managed the project timeline and coordination among stakeholders (developers, government team, and users).', 'Conducted requirement gathering and defined the main platform flow.', 'Ensured data integration complied with standards and was easily accessible to the public.', 'Monitored system quality to meet functionality and public transparency standards.'], imageUrl: '/images/pengalaman-rizal-hanifa-pratama-sebagai-web-developer.webp' },
+        { title: 'Activity & Attendance Log System', category: 'Project Management', liveUrl: '#', githubUrl: null, overview: 'An Activity & Attendance Log System, a platform designed to record employees\' daily activities, log attendance, and manage work shift logs. This system helps companies monitor employee productivity with high transparency and accuracy.', contributions: ['Managed project scope, timeline, and deliverables.', 'Led communication between stakeholders and the developer team to ensure the system met requirements.', 'Defined the system flow and user interface to be easily understood by internal company users.', 'Ensured the system could be smoothly implemented into the company\'s business processes.'], imageUrl: '/images/portfolio-rizal-hanifa-pratama-project-manager.webp' },
+        { title: 'Car Rental Platform', category: 'Web Development', liveUrl: 'https://boycodes-car-rent-v1.vercel.app/', githubUrl: null, overview: 'A modern website for a premium car rental service. This platform provides an easy-to-use vehicle booking experience for customers, with complete vehicle details, daily rental prices, additional features, and user reviews.', contributions: ['Designed and developed the website interface based on modern UI/UX.', 'Mengimplementasikan sistem pemesanan online dengan integrasi data kendaraan, harga, dan opsi tambahan.', 'Menjamin website responsif, cepat, dan user-friendly di berbagai perangkat.', 'Bekerja sama dengan tim bisnis untuk menyesuaikan kebutuhan penyewaan mobil ke dalam fitur digital.'], imageUrl: '/images/pengalaman-kerja-rizal-hanifa-pratama-project-manager.webp' },
+        { title: 'Gaming E-Commerce Website', category: 'Web Development', liveUrl: 'https://boycodes-gamezio.vercel.app/', githubUrl: null, overview: 'A digital platform for selling gaming products and accessories. The website is designed with a futuristic dark neon theme, complete with green neon accents. It features an interactive product catalog, highlighted products, and gamer reviews.', contributions: ['Designed and implemented the website interface with a gaming UI/UX concept.', 'Developed the product catalog system and category features.', 'Created a responsive website with fast performance for gamers on various devices.', 'Collaborated with the content team to align visual branding with the target gamer audience.'], imageUrl: '/images/jasa-web-developer-rizal-hanifa-pratama.webp' },
+        { title: 'KU AIRKU - Distribution Management System', category: 'Project Management', liveUrl: 'https://amdk-airku-v2.vercel.app/', githubUrl: null, overview: '"KU AIRKU" is a digital platform for managing the clean water distribution chain, from order recording and fleet assignment to delivery tracking. The system includes an admin portal and a mobile-friendly sales portal.', contributions: ['Led coordination between developers, UI/UX designers, and stakeholders.', 'Created the project plan using Agile/Scrum methodology.', 'Managed the project timeline, budget, and risks.', 'Communicated intensively with the client to translate operational needs into relevant application features.'], imageUrl: '/images/jasa-project-manager-rizal-hanifa-pratama.webp' },
+        { title: 'Zairent - Car Rental Platform', category: 'Web Development', liveUrl: 'https://boycodes-zairent.vercel.app/', githubUrl: null, overview: 'Design for the Zairent website, a premium car rental platform with a modern and user-friendly concept. The website features a quick search by car type, pickup location, and rental date.', contributions: ['Implemented the interface design into a responsive website using a modern framework.', 'Developed car search & filter features by category.', 'Integrated car data into a dynamic catalog.', 'Created a simple booking form system connected to a database.'], imageUrl: '/images/rizal-hanifa-pratama-project-manager-and-web-jogja-developer-profile.webp' },
+        { title: 'Law Firm & Notary Profile', category: 'Web Development', liveUrl: 'https://boycodes-sealed.vercel.app/', githubUrl: null, overview: 'Design for a company profile website for legal & notary services. This website displays main services such as legal consultation, business contracts, and notary services. Professional look with a combination of dark and beige colors.', contributions: ['Implemented UI/UX design into front-end code.', 'Developed Services, Business, Contract, and Testimonials pages.', 'Integrated a dynamic testimonial system.', 'Optimized the website to be responsive and fast-loading.'], imageUrl: '/images/rizal-hanifa-pratama-project-manager-and-web-developer-profile.webp' },
+        { title: 'HRIS Dashboard', category: 'Web Development', liveUrl: 'https://boycodes-hris.vercel.app/', githubUrl: null, overview: 'Design of a web-based HRIS (Human Resource Information System) dashboard featuring real-time employee attendance tracking, absence data management, and digital payroll processing.', contributions: ['Implemented the UI/UX design into front-end code using a modern framework.', 'Built integration with a back-end API to display real-time data.', 'Developed the attendance module (check-in, check-out, break).', 'Created the payroll management feature including automatic calculation.'], imageUrl: '/images/rizal-hanifa-pratama-project-manager-team-lead.webp' },
+        { title: 'Personal Portfolio Website', category: 'Web Development', liveUrl: '#', githubUrl: null, overview: 'A personal portfolio website showcasing a profile as a Project Manager & Freelance Web Developer. The website highlights work experience, skills, and the tech stack mastered. Modern design with a dark mode theme.', contributions: ['Built a personal portfolio website using a modern framework (Next.js/React with Tailwind CSS).', 'Implemented an interactive dark mode design with smooth navigation.', 'Developed a project showcase module to display work dynamically.', 'Optimized website performance for speed and SEO.'], imageUrl: '/images/project-showcase-rizal-hanifa-pratama-web-developer.webp' },
+        { title: 'News Portal & CMS', category: 'Web Development', liveUrl: 'https://portal-berita-v1-riizalhp-portofolio.vercel.app/homepage', githubUrl: null, overview: 'Design for a News Portal website with a modern content management system. Features two main sides: a Frontend News Portal and an Admin Dashboard for managing articles, drafts, comments, media, and visitor statistics.', contributions: ['Developed a web-based news portal with an integrated frontend-backend architecture.', 'Built an article management feature (create, edit, delete, scheduled publishing).', 'Created an admin dashboard with monitoring modules.', 'Implemented an authentication & authorization system.'], imageUrl: '/images/profil-dan-pengalaman-rizal-hanifa-pratama-project-manager.webp' },
+        { title: 'School E-Voting Application', category: 'Web Development', liveUrl: 'https://pemilihan-ketua-osis-v1-riizalhp-portofolio.vercel.app/', githubUrl: null, overview: 'A school e-voting application for the 2025 Student Council President election. The platform allows students to view candidate profiles, read their vision and mission, and vote online with a one-vote-per-account security system.', contributions: ['Developed an e-voting system with user (student) authentication.', 'Built a candidate module (profile, vision-mission, program details).', 'Created a voting system with one-user-one-vote validation.', 'Implemented a dashboard for admins/committees to monitor results.'], imageUrl: '/images/portfolio-rizal-hanifa-pratama-dalam-web-development.webp' },
+        { title: 'Futsal Arena Booking Website', category: 'Web Development', liveUrl: '#', githubUrl: null, overview: 'An online booking website for a modern futsal arena. Users can choose indoor/outdoor fields, view real-time availability schedules, read customer reviews, and make online reservations.', contributions: ['Developed an online booking system integrated with a schedule calendar.', 'Built a dynamic field selection module (indoor & outdoor).', 'Integrated customer testimonials into the website.', 'Created a photo gallery to display field facilities.'], imageUrl: '/images/karir-profesional-rizal-hanifa-pratama-project-manager.webp' },
+        { title: 'Night Club Reservation Website', category: 'Web Development', liveUrl: 'https://boycodes-nitely.vercel.app/', githubUrl: null, overview: 'A night club reservation website with features for booking VIP tables, event information, and online reservations. Users can select zones, number of guests, and view upcoming events.', contributions: ['Developed a VIP table reservation system with an interactive booking form.', 'Built an event module (upcoming and past events).', 'Integrated a reservation management system with automatic notifications.', 'Created the website layout with a modern neon design.'], imageUrl: '/images/keahlian-dan-skill-rizal-hanifa-pratama-project-manager.webp' },
+        { title: 'Mas Boy - Website Services', category: 'Web Development', liveUrl: 'https://boy-codes.vercel.app/', githubUrl: null, overview: 'A website for professional website services branded as Mas Boy, a digital business partner in Yogyakarta. The website showcases custom, SEO-friendly website creation services with unlimited pages and full support.', contributions: ['Built a company profile website for website creation services.', 'Developed the main page with a focus on conversion (CTAs).', 'Created sections for service advantages, statistics, and work process.', 'Optimized website performance for SEO and access speed.'], imageUrl: '/images/karir-profesional-rizal-hanifa-pratama-project-manager.webp' },
+        { title: 'Independence Day Event Landing Page', category: 'Web Development', liveUrl: 'https://undangan-17an.vercel.app/', githubUrl: null, overview: 'A landing page website for an Independence Day Contest & Fun Walk event. The website displays event information, contest categories for various groups, and prizes for winners.', contributions: ['Created an event landing page with a clear and attractive information structure.', 'Developed a dynamic contest category module.', 'Added easily readable event information, location, and time.', 'Made the display responsive for smartphone access.'], imageUrl: '/images/jasa-freelance-web-developer-rizal-hanifa-pratama.webp' },
+        { title: 'PesantrenFund Crowdfunding', category: 'Web Development', liveUrl: 'https://boycodes-pesantrenfund-beta.vercel.app/', githubUrl: null, overview: 'A crowdfunding website, PesantrenFund, to support the digitalization program of Islamic boarding schools in Indonesia. The website features donation campaigns, category filters, and a donation target progress bar.', contributions: ['Developed a donation campaign system with targets and progress bars.', 'Created a donation category filter module.', 'Integrated an online payment system for donors.', 'Optimized UI/UX for ease of use by donors.'], imageUrl: '/images/tentang-rizal-hanifa-pratama-web-developer.webp' },
+        { title: 'Agrofaster - Agriculture Marketplace', category: 'Project Management', liveUrl: '#', githubUrl: null, overview: 'Agrofaster mobile app, a marketplace for agricultural needs. Farmers can easily buy seeds, fertilizers, and farming equipment through the digital platform. Key features include user registration, account verification, product catalog, and an ordering system.', contributions: ['Compiled application requirements for the agricultural marketplace sector.', 'Created a product roadmap and prioritized key features.', 'Coordinated design & developer teams to meet the timeline.', 'Validated needs with stakeholders (farmers & distributors).'], imageUrl: '/images/rizal-hanifa-pratama-project-manager-digital-solutions.webp' },
+        { title: 'Realistic Homes - Property Website', category: 'Web Development', liveUrl: 'https://boycodes-realistica.vercel.app/', githubUrl: null, overview: 'Realistic Homes website, a company profile for a property business. It displays a catalog of new houses, apartments, and luxury flats. Equipped with project detail information pages and a visual gallery.', contributions: ['Developed a dynamic property catalog page.', 'Created a photo gallery module for real estate projects.', 'Optimized the website for fast access and responsiveness.', 'Implemented an SEO-friendly structure.'], imageUrl: '/images/rizal-hanifa-pratama-web-developer-fullstack.webp' },
+        { title: 'Gymon Fitness - Landing Page', category: 'Web Development', liveUrl: 'https://boycodes-gymon.vercel.app/', githubUrl: null, overview: 'Gymon Fitness website, a landing page for a fitness center. It displays classes, trainer profiles, membership packages, and a call-to-action for online registration. Clean design with green neon accents.', contributions: ['Built an interactive landing page for gym & fitness promotion.', 'Developed a class module with category filters.', 'Integrated membership packages into the booking system.', 'Created a responsive UI for easy mobile access.'], imageUrl: '/images/portofolio-web-development-rizal-hanifa-pratama.webp' },
+        { title: 'Galactic Annihilator - Web Game', category: 'Web Development', liveUrl: 'https://airplane-shooting-game-riizalhp-por.vercel.app/', githubUrl: null, overview: 'A web-based game, Galactic Annihilator, a simple mini arcade shooter. Players control a spaceship to evade and destroy enemies, with a scoring and life system. Minimalist design with a sci-fi feel.', contributions: ['Created a game based on pure JavaScript (HTML5 Canvas).', 'Developed the control system (mouse for movement, click to shoot).', 'Created score and life system mechanics.', 'Optimized performance for lightweight browser play.'], imageUrl: '/images/rizal-hanifa-pratama-cv-professional-project-manager.webp' },
+        { title: 'Zinzira - Streetwear E-commerce', category: 'Web Development', liveUrl: 'https://boycodes-zinzira.vercel.app/', githubUrl: null, overview: 'Zinzira website, a streetwear fashion e-commerce for Gen Z. It displays best-seller collections, a product catalog with discounts, and customer reviews. Modern, bold design with a focus on product visuals.', contributions: ['Created a product catalog & filter system with dynamic categories.', 'Developed discount and best-seller highlight modules.', 'Integrated customer reviews on the main page.', 'Optimized website performance for fast loading.'], imageUrl: '/images/portfolio-it-projects-rizal-hanifa-pratama-web-developer.webp' },
+        { title: 'ViewTube - Streaming Platform', category: 'Web Development', liveUrl: 'https://youtube-rebuild-riizalhp-portfolio.vercel.app/', githubUrl: null, overview: 'A video streaming platform named ViewTube, similar to YouTube, with key features: content recommendations, trending videos, shorts, channel categories, and an ad system. Modern UI with a dark mode.', contributions: ['Created a streaming interface with a dynamic video grid.', 'Developed category filter & trending video features.', 'Implemented an ad/banner system integrated into the UI.', 'Optimized performance for speed despite loading a lot of media.'], imageUrl: '/images/perjalanan-karir-rizal-hanifa-pratama-project-manager.webp' },
+        { title: 'Hyperfit - Fitness Landing Page', category: 'Web Development', liveUrl: 'https://boycodes-hyperfit.vercel.app/', githubUrl: null, overview: 'Hyperfit website, a modern landing page for a gym & fitness center. Displays trainer profiles, class schedules, price packages, and a call-to-action for online booking. Energetic design with orange accents.', contributions: ['Built an interactive landing page for gym promotion.', 'Created a trainer profile module with skill categories.', 'Developed a membership package & class schedule system.', 'Added CTA integration for online registration.'], imageUrl: '/images/pengalaman-rizal-hanifa-pratama-di-project-management.webp' },
+        { title: 'DreamHome - Property Listing', category: 'Web Development', liveUrl: 'https://properti-management-v2-riizalhp-portofolio.vercel.app/', githubUrl: null, overview: 'DreamHome property website, a platform for listing houses and apartments. Displays thousands of properties with filters for location, price, house type, and agent. Features "Featured Properties" & "Top Agents".', contributions: ['Developed a dynamic property filter system.', 'Created a property listing module with complete price & location data.', 'Integrated professional agent profiles.', 'Built a dashboard for active property and successful sales statistics.'], imageUrl: '/images/pengalaman-proyek-rizal-hanifa-pratama-project-manager.webp' },
+        { title: 'Architect Agency Profile', category: 'Web Development', liveUrl: 'https://boycodes-formark.vercel.app/', githubUrl: null, overview: 'Architect Agency website, a company profile for an architecture firm. Focuses on showcasing modern architectural projects, upcoming projects, and a visual gallery. Clean design with bold typography and yellow neon accents.', contributions: ['Built an architectural project showcase page.', 'Created an upcoming project module with progress status.', 'Implemented a responsive visual gallery.', 'Optimized access speed despite being image-heavy.'], imageUrl: '/images/karir-dan-proyek-rizal-hanifa-pratama-project-manager.webp' }
+      ],
       modal: {
         overviewTitle: 'Project Overview',
-        contributionsTitle: 'Key Contributions',
+        contributionsTitle: 'My Contributions',
         liveDemoButton: 'View Live Site',
-        githubButton: 'View on GitHub',
-      },
-      ongoingTitleLight: "Ongoing",
-      ongoingTitleBold: "Works",
-      ongoingSubtitle: "Here's a sneak peek at what I'm currently building. Check back soon for the final results!",
-      ongoingProjects: [
-        { title: "ResumeAI Platform", category: "Project Manager", description: "Developing a web platform to build and optimize ATS-friendly CVs with a job description matching feature.", status: "In Progress", imageUrl: '/images/rizal-hanifa-pratama-web-developer-cv.webp', liveUrl: 'https://resumeai.fun' }
-      ],
-      projects: [
-        {
-          title: 'Ayra - Wellness Companion',
-          category: 'Project Manager',
-          liveUrl: 'https://youtu.be/ag3znSncd24?si=g-89U5rEcAdq1Wip',
-          imageUrl: '/images/pengalaman-freelance-rizal-hanifa-pratama-project-manager.webp',
-          overview: "UI/UX design mockup for the Ayra mobile application, a personal wellness companion that helps users monitor their daily health. Key features include activity tracking (steps, hydration, sleep, diet), mood & energy check-ins, health tips, and a consultation chatbot. The design is clean and modern with a teal, white, and yellow/orange accent color scheme.",
-          contributions: [
-            "Acted as Project Manager.",
-            "Gathered application requirements based on client needs.",
-            "Created project plans, timelines, and workflows for the design & development teams.",
-            "Coordinated with UI/UX designers to ensure design alignment with user needs.",
-            "Reviewed design outcomes and provided feedback for product improvement.",
-            "Compiled documentation and presented results to stakeholders."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Matahati - Health Education App',
-          category: 'Project Manager',
-          liveUrl: 'https://gamematahati.com/',
-          imageUrl: '/images/keahlian-rizal-hanifa-pratama-web-developer.webp',
-          overview: "Design of a health education mobile application Matahati. This application combines education about hypertension with interactive games like quizzes, crosswords, and map games. The interface uses a cheerful pink theme to be more friendly to lay users.",
-          contributions: [
-            "Formulated the requirements for a game-based educational application for health outreach.",
-            "Created the feature flow (games, quizzes, education) with the design & development team.",
-            "Managed the project timeline to ensure on-time completion.",
-            "Coordinated across teams (designers, developers, health experts).",
-            "Compiled project documentation and presented the results to stakeholders."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Woodland - Design Firm Profile',
-          category: 'Web Development',
-          liveUrl: 'https://boycodes-woodland.vercel.app/',
-          imageUrl: '/images/jasa-website-development-rizal-hanifa-pratama.webp',
-          overview: "Woodland website, a company profile for an architectural and interior design firm. It displays a list of services (architecture, interior design, consultation), a showcase gallery of modern houses, and company branding information.",
-          contributions: [
-            "Built 'about' & 'services' pages with a clean structure.",
-            "Created a showcase gallery module for architecture.",
-            "Developed a detailed project page for houses.",
-            "Optimized the UI design to be minimalist and elegant.",
-            "Added strategic CTAs to attract potential clients."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Modestwear - E-commerce',
-          category: 'Web Development',
-          liveUrl: 'https://boycodes-modestwear.vercel.app/',
-          imageUrl: '/images/resume-terbaru-rizal-hanifa-pratama-project-manager.webp',
-          overview: "Modestwear website, an e-commerce for modern Muslim fashion. It displays collections of hijabs, abayas, dresses, kimonos, and accessories. Equipped with category features, best-selling items, promos, and a product catalog page. The design is clean and elegant with beige and black tones.",
-          contributions: [
-            "Developed a product catalog system with category filters.",
-            "Created a product page with price, collection, and promo status information.",
-            "Optimized the website for speed and e-commerce SEO.",
-            "Built a backend module for stock & product management.",
-            "Implemented the design to be responsive on desktop & mobile."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'OEE Monitoring System',
-          category: 'Project Manager',
-          liveUrl: null,
-          imageUrl: '/images/web-developer-rizal-hanifa-pratama-portofolio.webp',
-          overview: "This project is an OEE (Overall Equipment Effectiveness) Monitoring System developed for PT. Gemala Kempa Daya. The system is used to monitor the performance of production machines in real-time through key metrics such as Performance, Quality, Loading Time, and Total Stop Time. This dashboard helps the company analyze downtime, improve efficiency, and optimize production processes.",
-          contributions: [
-            "Designed the project timeline and roadmap.",
-            "Coordinated the developer and QA teams.",
-            "Formulated system requirements with factory stakeholders.",
-            "Ensured OEE features met industry standards."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Sinaou - Digital Education Management System',
-          category: 'Project Manager',
-          liveUrl: null,
-          imageUrl: '/images/rizal-hanifa-pratama-project-management-case-study.webp',
-          overview: "This project is Sinaou – a Digital Education Management System, a web-based platform used to manage data for teachers, students, classes, and salary status in an integrated manner. The dashboard makes it easy for admins to verify teachers, monitor class activities, and efficiently manage academic data. The system is designed to enhance transparency, orderliness, and efficiency in technology-based education management.",
-          contributions: [
-            "Managed project planning and set development milestones.",
-            "Led communication between education stakeholders and the developer team.",
-            "Compiled the functional system requirements documentation (FSD).",
-            "Oversaw the timeline, output quality, and system testing before implementation."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Supplier Priority Selection System',
-          category: 'Project Manager',
-          liveUrl: null,
-          imageUrl: '/images/rizal-hanifa-pratama-professional-project-management.webp',
-          overview: "This project is an Information System for Supplier Priority Selection at PT Pindad (Heavy Equipment Division) using the Analytical Hierarchy Process (AHP) method. The system helps the company evaluate and compare suppliers based on key criteria such as quality, delivery, price, and financial condition. The system dashboard displays measurable comparisons between suppliers and provides automatic reports in PDF format to facilitate strategic decision-making.",
-          contributions: [
-            "Developed the project plan and defined the system's functional scope.",
-            "Coordinated with technical teams and stakeholders to determine supplier evaluation criteria.",
-            "Ensured the AHP method was implemented according to academic standards and business needs.",
-            "Supervised system testing, data validation, and the delivery of accurate results to company management."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'FashionHub Indonesia - E-commerce',
-          category: 'Web Development',
-          liveUrl: 'https://fashion-ecommerce-riizalhp-portfolio.vercel.app/',
-          imageUrl: '/images/project-management-rizal-hanifa-pratama.webp',
-          overview: "This project is a women's fashion e-commerce platform (FashionHub Indonesia) focused on providing an online shopping experience with a modern, clean, and user-friendly interface. The system includes features like a product catalog, category filters, a shopping cart system, stock management, and automatic discount integration. Product displays are made attractive with high-quality photos and dynamic options for size, color, and quantity selection. The main goal of this project is to provide a digital solution for fashion brands to get closer to their customers through a fast, easy-to-use, and responsive platform on various devices.",
-          contributions: [
-            "Developed the e-commerce architecture from both frontend and backend sides.",
-            "Implemented product management and shopping cart systems.",
-            "Created integration for automatic discount features and the checkout system.",
-            "Optimized the design to be mobile-friendly and responsive."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Jogja Dataku - Data Management Platform',
-          category: 'Project Manager',
-          liveUrl: 'https://bapperida.jogjaprov.go.id/dataku/data_dasar/index/26-lingkungan-hidup?bidang_urusan=1',
-          imageUrl: '/images/pengalaman-rizal-hanifa-pratama-sebagai-web-developer.webp',
-          overview: "This project is Jogja Dataku, a web-based data management platform developed for the Regional Government of DIY. The system serves as a center for regional development information and data, covering various indicators such as finance, social, economic, and environmental. The platform allows users to search for data, display regional performance indicators, and export data to Excel/PDF formats. Its purpose is to provide data transparency and support data-driven decision making.",
-          contributions: [
-            "Managed the project timeline and coordination among stakeholders (developers, government team, and users).",
-            "Gathered system requirements and defined the platform's main flow.",
-            "Ensured data integration ran according to standards and was easily accessible to the public.",
-            "Supervised system quality to meet functionality and public transparency standards."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Activity & Attendance Log System',
-          category: 'Project Manager',
-          liveUrl: null,
-          imageUrl: '/images/portfolio-rizal-hanifa-pratama-project-manager.webp',
-          overview: "This project is an Activity & Attendance Log System, a platform designed to record employees' daily activities, track attendance, and manage work shift logs. The system helps the company monitor employee productivity with high transparency and accuracy. Key features include an activity log, activity history, clock-in/out recording, and real-time reporting that can be used by HR or operational managers for performance evaluation. The main goal of this project is to improve human resource management efficiency through an easy-to-use digital system, while also reducing the risk of human error in manual recording.",
-          contributions: [
-            "Managed the project's scope, timeline, and deliverables.",
-            "Led communication between stakeholders and the developer team to ensure the system met requirements.",
-            "Defined the system flow and user interface to be easily understood by the company's internal users.",
-            "Ensured the system could be smoothly implemented into the company's business processes."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Car Rental Platform',
-          category: 'Web Development',
-          liveUrl: 'https://boycodes-car-rent-v1.vercel.app/',
-          imageUrl: '/images/pengalaman-kerja-rizal-hanifa-pratama-project-manager.webp',
-          overview: "This project is a Car Rental Platform, a modern website for premium car rental services. The platform provides an easy-to-use vehicle booking experience for customers, with complete vehicle details, daily rental prices, additional features, and user reviews. The website is designed to make it easy for potential customers to choose a car according to their needs—from luxury sedans, SUVs, to trucks. The system is also equipped with 24/7 instant booking, customer reviews, and integration of add-on options (e.g., GPS, insurance, or child seat). The goal of this project is to help car rental businesses increase their online visibility, simplify bookings, and provide a practical and transparent digital experience for users.",
-          contributions: [
-            "Designed and developed the website interface based on modern UI/UX.",
-            "Implemented an online booking system with integration of vehicle data, prices, and additional options.",
-            "Ensured the website is responsive, fast, and user-friendly across various devices.",
-            "Collaborated with the business team to translate car rental needs into digital features."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Gaming E-Commerce Website',
-          category: 'Web Development',
-          liveUrl: 'https://boycodes-gamezio.vercel.app/',
-          imageUrl: '/images/jasa-web-developer-rizal-hanifa-pratama.webp',
-          overview: "This project is a Gaming E-Commerce Website, a digital platform for selling gaming products and accessories such as gaming chairs, desks, keyboards, mice, and other gear. The website is designed with a futuristic dark neon theme that fits the gaming world's identity, complete with neon green accents. In addition to an interactive product catalog, the platform also features highlights of top products, reviews from gamers, and integration with online gaming communities. The goal of this website development is to attract the highly visual gamer market, present an immersive online shopping experience, and increase sales conversion of gaming products.",
-          contributions: [
-            "Designed and implemented the website interface with a gaming UI/UX concept.",
-            "Developed the product catalog system and category features (chairs, desks, keyboards, mouse).",
-            "Created a responsive website with fast performance for comfortable access by gamers on various devices.",
-            "Collaborated with the content team to align visual branding with the target gamer audience."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'KU AIRKU - Distribution Management System',
-          category: 'Project Manager',
-          liveUrl: 'https://amdk-airku-v2.vercel.app/',
-          imageUrl: '/images/jasa-project-manager-rizal-hanifa-pratama.webp',
-          overview: "This project is the 'KU AIRKU' Distribution Management System, a digital platform for managing the clean water distribution chain, from recording orders, assigning fleets, to tracking deliveries. The system is equipped with an admin portal to monitor sales performance, survey reports, delivery routes, and order statuses in real-time. Additionally, there is a mobile-friendly sales portal that makes it easy for the sales team to record customer order requests quickly, transparently, and accurately. The project's goal is to improve distribution efficiency, reduce delays, and provide full visibility for management in monitoring operational distribution activities.",
-          contributions: [
-            "Led coordination between the developer team, UI/UX designers, and distribution company stakeholders.",
-            "Created the project plan using Agile/Scrum methodology with weekly sprints to ensure priority features were completed on time.",
-            "Managed the project's timeline, budget, and risks to ensure implementation proceeded according to target.",
-            "Conducted intensive communication with the client to understand operational needs and translate them into relevant application features."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Zairent - Car Rental Platform',
-          category: 'Web Development',
-          liveUrl: 'https://boycodes-zairent.vercel.app/',
-          imageUrl: '/images/rizal-hanifa-pratama-project-manager-and-web-jogja-developer-profile.webp',
-          overview: "Design for Zairent, a premium car rental platform with a modern and user-friendly concept. This website features a quick search based on car type, pickup location, and rental dates. It includes a comprehensive car catalog with detailed specifications (fuel type, transmission, mileage) and hourly rental prices. The interface uses a combination of bright yellow and white to highlight an elegant, professional, yet user-friendly feel.",
-          contributions: [
-            "Implemented the user interface design into a responsive website using modern frameworks (React/Next.js or Laravel Blade + Tailwind).",
-            "Developed the car search & filter feature by category (luxury car, electric car, convertible, etc.).",
-            "Integrated car data into a dynamic catalog with price, rating, and specification details.",
-            "Created a simple booking form system connected to the database.",
-            "Optimized website performance for fast access on mobile and desktop devices.",
-            "Wrote basic technical documentation for maintenance and future feature development."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Law Firm & Notary Profile',
-          category: 'Web Development',
-          liveUrl: 'https://boycodes-sealed.vercel.app/',
-          imageUrl: '/images/rizal-hanifa-pratama-project-manager-and-web-developer-profile.webp',
-          overview: "Company profile website design for a law & notary service. This website showcases main services such as legal consultation, business contracts, and notary services. The professional look with a combination of dark and beige colors gives an elegant, modern, and trustworthy impression. Features include a services section, client testimonials, and business contact information.",
-          contributions: [
-            "Implemented the UI/UX design into front-end code (HTML, CSS, JavaScript/React).",
-            "Developed the Services, Business, Contract, and Testimonials pages according to client needs.",
-            "Integrated a dynamic testimonial system to display client reviews.",
-            "Optimized the website to be responsive and fast-loading on various devices.",
-            "Conducted cross-browser testing to ensure display consistency.",
-            "Provided brief technical documentation to make the website easy for the client's team to maintain."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'HRIS Dashboard',
-          category: 'Web Development',
-          liveUrl: 'https://boycodes-hris.vercel.app/',
-          imageUrl: '/images/rizal-hanifa-pratama-project-manager-team-lead.webp',
-          overview: "Design for a web-based HRIS (Human Resource Information System) dashboard featuring real-time employee attendance tracking, absence data management, and digital payroll processing. This dashboard allows HR to monitor clock-in/out times, attendance status, and daily activity summaries, and calculate employee salaries with detailed deductions and compliance indicators. The interface uses a modern, clean style with a well-structured data layout.",
-          contributions: [
-            "Implemented UI/UX design into front-end code using modern frameworks (e.g., React/Next.js or Vue).",
-            "Built integration with back-end APIs to display real-time attendance and payroll data.",
-            "Developed the attendance module (check-in, check-out, break) and linked it to the employee database.",
-            "Created the payroll management feature including automatic calculations, deductions, and data export.",
-            "Optimized performance and responsiveness for various devices."
-          ],
-          githubUrl: 'https://github.com/example'
-        },
-        {
-          title: 'Personal Portfolio Website',
-          category: 'Web Development',
-          liveUrl: 'https://example.com',
-          imageUrl: '/images/project-showcase-rizal-hanifa-pratama-web-developer.webp',
-          overview: "A personal portfolio website showcasing a profile as a Project Manager & Freelance Web Developer. This website highlights work experience, skills, and the technology stack mastered. It features a services section (Project Manager, Web Developer, AI Agent Developer), a showcase of web developer projects, and client testimonials. The design is modern with a dark mode theme, bold typography, and an interactive layout that emphasizes professionalism and creativity.",
-          contributions: [
-            "Built a personal portfolio website using a modern framework (Next.js/React with Tailwind CSS).",
-            "Implemented an interactive dark mode design with smooth navigation.",
-            "Developed a dynamic project showcase module to display work.",
-            "Created a services section with clear and structured descriptions.",
-            "Optimized website performance for speed and SEO.",
-            "Wrote technical documentation for easy updates as more projects are added."
-          ],
-          githubUrl: 'https://github.com/example'
-        },
-        {
-          title: 'News Portal & CMS',
-          category: 'Web Development',
-          liveUrl: 'https://portal-berita-v1-riizalhp-portofolio.vercel.app/homepage',
-          imageUrl: '/images/profil-dan-pengalaman-rizal-hanifa-pratama-project-manager.webp',
-          overview: "Design for a News Portal website with a modern content management system. There are two main sides: Frontend News Portal → displays the latest articles with categories (technology, politics, economy, sports), breaking news, trending articles, and a main news slider. Admin Dashboard → for managing articles, drafts, comments, media, and visitor statistics. The dashboard includes comment moderation, user management, and latest activity reports. The interface is clean, professional, and easy to use for both readers and admins.",
-          contributions: [
-            "Developed a web-based news portal with an integrated frontend-backend architecture.",
-            "Built an article management feature (create, edit, delete, scheduled publishing).",
-            "Created an admin dashboard with modules for monitoring visitors, comments, and draft articles.",
-            "Implemented an authentication & authorization system for admins and contributors.",
-            "Optimized the layout to be responsive and SEO-friendly to increase news reach.",
-            "Conducted testing & debugging to ensure the portal runs stably with high traffic."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'School E-Voting Application',
-          category: 'Web Development',
-          liveUrl: 'https://pemilihan-ketua-osis-v1-riizalhp-portofolio.vercel.app/',
-          imageUrl: '/images/portfolio-rizal-hanifa-pratama-dalam-web-development.webp',
-          overview: "A school e-voting application for the 2025 Student Council President election. The platform allows students to view candidate profiles, read their vision and mission, and vote online with a security system that allows only one vote per account. The design is simple, modern, and transparent to support the digital democracy process at school.",
-          contributions: [
-            "Developed an e-voting system with user (student) authentication.",
-            "Built a candidate module (profile, vision-mission, program details).",
-            "Created a voting system with one-user-one-vote validation.",
-            "Implemented a dashboard for admins/Student Council committee to monitor vote results.",
-            "Optimized security to prevent vote data manipulation."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Futsal Arena Booking Website',
-          category: 'Web Development',
-          liveUrl: 'https://example.com',
-          imageUrl: '/images/layanan-web-developer-rizal-hanifa-pratama.webp',
-          overview: "Online booking website for a modern futsal arena. Users can choose indoor/outdoor fields, view real-time availability schedules, read customer reviews, and make online reservations. The interface is clean with a green-black theme that gives a sporty and professional impression.",
-          contributions: [
-            "Developed an online booking system integrated with a schedule calendar.",
-            "Built a dynamic field selection module (indoor & outdoor).",
-            "Integrated customer testimonials into the website.",
-            "Created a photo gallery to display field facilities.",
-            "Optimized the website for easy mobile access for quick bookings."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Night Club Reservation Website',
-          category: 'Web Development',
-          liveUrl: 'https://boycodes-nitely.vercel.app/',
-          imageUrl: '/images/keahlian-dan-skill-rizal-hanifa-pratama-project-manager.webp',
-          overview: "A night club reservation website with features for VIP table booking, event information, and online reservations. Users can select zones (A, B, C), number of guests, and view upcoming events and a gallery of the club's atmosphere. The design uses dark colors with neon purple-blue accents to create a modern and exclusive feel.",
-          contributions: [
-            "Developed a VIP table reservation system with an interactive booking form.",
-            "Built an event module (upcoming schedule, past events, artist highlights).",
-            "Integrated a reservation management system with automatic notifications.",
-            "Created a website layout with a modern neon design matching the nightlife theme.",
-            "Optimized website performance for fast access despite many media files (photos & videos)."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Mas Boy - Website Services',
-          category: 'Web Development',
-          liveUrl: 'https://boy-codes.vercel.app/',
-          imageUrl: '/images/karir-profesional-rizal-hanifa-pratama-project-manager.webp',
-          overview: "A website for a professional website services provider branded as Mas Boy, a digital business partner in Yogyakarta. This website showcases services for custom, SEO-friendly websites with unlimited pages and full support. It includes work statistics such as the number of websites built, client satisfaction rates, and on-time project completion.",
-          contributions: [
-            "Built a company profile website for a website creation service.",
-            "Developed the main page with a focus on conversion (CTAs: free consultation, view packages).",
-            "Created sections for service advantages, statistics, and work process.",
-            "Optimized website performance for SEO and access speed.",
-            "Designed a responsive structure for mobile and desktop."
-          ],
-          githubUrl: null
-        },
-        {
-          title: '17-an Event Landing Page',
-          category: 'Web Development',
-          liveUrl: 'https://undangan-17an.vercel.app/',
-          imageUrl: '/images/jasa-freelance-web-developer-rizal-hanifa-pratama.webp',
-          overview: "A landing page website for an Independence Day competition and fun walk event. The website displays event information (date, location, time), competition categories for various groups (children, teens, fathers, mothers, couples, all residents), and prizes for the winners. The design is simple, bright, and easily accessible to the general public.",
-          contributions: [
-            "Created an event landing page with a clear and engaging information structure.",
-            "Developed a dynamic competition category module with different colors for each group.",
-            "Added easy-to-read event information, location, and time.",
-            "Made the display responsive so it can be accessed on residents' smartphones.",
-            "Integrated a simple reminder system for event participants."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'PesantrenFund Crowdfunding',
-          category: 'Web Development',
-          liveUrl: 'https://boycodes-pesantrenfund-beta.vercel.app/',
-          imageUrl: '/images/tentang-rizal-hanifa-pratama-web-developer.webp',
-          overview: "PesantrenFund crowdfunding website to support the digitalization program of Islamic boarding schools in Indonesia. This website has features for donation campaigns, category filters (education, zakat, infrastructure, training), and a donation target progress bar. The look is professional with a focus on fund transparency and program impact.",
-          contributions: [
-            "Developed a donation campaign system with targets and progress bars.",
-            "Created a donation category filter module according to program type.",
-            "Integrated an online payment system for donors.",
-            "Optimized the UI/UX to be easy for donors to use.",
-            "Built a backend for the admin dashboard (manage campaigns, donations, reports)."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Agrofaster - Agriculture Marketplace',
-          category: 'Project Manager',
-          liveUrl: null,
-          imageUrl: '/images/rizal-hanifa-pratama-project-manager-digital-solutions.webp',
-          overview: "Agrofaster mobile application, a marketplace for agricultural needs. Farmers can buy seeds, fertilizers, and farming equipment easily through a digital platform. Key features include user registration, account verification, product catalog, item recommendations, and a system for ordering and selling harvest products.",
-          contributions: [
-            "Formulated the requirements for a marketplace application for the agricultural sector.",
-            "Created the product roadmap and set priorities for key features.",
-            "Coordinated the design & developer teams to adhere to the timeline.",
-            "Validated requirements with stakeholders (farmers & distributors).",
-            "Ensured application quality before launch."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Realistic Homes - Property Website',
-          category: 'Web Development',
-          liveUrl: 'https://boycodes-realistica.vercel.app/',
-          imageUrl: '/images/rizal-hanifa-pratama-web-developer-fullstack.webp',
-          overview: "Realistic Homes website, a company profile for a real estate business. It displays a catalog of new homes, apartments, and luxury flats. Equipped with detailed project information pages and a visual gallery. The design is minimalist with a monochrome feel to look elegant and professional.",
-          contributions: [
-            "Developed a dynamic property catalog page.",
-            "Created a photo gallery module for real estate projects.",
-            "Optimized the website for fast access and responsiveness.",
-            "Implemented an SEO-friendly structure for business visibility.",
-            "Built a simple backend for property data management."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Gymon Fitness - Landing Page',
-          category: 'Web Development',
-          liveUrl: 'https://boycodes-gymon.vercel.app/',
-          imageUrl: '/images/profil-profesional-rizal-hanifa-pratama-project-manager.webp',
-          overview: "Gymon Fitness website, a landing page for a fitness center. It displays classes (yoga, personal training, group class), trainer profiles, membership packages, and a call-to-action for online registration. The design is clean with neutral colors and neon green accents for an energetic feel.",
-          contributions: [
-            "Built an interactive landing page for gym & fitness promotion.",
-            "Developed a class module with category filters.",
-            "Integrated membership packages into the booking system.",
-            "Created a responsive UI for easy access by mobile users.",
-            "Added a 'Join Now' CTA to increase registration conversion."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Galactic Annihilator - Web Game',
-          category: 'Web Development',
-          liveUrl: 'https://airplane-shooting-game-riizalhp-por.vercel.app/',
-          imageUrl: '/images/rizal-hanifa-pratama-cv-professional-project-manager.webp',
-          overview: "A web-based game, Galactic Annihilator, a simple mini arcade shooter. Players control a spaceship to avoid and destroy enemies, with a score and life system. The design is minimalist with a sci-fi feel.",
-          contributions: [
-            "Created a game based on pure JavaScript (HTML5 Canvas).",
-            "Developed the control system (mouse for movement, click for shooting).",
-            "Created a score and life system mechanism.",
-            "Optimized performance to make the game lightweight to play in the browser.",
-            "Wrote basic documentation for future development."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Zinzira - Streetwear E-commerce',
-          category: 'Web Development',
-          liveUrl: 'https://boycodes-zinzira.vercel.app/',
-          imageUrl: '/images/portfolio-it-projects-rizal-hanifa-pratama-web-developer.webp',
-          overview: "Zinzira website, an e-commerce for Gen Z streetwear fashion. It displays best-seller collections, a product catalog with discounts, and customer reviews. The design is modern, bold, with a focus on product visuals.",
-          contributions: [
-            "Created a catalog & product filter system with dynamic categories.",
-            "Developed a discount and best-seller highlight module.",
-            "Integrated customer reviews on the main page.",
-            "Optimized website performance for fast loading.",
-            "Wrote technical documentation for e-commerce management."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'ViewTube - Streaming Platform',
-          category: 'Web Development',
-          liveUrl: 'https://youtube-rebuild-riizalhp-portfolio.vercel.app/',
-          imageUrl: '/images/perjalanan-karir-rizal-hanifa-pratama-project-manager.webp',
-          overview: "A video streaming platform called ViewTube, similar to YouTube, with key features: content recommendations, trending videos, shorts, channel categories, and an ad system. The UI is modern with a dark mode for viewing comfort.",
-          contributions: [
-            "Created a streaming interface with a dynamic video grid.",
-            "Developed features for category filters & trending videos.",
-            "Implemented an ad/banner system integrated into the UI.",
-            "Optimized performance for speed despite loading a lot of media.",
-            "Created a responsive UI for comfort on both desktop and mobile."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Hyperfit - Fitness Landing Page',
-          category: 'Web Development',
-          liveUrl: 'https://boycodes-hyperfit.vercel.app/',
-          imageUrl: '/images/pengalaman-rizal-hanifa-pratama-di-project-management.webp',
-          overview: "Hyperfit website, a modern landing page for a gym & fitness center. It displays trainer profiles, class schedules, price packages, and a call-to-action for online booking. The design is energetic with orange accents to evoke enthusiasm.",
-          contributions: [
-            "Built an interactive landing page for gym promotion.",
-            "Created a trainer profile module with skill categories.",
-            "Developed a membership package & class schedule system.",
-            "Added CTA integration for online registration.",
-            "Optimized website SEO for easy discovery."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'DreamHome - Property Listing',
-          category: 'Web Development',
-          liveUrl: 'https://properti-management-v2-riizalhp-portofolio.vercel.app/',
-          imageUrl: '/images/pengalaman-proyek-rizal-hanifa-pratama-project-manager.webp',
-          overview: "DreamHome property website, a listing platform for houses and apartments. It displays thousands of properties with filters for location, price, house type, and agent. Equipped with 'Featured Properties' & 'Top Agents' features.",
-          contributions: [
-            "Developed a dynamic property filter system.",
-            "Created a property listing module complete with price & location data.",
-            "Integrated professional agent profiles.",
-            "Created a statistics dashboard for active properties & successful sales.",
-            "Optimized the display to be mobile-friendly."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Architect Agency Profile',
-          category: 'Web Development',
-          liveUrl: 'https://boycodes-formark.vercel.app/',
-          imageUrl: '/images/karir-dan-proyek-rizal-hanifa-pratama-project-manager.webp',
-          overview: "Architect Agency website, a company profile for an architecture firm. It focuses on showcasing modern architectural projects, upcoming projects, and a visual gallery. The design is clean with a touch of bold typography and neon yellow accents.",
-          contributions: [
-            "Built a showcase page for architectural projects.",
-            "Created an upcoming project module with progress status.",
-            "Implemented a responsive visual gallery.",
-            "Optimized access speed despite being full of images.",
-            "Designed an SEO-friendly structure for architecture firm branding."
-          ],
-          githubUrl: null
-        }
-      ],
+        githubButton: 'View on GitHub'
+      }
     },
     
-    // Articles
-    articles: {
-      title: "My",
-      titleBold: "Articles",
-      subtitle: "Dive into my collection of articles, where I share insights, tips, and trends on web development, design, and digital strategy.",
-      readMore: "Read More",
-      backToArticles: "Back to Articles",
-      items: [
-        { 
-          title: "Marketplace Commissions Are Rising, It's Time for Your Own Website", 
-          category: "Business Strategy",
-          excerpt: "Are marketplace commission fees constantly increasing? Build a private website without deductions with RizalHp. Modern design, SEO-ready, and SME-friendly prices.",
-          content: `
-            <p>Recently, many business owners who rely on marketplaces have been feeling anxious. The commission fees, or 'admin fees', charged for every successful transaction are steadily increasing. This directly eats into the profit margins that should be yours. Is there a better solution?</p>
-            <p>Relying solely on marketplaces is like renting a stall in a busy market. It's great for attracting crowds, but you have to follow the owner's rules, including paying rent that can go up at any time. It's time to consider building your own 'store': a private e-commerce website.</p>
-            
-            <h3 class="text-2xl font-bold text-zinc-800 mt-6 mb-2">Why a Private Website is the Answer</h3>
-            <p>Moving your business to a private website isn't just about avoiding fees. It's a strategic investment for long-term growth. Here are the main benefits:</p>
-            <ul class="list-disc list-inside space-y-2">
-              <li><strong>100% Profit, Zero Deductions:</strong> The most obvious advantage. Every penny from your sales goes directly into your pocket, without any commission fees.</li>
-              <li><strong>Full Control Over Your Brand:</strong> On your own website, you are the director. You can design the look and feel to perfectly match your brand identity, creating a unique and memorable customer experience.</li>
-              <li><strong>Your Customer Data is Yours:</strong> Marketplaces rarely share detailed customer data. With your own website, you gain valuable insights into your customers' behavior, which can be used for targeted marketing and building loyalty.</li>
-              <li><strong>Direct Relationship with Customers:</strong> Build a community and communicate directly with your customers through newsletters, special promos, and personalized content, without the noise of competitors.</li>
-              <li><strong>Unlimited Flexibility:</strong> Want to run a flash sale, add a booking feature, or integrate a unique payment system? Your own website gives you the freedom to innovate without limitations.</li>
-            </ul>
-
-            <h3 class="text-2xl font-bold text-zinc-800 mt-6 mb-2">"But Isn't Building a Website Expensive and Difficult?"</h3>
-            <p>That's a common myth. In the past, it might have been true, but today, services like <strong>RizalHp</strong> offer professional, modern, and SEO-ready website creation at prices that are friendly for SMEs. We handle the technical complexities so you can focus on what you do best: running your business.</p>
-            <p>Don't let rising commission fees dictate your business's future. Take control of your profit and your brand. Investing in a private website is not an expense; it's a powerful move to build a sustainable and profitable business asset.</p>
-          `,
-          meta: {
-            title: "Marketplace Commissions Rising? Time for a Private Website | RizalHp",
-            description: "Marketplace commission fees keep increasing? Build a private website with no deductions with RizalHp. Modern, SEO-ready design at SME-friendly prices.",
-            keywords: "marketplace commission increase, private website, own e-commerce, website creation service, riizalhp, SME, yogyakarta web developer",
-            ogImage: "https://riizalhp.web.id/images/articles/marketplace-commissions-rising.jpg",
-            jsonLd: {
-              '@context': 'https://schema.org',
-              '@type': 'BlogPosting',
-              'headline': "Marketplace Commissions Are Rising, It's Time for Your Own Website",
-              'description': "Marketplace commissions are rising? Here's the reason and solution to switch to a private website for full profit and a strong brand.",
-              'image': "https://riizalhp.web.id/images/articles/marketplace-commissions-rising.jpg",
-              'datePublished': "2024-08-19"
-            }
-          }
-        },
-        { 
-          title: "E-commerce vs. Marketplace: Which is a Better Fit for Your Business?", 
-          category: "E-commerce Strategy",
-          excerpt: "Marketplace or your own E-commerce website? This article helps you determine the most profitable online selling strategy for your business.",
-          content: `
-            <p>In the world of online selling, there are two main paths: <strong>Marketplace</strong> and <strong>E-commerce (your own online store website)</strong>. Both have pros and cons. This article helps you determine the most profitable strategy for your business.</p>
-            <h3 class="text-2xl font-bold text-zinc-800 mt-6 mb-2">What Is a Marketplace?</h3>
-            <p>A marketplace is a third-party platform where sellers and buyers meet (e.g., Shopee, Tokopedia, Lazada). Sellers "rent a shelf" on the platform to market their products.</p>
-            <h4 class="text-xl font-bold text-zinc-800 mt-4 mb-2">Advantages of a Marketplace</h4>
-            <ul class="list-disc list-inside space-y-2">
-              <li>🚀 <strong>Quick start</strong> – register an account, upload products, and start selling immediately.</li>
-              <li>👥 <strong>Large traffic</strong> – millions of active users are already on the platform.</li>
-              <li>🔗 <strong>Integrated features</strong> – payments, shipping, internal promotions.</li>
-            </ul>
-            <h4 class="text-xl font-bold text-zinc-800 mt-4 mb-2">Disadvantages of a Marketplace</h4>
-            <ul class="list-disc list-inside space-y-2">
-              <li>💸 <strong>Commissions & ad fees</strong> – profit is eroded by cuts & promotional costs.</li>
-              <li>⚔️ <strong>Fierce competition</strong> – price wars and difficulty standing out from competitors.</li>
-              <li>🏷️ <strong>Limited branding</strong> – the store's identity is under the marketplace's umbrella.</li>
-              <li>📊 <strong>Customer data isn't yours</strong> – difficult to build retention & CRM.</li>
-            </ul>
-            <h3 class="text-2xl font-bold text-zinc-800 mt-6 mb-2">What Is E-commerce (a Private Website)?</h3>
-            <p>E-commerce is <strong>your own online store website</strong>. Consumers transact directly without a third-party platform intermediary.</p>
-            <h4 class="text-xl font-bold text-zinc-800 mt-4 mb-2">Advantages of E-commerce</h4>
-            <ul class="list-disc list-inside space-y-2">
-              <li>💰 <strong>Full profit</strong> – no transaction commission cuts.</li>
-              <li>🏗️ <strong>Strong branding</strong> – domain & design match your business identity.</li>
-              <li>🧭 <strong>Total control</strong> – rules, promos, and the entire shopping experience are in your hands.</li>
-              <li>🔎 <strong>SEO-friendly</strong> – can appear on Google and get organic traffic.</li>
-              <li>🔌 <strong>Flexible integration</strong> – WhatsApp, payment gateways, shipping, CRM, and analytics.</li>
-            </ul>
-            <h4 class="text-xl font-bold text-zinc-800 mt-4 mb-2">Disadvantages of E-commerce</h4>
-            <ul class="list-disc list-inside space-y-2">
-              <li>💸 <strong>Initial cost</strong> – website development & initial setup.</li>
-              <li>📈 <strong>Requires acquisition strategy</strong> – SEO/ads/social media to bring in traffic.</li>
-            </ul>
-            <h3 class="text-2xl font-bold text-zinc-800 mt-6 mb-2">Quick Comparison</h3>
-            <div class="overflow-x-auto"><table class="w-full text-left border-collapse"><thead><tr><th class="border p-2">Aspect</th><th class="border p-2">Marketplace</th><th class="border p-2">E-commerce (Private Website)</th></tr></thead><tbody><tr><td class="border p-2">Speed to Start</td><td class="border p-2">Easy & fast</td><td class="border p-2">Needs initial setup</td></tr><tr><td class="border p-2">Fees/Commissions</td><td class="border p-2">Commissions & ad fees</td><td class="border p-2">No per-transaction commission</td></tr><tr><td class="border p-2">Branding</td><td class="border p-2">Limited</td><td class="border p-2">Strong & consistent</td></tr><tr><td class="border p-2">Data Ownership</td><td class="border p-2">Owned by the platform</td><td class="border p-2">Owned by you</td></tr><tr><td class="border p-2">Traffic</td><td class="border p-2">Large, competitive</td><td class="border p-2">Needs SEO/ads</td></tr><tr><td class="border p-2">Control & Scalability</td><td class="border p-2">Limited by platform rules</td><td class="border p-2">High & flexible</td></tr></tbody></table></div>
-            <h3 class="text-2xl font-bold text-zinc-800 mt-6 mb-2">Recommended Strategy</h3>
-            <ul class="list-disc list-inside space-y-2">
-              <li><strong>Hybrid:</strong> use marketplaces for exposure, <em>but</em> make your private website the center of your sales ecosystem.</li>
-              <li>Build your <strong>brand & customer database</strong> on your website for long-term retention.</li>
-              <li>Optimize <strong>SEO + social media</strong> to acquire traffic without excessive ad spending.</li>
-            </ul>
-            <h3 class="text-2xl font-bold text-zinc-800 mt-6 mb-2">Why RizalHp for Your E-commerce?</h3>
-            <ul class="list-disc list-inside space-y-2">
-              <li>🎨 Modern, fast, and mobile-friendly design.</li>
-              <li>🧩 Ready-to-sell features: catalog, cart, checkout, payment & shipping integration.</li>
-              <li>🔎 Built-in basic SEO to be easily found on Google.</li>
-              <li>🤝 Free consultation before starting.</li>
-            </ul>
-            <h3 class="text-2xl font-bold text-zinc-800 mt-6 mb-2">Conclusion & CTA</h3>
-            <p>Marketplaces are good for a quick start, but a <strong>private E-commerce site</strong> is a long-term investment that gives you control, full profit, and a strong brand. Combine both, with your private website as the core of your strategy.</p>
-            <p><strong>👉 Ready to build your own E-commerce?</strong> Make it happen with <a href="https://riizalhp.web.id" target="_blank" rel="noopener">RizalHp</a> – your digital partner for a professional, fast, and SEO-ready online store.</p>
-          `,
-          meta: {
-            title: "E-commerce vs Marketplace: Which is Right for Your Business? | RizalHp",
-            description: "Choosing between your own e-commerce site and a marketplace? This guide breaks down the pros and cons to help you decide the best strategy.",
-            keywords: "e-commerce vs marketplace, online store, sell online, business strategy, riizalhp",
-            ogImage: "https://riizalhp.web.id/images/articles/ecommerce-vs-marketplace.jpg",
-            jsonLd: {
-              '@context': 'https://schema.org',
-              '@type': 'BlogPosting',
-              'headline': "E-commerce vs. Marketplace: Which is a Better Fit for Your Business?",
-              'description': "A complete comparison between selling on a marketplace and having your own e-commerce website.",
-              'image': "https://riizalhp.web.id/images/articles/ecommerce-vs-marketplace.jpg",
-              'datePublished': "2024-08-20"
-            }
-          }
-        }
-      ]
-    },
-
-    // How We Work
     howWeWork: {
-      title: "My",
-      titleBold: "Workflow",
-      subtitle: "My process is designed to be collaborative, transparent, and efficient, ensuring I deliver a final product that exceeds your expectations.",
+      title: 'Our',
+      titleBold: 'Workflow',
+      subtitle: 'A transparent and collaborative process to bring your vision to life.',
       steps: [
-        {
-          title: "Discovery & Consultation",
-          description: "I start by understanding your vision, goals, and target audience. This initial chat helps us align on the project scope and key requirements."
-        },
-        {
-          title: "Strategy & Planning",
-          description: "Based on our discovery session, I'll craft a detailed project plan, including sitemaps, user flows, and a technology stack proposal. I define the roadmap for success."
-        },
-        {
-          title: "UI/UX Design",
-          description: "My design team creates intuitive and visually stunning mockups and prototypes. I focus on creating a seamless user experience that reflects your brand identity."
-        },
-        {
-          title: "Development",
-          description: "My developers bring the designs to life with clean, efficient, and scalable code. I follow best practices to ensure your website is fast, secure, and responsive on all devices."
-        },
-        {
-          title: "Testing & QA",
-          description: "Before launch, I conduct rigorous testing across different browsers and devices to ensure everything works perfectly. I hunt down bugs so your users don't have to."
-        },
-        {
-          title: "Launch & Support",
-          description: "After your final approval, I deploy the website to a live server. I also provide ongoing maintenance and support to ensure your site remains up-to-date and performs optimally."
-        }
+        { title: 'Discovery & Strategy', description: 'We start by understanding your goals, audience, and challenges to create a solid plan.' },
+        { title: 'Design & Prototyping', description: 'We design intuitive user interfaces and create interactive prototypes for your feedback.' },
+        { title: 'Development', description: 'Our developers write clean, efficient code to build a robust and scalable product.' },
+        { title: 'Testing & QA', description: 'We rigorously test every aspect of the project to ensure quality and performance.' },
+        { title: 'Launch & Support', description: 'We handle the deployment and provide ongoing support to ensure your project\'s success.' }
       ]
     },
 
-    // Pricing
+    articles: {
+        title: 'My Articles',
+        titleBold: 'Digital Insights',
+        subtitle: 'Sharing my thoughts on web development, project management, and technology trends.',
+        readMore: 'Read More',
+        backToArticles: 'Back to Articles',
+        items: [
+            {
+                title: "The Importance of UI/UX in Modern Web Development",
+                category: "UI/UX Design",
+                excerpt: "Explore why a user-centric approach is no longer a luxury but a necessity for digital success. Good UI/UX can significantly boost user engagement and conversion rates.",
+                content: "<h3>The User is King</h3><p>In today's competitive digital landscape, a visually appealing website is not enough. The user experience (UX) and user interface (UI) are critical components that determine whether a user stays on your site or leaves for a competitor. A well-designed UI/UX makes interaction seamless, intuitive, and enjoyable.</p><h4>Key Principles of Good UI/UX:</h4><ul><li><strong>Clarity:</strong> The interface should be clear and easy to understand. Users should not have to guess what to do next.</li><li><strong>Consistency:</strong> Consistent design elements throughout the site help users learn the interface faster.</li><li><strong>Feedback:</strong> Provide immediate and clear feedback for user actions.</li><li><strong>Flexibility:</strong> The design should cater to both novice and expert users.</li></ul><p>By investing in UI/UX, businesses can see tangible returns through increased customer loyalty, higher conversion rates, and a stronger brand reputation.</p>",
+                meta: {
+                    title: "The Importance of UI/UX in Modern Web Development | riizalhp.",
+                    description: "Learn why UI/UX is crucial for modern websites and how it impacts user engagement, conversion rates, and overall business success.",
+                    keywords: "UI/UX, user experience, user interface, web design, conversion optimization",
+                    ogImage: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=2070&auto=format&fit=crop&ixlib-rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%D%D",
+                    jsonLd: {
+                        '@context': 'https://schema.org',
+                        '@type': 'BlogPosting',
+                        headline: "The Importance of UI/UX in Modern Web Development",
+                        datePublished: "2024-07-20",
+                        dateModified: "2024-07-20",
+                    }
+                }
+            },
+            {
+                title: "5 Reasons Your Business Needs a Professional Website",
+                category: "Business Strategy",
+                excerpt: "A website is your digital storefront. Discover five key reasons why investing in a professional website is one of the best decisions for your business growth.",
+                content: "<h3>Your Digital Front Door</h3><p>In the digital age, your website is often the first point of contact a potential customer has with your brand. A professional, well-designed website builds credibility and trust from the very first click.</p><ol><li><strong>Credibility and Professionalism:</strong> A high-quality website signals that you are a legitimate and trustworthy business.</li><li><strong>24/7 Availability:</strong> Your website works for you around the clock, providing information and generating leads even when you're not in the office.</li><li><strong>Wider Audience Reach:</strong> Unlike a physical store, a website is accessible to anyone in the world, dramatically expanding your potential market.</li><li><strong>Cost-Effective Marketing:</strong> Compared to traditional advertising, a website is a highly cost-effective marketing tool with a high return on investment.</li><li><strong>Showcasing Your Work:</strong> A website is the perfect platform to display your products, services, and portfolio to potential clients.</li></ol><p>Don't underestimate the power of a professional online presence. It's an essential tool for growth, marketing, and establishing your brand in the modern marketplace.</p>",
+                meta: {
+                    title: "5 Reasons Your Business Needs a Professional Website | riizalhp.",
+                    description: "Discover the top 5 reasons why a professional website is crucial for your business's credibility, marketing, and growth in the digital age.",
+                    keywords: "professional website, business website, online presence, digital marketing, business growth",
+                    ogImage: "https://images.unsplash.com/photo-1522199670076-2852f8c89bb8?q=80&w=2070&auto=format&fit=crop&ixlib-rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%D%D",
+                    jsonLd: {
+                        '@context': 'https://schema.org',
+                        '@type': 'BlogPosting',
+                        headline: "5 Reasons Your Business Needs a Professional Website",
+                        datePublished: "2024-07-15",
+                        dateModified: "2024-07-15",
+                    }
+                }
+            }
+        ]
+    },
+
     pricing: {
-      fullTitle: 'Services from <span class="font-light">riizal</span><span class="font-bold">hp</span><span style="color: #78ff00">.</span>',
-      subtitle: 'I provide transparent and flexible pricing plans to fit your needs, from individuals to large enterprises.',
-      mostPopular: 'Most Popular',
+      fullTitle: "Flexible Pricing For <span class=\"font-bold\">Every Need</span><span style=\"color: #78ff00;\">.</span>",
+      subtitle: 'Choose the plan that fits your goals. All packages can be customized.',
+      mostPopular: 'Most Recommended',
+      whatsappMessageTemplate: "Hello, I'm interested in your '{packageName}' package. Could we discuss this further?",
       tabs: {
-        personal: {
-          name: 'Personal',
-          description: 'Suitable for: Content creators, photographers, videographers, architects, fashion designers, freelancers.',
-        },
-        sme: {
-          name: 'SME',
-          description: 'Suitable for: Restaurants, coffee shops, online stores, local services.',
-        },
-        enterprise: {
-          name: 'Enterprise',
-          description: 'Suitable for: Companies, startups, educational institutions.',
-        },
+        personal: { name: 'Personal', description: 'For individuals, students, fresh graduates, freelancers, or personal brands.' },
+        sme: { name: 'SME', description: 'For startups, small to medium-sized businesses.' },
+        enterprise: { name: 'Enterprise', description: 'For companies, organizations, or startups at a larger scale.' }
       },
+      comparisonTitle: "Detailed <span class=\"font-bold\">Feature Comparison</span><span style=\"color: #78ff00;\">.</span>",
+      featureComparison: ["Domain", "Design", "SEO", "Revisions", "Google Analytics", "Hosting", "Sections", "Pages", "Maintenance & Support"],
       packages: {
         personal: [
-          {
-            name: 'Start',
-            description: 'To make your personal brand look neat and professional, while staying on budget.',
-            originalPrice: '$75',
-            price: '$49',
-            priceNote: '',
-            features: ['Unlimited pages & sections', 'Custom design based on personal style', 'Mobile friendly', '1x short consultation (30 mins)', '1x free revision', 'Basic SEO', '12 months hosting + free SSL', '1 week maintenance warranty'],
-            buttonText: 'Choose This Plan',
-          },
-          {
-            name: 'Pro',
-            description: 'So your work doesn\'t just get seen, but also noticed.',
-            originalPrice: '$110',
-            price: '$79',
-            priceNote: '',
-            popular: true,
-            features: ['Everything in Start, plus:', 'Premium design + smooth animations', 'Interactive portfolio gallery', 'Direct WhatsApp integration', '3x free revisions', '2x consultations (1 hr total)', '12 months hosting', '1 month maintenance warranty'],
-            buttonText: 'Choose This Plan',
-          },
-          {
-            name: 'Custom',
-            description: 'For those who want a website that\'s completely unique.',
-            originalPrice: '$180',
-            price: '$125',
-            priceNote: 'Starts from',
-            features: ['Everything in Pro, plus:', 'Special feature requests (booking, custom forms, etc.)', 'Fully interactive design', 'Speed optimization', 'Flexible revisions during project', '12 months hosting', '2 months maintenance'],
-            buttonText: 'Choose This Plan',
-          },
+          { name: 'Economy Personal', description: 'For students or fresh graduates needing a simple online profile.', originalPrice: '$35', price: '$25', priceNote: '/ year', features: ['Free domain (.my.id/.web.id/.site/.online)', 'Domain upgrade: .com (+$20), .id (+$25)', 'Landing Page (custom sections)', 'Premium Template Design', 'Responsive & mobile-friendly design', 'Contact Form (WA/Email)', '2x Minor revisions', 'Free hosting for 12 months', '3 months maintenance'], buttonText: 'Choose Plan', comparisonValues: ['✓ (.my.id/.web.id)', 'Template', '—', '2x Minor', '—', '1 Year', 'Custom', '1 Page', '3 Months'] },
+          { name: 'Starter Personal', description: 'For individuals starting to build their personal brand seriously.', originalPrice: '$100', price: '$65', priceNote: '/ year', features: ['Free domain (.my.id/.web.id)', 'Domain upgrade: .com (+$20), .id (+$25)', 'Landing Page (custom sections)', 'Custom design according to brand', 'Basic SEO', 'Google Analytics integration', '3x Minor revisions', 'Free hosting for 12 months', '3 months maintenance'], buttonText: 'Choose Plan', comparisonValues: ['✓ (.my.id/.web.id)', 'Custom', 'Basic', '3x Minor', '✓', '1 Year', 'Custom', '1 Page', '3 Months'] },
+          { name: 'Business Personal', description: 'For freelancers, tutors, or personal brands wanting a professional look.', originalPrice: '$200', price: '$130', priceNote: '/ year', popular: true, features: ['Premium .com or .id domain', 'Multi-page website (Home, About, etc.)', 'Mini blog for articles', 'Custom design according to brand', 'Complete SEO optimization', 'Google Analytics integration', '5x Minor + 1x Major revision', 'Free hosting for 12 months', '1-year full maintenance & support'], buttonText: 'Choose Plan', comparisonValues: ['✓ (.com or .id)', 'Custom', 'Complete', '5x Minor + 1x Major', '✓', '1 Year', 'Custom', 'Multi-page', '1 Year'] },
+          { name: 'Custom Personal', description: 'For content creators or large brands with specific needs.', price: '$260', priceNote: 'Starts from', features: ['Premium domain of choice (.com, .id, .ai, etc.)', 'Custom features as needed', 'Custom design according to brand', 'Enhanced security', 'Unlimited minor + 2x Major revisions', 'Free hosting for 12 months', '1-year full maintenance & support'], buttonText: 'Contact Us', comparisonValues: ['✓ (Premium)', 'Full Custom', 'Enhanced', 'Unlimited', '✓', '1 Year', 'Custom', 'Custom', '1 Year'] }
         ],
         sme: [
-          {
-            name: 'Start',
-            description: 'Get your business on Google without the hassle.',
-            originalPrice: '$95',
-            price: '$65',
-            priceNote: '',
-            features: ['Unlimited pages & sections', 'Simple & professional custom design', 'Mobile friendly', '1x short consultation', '1x free revision', 'Basic local business SEO', '12 months hosting + free SSL', '1 week maintenance warranty'],
-            buttonText: 'Choose This Plan',
-          },
-          {
-            name: 'Pro',
-            description: 'A website that doesn\'t just exist, but also sells.',
-            originalPrice: '$140',
-            price: '$99',
-            priceNote: '',
-            popular: true,
-            features: ['Everything in Start, plus:', 'Premium design + smooth animations', 'Product page + photo/video gallery', 'Direct WhatsApp order', 'Simple order form', '3x free revisions', '12 months hosting', '1 month maintenance warranty'],
-            buttonText: 'Choose This Plan',
-          },
-          {
-            name: 'Custom',
-            description: 'Full features, ready to scale up your business.',
-            originalPrice: '$220',
-            price: '$159',
-            priceNote: 'Starts from',
-            features: ['Everything in Pro, plus:', 'Full catalog with product filters', 'Custom booking/reservation form', 'Fully interactive design', 'Speed optimization', '12 months hosting', '2 months maintenance'],
-            buttonText: 'Choose This Plan',
-          },
+          { name: 'Economy SME', description: 'For new SMEs or small businesses wanting an online presence.', originalPrice: '$50', price: '$35', priceNote: '/ year', features: ['Free domain (.my.id/.web.id/.site/.online)', 'Domain upgrade: .com (+$20), .id (+$25)', 'Landing Page (custom sections)', 'Ready-to-use template design', 'Responsive & mobile-friendly design', 'Contact Form (WA/Email)', '2x Minor revisions', 'Free hosting for 12 months', '3 months maintenance'], buttonText: 'Choose Plan', comparisonValues: ['✓ (.my.id/.web.id)', 'Template', '—', '2x Minor', '—', '1 Year', 'Custom', '1 Page', '3 Months'] },
+          { name: 'Starter SME', description: 'For SMEs ready to seriously reach customers online.', originalPrice: '$150', price: '$100', priceNote: '/ year', features: ['Free domain (.my.id/.web.id)', 'Domain upgrade: .com (+$20), .id (+$25)', 'Complete Landing Page (custom sections)', 'Custom design according to brand', 'Order Form (WA/Email)', 'Basic SEO', 'Google Analytics integration', '3x Minor revisions', 'Free hosting for 12 months', '3 months maintenance'], buttonText: 'Choose Plan', comparisonValues: ['✓ (.my.id/.web.id)', 'Custom', 'Basic', '3x Minor', '✓', '1 Year', 'Custom', '1 Page', '3 Months'] },
+          { name: 'Business SME', description: 'The best choice for SMEs needing a more professional website.', originalPrice: '$300', price: '$200', priceNote: '/ year', popular: true, features: ['Premium .com or .id domain', 'Multi-page website', 'Simple product catalog / online booking', 'Custom design according to brand', 'Contact & order forms', 'Complete SEO optimization', 'Google Analytics integration', '5x Minor + 1x Major revision', 'Free hosting for 12 months', '1-year full maintenance & support'], buttonText: 'Choose Plan', comparisonValues: ['✓ (.com or .id)', 'Custom', 'Complete', '5x Minor + 1x Major', '✓', '1 Year', 'Custom', 'Multi-page', '1 Year'] },
+          { name: 'Custom SME', description: 'Premium solution for SMEs with extensive features as needed.', price: '$400', priceNote: 'Starts from', features: ['Premium domain of choice (.com, .id, .store, etc.)', 'Custom features (marketplace, payment gateway, etc.)', 'Full custom design', 'Enhanced security & automatic backups', 'Unlimited minor + 2x Major revisions', 'Free hosting for 12 months', '1-year full maintenance & support'], buttonText: 'Contact Us', comparisonValues: ['✓ (Premium)', 'Full Custom', 'Enhanced', 'Unlimited', '✓', '1 Year', 'Custom', 'Custom', '1 Year'] }
         ],
         enterprise: [
-          {
-            name: 'Start',
-            description: 'Entry-level package for simple corporate profile needs.',
-            originalPrice: '$125',
-            price: '$99',
-            priceNote: '',
-            features: ['Unlimited pages & sections', 'Clean & professional corporate design', 'Mobile friendly', '1x short consultation', '1x free revision', 'Basic SEO', '12 months hosting + free SSL', '1 week maintenance warranty'],
-            buttonText: 'Choose This Plan',
-          },
-          {
-            name: 'Pro',
-            description: 'To make the company image more convincing to clients and investors.',
-            originalPrice: '$220',
-            price: '$159',
-            priceNote: '',
-            popular: true,
-            features: ['Everything in Start, plus:', 'Premium design + professional animations', 'Live chat / quick contact form integration', 'Complete services & portfolio page', '3x free revisions', '2x intensive consultations', '12 months hosting', '1 month maintenance warranty'],
-            buttonText: 'Choose This Plan',
-          },
-          {
-            name: 'Custom',
-            description: 'Corporate-class website with features for large-scale business needs.',
-            originalPrice: '$375',
-            price: '$250',
-            priceNote: 'Starts from',
-            features: ['Everything in Pro, plus:', 'Custom internal system/API integration', 'User login / employee portal feature', 'Premium interactive design', 'Speed optimization', '12 months hosting', '2 months maintenance'],
-            buttonText: 'Choose This Plan',
-          },
-        ],
+          { name: 'Economy Enterprise', description: 'For small companies or organizations needing an online profile.', originalPrice: '$70', price: '$50', priceNote: '/ year', features: ['Free domain (.my.id/.web.id/.site/.online)', 'Domain upgrade: .com (+$20), .co.id (+$30)', 'Landing Page (custom sections)', 'Professional template design', 'Responsive & mobile-friendly design', 'Contact Form', '2x Minor revisions', 'Free hosting for 12 months', '3 months maintenance'], buttonText: 'Choose Plan', comparisonValues: ['✓ (.my.id/.web.id)', 'Template', '—', '2x Minor', '—', '1 Year', 'Custom', '1 Page', '3 Months'] },
+          { name: 'Starter Enterprise', description: 'For companies wanting to display a professional official profile.', originalPrice: '$250', price: '$165', priceNote: '/ year', features: ['Premium .co.id or .id domain', 'Multi-page website', 'Special corporate sections', 'Custom design according to corporate branding', 'Basic SEO optimization', 'Google Analytics integration', '3x Minor revisions', 'Free hosting for 12 months', '3 months maintenance'], buttonText: 'Choose Plan', comparisonValues: ['✓ (.co.id atau .id)', 'Custom', 'Basic', '3x Minor', '✓', '1 Year', '✓', 'Multi-page', '3 Months'] },
+          { name: 'Business Enterprise', description: 'The best choice for mid-sized companies with interactive features.', originalPrice: '$500', price: '$330', priceNote: '/ year', popular: true, features: ['Premium .co.id or .id domain', 'Multi-page website (incl. Careers)', 'Optional features (Login, Booking, Ticketing)', 'Custom design according to brand guidelines', 'Complete SEO optimization', '5x Minor + 1x Major revision', 'Free hosting for 12 months', '1-year full maintenance & support'], buttonText: 'Choose Plan', comparisonValues: ['✓ (.co.id or .id)', 'Custom', 'Complete', '5x Minor + 1x Major', '✓', '1 Year', 'Custom', 'Multi-page', '1 Year'] },
+          { name: 'Custom Enterprise', description: 'Premium solution for large companies with custom website systems.', price: '$650', priceNote: 'Starts from', features: ['Premium domain as needed', 'Custom features (HR System, Project Mgmt, SaaS, etc.)', 'Full custom design', 'Enterprise-level security', 'Unlimited minor + 2x Major revisions', 'Free hosting for 12 months', '1-year full maintenance & support'], buttonText: 'Contact Us', comparisonValues: ['✓ (Premium)', 'Full Custom', 'Enterprise-level', 'Unlimited', '✓', '1 Year', 'Custom', 'Custom', '1 Year'] }
+        ]
       },
+      products: {
+        title: "Products I Can <span class=\"font-bold\">Develop</span><span style=\"color: #78ff00;\">.</span>",
+        subtitle: "Here are some of the digital solutions I can build to meet your specific needs.",
+        items: [
+          { name: 'Online Store (E-Commerce Website)', description: 'A complete product selling website with catalog, shopping cart, payment methods, and shipping system.' },
+          { name: 'Company Profile Website', description: 'Official company site to introduce the brand, services, portfolio, and professional contact.' },
+          { name: 'LMS (Learning Management System)', description: 'Online learning platform with features for courses, exams, discussion forums, and digital certificates.' },
+          { name: 'Booking & Reservation System', description: 'Online booking system for scheduling services or facilities with automatic confirmation.' },
+          { name: 'Event & E-Ticketing', description: 'Event ticket sales website with e-tickets & QR code scan-ready.' },
+          { name: 'Fundraising & Donation Platform', description: 'Online fundraising platform, suitable for NGOs, communities, or social projects.' },
+          { name: 'Forum & Community Platform', description: 'Website for discussions, information sharing, and building online communities.' },
+          { name: 'Membership Website', description: 'A site with exclusive content for paid or registered members.' },
+          { name: 'Portfolio & Personal Branding', description: 'Personal website to showcase works, experience, and achievements.' },
+          { name: 'Blog / News Portal', description: 'Article or news-based website for education, opinion, or the latest information.' },
+          { name: 'Media Streaming Website', description: 'Platform for streaming music, video, or podcasts online.' },
+          { name: 'Video Platform', description: 'A dedicated site for uploading, managing, and sharing videos.' },
+          { name: 'ERP (Enterprise Resource Planning)', description: 'Integrated management system for finance, inventory, production, and business operations.' },
+          { name: 'CRM (Customer Relationship Management)', description: 'Platform to manage customer data, interactions, and sales.' },
+          { name: 'HRIS (Human Resource Information System)', description: 'HR management system for attendance, payroll, leave, and employee data.' }
+        ]
+      }
     },
 
-    // Contact
     contact: {
-      title: 'Contact',
-      titleBold: 'Me',
-      subtitle: "Have a project in mind? I'd love to hear from you. Let's create something amazing together.",
+      title: 'Have a project',
+      titleBold: 'in mind?',
+      subtitle: 'Let\'s talk about it. I am available for freelance work.',
       hireMeButton: 'Hire Me',
-      orPrompt: 'Or get in touch directly',
-      emailPrompt: 'Email',
-      whatsappPrompt: 'WhatsApp',
-      whatsappNumber: '+6289667912404',
-      socialPrompt: 'Follow me on social media',
-    },
+      orPrompt: 'or',
+      emailPrompt: 'Email me at',
+      whatsappPrompt: 'Chat with me on',
+      whatsappNumber: '+62 882-2544-4313',
+      socialPrompt: 'Follow me on social media'
+    }
   },
   id: {
     meta: {
       home: {
         title: 'riizalhp. | Jasa Pembuatan Website Profesional & Modern',
-        description: 'riizalhp. adalah layanan jasa pembuatan website profesional yang mengubah ide Anda menjadi kenyataan. Solusi untuk UMKM, personal branding, dan perusahaan.',
-        keywords: 'jasa pembuatan website, web developer, riizalhp, website profesional, umkm, yogyakarta',
+        description: 'riizalhp. adalah layanan jasa pembuatan website profesional yang mengubah ide Anda menjadi kenyataan. Solusi untuk UKM, personal branding, dan korporasi.',
+        keywords: 'jasa pembuatan website, web developer, riizalhp, website profesional, ukm, yogyakarta',
         ogImage: 'https://riizalhp.web.id/images/og-riizalhp-home.jpg',
         jsonLd: { '@context': 'https://schema.org', '@type': 'WebSite', 'name': 'riizalhp.' }
       },
       about: {
-        title: 'Tentang Saya | riizalhp. - Manajer Proyek & Web Developer',
-        description: 'Kenali Rizal Hanifa Pratama, seorang manajer proyek dan pengembang web yang berbasis di Yogyakarta. Jelajahi pengalaman, keterampilan, dan proyek-proyek saya.',
-        keywords: 'Rizal Hanifa Pratama, manajer proyek, web developer, Yogyakarta, portofolio, contsol dev',
+        title: 'Tentang Saya | riizalhp. - Project Manager & Web Developer',
+        description: 'Kenali Rizal Hanifa Pratama, seorang manajer proyek dan pengembang web yang berlokasi di Yogyakarta. Jelajahi pengalaman, keahlian, dan proyek saya.',
+        keywords: 'Rizal Hanifa Pratama, manajer proyek, pengembang web, yogyakarta, portofolio, contsol dev',
         ogImage: 'https://riizalhp.web.id/images/og-riizalhp-about.jpg',
         jsonLd: { '@context': 'https://schema.org', '@type': 'ProfilePage', 'name': 'Tentang Rizal Hanifa Pratama' }
       },
@@ -992,8 +319,8 @@ export const translations = {
       },
       howWeWork: {
         title: 'Alur Kerja Saya | riizalhp.',
-        description: 'Temukan alur kerja saya yang transparan dan efisien, dari konsultasi awal dan strategi hingga desain, pengembangan, dan peluncuran.',
-        keywords: 'proses pembuatan website, alur kerja riizalhp, desain ui/ux, tahap pengembangan web',
+        description: 'Temukan alur kerja saya yang transparan dan efisien, mulai dari konsultasi awal dan strategi hingga desain, pengembangan, dan peluncuran.',
+        keywords: 'proses pengembangan website, alur kerja riizalhp, desain ui/ux, langkah-langkah pengembangan web',
         ogImage: 'https://riizalhp.web.id/images/og-riizalhp-workflow.jpg',
         jsonLd: { '@context': 'https://schema.org', '@type': 'WebPage', 'name': 'Alur Kerja Saya' }
       },
@@ -1005,21 +332,20 @@ export const translations = {
         jsonLd: { '@context': 'https://schema.org', '@type': 'Blog', 'name': 'Artikel riizalhp.' }
       },
       pricing: {
-        title: 'Harga & Paket | Jasa Website riizalhp.',
-        description: 'Harga transparan dan fleksibel untuk pembuatan website. Temukan paket yang sempurna untuk personal brand, UMKM, atau kebutuhan perusahaan Anda.',
-        keywords: 'harga website, biaya pembuatan website, paket riizalhp, website murah',
+        title: 'Harga & Paket | Layanan Website riizalhp.',
+        description: 'Harga yang transparan dan fleksibel untuk pembuatan website. Temukan paket yang sempurna untuk kebutuhan personal brand, UKM, atau perusahaan Anda.',
+        keywords: 'harga website, biaya pengembangan web, paket riizalhp, website terjangkau',
         ogImage: 'https://riizalhp.web.id/images/og-riizalhp-pricing.jpg',
-        jsonLd: { '@context': 'https://schema.org', '@type': 'WebPage', 'name': 'Harga & Paket' }
+        jsonLd: { '@context': 'https://schema.org', '@type': 'WebPage', 'name': 'Harga' }
       },
       contact: {
-        title: 'Kontak Saya | Hubungi riizalhp.',
+        title: 'Hubungi Saya | Kontak riizalhp.',
         description: 'Punya proyek? Hubungi riizalhp. melalui email atau WhatsApp untuk mendiskusikan kebutuhan website Anda dan dapatkan konsultasi gratis.',
-        keywords: 'kontak riizalhp, minta penawaran, kontak web developer, konsultasi website',
+        keywords: 'hubungi riizalhp, dapatkan penawaran, kontak pengembang web, konsultasi website',
         ogImage: 'https://riizalhp.web.id/images/og-riizalhp-contact.jpg',
-        jsonLd: { '@context': 'https://schema.org', '@type': 'ContactPage', 'name': 'Kontak Saya' }
+        jsonLd: { '@context': 'https://schema.org', '@type': 'ContactPage', 'name': 'Hubungi Saya' }
       }
     },
-    // Navbar & Shared
     navStudio: 'tentang saya',
     navWorks: 'Karya',
     navMenu: 'menu',
@@ -1030,909 +356,234 @@ export const translations = {
     menuHowWeWork: 'Alur Kerja',
     menuArticles: 'Artikel',
     menuContact: 'Kontak',
-    getInTouch: 'Hubungi saya',
-    whatsappLink: 'https://wa.me/6289667912404',
-    
-    // Hero
+    getInTouch: 'Hubungi kami',
+    whatsappLink: 'https://wa.me/6288225444313?text=Halo%2C%20saya%20tertarik%20dengan%20layanan%20Anda.',
+
     hero: {
-      weAre: 'Saya adalah',
-      subtitle: 'Mewujudkan ide menjadi nyata dengan mengelola proyek dan membuat situs web<br class="hidden md:block" />yang mengubah visi besar menjadi pengalaman digital yang berdampak.',
-      words: ["Project Manager.", "Web Developer.", "Rizal Hanifa."],
       trustedBy: 'Telah Bekerja Sama Dengan',
+      words: ['Project Manager.', 'Web Developer.', 'Rizal Hanifa.', 'Solusi Digital.'],
+      weAre: 'Saya adalah',
+      subtitle: 'Mewujudkan ide menjadi nyata dengan mengelola proyek dan membuat situs web<br/>yang mengubah visi besar menjadi pengalaman digital yang berdampak.'
     },
 
-    // About
     about: {
-      title: 'Tentang',
+      title: 'Sedikit Tentang',
       titleBold: 'Saya',
-      subtitle: 'Hai, saya Rizal Hanifa Pratama – seorang Project Manager dan Web Developer yang berbasis di Yogyakarta, Indonesia (UTC+7).',
-      intro: 'Saya mewujudkan ide menjadi nyata dengan mengelola proyek dan merancang solusi digital yang mengubah visi besar menjadi pengalaman online yang berdampak. Dengan pengalaman profesional lebih dari 1 tahun, saya telah berkolaborasi dengan perusahaan di berbagai industri untuk memberikan hasil berkualitas tinggi, tepat waktu, dan dengan perhatian pada detail.',
-      experienceTitle: 'Pengalaman',
+      subtitle: 'Manajer Proyek dan Pengembang Web berdomisili di Yogyakarta, Indonesia.',
+      intro: 'Dengan pengalaman profesional lebih dari satu tahun, saya berspesialisasi dalam mewujudkan ide melalui manajemen proyek dan menciptakan solusi digital yang berdampak. Gairah saya adalah mengubah visi yang kompleks menjadi produk digital berkualitas tinggi yang berpusat pada pengguna.',
+      experienceTitle: 'Pengalaman Kerja',
       experience: [
-        {
-          role: 'Project Manager',
-          company: 'Contsolution Development',
-          period: 'Agu 2024 – Sekarang • Yogyakarta',
-        },
-        {
-          role: 'Product Owner Intern',
-          company: 'PT. Gemala Kempa Daya',
-          period: 'Jun 2024 – Agu 2024 • Jakarta Utara',
-        },
-        {
-          role: 'Head of Project Manager Department',
-          company: 'ITC UPN “Veteran” Yogyakarta',
-          period: 'Feb 2023 – Jun 2024 • Yogyakarta',
-        },
+        { role: 'Project Manager', company: 'Contsolution Development', period: 'Agu 2024 – Sekarang' },
+        { role: 'Product Owner Intern', company: 'PT. Gemala Kempa Daya', period: 'Jun 2024 – Agu 2024' },
+        { role: 'Head of Project Manager Department', company: 'ITC UPN “Veteran” Yogyakarta', period: 'Feb 2023 – Jun 2024' }
       ],
-      skillsTitle: 'Keterampilan & Keahlian',
-      pmSkills: [
-          'Perencanaan Proyek', 'Penjadwalan', 'Manajemen Biaya', 'Manajemen Risiko', 'Dokumentasi',
-          'Agile/Scrum', 'Komunikasi Stakeholder', 'Trello', 'Jira', 'Asana', 'Notion', 'Github Project',
-      ],
-      devSkills: [
-          'Pengembangan Frontend', 'Pengembangan Backend', 'Pengembangan Fullstack', 'Desain UI/UX',
-          'HTML', 'CSS', 'JavaScript', 'Typescript', 'React', 'Next.js',
-          'Laravel', 'Node.js', 'Express', 'PostgreSQL', 'MySQL', 'Figma', 'TailwindCSS', 'Integrasi AI'
-      ],
-      expertiseAreasTitle: 'Apa yang Saya Lakukan',
+      expertiseAreasTitle: 'Keahlian Saya',
       expertiseAreas: [
-          {
-              title: 'Manajemen Proyek',
-              description: 'Dari inisiasi hingga penutupan, saya memastikan proyek Anda berjalan lancar dan efisien.'
-          },
-          {
-              title: 'Pengembangan Web',
-              description: 'Membangun situs web yang responsif, modern, dan berkinerja tinggi.'
-          }
+        { title: 'Manajemen Proyek', description: 'Memimpin proyek dari konsep hingga selesai dengan fokus pada waktu, anggaran, dan kualitas.' },
+        { title: 'Pengembangan Web', description: 'Membangun situs web yang responsif dan berkinerja tinggi menggunakan teknologi modern.' }
       ],
-      testimonialsTitle: 'Kata Mereka',
-      testimonials: [
-        {
-          quote: 'Rizal adalah kombinasi langka dari seorang manajer proyek yang berorientasi pada detail dan pengembang web yang sangat terampil. Dia menjaga tim kami tetap terorganisir sambil memberikan produk yang sempurna lebih cepat dari jadwal.',
-          author: 'Theresia Tatik Pujiastuti',
-          company: 'RS Panti Rapih',
-          image: '/testimoni/Theresia-Tatik-Pujiastuti.webp',
-        },
-        {
-          quote: 'Bekerja dengan Rizal sangat mudah. Dia memahami kebutuhan bisnis, menerjemahkannya ke dalam solusi teknis, dan memastikan semuanya selesai tepat waktu tanpa mengorbankan kualitas.',
-          author: 'Fieryal Nafila',
-          company: 'PT Pindad',
-          image: '/testimoni/Fieryal-Nafila.webp',
-        },
-        {
-          quote: 'Profesional, komunikatif, dan sangat berbakat. Rizal membangun situs web kami persis seperti yang dibayangkan dan bahkan menyarankan perbaikan yang meningkatkan pengalaman pengguna kami.',
-          author: 'Agus Sumaryono',
-          company: 'Pendiri Edusales',
-          image: '/testimoni/Agus-sumaryono.webp',
-        },
-      ],
-      certificatesTitle: 'Sertifikat & Lisensi',
+      skillsTitle: 'Keterampilan',
+      pmSkills: ['Metodologi Agile', 'Scrum', 'Manajemen Risiko', 'Komunikasi Stakeholder', 'Jira', 'Trello'],
+      devSkills: ['React', 'TypeScript', 'Next.js', 'Node.js', 'Tailwind CSS', 'Figma'],
+      certificatesTitle: 'Sertifikat',
       certificates: [
-        {
-          name: 'Fundamental Project Management',
-          issuer: 'KOMDIGI : Google',
-          url: 'https://drive.google.com/drive/u/0/home'
-        },
-        {
-          name: 'Junior Website Programmer',
-          issuer: 'HALTEV : BNSP',
-          url: 'https://drive.google.com/drive/u/0/home'
-        },
-        {
-          name: 'Intermediate Project Management',
-          issuer: 'Talenthub',
-          url: 'https://drive.google.com/drive/u/0/home'
-        },
-        {
-          name: 'Digital Marketing',
-          issuer: 'BNSP',
-          url: 'https://drive.google.com/file/d/1E_W_sGnqLSHZsR47b-UqfPuP_Xg859Eo/view?usp=sharing'
-        },
-        {
-          name: 'SCRUM Fundamental Certified',
-          issuer: 'Scrum Study',
-          url: 'https://www.scrumstudy.com/certification/verify?type=SFC&number=938802'
-        },
-        {
-          name: 'Complete Agile Scrum Master Certification Training',
-          issuer: 'Udemy',
-          url: 'https://udemy-certificate.s3.amazonaws.com/image/UC-4d20f0ac-9726-4a56-8df1-fc0edd79c4d9.jpg'
-        }
+        { name: 'Fundamental Project Management', issuer: 'KOMDIGI', url: 'https://drive.google.com/file/d/11PCUyEWwBZQVbgvPpQ_xaovNNfJhncbv/view?usp=sharing' },
+        { name: 'Complete Agile Scrum Master Certification Training', issuer: 'Udemy', url: 'https://udemy-certificate.s3.amazonaws.com/image/UC-4d20f0ac-9726-4a56-8df1-fc0edd79c4d9.jpg' },
+        { name: 'Junior Web Programmer', issuer: 'BNSP', url: 'https://drive.google.com/file/d/1kMiecECnIHqntaL99PdFcBMGEkqraM91/view' },
+        { name: 'Intermediate Project Management', issuer: 'TalentHub', url: 'https://drive.google.com/file/d/1WiiztwcxMMFmy9XQeHWZEUQNaBsGbncp/view' },
+        { name: 'Scrum Fundamental Certified', issuer: 'SCRUMStudy', url: 'https://www.scrumstudy.com/certification/verify?type=SFC&number=938802' },
+        { name: 'Project Initiation', issuer: 'Google', url: 'https://coursera.org/share/1b464c0e46e43aac4c8ed3ca3ad7ddf0' },
+        { name: 'Digital Marketing', issuer: 'BNSP', url: 'https://drive.google.com/file/d/1E_W_sGnqLSHZsR47b-UqfPuP_Xg859Eo/view' }
       ],
+      testimonialsTitle: 'Kata Klien',
+      testimonials: [
+        { quote: 'Rizal adalah kombinasi langka dari seorang manajer proyek yang berorientasi pada detail dan pengembang web yang sangat terampil. Dia menjaga tim kami tetap terorganisir sambil memberikan produk yang sempurna lebih cepat dari jadwal.', author: 'Theresia Tatik Pujiastuti', company: 'RS Panti Rapih', image: '/testimoni/Theresia-Tatik-Pujiastuti.webp' },
+        { quote: 'Bekerja dengan Rizal sangat mudah. Dia memahami kebutuhan bisnis, menerjemahkannya ke dalam solusi teknis, dan memastikan semuanya selesai tepat waktu tanpa mengorbankan kualitas.', author: 'Fieryal Nafila', company: 'PT Pindad', image: '/testimoni/Fieryal-Nafila.webp' },
+        { quote: 'Profesional, komunikatif, dan sangat berbakat. Rizal membangun situs web kami persis seperti yang dibayangkan dan bahkan menyarankan perbaikan yang meningkatkan pengalaman pengguna kami.', author: 'Agus Sumaryono', company: 'Pendiri Edusales', image: '/testimoni/Agus-sumaryono.webp' }
+      ]
     },
 
-    // Works
     works: {
+      ongoingTitleLight: 'Proyek',
+      ongoingTitleBold: 'Berjalan',
+      ongoingSubtitle: 'Berikut adalah beberapa proyek yang sedang saya kerjakan saat ini.',
+      ongoingProjects: [
+        { title: 'Platform ResumeAI', category: 'Manajemen Proyek', description: 'Mengembangkan platform web untuk membuat dan mengoptimalkan CV ATS-friendly dengan fitur pencocokan deskripsi pekerjaan.', status: 'Dalam Pengerjaan', liveUrl: null, imageUrl: '/images/rizal-hanifa-pratama-web-developer-cv.webp' },
+      ],
       title: 'Karya',
       titleBold: 'Saya',
-      subtitle: "Saya telah menciptakan pengalaman digital untuk berbagai klien. Jelajahi beberapa proyek pilihan saya di bawah ini.",
-      filterAll: 'Semua Proyek',
+      subtitle: 'Sekilas portofolio proyek-proyek sukses kami.',
+      filterAll: 'Semua',
       searchPlaceholder: 'Cari proyek...',
+      loadMoreButton: 'Muat Lebih Banyak',
       noResults: 'Tidak ada proyek yang ditemukan.',
-      loadMoreButton: 'Lihat Lainnya',
+      projects: [
+        { title: 'Ayra - Wellness Companion', category: 'Manajemen Proyek', liveUrl: 'https://www.youtube.com/watch?si=g-89U5rEcAdq1Wip&v=ag3znSncd24&feature=youtu.be', githubUrl: null, overview: 'Mockup desain UI/UX aplikasi mobile Ayra, sebuah personal wellness companion yang membantu pengguna memantau kesehatan harian. Fitur utama termasuk tracking aktivitas (langkah, hidrasi, tidur, pola makan), mood & energi check-in, tips kesehatan, hingga chatbot untuk konsultasi. Desain clean dan modern dengan nuansa hijau tosca, putih, dan aksen kuning/oranye.', contributions: ['Berperan sebagai Project Manager.', 'Menyusun kebutuhan aplikasi (requirement gathering) berdasarkan kebutuhan klien.', 'Membuat rencana proyek, timeline, dan alur kerja tim desain & development.', 'Berkoordinasi dengan UI/UX designer untuk memastikan kesesuaian desain dengan kebutuhan user.', 'Melakukan review hasil desain dan memberikan feedback untuk penyempurnaan produk.', 'Menyusun dokumentasi dan mempresentasikan hasil ke stakeholder.'], imageUrl: '/images/pengalaman-freelance-rizal-hanifa-pratama-project-manager.webp' },
+        { title: 'Matahati - Aplikasi Edukasi Kesehatan', category: 'Manajemen Proyek', liveUrl: 'https://gamematahati.com/', githubUrl: null, overview: 'Desain aplikasi mobile edukasi kesehatan Matahati. Aplikasi ini menggabungkan edukasi seputar hipertensi dengan game interaktif seperti kuis, teka-teki silang, dan map game. Tampilan menggunakan tema pink ceria agar lebih ramah untuk pengguna awam.', contributions: ['Menyusun kebutuhan aplikasi edukasi berbasis game untuk penyuluhan kesehatan.', 'Membuat alur fitur (game, kuis, edukasi) bersama tim desain & development.', 'Mengatur timeline proyek agar selesai tepat waktu.', 'Melakukan koordinasi lintas tim (desainer, developer, ahli kesehatan).', 'Menyusun dokumentasi proyek dan mempresentasikan hasil kepada stakeholder.'], imageUrl: '/images/keahlian-rizal-hanifa-pratama-web-developer.webp' },
+        { title: 'Woodland - Profil Firma Desain', category: 'Pengembangan Web', liveUrl: 'https://boycodes-woodland.vercel.app/', githubUrl: null, overview: 'Website Woodland, company profile untuk firma desain arsitektur dan interior. Menampilkan daftar layanan (architecture, interior design, consultation), showcase galeri rumah modern, serta informasi company branding.', contributions: ['Membangun halaman about & services dengan struktur clean.', 'Membuat modul showcase galeri arsitektur.', 'Mengembangkan halaman detail proyek rumah.', 'Mengoptimalkan desain UI agar minimalis dan elegan.', 'Menambahkan CTA strategis untuk menarik calon klien.'], imageUrl: '/images/jasa-website-development-rizal-hanifa-pratama.webp' },
+        { title: 'Modestwear - E-commerce', category: 'Pengembangan Web', liveUrl: 'https://boycodes-modestwear.vercel.app/', githubUrl: null, overview: 'Website Modestwear, e-commerce fashion muslimah modern. Menampilkan koleksi hijab, abaya, dress, kimono, hingga aksesoris. Dilengkapi fitur kategori, best selling, promo, serta halaman katalog produk. Desain clean dan elegan dengan nuansa beige dan hitam.', contributions: ['Mengembangkan sistem katalog produk dengan filter kategori.', 'Membuat halaman produk dengan informasi harga, koleksi, dan status promo.', 'Mengoptimalkan website untuk kecepatan dan SEO e-commerce.', 'Menyusun modul backend untuk manajemen stok & produk.', 'Mengimplementasikan desain agar responsif di desktop & mobile.'], imageUrl: '/images/resume-terbaru-rizal-hanifa-pratama-project-manager.webp' },
+        { title: 'OEE Monitoring System', category: 'Manajemen Proyek', liveUrl: '#', githubUrl: null, overview: 'Proyek ini adalah OEE (Overall Equipment Effectiveness) Monitoring System yang dikembangkan untuk PT. Gemala Kempa Daya. Sistem ini digunakan untuk memantau performa mesin produksi secara real-time melalui metrik utama seperti Performance, Quality, Loading Time, dan Total Stop Time. Dashboard ini membantu perusahaan dalam menganalisis downtime, meningkatkan efisiensi, serta mengoptimalkan proses produksi.', contributions: ['Merancang timeline dan roadmap proyek.', 'Mengkoordinasikan tim developer dan QA.', 'Menyusun kebutuhan sistem bersama stakeholder pabrik.', 'Memastikan fitur OEE sesuai standar industri.'], imageUrl: '/images/web-developer-rizal-hanifa-pratama-portofolio.webp' },
+        { title: 'Sinaou - Sistem Manajemen Pendidikan Digital', category: 'Manajemen Proyek', liveUrl: '#', githubUrl: null, overview: 'Proyek ini adalah Sinaou – Sistem Manajemen Pendidikan Digital, sebuah platform berbasis web yang digunakan untuk mengelola data pengajar, siswa, kelas, hingga status gaji secara terintegrasi. Dashboard memberikan kemudahan bagi admin untuk melakukan verifikasi pengajar, memantau aktivitas kelas, dan mengelola data akademik secara efisien.', contributions: ['Mengelola perencanaan proyek dan menetapkan milestone pengembangan.', 'Memimpin komunikasi antara stakeholder pendidikan dan tim developer.', 'Menyusun dokumentasi kebutuhan fungsional sistem (FSD).', 'Mengawasi timeline, kualitas output, serta uji coba sistem sebelum implementasi.'], imageUrl: '/images/rizal-hanifa-pratama-project-management-case-study.webp' },
+        { title: 'Sistem Pemilihan Prioritas Supplier', category: 'Manajemen Proyek', liveUrl: '#', githubUrl: null, overview: 'Proyek ini adalah Sistem Informasi Pemilihan Prioritas Supplier PT Pindad (Divisi Alat Berat) dengan metode Analytical Hierarchy Process (AHP). Sistem ini membantu perusahaan dalam mengevaluasi dan membandingkan supplier berdasarkan kriteria utama seperti kualitas, pengiriman, harga, dan kondisi finansial.', contributions: ['Menyusun perencanaan proyek dan menentukan scope fungsional sistem.', 'Berkoordinasi dengan tim teknis dan stakeholder untuk menentukan kriteria evaluasi supplier.', 'Memastikan metode AHP diimplementasikan sesuai standar akademis dan kebutuhan bisnis.', 'Mengawasi pengujian sistem, validasi data, serta penyampaian hasil yang akurat ke manajemen perusahaan.'], imageUrl: '/images/rizal-hanifa-pratama-professional-project-management.webp' },
+        { title: 'FashionHub Indonesia - E-commerce', category: 'Pengembangan Web', liveUrl: 'https://fashion-ecommerce-riizalhp-portfolio.vercel.app/', githubUrl: null, overview: 'Platform e-commerce fashion wanita (FashionHub Indonesia) yang berfokus pada pengalaman belanja online dengan tampilan modern, clean, dan user-friendly. Sistem ini mencakup fitur katalog produk, filter kategori, sistem keranjang belanja, manajemen stok, hingga integrasi diskon otomatis.', contributions: ['Mengembangkan arsitektur e-commerce dari sisi frontend dan backend.', 'Menerapkan sistem manajemen produk dan keranjang belanja.', 'Membuat integrasi fitur diskon otomatis serta sistem checkout.', 'Mengoptimalkan desain agar mobile-friendly dan responsif.'], imageUrl: '/images/project-management-rizal-hanifa-pratama.webp' },
+        { title: 'Jogja Dataku - Platform Manajemen Data', category: 'Manajemen Proyek', liveUrl: 'https://bapperida.jogjaprov.go.id/dataku/data_dasar/index/26-lingkungan-hidup?bidang_urusan=1', githubUrl: null, overview: 'Jogja Dataku adalah platform manajemen data berbasis web yang dikembangkan untuk Pemerintah Daerah DIY. Sistem ini berfungsi sebagai pusat informasi dan data pembangunan daerah, mencakup berbagai indikator seperti keuangan, sosial, ekonomi, serta lingkungan.', contributions: ['Mengelola timeline proyek dan koordinasi antar stakeholder (developer, tim pemerintah, dan user).', 'Menyusun kebutuhan sistem (requirement gathering) serta mendefinisikan flow utama platform.', 'Memastikan integrasi data berjalan sesuai standar dan dapat diakses dengan mudah oleh masyarakat.', 'Mengawasi kualitas sistem agar memenuhi standar fungsionalitas dan transparansi publik.'], imageUrl: '/images/pengalaman-rizal-hanifa-pratama-sebagai-web-developer.webp' },
+        { title: 'Sistem Log Aktivitas & Kehadiran', category: 'Manajemen Proyek', liveUrl: '#', githubUrl: null, overview: 'Sistem Activity & Attendance Log, sebuah platform yang dirancang untuk mencatat aktivitas harian karyawan, mencatat kehadiran, serta mengelola log shift kerja. Sistem ini membantu perusahaan dalam memantau produktivitas karyawan dengan transparansi dan akurasi tinggi.', contributions: ['Mengelola scope, timeline, dan deliverables proyek.', 'Memimpin komunikasi antara stakeholder dan tim developer untuk memastikan sistem sesuai kebutuhan.', 'Menentukan flow sistem dan user interface agar mudah dipahami oleh pengguna internal perusahaan.', 'Memastikan sistem dapat diimplementasikan dengan lancar dalam proses bisnis perusahaan.'], imageUrl: '/images/portfolio-rizal-hanifa-pratama-project-manager.webp' },
+        { title: 'Platform Rental Mobil', category: 'Pengembangan Web', liveUrl: 'https://boycodes-car-rent-v1.vercel.app/', githubUrl: null, overview: 'Car Rental Platform, sebuah website modern untuk layanan penyewaan mobil premium. Platform ini menyediakan pengalaman pemesanan kendaraan yang mudah digunakan oleh pelanggan, dengan detail kendaraan yang lengkap, harga sewa per hari, fitur tambahan, serta ulasan pengguna.', contributions: ['Mendesain dan mengembangkan antarmuka website berbasis modern UI/UX.', 'Mengimplementasikan sistem pemesanan online dengan integrasi data kendaraan, harga, dan opsi tambahan.', 'Menjamin website responsif, cepat, dan user-friendly di berbagai perangkat.', 'Bekerja sama dengan tim bisnis untuk menyesuaikan kebutuhan penyewaan mobil ke dalam fitur digital.'], imageUrl: '/images/pengalaman-kerja-rizal-hanifa-pratama-project-manager.webp' },
+        { title: 'Website E-Commerce Gaming', category: 'Pengembangan Web', liveUrl: 'https://boycodes-gamezio.vercel.app/', githubUrl: null, overview: 'Gaming E-Commerce Website, sebuah platform digital untuk menjual produk dan aksesoris gaming. Website dirancang dengan tema dark neon futuristik yang sesuai dengan identitas dunia gaming, lengkap dengan sentuhan hijau neon sebagai warna aksen.', contributions: ['Mendesain dan mengimplementasikan antarmuka website dengan konsep gaming UI/UX.', 'Mengembangkan sistem katalog produk, fitur kategori (kursi, meja, keyboard, mouse).', 'Membuat website responsif dengan performa cepat agar nyaman diakses gamer di berbagai perangkat.', 'Bekerja sama dengan tim konten untuk menyesuaikan branding visual sesuai target audiens gamer.'], imageUrl: '/images/jasa-web-developer-rizal-hanifa-pratama.webp' },
+        { title: 'KU AIRKU - Sistem Manajemen Distribusi', category: 'Manajemen Proyek', liveUrl: 'https://amdk-airku-v2.vercel.app/', githubUrl: null, overview: 'Sistem Manajemen Distribusi "KU AIRKU", sebuah platform digital untuk mengelola rantai distribusi air bersih mulai dari pencatatan pemesanan, penugasan armada, hingga pelacakan pengiriman.', contributions: ['Memimpin koordinasi antara tim developer, UI/UX designer, dan stakeholder perusahaan distribusi.', 'Membuat rencana proyek menggunakan metodologi Agile/Scrum.', 'Mengelola timeline, anggaran, dan risiko proyek agar implementasi berjalan sesuai target.', 'Melakukan komunikasi intensif dengan klien untuk memahami kebutuhan operasional.'], imageUrl: '/images/jasa-project-manager-rizal-hanifa-pratama.webp' },
+        { title: 'Zairent - Platform Sewa Mobil', category: 'Pengembangan Web', liveUrl: 'https://boycodes-zairent.vercel.app/', githubUrl: null, overview: 'Desain website Zairent, sebuah platform penyewaan mobil premium dengan konsep modern dan user-friendly. Website ini menghadirkan fitur pencarian cepat berdasarkan tipe mobil, lokasi penjemputan, serta tanggal sewa.', contributions: ['Mengimplementasikan desain antarmuka ke dalam website responsif menggunakan framework modern.', 'Mengembangkan fitur pencarian & filter mobil berdasarkan kategori.', 'Mengintegrasikan data mobil ke dalam katalog dinamis.', 'Membuat sistem form booking sederhana yang terhubung ke database.'], imageUrl: '/images/rizal-hanifa-pratama-project-manager-and-web-jogja-developer-profile.webp' },
+        { title: 'Profil Firma Hukum & Notaris', category: 'Pengembangan Web', liveUrl: 'https://boycodes-sealed.vercel.app/', githubUrl: null, overview: 'Desain website company profile untuk jasa hukum & notaris. Website ini menampilkan layanan utama seperti legal consultation, business contract, serta notary services. Tampilan profesional dengan kombinasi warna gelap dan beige.', contributions: ['Mengimplementasikan desain UI/UX ke dalam kode front-end.', 'Mengembangkan halaman Services, Business, Contract, dan Testimonials.', 'Mengintegrasikan sistem testimonial dinamis untuk menampilkan ulasan klien.', 'Mengoptimalkan website agar responsif dan cepat diakses.'], imageUrl: '/images/rizal-hanifa-pratama-project-manager-and-web-developer-profile.webp' },
+        { title: 'Dasbor HRIS', category: 'Pengembangan Web', liveUrl: 'https://boycodes-hris.vercel.app/', githubUrl: null, overview: 'Desain dashboard sistem HRIS (Human Resource Information System) berbasis web yang menampilkan fitur utama seperti pelacakan kehadiran karyawan secara real-time, pengelolaan data absensi, serta pemrosesan gaji digital.', contributions: ['Mengimplementasikan desain UI/UX ke dalam kode front-end menggunakan framework modern.', 'Membangun integrasi dengan back-end API untuk menampilkan data real-time.', 'Mengembangkan modul absensi (check-in, check-out, istirahat).', 'Membuat fitur pengelolaan gaji termasuk kalkulasi otomatis.'], imageUrl: '/images/rizal-hanifa-pratama-project-manager-team-lead.webp' },
+        { title: 'Website Portofolio Pribadi', category: 'Pengembangan Web', liveUrl: '#', githubUrl: null, overview: 'Website portofolio pribadi yang menampilkan profil sebagai Project Manager & Freelance Web Developer. Website ini menyoroti pengalaman kerja, keahlian, serta stack teknologi yang dikuasai. Desain modern dengan tema dark mode.', contributions: ['Membangun website portofolio personal menggunakan Next.js/React dengan Tailwind CSS.', 'Mengimplementasikan desain dark mode interaktif dengan navigasi yang smooth.', 'Mengembangkan modul showcase proyek untuk menampilkan hasil kerja secara dinamis.', 'Mengoptimalkan performa website untuk kecepatan akses dan SEO.'], imageUrl: '/images/project-showcase-rizal-hanifa-pratama-web-developer.webp' },
+        { title: 'Portal Berita & CMS', category: 'Pengembangan Web', liveUrl: 'https://portal-berita-v1-riizalhp-portofolio.vercel.app/homepage', githubUrl: null, overview: 'Desain website Portal Berita dengan sistem manajemen konten modern. Terdapat dua sisi utama: Frontend Portal Berita dan Admin Dashboard untuk pengelolaan artikel, draft, komentar, media, hingga statistik pengunjung.', contributions: ['Mengembangkan portal berita berbasis web dengan arsitektur frontend-backend terintegrasi.', 'Membangun fitur manajemen artikel (buat, edit, hapus, publikasi terjadwal).', 'Membuat dashboard admin dengan modul monitoring.', 'Mengimplementasikan sistem autentikasi & otorisasi.'], imageUrl: '/images/profil-dan-pengalaman-rizal-hanifa-pratama-project-manager.webp' },
+        { title: 'Aplikasi E-Voting Sekolah', category: 'Pengembangan Web', liveUrl: 'https://pemilihan-ketua-osis-v1-riizalhp-portofolio.vercel.app/', githubUrl: null, overview: 'Aplikasi e-voting sekolah untuk pemilihan Ketua OSIS 2025. Platform ini memungkinkan siswa melihat profil kandidat, membaca visi misi, dan memberikan suara secara online dengan sistem keamanan one-user-one-vote.', contributions: ['Mengembangkan sistem e-voting dengan autentikasi user (siswa).', 'Membangun modul kandidat (profil, visi-misi, detail program kerja).', 'Membuat sistem voting dengan validasi one-user-one-vote.', 'Mengimplementasikan dashboard untuk admin memantau hasil suara.'], imageUrl: '/images/portfolio-rizal-hanifa-pratama-dalam-web-development.webp' },
+        { title: 'Website Booking Arena Futsal', category: 'Pengembangan Web', liveUrl: '#', githubUrl: null, overview: 'Website booking online untuk arena futsal modern. Pengguna dapat memilih lapangan indoor/outdoor, melihat jadwal ketersediaan real-time, membaca ulasan pelanggan, hingga melakukan reservasi online.', contributions: ['Mengembangkan sistem booking online terintegrasi dengan kalender jadwal.', 'Membangun modul pemilihan lapangan (indoor & outdoor) secara dinamis.', 'Mengintegrasikan testimoni pelanggan ke dalam website.', 'Membuat galeri foto untuk menampilkan fasilitas lapangan.'], imageUrl: '/images/karir-profesional-rizal-hanifa-pratama-project-manager.webp' },
+        { title: 'Website Reservasi Night Club', category: 'Pengembangan Web', liveUrl: 'https://boycodes-nitely.vercel.app/', githubUrl: null, overview: 'Website reservasi night club dengan fitur pemesanan meja VIP, informasi event, dan reservasi online. Pengguna dapat memilih zona, jumlah tamu, serta melihat daftar event mendatang. Desain menggunakan warna gelap dengan aksen neon.', contributions: ['Mengembangkan sistem reservasi meja VIP dengan form booking interaktif.', 'Membangun modul event (jadwal mendatang, event sebelumnya).', 'Mengintegrasikan sistem manajemen reservasi dengan notifikasi otomatis.', 'Membuat tampilan website dengan desain neon modern.'], imageUrl: '/images/keahlian-dan-skill-rizal-hanifa-pratama-project-manager.webp' },
+        { title: 'Mas Boy - Jasa Website', category: 'Pengembangan Web', liveUrl: 'https://boy-codes.vercel.app/', githubUrl: null, overview: 'Website layanan jasa website profesional dengan branding Mas Boy sebagai digital partner bisnis di Yogyakarta. Website ini menampilkan layanan pembuatan website custom, SEO-friendly, unlimited pages, dan full support.', contributions: ['Membangun website company profile jasa pembuatan website.', 'Mengembangkan halaman utama dengan fokus pada konversi (CTA).', 'Membuat section keunggulan layanan, statistik, dan proses kerja.', 'Mengoptimalkan performa website untuk SEO dan kecepatan akses.'], imageUrl: '/images/karir-profesional-rizal-hanifa-pratama-project-manager.webp' },
+        { title: 'Landing Page Acara 17-an', category: 'Pengembangan Web', liveUrl: 'https://undangan-17an.vercel.app/', githubUrl: null, overview: 'Website landing page untuk acara Lomba & Jalan Sehat 17-an. Website menampilkan informasi acara, kategori lomba, serta hadiah bagi pemenang. Desain sederhana, cerah, dan mudah diakses oleh masyarakat umum.', contributions: ['Membuat landing page event dengan struktur informasi yang jelas dan menarik.', 'Mengembangkan modul kategori lomba dinamis.', 'Menambahkan informasi acara, lokasi, dan waktu yang mudah dibaca.', 'Membuat tampilan responsif agar bisa diakses di smartphone.'], imageUrl: '/images/jasa-freelance-web-developer-rizal-hanifa-pratama.webp' },
+        { title: 'PesantrenFund Crowdfunding', category: 'Pengembangan Web', liveUrl: 'https://boycodes-pesantrenfund-beta.vercel.app/', githubUrl: null, overview: 'Website crowdfunding PesantrenFund untuk mendukung program digitalisasi pesantren di Indonesia. Website ini memiliki fitur kampanye donasi, filter kategori, serta progress bar target donasi.', contributions: ['Mengembangkan sistem kampanye donasi dengan target dan progress bar.', 'Membuat modul filter kategori donasi sesuai jenis program.', 'Mengintegrasikan sistem pembayaran online untuk donatur.', 'Mengoptimalkan UI/UX agar mudah digunakan oleh donatur.'], imageUrl: '/images/tentang-rizal-hanifa-pratama-web-developer.webp' },
+        { title: 'Agrofaster - Marketplace Pertanian', category: 'Manajemen Proyek', liveUrl: '#', githubUrl: null, overview: 'Aplikasi mobile Agrofaster, marketplace untuk kebutuhan pertanian. Petani dapat membeli benih, pupuk, dan peralatan tani dengan mudah melalui platform digital. Fitur utama meliputi registrasi user, verifikasi akun, katalog produk, dan sistem pemesanan.', contributions: ['Menyusun requirement aplikasi marketplace untuk sektor pertanian.', 'Membuat roadmap produk dan mengatur prioritas fitur utama.', 'Mengkoordinasikan tim desain & developer agar sesuai timeline.', 'Melakukan validasi kebutuhan dengan stakeholder.'], imageUrl: '/images/rizal-hanifa-pratama-project-manager-digital-solutions.webp' },
+        { title: 'Realistic Homes - Website Properti', category: 'Pengembangan Web', liveUrl: 'https://boycodes-realistica.vercel.app/', githubUrl: null, overview: 'Website Realistic Homes, company profile untuk bisnis properti. Menampilkan katalog rumah baru, apartemen, dan luxury flats. Dilengkapi halaman informasi detail proyek serta galeri visual.', contributions: ['Mengembangkan halaman katalog properti dinamis.', 'Membuat modul galeri foto proyek real estate.', 'Mengoptimalkan website agar cepat diakses dan responsif.', 'Mengimplementasikan struktur SEO-friendly.'], imageUrl: '/images/rizal-hanifa-pratama-web-developer-fullstack.webp' },
+        { title: 'Gymon Fitness - Landing Page', category: 'Pengembangan Web', liveUrl: 'https://boycodes-gymon.vercel.app/', githubUrl: null, overview: 'Website Gymon Fitness, landing page untuk pusat kebugaran. Menampilkan kelas, profil trainer, paket membership, dan call-to-action untuk registrasi online. Desain clean dengan aksen hijau neon.', contributions: ['Membangun landing page interaktif untuk promosi gym & fitness.', 'Mengembangkan modul kelas dengan filter kategori.', 'Mengintegrasikan paket membership ke dalam sistem booking.', 'Membuat UI responsif agar mudah diakses pengguna mobile.'], imageUrl: '/images/portofolio-web-development-rizal-hanifa-pratama.webp' },
+        { title: 'Galactic Annihilator - Game Web', category: 'Pengembangan Web', liveUrl: 'https://airplane-shooting-game-riizalhp-por.vercel.app/', githubUrl: null, overview: 'Game berbasis web Galactic Annihilator, sebuah mini arcade shooter sederhana. Pemain mengendalikan pesawat luar angkasa untuk menghindari dan menghancurkan musuh, dengan sistem skor dan nyawa.', contributions: ['Membuat game berbasis JavaScript murni (HTML5 Canvas).', 'Mengembangkan sistem kontrol (mouse untuk gerakan, klik untuk tembakan).', 'Membuat mekanisme skor & sistem nyawa.', 'Mengoptimalkan performa agar game ringan dimainkan di browser.'], imageUrl: '/images/rizal-hanifa-pratama-cv-professional-project-manager.webp' },
+        { title: 'Zinzira - E-commerce Streetwear', category: 'Pengembangan Web', liveUrl: 'https://boycodes-zinzira.vercel.app/', githubUrl: null, overview: 'Website Zinzira, e-commerce fashion streetwear untuk generasi Z. Menampilkan koleksi best sellers, katalog produk dengan diskon, serta ulasan pelanggan. Desain modern dan bold.', contributions: ['Membuat sistem katalog & filter produk dengan kategori dinamis.', 'Mengembangkan modul diskon dan highlight best seller.', 'Mengintegrasikan ulasan pelanggan pada halaman utama.', 'Mengoptimalkan performa website untuk load cepat.'], imageUrl: '/images/portfolio-it-projects-rizal-hanifa-pratama-web-developer.webp' },
+        { title: 'ViewTube - Platform Streaming', category: 'Pengembangan Web', liveUrl: 'https://youtube-rebuild-riizalhp-portfolio.vercel.app/', githubUrl: null, overview: 'Platform streaming video bernama ViewTube, mirip YouTube, dengan fitur utama: rekomendasi konten, video trending, shorts, kategori channel, dan sistem iklan. UI dibuat modern dengan mode dark.', contributions: ['Membuat antarmuka streaming dengan grid video dinamis.', 'Mengembangkan fitur filter kategori & trending video.', 'Menerapkan sistem iklan/banner terintegrasi ke UI.', 'Mengoptimalkan performa agar cepat meski memuat banyak media.'], imageUrl: '/images/perjalanan-karir-rizal-hanifa-pratama-project-manager.webp' },
+        { title: 'Hyperfit - Landing Page Fitness', category: 'Pengembangan Web', liveUrl: 'https://boycodes-hyperfit.vercel.app/', githubUrl: null, overview: 'Website Hyperfit, landing page modern untuk gym & fitness center. Menampilkan profil pelatih, jadwal kelas, paket harga, dan call-to-action untuk booking online. Desain energik dengan aksen oranye.', contributions: ['Membangun landing page interaktif untuk promosi gym.', 'Membuat modul profil pelatih dengan kategori keahlian.', 'Mengembangkan sistem paket membership & jadwal kelas.', 'Menambahkan integrasi CTA untuk pendaftaran online.'], imageUrl: '/images/pengalaman-rizal-hanifa-pratama-di-project-management.webp' },
+        { title: 'DreamHome - Listing Properti', category: 'Pengembangan Web', liveUrl: 'https://properti-management-v2-riizalhp-portofolio.vercel.app/', githubUrl: null, overview: 'Website properti DreamHome, platform listing rumah dan apartemen. Menampilkan ribuan properti dengan filter lokasi, harga, jenis rumah, hingga agen. Dilengkapi fitur “Featured Properties” & “Top Agents”.', contributions: ['Mengembangkan sistem filter properti dinamis.', 'Membuat modul listing properti lengkap dengan data harga & lokasi.', 'Mengintegrasikan profil agen profesional.', 'Membuat dashboard statistik properti aktif & penjualan sukses.'], imageUrl: '/images/pengalaman-proyek-rizal-hanifa-pratama-project-manager.webp' },
+        { title: 'Architect Agency Profile', category: 'Pengembangan Web', liveUrl: 'https://boycodes-formark.vercel.app/', githubUrl: null, overview: 'Website Architect Agency, company profile untuk firma arsitektur. Fokus menampilkan proyek arsitektur modern, upcoming projects, serta galeri visual. Desain clean dengan sentuhan tipografi bold dan aksen neon kuning.', contributions: ['Membangun halaman showcase proyek arsitektur.', 'Membuat modul upcoming project dengan status progress.', 'Mengimplementasikan galeri visual responsif.', 'Mengoptimalkan kecepatan akses meski penuh gambar.'], imageUrl: '/images/karir-dan-proyek-rizal-hanifa-pratama-project-manager.webp' }
+      ],
       modal: {
         overviewTitle: 'Gambaran Proyek',
-        contributionsTitle: 'Kontribusi Utama',
-        liveDemoButton: 'Lihat Situs Live',
-        githubButton: 'Lihat di GitHub',
-      },
-      ongoingTitleLight: "Proyek",
-      ongoingTitleBold: "Berjalan",
-      ongoingSubtitle: "Intip apa yang sedang saya bangun saat ini. Kunjungi kembali segera untuk melihat hasil akhirnya!",
-      ongoingProjects: [
-        { title: "Platform ResumeAI", category: "Manajemen Proyek", description: "Mengembangkan platform web untuk membuat dan mengoptimalkan CV ATS-friendly dengan fitur pencocokan deskripsi pekerjaan.", status: "Dalam Pengerjaan", imageUrl: '/images/rizal-hanifa-pratama-web-developer-cv.webp', liveUrl: 'https://resumeai.fun' }
-      ],
-      projects: [
-        {
-          title: 'Ayra - Wellness Companion',
-          category: 'Manajemen Proyek',
-          liveUrl: 'https://youtu.be/ag3znSncd24?si=g-89U5rEcAdq1Wip',
-          imageUrl: '/images/pengalaman-freelance-rizal-hanifa-pratama-project-manager.webp',
-          overview: "Mockup desain UI/UX aplikasi mobile Ayra, sebuah personal wellness companion yang membantu pengguna memantau kesehatan harian. Fitur utama termasuk tracking aktivitas (langkah, hidrasi, tidur, pola makan), mood & energi check-in, tips kesehatan, hingga chatbot untuk konsultasi. Desain clean dan modern dengan nuansa hijau tosca, putih, dan aksen kuning/oranye.",
-          contributions: [
-            "Berperan sebagai Project Manager.",
-            "Menyusun kebutuhan aplikasi (requirement gathering) berdasarkan kebutuhan klien.",
-            "Membuat rencana proyek, timeline, dan alur kerja tim desain & development.",
-            "Berkoordinasi dengan UI/UX designer untuk memastikan kesesuaian desain dengan kebutuhan user.",
-            "Melakukan review hasil desain dan memberikan feedback untuk penyempurnaan produk.",
-            "Menyusun dokumentasi dan mempresentasikan hasil ke stakeholder."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Matahati - Aplikasi Edukasi Kesehatan',
-          category: 'Manajemen Proyek',
-          liveUrl: 'https://gamematahati.com/',
-          imageUrl: '/images/keahlian-rizal-hanifa-pratama-web-developer.webp',
-          overview: "Desain aplikasi mobile edukasi kesehatan Matahati. Aplikasi ini menggabungkan edukasi seputar hipertensi dengan game interaktif seperti kuis, teka-teki silang, dan map game. Tampilan menggunakan tema pink ceria agar lebih ramah untuk pengguna awam.",
-          contributions: [
-            "Menyusun kebutuhan aplikasi edukasi berbasis game untuk penyuluhan kesehatan.",
-            "Membuat alur fitur (game, kuis, edukasi) bersama tim desain & development.",
-            "Mengatur timeline proyek agar selesai tepat waktu.",
-            "Melakukan koordinasi lintas tim (desainer, developer, ahli kesehatan).",
-            "Menyusun dokumentasi proyek dan mempresentasikan hasil kepada stakeholder."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Woodland - Profil Firma Desain',
-          category: 'Pengembangan Web',
-          liveUrl: 'https://boycodes-woodland.vercel.app/',
-          imageUrl: '/images/jasa-website-development-rizal-hanifa-pratama.webp',
-          overview: "Website Woodland, company profile untuk firma desain arsitektur dan interior. Menampilkan daftar layanan (architecture, interior design, consultation), showcase galeri rumah modern, serta informasi company branding.",
-          contributions: [
-            "Membangun halaman about & services dengan struktur clean.",
-            "Membuat modul showcase galeri arsitektur.",
-            "Mengembangkan halaman detail proyek rumah.",
-            "Mengoptimalkan desain UI agar minimalis dan elegan.",
-            "Menambahkan CTA strategis untuk menarik calon klien."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Modestwear - E-commerce',
-          category: 'Pengembangan Web',
-          liveUrl: 'https://boycodes-modestwear.vercel.app/',
-          imageUrl: '/images/resume-terbaru-rizal-hanifa-pratama-project-manager.webp',
-          overview: "Website Modestwear, e-commerce fashion muslimah modern. Menampilkan koleksi hijab, abaya, dress, kimono, hingga aksesoris. Dilengkapi fitur kategori, best selling, promo, serta halaman katalog produk. Desain clean dan elegan dengan nuansa beige dan hitam.",
-          contributions: [
-            "Mengembangkan sistem katalog produk dengan filter kategori.",
-            "Membuat halaman produk dengan informasi harga, koleksi, dan status promo.",
-            "Mengoptimalkan website untuk kecepatan dan SEO e-commerce.",
-            "Menyusun modul backend untuk manajemen stok & produk.",
-            "Mengimplementasikan desain agar responsif di desktop & mobile."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'OEE Monitoring System',
-          category: 'Manajemen Proyek',
-          liveUrl: null,
-          imageUrl: '/images/web-developer-rizal-hanifa-pratama-portofolio.webp',
-          overview: "Proyek ini adalah OEE (Overall Equipment Effectiveness) Monitoring System yang dikembangkan untuk PT. Gemala Kempa Daya. Sistem ini digunakan untuk memantau performa mesin produksi secara real-time melalui metrik utama seperti Performance, Quality, Loading Time, dan Total Stop Time. Dashboard ini membantu perusahaan dalam menganalisis downtime, meningkatkan efisiensi, serta mengoptimalkan proses produksi.",
-          contributions: [
-            "Merancang timeline dan roadmap proyek.",
-            "Mengkoordinasikan tim developer dan QA.",
-            "Menyusun kebutuhan sistem bersama stakeholder pabrik.",
-            "Memastikan fitur OEE sesuai standar industri."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Sinaou - Sistem Manajemen Pendidikan Digital',
-          category: 'Manajemen Proyek',
-          liveUrl: null,
-          imageUrl: '/images/rizal-hanifa-pratama-project-management-case-study.webp',
-          overview: "Proyek ini adalah Sinaou – Sistem Manajemen Pendidikan Digital, sebuah platform berbasis web yang digunakan untuk mengelola data pengajar, siswa, kelas, hingga status gaji secara terintegrasi. Dashboard memberikan kemudahan bagi admin untuk melakukan verifikasi pengajar, memantau aktivitas kelas, dan mengelola data akademik secara efisien. Sistem ini dirancang untuk meningkatkan transparansi, keteraturan, serta efisiensi dalam pengelolaan pendidikan berbasis teknologi.",
-          contributions: [
-            "Mengelola perencanaan proyek dan menetapkan milestone pengembangan.",
-            "Memimpin komunikasi antara stakeholder pendidikan dan tim developer.",
-            "Menyusun dokumentasi kebutuhan fungsional sistem (FSD).",
-            "Mengawasi timeline, kualitas output, serta uji coba sistem sebelum implementasi."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Sistem Pemilihan Prioritas Supplier',
-          category: 'Manajemen Proyek',
-          liveUrl: null,
-          imageUrl: '/images/rizal-hanifa-pratama-professional-project-management.webp',
-          overview: "Proyek ini adalah Sistem Informasi Pemilihan Prioritas Supplier PT Pindad (Divisi Alat Berat) dengan metode Analytical Hierarchy Process (AHP). Sistem ini membantu perusahaan dalam mengevaluasi dan membandingkan supplier berdasarkan kriteria utama seperti kualitas, pengiriman, harga, dan kondisi finansial. Dashboard sistem menampilkan hasil perbandingan antar supplier secara terukur serta menyediakan laporan otomatis dalam format PDF untuk mempermudah pengambilan keputusan strategis.",
-          contributions: [
-            "Menyusun perencanaan proyek dan menentukan scope fungsional sistem.",
-            "Berkoordinasi dengan tim teknis dan stakeholder untuk menentukan kriteria evaluasi supplier.",
-            "Memastikan metode AHP diimplementasikan sesuai standar akademis dan kebutuhan bisnis.",
-            "Mengawasi pengujian sistem, validasi data, serta penyampaian hasil yang akurat ke manajemen perusahaan."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'FashionHub Indonesia - E-commerce',
-          category: 'Pengembangan Web',
-          liveUrl: 'https://fashion-ecommerce-riizalhp-portfolio.vercel.app/',
-          imageUrl: '/images/project-management-rizal-hanifa-pratama.webp',
-          overview: "Proyek ini merupakan platform e-commerce fashion wanita (FashionHub Indonesia) yang berfokus pada pengalaman belanja online dengan tampilan modern, clean, dan user-friendly. Sistem ini mencakup fitur katalog produk, filter kategori, sistem keranjang belanja, manajemen stok, hingga integrasi diskon otomatis. Tampilan produk dibuat menarik dengan foto berkualitas tinggi serta opsi pemilihan ukuran, warna, dan jumlah secara dinamis. Tujuan utama proyek ini adalah memberikan solusi digital bagi brand fashion agar lebih dekat dengan pelanggan melalui platform yang cepat, mudah digunakan, dan responsif di berbagai perangkat.",
-          contributions: [
-            "Mengembangkan arsitektur e-commerce dari sisi frontend dan backend.",
-            "Menerapkan sistem manajemen produk dan keranjang belanja.",
-            "Membuat integrasi fitur diskon otomatis serta sistem checkout.",
-            "Mengoptimalkan desain agar mobile-friendly dan responsif."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Jogja Dataku - Platform Manajemen Data',
-          category: 'Manajemen Proyek',
-          liveUrl: 'https://bapperida.jogjaprov.go.id/dataku/data_dasar/index/26-lingkungan-hidup?bidang_urusan=1',
-          imageUrl: '/images/pengalaman-rizal-hanifa-pratama-sebagai-web-developer.webp',
-          overview: "Proyek ini adalah Jogja Dataku, sebuah platform manajemen data berbasis web yang dikembangkan untuk Pemerintah Daerah DIY. Sistem ini berfungsi sebagai pusat informasi dan data pembangunan daerah, mencakup berbagai indikator seperti keuangan, sosial, ekonomi, serta lingkungan. Platform ini memungkinkan pengguna untuk melakukan pencarian data, menampilkan indikator kinerja daerah, serta melakukan ekspor data ke format Excel/PDF. Tujuannya adalah menyediakan transparansi data serta mendukung pengambilan keputusan berbasis data (data-driven decision making).",
-          contributions: [
-            "Mengelola timeline proyek dan koordinasi antar stakeholder (developer, tim pemerintah, dan user).",
-            "Menyusun kebutuhan sistem (requirement gathering) serta mendefinisikan flow utama platform.",
-            "Memastikan integrasi data berjalan sesuai standar dan dapat diakses dengan mudah oleh masyarakat.",
-            "Mengawasi kualitas sistem agar memenuhi standar fungsionalitas dan transparansi publik."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Sistem Log Aktivitas & Kehadiran',
-          category: 'Manajemen Proyek',
-          liveUrl: null,
-          imageUrl: '/images/portfolio-rizal-hanifa-pratama-project-manager.webp',
-          overview: "Proyek ini adalah Sistem Activity & Attendance Log, sebuah platform yang dirancang untuk mencatat aktivitas harian karyawan, mencatat kehadiran, serta mengelola log shift kerja. Sistem ini membantu perusahaan dalam memantau produktivitas karyawan dengan transparansi dan akurasi tinggi. Fitur utama mencakup log activity, riwayat aktivitas, pencatatan waktu masuk/keluar, serta pelaporan real-time yang dapat digunakan oleh HR atau manajer operasional untuk evaluasi kinerja. Tujuan utama proyek ini adalah meningkatkan efisiensi pengelolaan sumber daya manusia melalui sistem digital yang mudah digunakan, sekaligus mengurangi risiko human error pada pencatatan manual.",
-          contributions: [
-            "Mengelola scope, timeline, dan deliverables proyek.",
-            "Memimpin komunikasi antara stakeholder dan tim developer untuk memastikan sistem sesuai kebutuhan.",
-            "Menentukan flow sistem dan user interface agar mudah dipahami oleh pengguna internal perusahaan.",
-            "Memastikan sistem dapat diimplementasikan dengan lancar dalam proses bisnis perusahaan."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Platform Rental Mobil',
-          category: 'Pengembangan Web',
-          liveUrl: 'https://boycodes-car-rent-v1.vercel.app/',
-          imageUrl: '/images/pengalaman-kerja-rizal-hanifa-pratama-project-manager.webp',
-          overview: "Proyek ini adalah Car Rental Platform, sebuah website modern untuk layanan penyewaan mobil premium. Platform ini menyediakan pengalaman pemesanan kendaraan yang mudah digunakan oleh pelanggan, dengan detail kendaraan yang lengkap, harga sewa per hari, fitur tambahan, serta ulasan pengguna. Website ini dirancang untuk mempermudah calon pelanggan dalam memilih mobil sesuai kebutuhan—mulai dari kategori luxury sedan, SUV, hingga trucks. Sistem juga dilengkapi dengan instant booking 24/7, review pelanggan, serta integrasi opsi add-ons (misalnya GPS, asuransi, atau child seat). Tujuan proyek ini adalah membantu bisnis rental mobil meningkatkan visibilitas online, mempermudah pemesanan, dan memberikan pengalaman digital yang praktis serta transparan bagi pengguna.",
-          contributions: [
-            "Mendesain dan mengembangkan antarmuka website berbasis modern UI/UX.",
-            "Mengimplementasikan sistem pemesanan online dengan integrasi data kendaraan, harga, dan opsi tambahan.",
-            "Menjamin website responsif, cepat, dan user-friendly di berbagai perangkat.",
-            "Bekerja sama dengan tim bisnis untuk menyesuaikan kebutuhan penyewaan mobil ke dalam fitur digital."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Website E-Commerce Gaming',
-          category: 'Pengembangan Web',
-          liveUrl: 'https://boycodes-gamezio.vercel.app/',
-          imageUrl: '/images/jasa-web-developer-rizal-hanifa-pratama.webp',
-          overview: "Proyek ini adalah Gaming E-Commerce Website, sebuah platform digital untuk menjual produk dan aksesoris gaming seperti kursi gaming, meja, keyboard, mouse, dan perlengkapan lainnya. Website dirancang dengan tema dark neon futuristik yang sesuai dengan identitas dunia gaming, lengkap dengan sentuhan hijau neon sebagai warna aksen. Selain katalog produk yang interaktif, platform ini juga menampilkan highlight produk unggulan, ulasan dari gamer, serta integrasi dengan komunitas pemain game online. Tujuan dari pengembangan website ini adalah untuk menarik pasar gamer yang sangat visual, menghadirkan pengalaman belanja online yang imersif, dan meningkatkan konversi penjualan produk gaming.",
-          contributions: [
-            "Mendesain dan mengimplementasikan antarmuka website dengan konsep gaming UI/UX.",
-            "Mengembangkan sistem katalog produk, fitur kategori (kursi, meja, keyboard, mouse).",
-            "Membuat website responsif dengan performa cepat agar nyaman diakses gamer di berbagai perangkat.",
-            "Bekerja sama dengan tim konten untuk menyesuaikan branding visual sesuai target audiens gamer."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'KU AIRKU - Sistem Manajemen Distribusi',
-          category: 'Manajemen Proyek',
-          liveUrl: 'https://amdk-airku-v2.vercel.app/',
-          imageUrl: '/images/jasa-project-manager-rizal-hanifa-pratama.webp',
-          overview: `Proyek ini adalah Sistem Manajemen Distribusi "KU AIRKU", sebuah platform digital untuk mengelola rantai distribusi air bersih mulai dari pencatatan pemesanan, penugasan armada, hingga pelacakan pengiriman. Sistem ini dilengkapi dengan portal admin untuk memantau performa penjualan, laporan survei, rute pengiriman, serta status pesanan secara real-time. Selain itu, terdapat juga portal sales mobile-friendly yang memudahkan tim penjualan untuk mencatat permintaan pesanan dari pelanggan dengan cepat, transparan, dan akurat. Tujuan proyek ini adalah meningkatkan efisiensi distribusi, mengurangi keterlambatan, serta memberikan visibilitas penuh bagi manajemen dalam memantau aktivitas operasional distribusi.`,
-          contributions: [
-            "Memimpin koordinasi antara tim developer, UI/UX designer, dan stakeholder perusahaan distribusi.",
-            "Membuat rencana proyek menggunakan metodologi Agile/Scrum dengan sprint mingguan untuk memastikan fitur prioritas selesai tepat waktu.",
-            "Mengelola timeline, anggaran, dan risiko proyek agar implementasi berjalan sesuai target.",
-            "Melakukan komunikasi intensif dengan klien untuk memahami kebutuhan operasional dan menerjemahkannya menjadi fitur aplikasi yang relevan."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Zairent - Platform Sewa Mobil',
-          category: 'Pengembangan Web',
-          liveUrl: 'https://boycodes-zairent.vercel.app/',
-          imageUrl: '/images/rizal-hanifa-pratama-project-manager-and-web-jogja-developer-profile.webp',
-          overview: "Desain website Zairent, sebuah platform penyewaan mobil premium dengan konsep modern dan user-friendly. Website ini menghadirkan fitur pencarian cepat berdasarkan tipe mobil, lokasi penjemputan, serta tanggal sewa. Terdapat katalog mobil lengkap dengan detail spesifikasi (tipe bahan bakar, transmisi, jarak tempuh) dan harga sewa per jam. Tampilan menggunakan kombinasi warna kuning cerah dan putih untuk menonjolkan kesan elegan, profesional, sekaligus ramah pengguna.",
-          contributions: [
-            "Mengimplementasikan desain antarmuka ke dalam website responsif menggunakan framework modern (React/Next.js atau Laravel Blade + Tailwind).",
-            "Mengembangkan fitur pencarian & filter mobil berdasarkan kategori (luxury car, electric car, convertible, dsb).",
-            "Mengintegrasikan data mobil ke dalam katalog dinamis dengan detail harga, rating, dan spesifikasi.",
-            "Membuat sistem form booking sederhana yang terhubung ke database.",
-            "Melakukan optimasi performa website agar cepat diakses di perangkat mobile dan desktop.",
-            "Menyusun dokumentasi teknis dasar untuk maintenance serta pengembangan fitur lanjutan."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Profil Firma Hukum & Notaris',
-          category: 'Pengembangan Web',
-          liveUrl: 'https://boycodes-sealed.vercel.app/',
-          imageUrl: '/images/rizal-hanifa-pratama-project-manager-and-web-developer-profile.webp',
-          overview: "Desain website company profile untuk jasa hukum & notaris. Website ini menampilkan layanan utama seperti legal consultation, business contract, serta notary services. Tampilan profesional dengan kombinasi warna gelap dan beige yang memberi kesan elegan, modern, dan terpercaya. Fitur yang dihadirkan meliputi section layanan, testimoni klien, serta informasi kontak bisnis.",
-          contributions: [
-            "Mengimplementasikan desain UI/UX ke dalam kode front-end (HTML, CSS, JavaScript/React).",
-            "Mengembangkan halaman Services, Business, Contract, dan Testimonials sesuai kebutuhan klien.",
-            "Mengintegrasikan sistem testimonial dinamis untuk menampilkan ulasan klien.",
-            "Mengoptimalkan website agar responsif dan cepat diakses pada berbagai perangkat.",
-            "Melakukan testing cross-browser untuk memastikan konsistensi tampilan.",
-            "Menyediakan dokumentasi teknis singkat agar website mudah di-maintain oleh tim klien."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Dasbor HRIS',
-          category: 'Pengembangan Web',
-          liveUrl: 'https://boycodes-hris.vercel.app/',
-          imageUrl: '/images/rizal-hanifa-pratama-project-manager-team-lead.webp',
-          overview: "Desain dashboard sistem HRIS (Human Resource Information System) berbasis web yang menampilkan fitur utama seperti pelacakan kehadiran karyawan secara real-time, pengelolaan data absensi, serta pemrosesan gaji digital. Dashboard ini memungkinkan HR untuk memantau jam masuk/keluar, status kehadiran, rekap aktivitas harian, serta menghitung gaji karyawan lengkap dengan rincian potongan dan indikator kepatuhan. Tampilan menggunakan gaya modern, clean, dengan struktur data yang rapi sehingga memudahkan proses manajemen SDM.",
-          contributions: [
-            "Mengimplementasikan desain UI/UX ke dalam kode front-end menggunakan framework modern (misalnya React/Next.js atau Vue).",
-            "Membangun integrasi dengan back-end API untuk menampilkan data kehadiran dan penggajian secara real-time.",
-            "Mengembangkan modul absensi (check-in, check-out, istirahat) dan menautkannya ke basis data karyawan.",
-            "Membuat fitur pengelolaan gaji termasuk kalkulasi otomatis, potongan, dan ekspor data.",
-            "Melakukan optimasi performa dan responsivitas agar dashboard dapat digunakan dengan lancar di berbagai perangkat."
-          ],
-          githubUrl: 'https://github.com/example'
-        },
-        {
-          title: 'Website Portofolio Pribadi',
-          category: 'Pengembangan Web',
-          liveUrl: 'https://example.com',
-          imageUrl: '/images/project-showcase-rizal-hanifa-pratama-web-developer.webp',
-          overview: "Website portofolio pribadi yang menampilkan profil sebagai Project Manager & Freelance Web Developer. Website ini menyoroti pengalaman kerja, keahlian, serta stack teknologi yang dikuasai. Terdapat section layanan (Project Manager, Web Developer, AI Agent Developer), showcase proyek web developer, hingga testimoni klien. Desain modern dengan tema dark mode, tipografi tegas, dan layout interaktif yang menonjolkan profesionalisme sekaligus kreativitas.",
-          contributions: [
-            "Membangun website portofolio personal menggunakan framework modern (Next.js/React dengan Tailwind CSS).",
-            "Mengimplementasikan desain dark mode interaktif dengan navigasi yang smooth.",
-            "Mengembangkan modul showcase proyek untuk menampilkan hasil kerja secara dinamis.",
-            "Membuat section layanan dengan deskripsi yang mudah dipahami dan terstruktur.",
-            "Mengoptimalkan performa website untuk kecepatan akses dan SEO.",
-            "Menyusun dokumentasi teknis agar website mudah diperbarui seiring bertambahnya proyek."
-          ],
-          githubUrl: 'https://github.com/example'
-        },
-        {
-          title: 'Portal Berita & CMS',
-          category: 'Pengembangan Web',
-          liveUrl: 'https://portal-berita-v1-riizalhp-portofolio.vercel.app/homepage',
-          imageUrl: '/images/profil-dan-pengalaman-rizal-hanifa-pratama-project-manager.webp',
-          overview: "Desain website Portal Berita dengan sistem manajemen konten modern. Terdapat dua sisi utama: Frontend Portal Berita → menampilkan artikel terkini dengan kategori (teknologi, politik, ekonomi, olahraga), breaking news, artikel trending, serta slider berita utama. Admin Dashboard → untuk pengelolaan artikel, draft, komentar, media, hingga statistik pengunjung. Dashboard dilengkapi fitur moderasi komentar, manajemen user, dan laporan aktivitas terbaru. Tampilan clean, profesional, dan mudah digunakan baik untuk pembaca maupun admin.",
-          contributions: [
-            "Mengembangkan portal berita berbasis web dengan arsitektur frontend-backend terintegrasi.",
-            "Membangun fitur manajemen artikel (buat, edit, hapus, publikasi terjadwal).",
-            "Membuat dashboard admin dengan modul monitoring pengunjung, komentar, dan draft artikel.",
-            "Mengimplementasikan sistem autentikasi & otorisasi untuk admin dan kontributor.",
-            "Mengoptimalkan tampilan agar responsif dan SEO-friendly untuk meningkatkan jangkauan berita.",
-            "Melakukan testing & debugging agar portal berjalan stabil dengan traffic tinggi."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Aplikasi E-Voting Sekolah',
-          category: 'Pengembangan Web',
-          liveUrl: 'https://pemilihan-ketua-osis-v1-riizalhp-portofolio.vercel.app/',
-          imageUrl: '/images/portfolio-rizal-hanifa-pratama-dalam-web-development.webp',
-          overview: "Aplikasi e-voting sekolah untuk pemilihan Ketua OSIS 2025. Platform ini memungkinkan siswa melihat profil kandidat, membaca visi misi, dan memberikan suara secara online dengan sistem keamanan yang hanya mengizinkan satu kali voting per akun. Desain sederhana, modern, dan transparan untuk mendukung proses demokrasi digital di sekolah.",
-          contributions: [
-            "Mengembangkan sistem e-voting dengan autentikasi user (siswa).",
-            "Membangun modul kandidat (profil, visi-misi, detail program kerja).",
-            "Membuat sistem voting dengan validasi one-user-one-vote.",
-            "Mengimplementasikan dashboard untuk admin/panitia OSIS memantau hasil suara.",
-            "Mengoptimalkan keamanan agar data suara tidak bisa dimanipulasi."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Website Booking Arena Futsal',
-          category: 'Pengembangan Web',
-          liveUrl: 'https://example.com',
-          imageUrl: '/images/layanan-web-developer-rizal-hanifa-pratama.webp',
-          overview: "Website booking online untuk arena futsal modern. Pengguna dapat memilih lapangan indoor/outdoor, melihat jadwal ketersediaan real-time, membaca ulasan pelanggan, hingga melakukan reservasi online. Tampilan clean dengan nuansa hijau-hitam yang memberi kesan sporty dan profesional.",
-          contributions: [
-            "Mengembangkan sistem booking online terintegrasi dengan kalender jadwal.",
-            "Membangun modul pemilihan lapangan (indoor & outdoor) secara dinamis.",
-            "Mengintegrasikan testimoni pelanggan ke dalam website.",
-            "Membuat galeri foto untuk menampilkan fasilitas lapangan.",
-            "Mengoptimalkan website agar mudah diakses via mobile untuk pemesanan cepat."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Website Reservasi Night Club',
-          category: 'Pengembangan Web',
-          liveUrl: 'https://boycodes-nitely.vercel.app/',
-          imageUrl: '/images/keahlian-dan-skill-rizal-hanifa-pratama-project-manager.webp',
-          overview: "Website reservasi night club dengan fitur pemesanan meja VIP, informasi event, dan reservasi online. Pengguna dapat memilih zona (A, B, C), jumlah tamu, serta melihat daftar event mendatang dan galeri suasana club. Desain menggunakan warna gelap dengan aksen neon ungu-biru yang menciptakan kesan modern dan eksklusif.",
-          contributions: [
-            "Mengembangkan sistem reservasi meja VIP dengan form booking interaktif.",
-            "Membangun modul event (jadwal mendatang, event sebelumnya, highlight artis).",
-            "Mengintegrasikan sistem manajemen reservasi dengan notifikasi otomatis.",
-            "Membuat tampilan website dengan desain neon modern sesuai tema nightlife.",
-            "Mengoptimalkan performa website untuk akses cepat meski dengan banyak media (foto & video)."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Mas Boy - Jasa Website',
-          category: 'Pengembangan Web',
-          liveUrl: 'https://boy-codes.vercel.app/',
-          imageUrl: '/images/karir-profesional-rizal-hanifa-pratama-project-manager.webp',
-          overview: "Website layanan jasa website profesional dengan branding Mas Boy sebagai digital partner bisnis di Yogyakarta. Website ini menampilkan layanan pembuatan website custom, SEO-friendly, unlimited pages, dan full support. Terdapat statistik hasil kerja seperti jumlah website yang dibangun, tingkat kepuasan klien, serta ketepatan waktu pengerjaan.",
-          contributions: [
-            "Membangun website company profile jasa pembuatan website.",
-            "Mengembangkan halaman utama dengan fokus pada konversi (CTA: free consultation, view packages).",
-            "Membuat section keunggulan layanan, statistik, dan proses kerja.",
-            "Mengoptimalkan performa website untuk SEO dan kecepatan akses.",
-            "Menyusun struktur yang responsif untuk mobile dan desktop."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Landing Page Acara 17-an',
-          category: 'Pengembangan Web',
-          liveUrl: 'https://undangan-17an.vercel.app/',
-          imageUrl: '/images/jasa-freelance-web-developer-rizal-hanifa-pratama.webp',
-          overview: "Website landing page untuk acara Lomba & Jalan Sehat 17-an. Website menampilkan informasi acara (tanggal, lokasi, waktu), kategori lomba untuk berbagai kalangan (anak, remaja, bapak-bapak, ibu-ibu, pasangan, semua warga), serta hadiah bagi pemenang. Desain sederhana, cerah, dan mudah diakses oleh masyarakat umum.",
-          contributions: [
-            "Membuat landing page event dengan struktur informasi yang jelas dan menarik.",
-            "Mengembangkan modul kategori lomba dinamis dengan warna berbeda untuk setiap kelompok.",
-            "Menambahkan informasi acara, lokasi, dan waktu yang mudah dibaca.",
-            "Membuat tampilan responsif agar bisa diakses di smartphone warga.",
-            "Mengintegrasikan sistem reminder sederhana untuk peserta acara."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'PesantrenFund Crowdfunding',
-          category: 'Pengembangan Web',
-          liveUrl: 'https://boycodes-pesantrenfund-beta.vercel.app/',
-          imageUrl: '/images/tentang-rizal-hanifa-pratama-web-developer.webp',
-          overview: "Website crowdfunding PesantrenFund untuk mendukung program digitalisasi pesantren di Indonesia. Website ini memiliki fitur kampanye donasi, filter kategori (pendidikan, zakat, infrastruktur, pelatihan), serta progress bar target donasi. Tampilan profesional dengan fokus pada transparansi dana dan dampak program.",
-          contributions: [
-            "Mengembangkan sistem kampanye donasi dengan target dan progress bar.",
-            "Membuat modul filter kategori donasi sesuai jenis program.",
-            "Mengintegrasikan sistem pembayaran online untuk donatur.",
-            "Mengoptimalkan UI/UX agar mudah digunakan oleh donatur.",
-            "Menyusun backend untuk dashboard admin (kelola kampanye, donasi, laporan)."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Agrofaster - Marketplace Pertanian',
-          category: 'Manajemen Proyek',
-          liveUrl: null,
-          imageUrl: '/images/rizal-hanifa-pratama-project-manager-digital-solutions.webp',
-          overview: "Aplikasi mobile Agrofaster, marketplace untuk kebutuhan pertanian. Petani dapat membeli benih, pupuk, dan peralatan tani dengan mudah melalui platform digital. Fitur utama meliputi registrasi user, verifikasi akun, katalog produk, rekomendasi barang, hingga sistem pemesanan dan penjualan hasil panen.",
-          contributions: [
-            "Menyusun requirement aplikasi marketplace untuk sektor pertanian.",
-            "Membuat roadmap produk dan mengatur prioritas fitur utama.",
-            "Mengkoordinasikan tim desain & developer agar sesuai timeline.",
-            "Melakukan validasi kebutuhan dengan stakeholder (petani & distributor).",
-            "Memastikan kualitas aplikasi sebelum peluncuran."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Realistic Homes - Website Properti',
-          category: 'Pengembangan Web',
-          liveUrl: 'https://boycodes-realistica.vercel.app/',
-          imageUrl: '/images/rizal-hanifa-pratama-web-developer-fullstack.webp',
-          overview: "Website Realistic Homes, company profile untuk bisnis properti. Menampilkan katalog rumah baru, apartemen, dan luxury flats. Dilengkapi halaman informasi detail proyek serta galeri visual. Desain minimalis dengan nuansa monokrom agar terlihat elegan dan profesional.",
-          contributions: [
-            "Mengembangkan halaman katalog properti dinamis.",
-            "Membuat modul galeri foto proyek real estate.",
-            "Mengoptimalkan website agar cepat diakses dan responsif.",
-            "Mengimplementasikan struktur SEO-friendly untuk visibilitas bisnis.",
-            "Menyusun backend sederhana untuk manajemen data properti."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Gymon Fitness - Landing Page',
-          category: 'Pengembangan Web',
-          liveUrl: 'https://boycodes-gymon.vercel.app/',
-          imageUrl: '/images/profil-profesional-rizal-hanifa-pratama-project-manager.webp',
-          overview: "Website Gymon Fitness, landing page untuk pusat kebugaran. Menampilkan kelas (yoga, personal training, group class), profil trainer, paket membership, dan call-to-action untuk registrasi online. Desain clean dengan warna netral dan aksen hijau neon untuk kesan energik.",
-          contributions: [
-            "Membangun landing page interaktif untuk promosi gym & fitness.",
-            "Mengembangkan modul kelas dengan filter kategori.",
-            "Mengintegrasikan paket membership ke dalam sistem booking.",
-            "Membuat UI responsif agar mudah diakses pengguna mobile.",
-            "Menambahkan CTA “Join Now” untuk meningkatkan konversi pendaftaran."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Galactic Annihilator - Game Web',
-          category: 'Pengembangan Web',
-          liveUrl: 'https://airplane-shooting-game-riizalhp-por.vercel.app/',
-          imageUrl: '/images/rizal-hanifa-pratama-cv-professional-project-manager.webp',
-          overview: "Game berbasis web Galactic Annihilator, sebuah mini arcade shooter sederhana. Pemain mengendalikan pesawat luar angkasa untuk menghindari dan menghancurkan musuh, dengan sistem skor dan nyawa. Desain minimalis dengan nuansa sci-fi.",
-          contributions: [
-            "Membuat game berbasis JavaScript murni (HTML5 Canvas).",
-            "Mengembangkan sistem kontrol (mouse untuk gerakan, klik untuk tembakan).",
-            "Membuat mekanisme skor & sistem nyawa.",
-            "Mengoptimalkan performa agar game ringan dimainkan di browser.",
-            "Menyusun dokumentasi dasar untuk pengembangan lanjutan."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Zinzira - E-commerce Streetwear',
-          category: 'Pengembangan Web',
-          liveUrl: 'https://boycodes-zinzira.vercel.app/',
-          imageUrl: '/images/portfolio-it-projects-rizal-hanifa-pratama-web-developer.webp',
-          overview: "Website Zinzira, e-commerce fashion streetwear untuk generasi Z. Menampilkan koleksi best sellers, katalog produk dengan diskon, serta ulasan pelanggan. Desain modern, bold, dengan fokus pada visual produk.",
-          contributions: [
-            "Membuat sistem katalog & filter produk dengan kategori dinamis.",
-            "Mengembangkan modul diskon dan highlight best seller.",
-            "Mengintegrasikan ulasan pelanggan pada halaman utama.",
-            "Mengoptimalkan performa website untuk load cepat.",
-            "Menyusun dokumentasi teknis untuk pengelolaan e-commerce."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'ViewTube - Platform Streaming',
-          category: 'Pengembangan Web',
-          liveUrl: 'https://youtube-rebuild-riizalhp-portfolio.vercel.app/',
-          imageUrl: '/images/perjalanan-karir-rizal-hanifa-pratama-project-manager.webp',
-          overview: "Platform streaming video bernama ViewTube, mirip YouTube, dengan fitur utama: rekomendasi konten, video trending, shorts, kategori channel, dan sistem iklan. UI dibuat modern dengan mode dark untuk kenyamanan menonton.",
-          contributions: [
-            "Membuat antarmuka streaming dengan grid video dinamis.",
-            "Mengembangkan fitur filter kategori & trending video.",
-            "Menerapkan sistem iklan/banner terintegrasi ke UI.",
-            "Mengoptimalkan performa agar cepat meski memuat banyak media.",
-            "Membuat UI responsif agar nyaman di desktop maupun mobile."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Hyperfit - Landing Page Fitness',
-          category: 'Pengembangan Web',
-          liveUrl: 'https://boycodes-hyperfit.vercel.app/',
-          imageUrl: '/images/pengalaman-rizal-hanifa-pratama-di-project-management.webp',
-          overview: "Website Hyperfit, landing page modern untuk gym & fitness center. Menampilkan profil pelatih, jadwal kelas, paket harga, dan call-to-action untuk booking online. Desain energik dengan aksen oranye untuk membangkitkan semangat.",
-          contributions: [
-            "Membangun landing page interaktif untuk promosi gym.",
-            "Membuat modul profil pelatih dengan kategori keahlian.",
-            "Mengembangkan sistem paket membership & jadwal kelas.",
-            "Menambahkan integrasi CTA untuk pendaftaran online.",
-            "Mengoptimalkan SEO website agar mudah ditemukan."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'DreamHome - Listing Properti',
-          category: 'Pengembangan Web',
-          liveUrl: 'https://properti-management-v2-riizalhp-portofolio.vercel.app/',
-          imageUrl: '/images/pengalaman-proyek-rizal-hanifa-pratama-project-manager.webp',
-          overview: "Website properti DreamHome, platform listing rumah dan apartemen. Menampilkan ribuan properti dengan filter lokasi, harga, jenis rumah, hingga agen. Dilengkapi fitur “Featured Properties” & “Top Agents”.",
-          contributions: [
-            "Mengembangkan sistem filter properti dinamis.",
-            "Membuat modul listing properti lengkap dengan data harga & lokasi.",
-            "Mengintegrasikan profil agen profesional.",
-            "Membuat dashboard statistik properti aktif & penjualan sukses.",
-            "Mengoptimalkan tampilan agar mobile-friendly."
-          ],
-          githubUrl: null
-        },
-        {
-          title: 'Architect Agency Profile',
-          category: 'Pengembangan Web',
-          liveUrl: 'https://boycodes-formark.vercel.app/',
-          imageUrl: '/images/karir-dan-proyek-rizal-hanifa-pratama-project-manager.webp',
-          overview: "Website Architect Agency, company profile untuk firma arsitektur. Fokus menampilkan proyek arsitektur modern, upcoming projects, serta galeri visual. Desain clean dengan sentuhan tipografi bold dan aksen neon kuning.",
-          contributions: [
-            "Membangun halaman showcase proyek arsitektur.",
-            "Membuat modul upcoming project dengan status progress.",
-            "Mengimplementasikan galeri visual responsif.",
-            "Mengoptimalkan kecepatan akses meski penuh gambar.",
-            "Menyusun struktur SEO-friendly untuk branding firma arsitektur."
-          ],
-          githubUrl: null
-        }
-      ],
+        contributionsTitle: 'Kontribusi Saya',
+        liveDemoButton: 'Lihat Situs',
+        githubButton: 'Lihat di GitHub'
+      }
     },
     
-    // Articles
-    articles: {
-      title: "Artikel",
-      titleBold: "Saya",
-      subtitle: "Selami koleksi artikel saya, tempat saya berbagi wawasan, tips, dan tren tentang pengembangan web, desain, dan strategi digital.",
-      readMore: "Baca Selengkapnya",
-      backToArticles: "Kembali ke Artikel",
-      items: [
-        { 
-          title: "Komisi Marketplace Naik, Saatnya Punya Website Sendiri", 
-          category: "Strategi Bisnis",
-          excerpt: "Biaya komisi marketplace terus naik? Bangun website pribadi tanpa potongan bersama RizalHp. Desain modern, siap SEO, harga ramah UMKM.",
-          content: `
-            <p>Belakangan ini, banyak pemilik bisnis yang mengandalkan marketplace dibuat resah. Biaya komisi atau ‘biaya admin’ yang dikenakan untuk setiap transaksi berhasil terus mengalami kenaikan. Hal ini secara langsung menggerus margin keuntungan yang seharusnya menjadi milik Anda. Apakah ada solusi yang lebih baik?</p>
-            <p>Bergantung sepenuhnya pada marketplace itu ibarat menyewa lapak di pasar yang ramai. Memang bagus untuk menjaring keramaian, tetapi Anda harus mengikuti aturan pemilik pasar, termasuk membayar sewa yang bisa naik kapan saja. Sudah saatnya mempertimbangkan untuk membangun ‘toko’ Anda sendiri: sebuah website e-commerce pribadi.</p>
-            
-            <h3 class="text-2xl font-bold text-zinc-800 mt-6 mb-2">Mengapa Website Pribadi adalah Jawabannya</h3>
-            <p>Memindahkan bisnis ke website pribadi bukan sekadar tentang menghindari biaya. Ini adalah investasi strategis untuk pertumbuhan jangka panjang. Berikut adalah keuntungan utamanya:</p>
-            <ul class="list-disc list-inside space-y-2">
-              <li><strong>100% Profit, Tanpa Potongan:</strong> Keuntungan paling nyata. Setiap rupiah dari penjualan masuk sepenuhnya ke kantong Anda, tanpa ada biaya komisi.</li>
-              <li><strong>Kontrol Penuh Atas Brand:</strong> Di website sendiri, Anda adalah sutradaranya. Anda bisa merancang tampilan yang sesuai dengan identitas brand, menciptakan pengalaman pelanggan yang unik dan tak terlupakan.</li>
-              <li><strong>Data Pelanggan Milik Anda:</strong> Marketplace jarang membagikan data pelanggan secara detail. Dengan website sendiri, Anda mendapatkan wawasan berharga tentang perilaku konsumen yang bisa digunakan untuk marketing tertarget dan membangun loyalitas.</li>
-              <li><strong>Hubungan Langsung dengan Pelanggan:</strong> Bangun komunitas dan berkomunikasi langsung dengan pelanggan melalui newsletter, promo khusus, dan konten personal, tanpa gangguan dari kompetitor.</li>
-              <li><strong>Fleksibilitas Tanpa Batas:</strong> Ingin mengadakan flash sale, menambah fitur booking, atau mengintegrasikan sistem pembayaran unik? Website sendiri memberi Anda kebebasan untuk berinovasi tanpa batasan.</li>
-            </ul>
-
-            <h3 class="text-2xl font-bold text-zinc-800 mt-6 mb-2">"Tapi, Bukankah Membuat Website Itu Mahal dan Sulit?"</h3>
-            <p>Itu adalah mitos yang umum. Dulu mungkin benar, tetapi hari ini, jasa seperti <strong>RizalHp</strong> menawarkan pembuatan website profesional, modern, dan siap SEO dengan harga yang ramah untuk UMKM. Kami menangani kerumitan teknisnya, sehingga Anda bisa fokus pada hal terbaik yang Anda lakukan: menjalankan bisnis.</p>
-            <p>Jangan biarkan kenaikan biaya komisi mendikte masa depan bisnis Anda. Ambil alih kendali atas profit dan brand Anda. Berinvestasi dalam website pribadi bukanlah biaya, melainkan langkah kuat untuk membangun aset bisnis yang berkelanjutan dan menguntungkan.</p>
-          `,
-          meta: {
-            title: "Komisi Marketplace Naik? Saatnya Punya Website Pribadi | RizalHp",
-            description: "Biaya komisi marketplace terus naik? Bangun website pribadi tanpa potongan bersama RizalHp. Desain modern, siap SEO, harga ramah UMKM.",
-            keywords: "komisi marketplace naik, website pribadi, e-commerce sendiri, jasa pembuatan website, riizalhp, umkm, web developer yogyakarta",
-            ogImage: "https://riizalhp.web.id/images/articles/marketplace-commissions-rising.jpg",
-            jsonLd: {
-              '@context': 'https://schema.org',
-              '@type': 'BlogPosting',
-              'headline': "Komisi Marketplace Naik, Saatnya Punya Website Sendiri",
-              'description': "Komisi marketplace naik? Inilah alasan dan solusi untuk beralih ke website pribadi demi profit penuh dan brand yang kuat.",
-              'image': "https://riizalhp.web.id/images/articles/marketplace-commissions-rising.jpg",
-              'datePublished': "2024-08-19"
-            }
-          }
-        },
-        { 
-          title: "E-commerce vs Marketplace: Mana yang Lebih Cocok untuk Bisnis Anda?", 
-          category: "Strategi E-commerce",
-          excerpt: "Marketplace atau website E-commerce sendiri? Artikel ini membantu Anda menentukan strategi jualan online paling menguntungkan untuk bisnis Anda.",
-          content: `
-            <p>Dalam dunia jualan online, ada dua jalur utama: <strong>Marketplace</strong> dan <strong>E-commerce (website toko online sendiri)</strong>. Keduanya punya plus-minus. Artikel ini membantu Anda menentukan strategi paling menguntungkan untuk bisnis Anda.</p>
-            <h3 class="text-2xl font-bold text-zinc-800 mt-6 mb-2">Apa Itu Marketplace?</h3>
-            <p>Marketplace adalah platform pihak ketiga tempat penjual dan pembeli bertemu (contoh: Shopee, Tokopedia, Lazada). Penjual "menyewa rak" di platform tersebut untuk memasarkan produk.</p>
-            <h4 class="text-xl font-bold text-zinc-800 mt-4 mb-2">Kelebihan Marketplace</h4>
-            <ul class="list-disc list-inside space-y-2">
-              <li>🚀 <strong>Cepat mulai</strong> – daftar akun, upload produk, langsung bisa jualan.</li>
-              <li>👥 <strong>Traffic besar</strong> – sudah ada jutaan pengguna aktif di platform.</li>
-              <li>🔗 <strong>Fitur terintegrasi</strong> – pembayaran, pengiriman, promosi internal.</li>
-            </ul>
-            <h4 class="text-xl font-bold text-zinc-800 mt-4 mb-2">Kekurangan Marketplace</h4>
-            <ul class="list-disc list-inside space-y-2">
-              <li>💸 <strong>Komisi & biaya iklan</strong> – profit tergerus potongan & biaya promosi.</li>
-              <li>⚔️ <strong>Persaingan ketat</strong> – perang harga dan sulit tampil beda dari kompetitor.</li>
-              <li>🏷️ <strong>Branding terbatas</strong> – identitas toko berada di bawah payung marketplace.</li>
-              <li>📊 <strong>Data pelanggan bukan milik Anda</strong> – sulit membangun retensi & CRM.</li>
-            </ul>
-            <h3 class="text-2xl font-bold text-zinc-800 mt-6 mb-2">Apa Itu E-commerce (Website Pribadi)?</h3>
-            <p>E-commerce adalah <strong>website toko online milik Anda sendiri</strong>. Konsumen bertransaksi langsung tanpa perantara platform pihak ketiga.</p>
-            <h4 class="text-xl font-bold text-zinc-800 mt-4 mb-2">Kelebihan E-commerce</h4>
-            <ul class="list-disc list-inside space-y-2">
-              <li>💰 <strong>Profit penuh</strong> – tidak ada potongan komisi transaksi.</li>
-              <li>🏗️ <strong>Branding kuat</strong> – domain & desain sesuai identitas bisnis.</li>
-              <li>🧭 <strong>Kontrol total</strong> – aturan, promo, hingga seluruh pengalaman belanja ada di tangan Anda.</li>
-              <li>🔎 <strong>SEO-friendly</strong> – bisa muncul di Google dan dapat traffic organik.</li>
-              <li>🔌 <strong>Integrasi fleksibel</strong> – WhatsApp, payment gateway, shipping, CRM, dan analytics.</li>
-            </ul>
-            <h4 class="text-xl font-bold text-zinc-800 mt-4 mb-2">Kekurangan E-commerce</h4>
-            <ul class="list-disc list-inside space-y-2">
-              <li>💸 <strong>Biaya awal</strong> – development website & setup awal.</li>
-              <li>📈 <strong>Perlu strategi akuisisi</strong> – SEO/iklan/sosmed untuk mendatangkan traffic.</li>
-            </ul>
-            <h3 class="text-2xl font-bold text-zinc-800 mt-6 mb-2">Perbandingan Cepat</h3>
-            <div class="overflow-x-auto"><table class="w-full text-left border-collapse"><thead><tr><th class="border p-2">Aspek</th><th class="border p-2">Marketplace</th><th class="border p-2">E-commerce (Website Pribadi)</th></tr></thead><tbody><tr><td class="border p-2">Kecepatan Mulai</td><td class="border p-2">Mudah & cepat</td><td class="border p-2">Perlu setup awal</td></tr><tr><td class="border p-2">Biaya/Komisi</td><td class="border p-2">Komisi & biaya iklan</td><td class="border p-2">Tidak ada komisi per transaksi</td></tr><tr><td class="border p-2">Branding</td><td class="border p-2">Terbatas</td><td class="border p-2">Kuat & konsisten</td></tr><tr><td class="border p-2">Kepemilikan Data</td><td class="border p-2">Milik platform</td><td class="border p-2">Milik Anda</td></tr><tr><td class="border p-2">Traffic</td><td class="border p-2">Besar, kompetitif</td><td class="border p-2">Perlu SEO/iklan</td></tr><tr><td class="border p-2">Kontrol & Skalabilitas</td><td class="border p-2">Terbatas aturan platform</td><td class="border p-2">Tinggi & fleksibel</td></tr></tbody></table></div>
-            <h3 class="text-2xl font-bold text-zinc-800 mt-6 mb-2">Strategi yang Direkomendasikan</h3>
-            <ul class="list-disc list-inside space-y-2">
-              <li><strong>Hybrid:</strong> gunakan marketplace untuk eksposur, <em>tapi</em> jadikan website pribadi sebagai pusat ekosistem penjualan.</li>
-              <li>Bangun <strong>brand & database pelanggan</strong> di website Anda untuk retensi jangka panjang.</li>
-              <li>Optimalkan <strong>SEO + media sosial</strong> untuk akuisisi traffic tanpa biaya iklan berlebih.</li>
-            </ul>
-            <h3 class="text-2xl font-bold text-zinc-800 mt-6 mb-2">Mengapa RizalHp untuk E-commerce Anda?</h3>
-            <ul class="list-disc list-inside space-y-2">
-              <li>🎨 Desain modern, cepat, dan mobile-friendly.</li>
-              <li>🧩 Fitur siap jual: katalog, keranjang, checkout, integrasi pembayaran & pengiriman.</li>
-              <li>🔎 Dibangun dengan basic SEO agar mudah ditemukan Google.</li>
-              <li>🤝 Konsultasi gratis sebelum memulai.</li>
-            </ul>
-            <h3 class="text-2xl font-bold text-zinc-800 mt-6 mb-2">Kesimpulan & CTA</h3>
-            <p>Marketplace bagus untuk memulai cepat, tetapi <strong>website E-commerce pribadi</strong> adalah investasi jangka panjang yang memberi Anda kontrol, profit penuh, dan brand yang kuat. Gabungkan keduanya, dengan website pribadi sebagai inti strategi Anda.</p>
-            <p><strong>👉 Siap membangun E-commerce sendiri?</strong> Wujudkan bersama <a href="https://riizalhp.web.id" target="_blank" rel="noopener">RizalHp</a> – partner digital Anda untuk toko online profesional, cepat, dan siap SEO.</p>
-          `,
-          meta: {
-            title: "E-commerce vs Marketplace: Mana yang Tepat untuk Bisnis Anda? | RizalHp",
-            description: "Memilih antara website e-commerce sendiri dan marketplace? Panduan ini menguraikan pro dan kontra untuk membantu Anda memutuskan strategi terbaik.",
-            keywords: "e-commerce vs marketplace, toko online, jualan online, strategi bisnis, riizalhp",
-            ogImage: "https://riizalhp.web.id/images/articles/ecommerce-vs-marketplace.jpg",
-            jsonLd: {
-              '@context': 'https://schema.org',
-              '@type': 'BlogPosting',
-              'headline': "E-commerce vs. Marketplace: Mana yang Lebih Cocok untuk Bisnis Anda?",
-              'description': "Perbandingan lengkap antara berjualan di marketplace dan memiliki website e-commerce sendiri.",
-              'image': "https://riizalhp.web.id/images/articles/ecommerce-vs-marketplace.jpg",
-              'datePublished': "2024-08-20"
-            }
-          }
-        }
-      ]
-    },
-
-    // How We Work
     howWeWork: {
-      title: "Alur",
-      titleBold: "Kerja Saya",
-      subtitle: "Proses saya dirancang untuk kolaboratif, transparan, dan efisien, memastikan saya memberikan produk akhir yang melebihi harapan Anda.",
+      title: 'Alur Kerja',
+      titleBold: 'Kami',
+      subtitle: 'Proses yang transparan dan kolaboratif untuk mewujudkan visi Anda.',
       steps: [
-        {
-          title: "Penemuan & Konsultasi",
-          description: "Saya mulai dengan memahami visi, tujuan, dan target audiens Anda. Obrolan awal ini membantu kita menyelaraskan ruang lingkup proyek dan persyaratan utama."
-        },
-        {
-          title: "Strategi & Perencanaan",
-          description: "Berdasarkan sesi penemuan kita, saya akan menyusun rencana proyek yang terperinci, termasuk peta situs, alur pengguna, dan proposal tumpukan teknologi. Saya mendefinisikan peta jalan menuju kesuksesan."
-        },
-        {
-          title: "Desain UI/UX",
-          description: "Tim desain saya menciptakan mockup dan prototipe yang intuitif dan menakjubkan secara visual. Saya fokus pada menciptakan pengalaman pengguna yang mulus yang mencerminkan identitas merek Anda."
-        },
-        {
-          title: "Pengembangan",
-          description: "Pengembang saya menghidupkan desain dengan kode yang bersih, efisien, dan dapat diskalakan. Saya mengikuti praktik terbaik untuk memastikan situs web Anda cepat, aman, dan responsif di semua perangkat."
-        },
-        {
-          title: "Pengujian & QA",
-          description: "Sebelum peluncuran, saya melakukan pengujian ketat di berbagai browser dan perangkat untuk memastikan semuanya berfungsi dengan sempurna. Saya memburu bug sehingga pengguna Anda tidak perlu melakukannya."
-        },
-        {
-          title: "Peluncuran & Dukungan",
-          description: "Setelah persetujuan akhir Anda, saya menerapkan situs web ke server langsung. Saya juga menyediakan pemeliharaan dan dukungan berkelanjutan untuk memastikan situs Anda tetap mutakhir dan berkinerja optimal."
-        }
+        { title: 'Penemuan & Strategi', description: 'Kami mulai dengan memahami tujuan, audiens, dan tantangan Anda untuk membuat rencana yang solid.' },
+        { title: 'Desain & Prototyping', description: 'Kami merancang antarmuka pengguna yang intuitif dan membuat prototipe interaktif untuk umpan balik Anda.' },
+        { title: 'Pengembangan', description: 'Pengembang kami menulis kode yang bersih dan efisien untuk membangun produk yang kuat dan dapat diskalakan.' },
+        { title: 'Pengujian & QA', description: 'Kami menguji setiap aspek proyek secara ketat untuk memastikan kualitas dan kinerja.' },
+        { title: 'Peluncuran & Dukungan', description: 'Kami menangani penerapan dan memberikan dukungan berkelanjutan untuk memastikan keberhasilan proyek Anda.' }
       ]
     },
 
-    // Pricing
+    articles: {
+      title: 'Artikel Saya',
+      titleBold: 'Wawasan Digital',
+      subtitle: 'Berbagi pemikiran saya tentang pengembangan web, manajemen proyek, dan tren teknologi.',
+      readMore: 'Baca Selengkapnya',
+      backToArticles: 'Kembali ke Artikel',
+      items: [
+        {
+          title: "Pentingnya UI/UX dalam Pengembangan Web Modern",
+          category: "Desain UI/UX",
+          excerpt: "Jelajahi mengapa pendekatan yang berpusat pada pengguna bukan lagi kemewahan tetapi keharusan untuk kesuksesan digital. UI/UX yang baik dapat meningkatkan keterlibatan dan konversi pengguna secara signifikan.",
+          content: "<h3>Pengguna adalah Raja</h3><p>Dalam lanskap digital yang kompetitif saat ini, situs web yang menarik secara visual saja tidak cukup. Pengalaman pengguna (UX) dan antarmuka pengguna (UI) adalah komponen penting yang menentukan apakah pengguna tetap di situs Anda atau beralih ke pesaing. UI/UX yang dirancang dengan baik membuat interaksi menjadi lancar, intuitif, dan menyenangkan.</p><h4>Prinsip Utama UI/UX yang Baik:</h4><ul><li><strong>Kejelasan:</strong> Antarmuka harus jelas dan mudah dipahami. Pengguna tidak perlu menebak-nebak apa yang harus dilakukan selanjutnya.</li><li><strong>Konsistensi:</strong> Elemen desain yang konsisten di seluruh situs membantu pengguna mempelajari antarmuka lebih cepat.</li><li><strong>Umpan Balik:</strong> Berikan umpan balik yang segera dan jelas untuk tindakan pengguna.</li><li><strong>Fleksibilitas:</strong> Desain harus melayani pengguna pemula maupun ahli.</li></ul><p>Dengan berinvestasi pada UI/UX, bisnis dapat melihat pengembalian nyata melalui peningkatan loyalitas pelanggan, tingkat konversi yang lebih tinggi, dan reputasi merek yang lebih kuat.</p>",
+          meta: {
+            title: "Pentingnya UI/UX dalam Pengembangan Web Modern | riizalhp.",
+            description: "Pelajari mengapa UI/UX sangat penting untuk situs web modern dan bagaimana hal itu memengaruhi keterlibatan pengguna, tingkat konversi, dan kesuksesan bisnis secara keseluruhan.",
+            keywords: "UI/UX, pengalaman pengguna, antarmuka pengguna, desain web, optimisasi konversi",
+            ogImage: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=2070&auto=format&fit=crop&ixlib-rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%D%D",
+            jsonLd: {
+              '@context': 'https://schema.org',
+              '@type': 'BlogPosting',
+              headline: "Pentingnya UI/UX dalam Pengembangan Web Modern",
+              datePublished: "2024-07-20",
+              dateModified: "2024-07-20"
+            }
+          }
+        },
+        {
+          title: "5 Alasan Bisnis Anda Membutuhkan Website Profesional",
+          category: "Strategi Bisnis",
+          excerpt: "Situs web adalah etalase digital Anda. Temukan lima alasan utama mengapa berinvestasi di situs web profesional adalah salah satu keputusan terbaik untuk pertumbuhan bisnis Anda.",
+          content: "<h3>Pintu Depan Digital Anda</h3><p>Di era digital, situs web Anda sering kali menjadi titik kontak pertama calon pelanggan dengan merek Anda. Situs web yang profesional dan dirancang dengan baik membangun kredibilitas dan kepercayaan sejak klik pertama.</p><ol><li><strong>Kredibilitas dan Profesionalisme:</strong> Situs web berkualitas tinggi menandakan bahwa Anda adalah bisnis yang sah dan dapat dipercaya.</li><li><strong>Ketersediaan 24/7:</strong> Situs web Anda bekerja untuk Anda sepanjang waktu, memberikan informasi dan menghasilkan prospek bahkan saat Anda tidak di kantor.</li><li><strong>Jangkauan Audiens yang Lebih Luas:</strong> Berbeda dengan toko fisik, situs web dapat diakses oleh siapa saja di dunia, yang secara dramatis memperluas pasar potensial Anda.</li><li><strong>Pemasaran Hemat Biaya:</strong> Dibandingkan dengan iklan tradisional, situs web adalah alat pemasaran yang sangat hemat biaya dengan laba atas investasi yang tinggi.</li><li><strong>Memamerkan Karya Anda:</strong> Situs web adalah platform yang sempurna untuk menampilkan produk, layanan, dan portofolio Anda kepada calon klien.</li></ol><p>Jangan remehkan kekuatan kehadiran online profesional. Ini adalah alat penting untuk pertumbuhan, pemasaran, dan membangun merek Anda di pasar modern.</p>",
+          meta: {
+            title: "5 Alasan Bisnis Anda Membutuhkan Website Profesional | riizalhp.",
+            description: "Temukan 5 alasan utama mengapa website profesional sangat penting untuk kredibilitas, pemasaran, dan pertumbuhan bisnis Anda di era digital.",
+            keywords: "website profesional, website bisnis, kehadiran online, pemasaran digital, pertumbuhan bisnis",
+            ogImage: "https://images.unsplash.com/photo-1522199670076-2852f8c89bb8?q=80&w=2070&auto=format&fit=crop&ixlib-rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%D%D",
+            jsonLd: {
+              '@context': 'https://schema.org',
+              '@type': 'BlogPosting',
+              headline: "5 Alasan Bisnis Anda Membutuhkan Website Profesional",
+              datePublished: "2024-07-15",
+              dateModified: "2024-07-15"
+            }
+          }
+        }
+      ]
+    },
     pricing: {
-      fullTitle: 'Layanan dari <span class="font-light">riizal</span><span class="font-bold">hp</span><span style="color: #78ff00">.</span>',
-      subtitle: 'Saya menyediakan paket harga yang transparan dan fleksibel untuk memenuhi kebutuhan Anda, dari perorangan hingga perusahaan besar.',
-      mostPopular: 'Paling Populer',
+      fullTitle: "Harga Fleksibel Untuk <span class=\"font-bold\">Setiap Kebutuhan</span><span style=\"color: #78ff00;\">.</span>",
+      subtitle: 'Pilih paket yang sesuai dengan tujuan Anda. Semua paket dapat disesuaikan.',
+      mostPopular: 'Paling Direkomendasikan',
+      whatsappMessageTemplate: "Halo, saya tertarik dengan paket '{packageName}'. Bisakah kita diskusikan lebih lanjut?",
       tabs: {
-        personal: {
-          name: 'Personal',
-          description: 'Cocok untuk: Content creator, fotografer, videografer, arsitek, desainer fashion, freelancer.',
-        },
-        sme: {
-          name: 'UMKM',
-          description: 'Cocok untuk: Restoran, coffee shop, toko online, jasa lokal.',
-        },
-        enterprise: {
-          name: 'Perusahaan',
-          description: 'Cocok untuk: Perusahaan, startup, institusi pendidikan.',
-        },
+        personal: { name: 'Personal', description: 'Untuk perorangan, mahasiswa, fresh graduate, freelancer, atau personal brand.' },
+        sme: { name: 'UKM', description: 'Untuk startup, usaha kecil hingga menengah.' },
+        enterprise: { name: 'Enterprise', description: 'Untuk perusahaan, organisasi, atau startup skala besar.' }
       },
+      comparisonTitle: "Perbandingan <span class=\"font-bold\">Fitur Detail</span><span style=\"color: #78ff00;\">.</span>",
+      featureComparison: ["Domain", "Desain", "SEO", "Revisi", "Google Analytics", "Hosting", "Bagian", "Halaman", "Pemeliharaan & Dukungan"],
       packages: {
         personal: [
-          {
-            name: 'Mulai',
-            description: 'Agar personal brand kelihatan rapi dan profesional, tapi tetap hemat.',
-            originalPrice: 'Rp 1.150.000',
-            price: 'Rp 750.000',
-            priceNote: '',
-            features: ['Halaman & section tak terbatas', 'Desain custom sesuai gaya personal', 'Mobile friendly', '1x konsultasi singkat (30 menit)', '1x gratis revisi', 'Basic SEO', '12 bulan hosting + gratis SSL', 'Garansi maintenance 1 minggu'],
-            buttonText: 'Pilih Paket Ini',
-          },
-          {
-            name: 'Pro',
-            description: 'Supaya hasil karyamu tidak hanya dilihat, tapi juga dilirik.',
-            originalPrice: 'Rp 1.700.000',
-            price: 'Rp 1.200.000',
-            priceNote: '',
-            popular: true,
-            features: ['Semua di paket Mulai, plus:', 'Desain premium + animasi smooth', 'Galeri portofolio interaktif', 'Integrasi langsung ke WhatsApp', '3x gratis revisi', '2x konsultasi (total 1 jam)', '12 bulan hosting', 'Garansi maintenance 1 bulan'],
-            buttonText: 'Pilih Paket Ini',
-          },
-          {
-            name: 'Custom',
-            description: 'Bagi yang ingin website-nya beda dari yang lain.',
-            originalPrice: 'Rp 2.750.000',
-            price: 'Rp 1.900.000',
-            priceNote: 'Mulai dari',
-            features: ['Semua di paket Pro, plus:', 'Request fitur khusus (booking, form custom, dll)', 'Desain fully-interactive', 'Optimasi kecepatan', 'Revisi fleksibel selama proyek', '12 bulan hosting', 'Maintenance 2 bulan'],
-            buttonText: 'Pilih Paket Ini',
-          },
+          { name: 'Ekonomi Personal', description: 'Untuk mahasiswa atau fresh graduate yang butuh profil online simpel.', originalPrice: 'Rp 500.000', price: 'Rp 350.000', priceNote: '/ tahun', features: ['Domain gratis (.my.id/.web.id/.site/.online)', 'Upgrade domain: .com (+Rp310k), .id (+Rp390k)', 'Landing Page (bagian custom)', 'Desain Template Premium', 'Desain responsif & mobile-friendly', 'Formulir Kontak (WA/Email)', '2x Revisi minor', 'Gratis hosting 12 bulan', '3 bulan pemeliharaan'], buttonText: 'Pilih Paket', comparisonValues: ['✓ (.my.id/.web.id)', 'Template', '—', '2x Minor', '—', '1 Tahun', 'Custom', '1 Halaman', '3 Bulan'] },
+          { name: 'Starter Personal', description: 'Untuk individu yang mulai serius membangun personal brand.', originalPrice: 'Rp 1.500.000', price: 'Rp 1.000.000', priceNote: '/ tahun', features: ['Domain gratis (.my.id/.web.id)', 'Upgrade domain: .com (+Rp310k), .id (+Rp390k)', 'Landing Page (bagian custom)', 'Desain custom sesuai brand', 'SEO Dasar', 'Integrasi Google Analytics', '3x Revisi minor', 'Gratis hosting 12 bulan', '3 bulan pemeliharaan'], buttonText: 'Pilih Paket', comparisonValues: ['✓ (.my.id/.web.id)', 'Custom', 'Dasar', '3x Minor', '✓', '1 Tahun', 'Custom', '1 Halaman', '3 Bulan'] },
+          { name: 'Bisnis Personal', description: 'Untuk freelancer, tutor, atau personal brand yang ingin tampil profesional.', originalPrice: 'Rp 3.000.000', price: 'Rp 2.000.000', priceNote: '/ tahun', popular: true, features: ['Domain premium .com atau .id', 'Website multi-halaman (Home, About, dll)', 'Blog mini untuk artikel', 'Desain custom sesuai brand', 'Optimisasi SEO lengkap', 'Integrasi Google Analytics', '5x Revisi minor + 1x Mayor', 'Gratis hosting 12 bulan', '1 tahun pemeliharaan & support penuh'], buttonText: 'Pilih Paket', comparisonValues: ['✓ (.com atau .id)', 'Custom', 'Lengkap', '5x Minor + 1x Mayor', '✓', '1 Tahun', 'Custom', 'Multi-halaman', '1 Tahun'] },
+          { name: 'Custom Personal', description: 'Untuk content creator atau brand besar dengan kebutuhan spesifik.', price: 'Rp 4.000.000', priceNote: 'Mulai dari', features: ['Domain premium pilihan (.com, .id, .ai, dll)', 'Fitur custom sesuai kebutuhan', 'Desain custom sesuai brand', 'Keamanan tingkat lanjut', 'Revisi minor tak terbatas + 2x Mayor', 'Gratis hosting 12 bulan', '1 tahun pemeliharaan & support penuh'], buttonText: 'Hubungi Kami', comparisonValues: ['✓ (Premium)', 'Full Custom', 'Ditingkatkan', 'Tak Terbatas', '✓', '1 Tahun', 'Custom', 'Custom', '1 Tahun'] }
         ],
         sme: [
-          {
-            name: 'Mulai',
-            description: 'Biar bisnismu bisa muncul di Google tanpa ribet.',
-            originalPrice: 'Rp 1.450.000',
-            price: 'Rp 999.000',
-            priceNote: '',
-            features: ['Halaman & section tak terbatas', 'Desain custom simpel & profesional', 'Mobile friendly', '1x konsultasi singkat', '1x gratis revisi', 'Basic SEO bisnis lokal', '12 bulan hosting + gratis SSL', 'Garansi maintenance 1 minggu'],
-            buttonText: 'Pilih Paket Ini',
-          },
-          {
-            name: 'Pro',
-            description: 'Website yang tidak hanya ada, tapi juga menjual.',
-            originalPrice: 'Rp 2.150.000',
-            price: 'Rp 1.500.000',
-            priceNote: '',
-            popular: true,
-            features: ['Semua di paket Mulai, plus:', 'Desain premium + animasi smooth', 'Halaman produk + galeri foto/video', 'Pemesanan langsung ke WhatsApp', 'Form order sederhana', '3x gratis revisi', '12 bulan hosting', 'Garansi maintenance 1 bulan'],
-            buttonText: 'Pilih Paket Ini',
-          },
-          {
-            name: 'Custom',
-            description: 'Fitur lengkap, siap untuk scale-up bisnismu.',
-            originalPrice: 'Rp 3.400.000',
-            price: 'Rp 2.450.000',
-            priceNote: 'Mulai dari',
-            features: ['Semua di paket Pro, plus:', 'Katalog lengkap dengan filter produk', 'Form booking/reservasi custom', 'Desain fully-interactive', 'Optimasi kecepatan', '12 bulan hosting', 'Maintenance 2 bulan'],
-            buttonText: 'Pilih Paket Ini',
-          },
+          { name: 'Ekonomi UKM', description: 'Untuk UKM baru atau usaha kecil yang ingin hadir online.', originalPrice: 'Rp 750.000', price: 'Rp 500.000', priceNote: '/ tahun', features: ['Domain gratis (.my.id/.web.id/.site/.online)', 'Upgrade domain: .com (+Rp310k), .id (+Rp390k)', 'Landing Page (bagian custom)', 'Desain template siap pakai', 'Desain responsif & mobile-friendly', 'Formulir Kontak (WA/Email)', '2x Revisi minor', 'Gratis hosting 12 bulan', '3 bulan pemeliharaan'], buttonText: 'Pilih Paket', comparisonValues: ['✓ (.my.id/.web.id)', 'Template', '—', '2x Minor', '—', '1 Tahun', 'Custom', '1 Halaman', '3 Bulan'] },
+          { name: 'Starter UKM', description: 'Untuk UKM yang siap serius menjangkau pelanggan online.', originalPrice: 'Rp 2.500.000', price: 'Rp 1.500.000', priceNote: '/ tahun', features: ['Domain gratis (.my.id/.web.id)', 'Upgrade domain: .com (+Rp310k), .id (+Rp390k)', 'Landing Page lengkap (bagian custom)', 'Desain custom sesuai brand', 'Formulir Order (WA/Email)', 'SEO Dasar', 'Integrasi Google Analytics', '3x Revisi minor', 'Gratis hosting 12 bulan', '3 bulan pemeliharaan'], buttonText: 'Pilih Paket', comparisonValues: ['✓ (.my.id/.web.id)', 'Custom', 'Dasar', '3x Minor', '✓', '1 Tahun', 'Custom', '1 Halaman', '3 Bulan'] },
+          { name: 'Bisnis UKM', description: 'Pilihan terbaik untuk UKM yang butuh website lebih profesional.', originalPrice: 'Rp 5.000.000', price: 'Rp 3.000.000', priceNote: '/ tahun', popular: true, features: ['Domain premium .com atau .id', 'Website multi-halaman', 'Katalog produk simpel / booking online', 'Desain custom sesuai brand', 'Formulir kontak & order', 'Optimisasi SEO lengkap', 'Integrasi Google Analytics', '5x Revisi minor + 1x Mayor', 'Gratis hosting 12 bulan', '1 tahun pemeliharaan & support penuh'], buttonText: 'Pilih Paket', comparisonValues: ['✓ (.com atau .id)', 'Custom', 'Lengkap', '5x Minor + 1x Mayor', '✓', '1 Tahun', 'Custom', 'Multi-halaman', '1 Tahun'] },
+          { name: 'Custom UKM', description: 'Solusi premium untuk UKM dengan fitur lengkap sesuai kebutuhan.', price: 'Rp 6.000.000', priceNote: 'Mulai dari', features: ['Domain premium pilihan (.com, .id, .store, dll)', 'Fitur custom (marketplace, payment gateway, dll)', 'Desain full custom', 'Keamanan tingkat lanjut & backup otomatis', 'Revisi minor tak terbatas + 2x Mayor', 'Gratis hosting 12 bulan', '1 tahun pemeliharaan & support penuh'], buttonText: 'Hubungi Kami', comparisonValues: ['✓ (Premium)', 'Full Custom', 'Ditingkatkan', 'Tak Terbatas', '✓', '1 Tahun', 'Custom', 'Custom', '1 Tahun'] }
         ],
         enterprise: [
-          {
-            name: 'Mulai',
-            description: 'Paket entry-level untuk kebutuhan profil korporat yang simpel.',
-            originalPrice: 'Rp 1.900.000',
-            price: 'Rp 1.500.000',
-            priceNote: '',
-            features: ['Halaman & section tak terbatas', 'Desain korporat clean & profesional', 'Mobile friendly', '1x konsultasi singkat', '1x gratis revisi', 'Basic SEO', '12 bulan hosting + gratis SSL', 'Garansi maintenance 1 minggu'],
-            buttonText: 'Pilih Paket Ini',
-          },
-          {
-            name: 'Pro',
-            description: 'Agar citra perusahaan lebih meyakinkan di mata klien dan investor.',
-            originalPrice: 'Rp 3.400.000',
-            price: 'Rp 2.450.000',
-            priceNote: '',
-            popular: true,
-            features: ['Semua di paket Mulai, plus:', 'Desain premium + animasi profesional', 'Integrasi live chat / form kontak cepat', 'Halaman layanan & portofolio lengkap', '3x gratis revisi', '2x konsultasi intensif', '12 bulan hosting', 'Garansi maintenance 1 bulan'],
-            buttonText: 'Pilih Paket Ini',
-          },
-          {
-            name: 'Custom',
-            description: 'Website kelas korporat dengan fitur untuk kebutuhan bisnis skala besar.',
-            originalPrice: 'Rp 5.750.000',
-            price: 'Rp 3.850.000',
-            priceNote: 'Mulai dari',
-            features: ['Semua di paket Pro, plus:', 'Integrasi sistem internal/API custom', 'Fitur login user / portal karyawan', 'Desain interaktif premium', 'Optimasi kecepatan', '12 bulan hosting', 'Maintenance 2 bulan'],
-            buttonText: 'Pilih Paket Ini',
-          },
-        ],
+          { name: 'Ekonomi Enterprise', description: 'Untuk perusahaan atau organisasi kecil yang butuh profil online.', originalPrice: 'Rp 1.000.000', price: 'Rp 750.000', priceNote: '/ tahun', features: ['Domain gratis (.my.id/.web.id/.site/.online)', 'Upgrade domain: .com (+Rp310k), .co.id (+Rp465k)', 'Landing Page (bagian custom)', 'Desain template profesional', 'Desain responsif & mobile-friendly', 'Formulir Kontak', '2x Revisi minor', 'Gratis hosting 12 bulan', '3 bulan pemeliharaan'], buttonText: 'Pilih Paket', comparisonValues: ['✓ (.my.id/.web.id)', 'Template', '—', '2x Minor', '—', '1 Tahun', 'Custom', '1 Halaman', '3 Bulan'] },
+          { name: 'Starter Enterprise', description: 'Untuk perusahaan yang ingin menampilkan profil resmi profesional.', originalPrice: 'Rp 4.000.000', price: 'Rp 2.500.000', priceNote: '/ tahun', features: ['Domain premium .co.id atau .id', 'Website multi-halaman', 'Bagian khusus korporat', 'Desain custom sesuai branding korporat', 'Optimisasi SEO dasar', 'Integrasi Google Analytics', '3x Revisi minor', 'Gratis hosting 12 bulan', '3 bulan pemeliharaan'], buttonText: 'Pilih Paket', comparisonValues: ['✓ (.co.id atau .id)', 'Custom', 'Dasar', '3x Minor', '✓', '1 Tahun', '✓', 'Multi-halaman', '3 Bulan'] },
+          { name: 'Bisnis Enterprise', description: 'Pilihan terbaik untuk perusahaan menengah dengan fitur interaktif.', originalPrice: 'Rp 8.000.000', price: 'Rp 5.000.000', priceNote: '/ tahun', popular: true, features: ['Domain premium .co.id atau .id', 'Website multi-halaman (termasuk Karir)', 'Fitur opsional (Login, Booking, Ticketing)', 'Desain custom sesuai brand guidelines', 'Optimisasi SEO lengkap', '5x Revisi minor + 1x Mayor', 'Gratis hosting 12 bulan', '1 tahun pemeliharaan & support penuh'], buttonText: 'Pilih Paket', comparisonValues: ['✓ (.co.id atau .id)', 'Custom', 'Lengkap', '5x Minor + 1x Mayor', '✓', '1 Tahun', 'Custom', 'Multi-halaman', '1 Tahun'] },
+          { name: 'Custom Enterprise', description: 'Solusi premium untuk perusahaan besar dengan sistem website custom.', price: 'Rp 10.000.000', priceNote: 'Mulai dari', features: ['Domain premium sesuai kebutuhan', 'Fitur custom (Sistem HR, Project Mgmt, SaaS, dll)', 'Desain full custom', 'Keamanan level enterprise', 'Revisi minor tak terbatas + 2x Mayor', 'Gratis hosting 12 bulan', '1 tahun pemeliharaan & support penuh'], buttonText: 'Hubungi Kami', comparisonValues: ['✓ (Premium)', 'Full Custom', 'Level Enterprise', 'Tak Terbatas', '✓', '1 Tahun', 'Custom', 'Custom', '1 Tahun'] }
+        ]
       },
+      products: {
+        title: "Produk yang Bisa <span class=\"font-bold\">Saya Kembangkan</span><span style=\"color: #78ff00;\">.</span>",
+        subtitle: "Berikut adalah beberapa solusi digital yang bisa saya bangun untuk memenuhi kebutuhan spesifik Anda.",
+        items: [
+          { name: 'Toko Online (E-Commerce Website)', description: 'Website jualan produk lengkap dengan katalog, keranjang belanja, metode pembayaran, dan sistem pengiriman.' },
+          { name: 'Company Profile Website', description: 'Situs resmi perusahaan untuk memperkenalkan brand, layanan, portofolio, dan kontak profesional.' },
+          { name: 'LMS (Learning Management System)', description: 'Platform belajar online dengan fitur kursus, ujian, forum diskusi, dan sertifikat digital.' },
+          { name: 'Booking & Reservation System', description: 'Sistem pemesanan online untuk jadwal layanan atau fasilitas dengan konfirmasi otomatis.' },
+          { name: 'Event & E-Ticketing', description: 'Website penjualan tiket acara dengan e-ticket & QR code scan-ready.' },
+          { name: 'Fundraising & Donation Platform', description: 'Platform penggalangan dana online, cocok untuk NGO, komunitas, atau proyek sosial.' },
+          { name: 'Forum & Community Platform', description: 'Website untuk diskusi, berbagi informasi, dan membangun komunitas online.' },
+          { name: 'Membership Website', description: 'Situs dengan konten eksklusif bagi anggota berbayar atau terdaftar.' },
+          { name: 'Portfolio & Personal Branding', description: 'Website personal untuk memamerkan karya, pengalaman, dan pencapaian.' },
+          { name: 'Blog / News Portal', description: 'Website berbasis artikel atau berita untuk edukasi, opini, atau informasi terkini.' },
+          { name: 'Media Streaming Website', description: 'Platform untuk streaming musik, video, atau podcast secara online.' },
+          { name: 'Video Platform', description: 'Situs khusus untuk mengunggah, mengelola, dan membagikan video.' },
+          { name: 'ERP (Enterprise Resource Planning)', description: 'Sistem manajemen terpadu untuk keuangan, stok, produksi, dan operasional bisnis.' },
+          { name: 'CRM (Customer Relationship Management)', description: 'Platform untuk mengelola data pelanggan, interaksi, dan penjualan.' },
+          { name: 'HRIS (Human Resource Information System)', description: 'Sistem manajemen SDM untuk absensi, payroll, cuti, dan data karyawan.' }
+        ]
+      }
     },
-
-    // Contact
     contact: {
-      title: 'Kontak',
-      titleBold: 'Saya',
-      subtitle: "Punya proyek? Saya ingin mendengar dari Anda. Mari kita ciptakan sesuatu yang luar biasa bersama.",
+      title: 'Punya proyek',
+      titleBold: 'dalam pikiran?',
+      subtitle: 'Mari kita bicarakan. Saya tersedia untuk pekerjaan freelance.',
       hireMeButton: 'Rekrut Saya',
-      orPrompt: 'Atau hubungi langsung',
-      emailPrompt: 'Email',
-      whatsappPrompt: 'WhatsApp',
-      whatsappNumber: '+6289667912404',
-      socialPrompt: 'Ikuti saya di media sosial',
-    },
+      orPrompt: 'atau',
+      emailPrompt: 'Email saya di',
+      whatsappPrompt: 'Hubungi saya di',
+      whatsappNumber: '+62 882-2544-4313',
+      socialPrompt: 'Ikuti saya di media sosial'
+    }
   }
 };

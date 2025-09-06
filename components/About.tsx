@@ -158,7 +158,7 @@ const About: React.FC = () => {
                   />
                   <p className="text-zinc-700 italic flex-grow">"{testimonial.quote}"</p>
                   <div className="mt-4 pt-4 border-t border-zinc-200 w-full">
-                    <p className="font-bold text-zinc-900">&mdash; {testimonial.author}</p>
+                    <p className="font-bold text-zinc-900">{testimonial.author}</p>
                     <p className="text-sm text-zinc-500">{testimonial.company}</p>
                   </div>
                 </div>
