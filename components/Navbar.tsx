@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { InstagramIcon, LinkedInIcon, TikTokIcon, WhatsAppIcon } from './Icons';
-import type { Page } from '../App';
 import { useLanguage } from '../contexts/LanguageContext';
 import HighlightText from './HighlightText';
 
@@ -27,16 +27,15 @@ const LanguageSwitcher: React.FC = () => {
   );
 };
 
-const Navbar: React.FC<{ onNavigate: (page: Page) => void; }> = ({ onNavigate }) => {
+const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { t } = useLanguage();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   
-  const handleNavigation = (page: Page) => {
-    onNavigate(page);
-    window.scrollTo(0, 0); // Scroll to top on page change
-    setIsMenuOpen(false); // Close menu on navigation
+  const closeMenu = () => {
+    window.scrollTo(0, 0);
+    setIsMenuOpen(false);
   };
 
   const socialLinks = [
@@ -46,23 +45,23 @@ const Navbar: React.FC<{ onNavigate: (page: Page) => void; }> = ({ onNavigate })
     { Icon: WhatsAppIcon, href: t('whatsappLink') },
   ];
   
-  const navItems: { name: string, page: Page }[] = [
-    { name: t('menuAbout'), page: 'about' },
-    { name: t('menuWorks'), page: 'works' },
-    { name: t('menuHowWeWork'), page: 'how-we-work' },
-    { name: t('menuArticles'), page: 'articles' },
-    { name: t('menuPricing'), page: 'pricing' },
-    { name: t('menuContact'), page: 'contact' },
+  const navItems: { name: string, path: string }[] = [
+    { name: t('menuAbout'), path: '/about' },
+    { name: t('menuWorks'), path: '/works' },
+    { name: t('menuHowWeWork'), path: '/how-we-work' },
+    { name: t('menuArticles'), path: '/articles' },
+    { name: t('menuPricing'), path: '/pricing' },
+    { name: t('menuContact'), path: '/contact' },
   ];
 
   return (
     <header className="absolute top-10 left-0 right-0 z-50 p-6 md:p-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          <button onClick={() => handleNavigation('about')} className="hidden md:block text-sm font-medium tracking-tight hover:text-zinc-500 transition-colors">
+          <Link to="/about" onClick={closeMenu} className="hidden md:block text-sm font-medium tracking-tight hover:text-zinc-500 transition-colors">
             <HighlightText>{t('navStudio')}</HighlightText>
-          </button>
-          <button onClick={() => handleNavigation('home')} className="md:absolute md:left-1/2 md:-translate-x-1/2">
+          </Link>
+          <Link to="/" onClick={closeMenu} className="md:absolute md:left-1/2 md:-translate-x-1/2">
             <HighlightText>
               <div className="text-2xl md:text-3xl font-medium tracking-tighter text-zinc-900">
                 <span className="font-light">riizal</span>
@@ -70,20 +69,21 @@ const Navbar: React.FC<{ onNavigate: (page: Page) => void; }> = ({ onNavigate })
                 <span style={{ color: '#78ff00' }}>.</span>
               </div>
             </HighlightText>
-          </button>
+          </Link>
           <div className="flex items-center gap-4 md:gap-6">
-            <button onClick={() => handleNavigation('works')} className="hidden md:block text-sm font-medium tracking-tight hover:text-zinc-500 transition-colors">
+            <Link to="/works" onClick={closeMenu} className="hidden md:block text-sm font-medium tracking-tight hover:text-zinc-500 transition-colors">
               <HighlightText>{t('navWorks')}</HighlightText>
-            </button>
+            </Link>
             <div className="hidden md:block">
               <LanguageSwitcher />
             </div>
-            <button
-                onClick={() => handleNavigation('contact')}
+            <Link
+                to="/contact"
+                onClick={closeMenu}
                 className="hidden md:inline-block bg-zinc-900 text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-zinc-700 transition-colors duration-300 transform hover:-translate-y-0.5"
             >
                 {t('contact.hireMeButton')}
-            </button>
+            </Link>
             <button onClick={toggleMenu} className="flex items-center gap-2 text-sm font-medium tracking-tight group">
               {t('navMenu')}
               <div className="w-6 h-6 flex flex-col justify-center items-center gap-1.5">
@@ -114,9 +114,9 @@ const Navbar: React.FC<{ onNavigate: (page: Page) => void; }> = ({ onNavigate })
             </div>
             <nav className="flex flex-col items-start gap-2">
               {navItems.map(item => (
-                <button key={item.name} onClick={() => handleNavigation(item.page)} className="text-4xl md:text-5xl font-bold text-zinc-800 hover:text-zinc-400 transition-colors duration-300 -ml-1 text-left">
+                <Link key={item.name} to={item.path} onClick={closeMenu} className="text-4xl md:text-5xl font-bold text-zinc-800 hover:text-zinc-400 transition-colors duration-300 -ml-1 text-left">
                   <HighlightText>{item.name}</HighlightText>
-                </button>
+                </Link>
               ))}
             </nav>
           </div>

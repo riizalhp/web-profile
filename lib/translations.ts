@@ -114,7 +114,7 @@ export const translations = {
       ongoingTitleBold: 'Projects',
       ongoingSubtitle: 'Here are some of the projects I am currently working on.',
       ongoingProjects: [
-        { title: 'ResumeAI Platform', category: 'Project Management', description: 'Developing a web platform to create and optimize ATS-friendly CVs with job description matching features.', status: 'In Progress', liveUrl: null, imageUrl: '/images/rizal-hanifa-pratama-web-developer-cv.webp' },
+        { title: 'ResumeAI Platform', category: 'Project Management', description: 'Developing a web platform to create and optimize ATS-friendly CVs with job description matching features.', status: 'In Progress', liveUrl: 'http://resumeai.fun/', imageUrl: '/images/rizal-hanifa-pratama-web-developer-cv.webp' },
       ],
       title: 'My',
       titleBold: 'Works',
@@ -408,7 +408,7 @@ export const translations = {
       ongoingTitleBold: 'Berjalan',
       ongoingSubtitle: 'Berikut adalah beberapa proyek yang sedang saya kerjakan saat ini.',
       ongoingProjects: [
-        { title: 'Platform ResumeAI', category: 'Manajemen Proyek', description: 'Mengembangkan platform web untuk membuat dan mengoptimalkan CV ATS-friendly dengan fitur pencocokan deskripsi pekerjaan.', status: 'Dalam Pengerjaan', liveUrl: null, imageUrl: '/images/rizal-hanifa-pratama-web-developer-cv.webp' },
+        { title: 'Platform ResumeAI', category: 'Manajemen Proyek', description: 'Mengembangkan platform web untuk membuat dan mengoptimalkan CV ATS-friendly dengan fitur pencocokan deskripsi pekerjaan.', status: 'Dalam Pengerjaan', liveUrl: 'http://resumeai.fun/', imageUrl: '/images/rizal-hanifa-pratama-web-developer-cv.webp' },
       ],
       title: 'Karya',
       titleBold: 'Saya',
@@ -481,21 +481,21 @@ export const translations = {
       backToArticles: 'Kembali ke Artikel',
       items: [
         {
-          title: "Pentingnya UI/UX dalam Pengembangan Web Modern",
-          category: "Desain UI/UX",
-          excerpt: "Jelajahi mengapa pendekatan yang berpusat pada pengguna bukan lagi kemewahan tetapi keharusan untuk kesuksesan digital. UI/UX yang baik dapat meningkatkan keterlibatan dan konversi pengguna secara signifikan.",
-          content: "<h3>Pengguna adalah Raja</h3><p>Dalam lanskap digital yang kompetitif saat ini, situs web yang menarik secara visual saja tidak cukup. Pengalaman pengguna (UX) dan antarmuka pengguna (UI) adalah komponen penting yang menentukan apakah pengguna tetap di situs Anda atau beralih ke pesaing. UI/UX yang dirancang dengan baik membuat interaksi menjadi lancar, intuitif, dan menyenangkan.</p><h4>Prinsip Utama UI/UX yang Baik:</h4><ul><li><strong>Kejelasan:</strong> Antarmuka harus jelas dan mudah dipahami. Pengguna tidak perlu menebak-nebak apa yang harus dilakukan selanjutnya.</li><li><strong>Konsistensi:</strong> Elemen desain yang konsisten di seluruh situs membantu pengguna mempelajari antarmuka lebih cepat.</li><li><strong>Umpan Balik:</strong> Berikan umpan balik yang segera dan jelas untuk tindakan pengguna.</li><li><strong>Fleksibilitas:</strong> Desain harus melayani pengguna pemula maupun ahli.</li></ul><p>Dengan berinvestasi pada UI/UX, bisnis dapat melihat pengembalian nyata melalui peningkatan loyalitas pelanggan, tingkat konversi yang lebih tinggi, dan reputasi merek yang lebih kuat.</p>",
+          title: "E-commerce vs Marketplace: Perbedaan & Keuntungan",
+          category: "Strategi Bisnis",
+          excerpt: "Di era digital, transaksi jual beli tidak lagi terbatas pada toko fisik. Kini, banyak bisnis beralih ke platform online untuk memperluas jangkauan pasar.",
+          content: "<h3>Apa Itu E-commerce?</h3><p>E-commerce adalah toko online milik individu atau perusahaan yang berdiri sendiri. Pemilik toko bertanggung jawab penuh terhadap website, produk, sistem pembayaran, hingga pengiriman. Contoh e-commerce antara lain: Zalora, Berrybenka, atau website brand resmi seperti Nike.com.</p><h4>Kelebihan E-commerce:</h4><ul><li>Kontrol penuh atas tampilan website, branding, hingga pengalaman pengguna.</li><li>Data pelanggan lebih terjaga, bisa digunakan untuk strategi pemasaran jangka panjang.</li><li>Eksklusivitas produk, karena toko hanya menjual barang milik pemilik website.</li></ul><h4>Kekurangan E-commerce:</h4><ul><li>Membutuhkan biaya lebih besar untuk membangun website dan sistem pembayaran.</li><li>Butuh effort tinggi untuk mendatangkan traffic dan promosi agar toko dikenal.</li></ul><h3>Apa Itu Marketplace?</h3><p>Marketplace adalah platform yang mempertemukan penjual dan pembeli dalam satu wadah. Penjual cukup mendaftarkan produk tanpa perlu mengurus sistem website. Contoh marketplace yang populer adalah Shopee, Tokopedia, Lazada, dan Bukalapak.</p><h4>Kelebihan Marketplace:</h4><ul><li>Traffic besar dan cepat, karena marketplace sudah memiliki jutaan pengguna.</li><li>Mudah digunakan, penjual cukup fokus pada produk tanpa pusing soal sistem.</li><li>Kepercayaan konsumen tinggi, karena marketplace sudah memiliki reputasi dan sistem keamanan transaksi.</li></ul><h4>Kekurangan Marketplace:</h4><ul><li>Persaingan ketat, banyak penjual menjual produk serupa dengan harga bersaing.</li><li>Keterbatasan branding, karena tampilan toko mengikuti template yang sama.</li><li>Biaya tambahan, ada potongan biaya admin atau komisi setiap transaksi.</li></ul><h3>Perbedaan Utama E-commerce vs Marketplace</h3><table><thead><tr><th>Aspek</th><th>E-commerce</th><th>Marketplace</th></tr></thead><tbody><tr><td>Kepemilikan</td><td>Dimiliki & dikelola penuh oleh brand</td><td>Dikelola pihak ketiga, penjual hanya ikut</td></tr><tr><td>Kontrol Branding</td><td>Tinggi (desain, promosi, data pelanggan)</td><td>Rendah (template standar)</td></tr><tr><td>Biaya Awal</td><td>Relatif besar untuk setup & maintenance</td><td>Rendah, cukup daftar & upload produk</td></tr><tr><td>Traffic</td><td>Perlu usaha marketing mandiri</td><td>Sudah tersedia pengguna dalam jumlah besar</td></tr><tr><td>Persaingan</td><td>Tidak langsung, hanya dengan brand lain</td><td>Sangat ketat di dalam satu platform</td></tr></tbody></table><h3>Mana yang Lebih Menguntungkan?</h3><p>Jawabannya tergantung pada tujuan bisnis:</p><ul><li>Jika ingin bangun brand jangka panjang dengan kontrol penuh atas pengalaman pelanggan, E-commerce lebih cocok.</li><li>Jika ingin cepat menjual dan dapat pembeli banyak dengan biaya awal minim, Marketplace adalah pilihan tepat.</li></ul><p>Banyak brand besar saat ini bahkan menggunakan kombinasi keduanya: menjual lewat marketplace untuk menjangkau pasar luas, sekaligus membangun e-commerce resmi sebagai pusat branding.</p>",
           meta: {
-            title: "Pentingnya UI/UX dalam Pengembangan Web Modern | riizalhp.",
-            description: "Pelajari mengapa UI/UX sangat penting untuk situs web modern dan bagaimana hal itu memengaruhi keterlibatan pengguna, tingkat konversi, dan kesuksesan bisnis secara keseluruhan.",
-            keywords: "UI/UX, pengalaman pengguna, antarmuka pengguna, desain web, optimisasi konversi",
-            ogImage: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=2070&auto=format&fit=crop&ixlib-rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%D%D",
+            title: "E-commerce vs Marketplace: Perbedaan & Keuntungan | riizalhp.",
+            description: "Pelajari perbedaan mendasar antara E-commerce dan Marketplace, serta keuntungan dan kerugian masing-masing untuk membantu Anda memilih platform yang tepat.",
+            keywords: "e-commerce, marketplace, bisnis online, strategi digital, toko online",
+            ogImage: "/articles/ecommerce-vs-marketplace-perbedaan-keuntungan-boycodes.webp",
             jsonLd: {
               '@context': 'https://schema.org',
               '@type': 'BlogPosting',
-              headline: "Pentingnya UI/UX dalam Pengembangan Web Modern",
-              datePublished: "2024-07-20",
-              dateModified: "2024-07-20"
+              headline: "E-commerce vs Marketplace: Perbedaan & Keuntungan",
+              datePublished: "2025-09-06",
+              dateModified: "2025-09-06"
             }
           }
         },

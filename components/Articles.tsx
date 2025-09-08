@@ -1,23 +1,31 @@
-
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 import HighlightText from './HighlightText';
 
-const staticImageUrls = [
-  'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  'https://images.unsplash.com/photo-1522199670076-2852f8c89bb8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-];
+// Function to generate a URL-friendly slug from a title
+const slugify = (text: string) =>
+  text
+    .toString()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, '-')
+    .replace(/[^a-z0-9-]/g, '')
+    .replace(/-+/g, '-');
 
-interface ArticlesProps {
-  onSelectArticle: (article: any) => void;
-}
-
-const Articles: React.FC<ArticlesProps> = ({ onSelectArticle }) => {
+const Articles: React.FC = () => {
   const { t } = useLanguage();
   const articlesContent = t('articles');
-  const articles = articlesContent.items.map((article: any, index: number) => ({
+  
+  const articles = articlesContent.items.map((article: any) => ({
     ...article,
-    imageUrl: staticImageUrls[index % staticImageUrls.length],
+    // Construct a full URL for the image if a relative path is provided in translations
+    imageUrl: article.meta.ogImage.startsWith('/') 
+      ? `https://riizalhp.web.id${article.meta.ogImage}` 
+      : article.meta.ogImage,
+    slug: slugify(article.title),
   }));
 
   return (
@@ -34,10 +42,10 @@ const Articles: React.FC<ArticlesProps> = ({ onSelectArticle }) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {articles.map((article: any, index: number) => (
-            <div 
+            <Link 
+              to={`/artikel/${article.slug}`}
               key={index} 
-              className="group flex flex-col overflow-hidden rounded-lg shadow-sm hover:shadow-2xl transition-shadow duration-300 bg-zinc-50 cursor-pointer"
-              onClick={() => onSelectArticle(article)}
+              className="group flex flex-col overflow-hidden rounded-lg shadow-sm hover:shadow-2xl transition-shadow duration-300 bg-zinc-50"
             >
               <div className="relative h-56 overflow-hidden">
                 <img
@@ -60,7 +68,7 @@ const Articles: React.FC<ArticlesProps> = ({ onSelectArticle }) => {
                   <HighlightText>{t('articles.readMore')}</HighlightText>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

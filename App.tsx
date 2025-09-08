@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import TopBar from './components/TopBar';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -9,16 +10,13 @@ import Pricing from './components/Pricing';
 import Contact from './components/Contact';
 import HowWeWork from './components/HowWeWork';
 import Articles from './components/Articles';
-import ArticleDetail from './components/ArticleDetail';
+import ArticlePage from './components/ArticlePage'; // Import the new page component
 import MetaTags from './components/MetaTags';
 import { useLanguage } from './contexts/LanguageContext';
 
-export type Page = 'home' | 'about' | 'works' | 'pricing' | 'how-we-work' | 'contact' | 'articles';
-
 const App: React.FC = () => {
   const { language, t } = useLanguage();
-  const [currentPage, setCurrentPage] = useState<Page>('home');
-  const [selectedArticle, setSelectedArticle] = useState<any | null>(null);
+  const location = useLocation();
   const [currentMeta, setCurrentMeta] = useState<any>(null);
 
   const BASE_URL = 'https://riizalhp.web.id';
@@ -26,95 +24,33 @@ const App: React.FC = () => {
   useEffect(() => {
     let metaData;
     const langPath = language === 'id' ? '' : '/en';
+    const path = location.pathname;
 
-    if (currentPage === 'articles' && selectedArticle) {
-      const articleMeta = selectedArticle.meta;
-      const articleSlug = articleMeta.jsonLd.headline.toLowerCase()
-        .replace(/[^a-z0-9\s-]/g, '')
-        .replace(/\s+/g, '-')
-        .replace(/-+/g, '-');
-      
-      const canonicalUrl = `${BASE_URL}${langPath}/artikel/${articleSlug}`;
-
-      metaData = {
-        ...articleMeta,
-        ogUrl: canonicalUrl,
-        jsonLd: {
-          ...articleMeta.jsonLd,
-          mainEntityOfPage: {
-            '@type': 'WebPage',
-            '@id': canonicalUrl,
-          },
-          author: { '@type': 'Organization', 'name': 'RizalHp' },
-          publisher: {
-            '@type': 'Organization',
-            'name': 'RizalHp',
-            'logo': { '@type': 'ImageObject', 'url': 'https://riizalhp.web.id/assets/logo.png' }
-          }
-        }
-      };
-    } else {
-      const pageKey = currentPage.replace(/-(\w)/g, (_, c) => c.toUpperCase());
+    // This logic needs to be smart enough to handle article pages via ArticlePage component
+    // For now, we focus on the main pages.
+    if (!path.startsWith('/artikel')) { 
+      const pageKey = path === '/' ? 'home' : path.substring(1).replace(/-(\w)/g, (_, c) => c.toUpperCase());
       const pageMeta = t(`meta.${pageKey}`);
-      const pagePath = currentPage === 'home' ? '' : `/${currentPage}`;
-      const canonicalUrl = `${BASE_URL}${langPath}${pagePath}`;
       
-      metaData = {
-        ...pageMeta,
-        ogUrl: canonicalUrl,
-        jsonLd: {
-          ...pageMeta.jsonLd,
-          url: canonicalUrl,
-          mainEntityOfPage: {
-            '@type': 'WebPage',
-            '@id': canonicalUrl,
-          },
-        }
-      };
+      if (pageMeta) {
+        const canonicalUrl = `${BASE_URL}${langPath}${path === '/' ? '' : path}`;
+        
+        metaData = {
+          ...pageMeta,
+          ogUrl: canonicalUrl,
+          jsonLd: {
+            ...pageMeta.jsonLd,
+            url: canonicalUrl,
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id': canonicalUrl,
+            },
+          }
+        };
+        setCurrentMeta(metaData);
+      }
     }
-    setCurrentMeta(metaData);
-
-  }, [currentPage, selectedArticle, language, t]);
-
-  const handleNavigate = (page: Page) => {
-    setCurrentPage(page);
-    setSelectedArticle(null);
-    window.scrollTo(0, 0);
-  };
-
-  const handleSelectArticle = (article: any) => {
-    setSelectedArticle(article);
-    window.scrollTo(0, 0);
-  };
-
-  const handleBackToArticles = () => {
-    setSelectedArticle(null);
-    window.scrollTo(0, 0);
-  };
-
-  const renderPage = () => {
-    if (currentPage === 'articles' && selectedArticle) {
-      return <ArticleDetail article={selectedArticle} onBack={handleBackToArticles} />;
-    }
-
-    switch (currentPage) {
-      case 'about':
-        return <About />;
-      case 'works':
-        return <Works />;
-      case 'pricing':
-        return <Pricing />;
-      case 'how-we-work':
-        return <HowWeWork />;
-      case 'articles':
-        return <Articles onSelectArticle={handleSelectArticle} />;
-      case 'contact':
-        return <Contact />;
-      case 'home':
-      default:
-        return <Hero />;
-    }
-  };
+  }, [location.pathname, language, t]);
 
   return (
     <>
@@ -123,9 +59,18 @@ const App: React.FC = () => {
         <div className="noise-overlay fixed inset-0 z-[100] pointer-events-none opacity-10"></div>
         <div className="relative z-10">
           <TopBar />
-          <Navbar onNavigate={handleNavigate} />
+          <Navbar />
           <main>
-            {renderPage()}
+            <Routes>
+              <Route path="/" element={<Hero />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/works" element={<Works />} />
+              <Route path="/pricing" element={<Pricing />} />
+              <Route path="/how-we-work" element={<HowWeWork />} />
+              <Route path="/articles" element={<Articles />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/artikel/:slug" element={<ArticlePage />} />
+            </Routes>
           </main>
         </div>
       </div>
